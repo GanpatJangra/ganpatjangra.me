@@ -212,12 +212,13 @@ export default {
     top: 5%;
     height: 100%;
     width: 80px;
-    /* background: white ; */
+
+  
   
 }
 .swiper-button-next:hover{
 opacity: 0.2;
-  border-radius: 20px;
+ 
   margin-bottom: 20px;
   background: #e9e9ef;
 }
@@ -225,7 +226,6 @@ opacity: 0.2;
 .swiper-button-prev:hover{
   opacity: 0.2;
 border-radius: 20px;
-padding-bottom: 50px;
   background: #e9e9ef;
 }
 
