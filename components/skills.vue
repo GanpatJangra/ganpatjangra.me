@@ -1,11 +1,9 @@
 <template>
   <swiper
   :navigation="true"
-  :keyboard="{
-      enabled: true,
-    }"
+  :keyboard="{enabled: true,}"
    :pagination="{dynamicBullets: true,clickable: true}"
-     :modules="modules" class="mySwiper cursor-pointer select-none">
+     :modules="modules" class="mySwiper cursor-pointer select-none mt-10">
     <swiper-slide>
 
         <section class="bg-white">
@@ -111,13 +109,7 @@
       </section>
     </swiper-slide>
     <swiper-slide>
-
-
-
-
-
- 
-       <section class="bg-white">
+    <section class="bg-white">
                 <div class="container px-4 mx-auto">
           <h1 class="text-[#00749A] text-2xl justify-center flex font-semibold"> OTHER</h1>
           <div class="flex flex-wrap items-center justify-center -mx-4">
@@ -167,8 +159,9 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
     </swiper-slide>
+
 
   </swiper>
 </template>

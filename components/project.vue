@@ -13,15 +13,32 @@
        :pagination="{dynamicBullets: true,clickable: true}"
          :modules="modules"
         :thumbs="{ swiper: thumbsSwiper }"
-        class="mx-10 mySwiper2"
+        class="mx-10 mySwiper2 select-none"
     >
 
         <swiper-slide>
 
                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0 ">
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <img class="w-20 h-20 mx-auto mb-5" src="../assets/images/team/placeholder-photo.png" alt="">
-                    <h4 class="mb-12 text-xl font-medium font-heading">Ainsley lorem </h4>
+                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex flex-col sm:flex-row justify-between lg:mx-14">
+                      <div>
+                    <img class="w-20 h-20 mx-auto mb-5 " src="../assets/images/team/placeholder-photo.png" alt="">
+                      </div>
+                      <!-- <div class="flex  sm:space-x-20 mb-14"> -->
+                     <div class="flex flex-col">  
+                        <h1 class="flex items-center uppercase "><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="">html</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="">tailwind css</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="">java</h1>
+                     
+                        </div>
+                     <div>  
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="">vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="">nuxt js</h1>
+                      
+                        </div>
+                      <!-- </div> -->
+                    </div>
                     <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
@@ -29,20 +46,55 @@
 
         <swiper-slide>
 
-                <div class="relative w-full px-1 mb-4 xl:w-auto xl:mb-0">
-                  <div class="px-6 pt-10 pb-12 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <img class="w-20 h-20 mx-auto mb-5" src="../assets/images/team/placeholder-photo.png" alt=""><h4 class="mb-12 text-xl font-medium font-heading">Faustina H. Fawn</h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Manager</span>
+                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0 ">
+                  <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
+                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex justify-between items-center flex-col sm:flex-row ">
+                    
+                    <img class="w-20 sm:w-40 rounded-md pb-6" src="../assets/images/team/photo4.png" alt="">
+                    
+                      <div class="flex sm:space-x-20 space-x-8">
+                     <div>  
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="">html</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="">tailwind css</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="">java</h1>
+                     
+                        </div>
+                     <div>  
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="">vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="">nuxt js</h1>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
         </swiper-slide>
 
         <swiper-slide>
-
-                <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
-                  <div class="px-6 pt-10 pb-12 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <img class="w-20 h-20 mx-auto mb-5" src="../assets/images/team/placeholder-photo.png" alt=""><h4 class="mb-12 text-xl font-medium font-heading">Jasmine Joy</h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Manager</span>
+      <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0 ">
+                  <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
+                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex justify-between">
+                      <div class="mx-auto">
+                    <img class="w-20 h-20 mx-auto mb-5" src="../assets/images/team/placeholder-photo.png" alt="">
+                      </div>
+                      <div class="flex  sm:space-x-20 mb-14">
+                     <div>  
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="">html</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="">tailwind css</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="">java</h1>
+                     
+                        </div>
+                     <div>  
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="">vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="">nuxt js</h1>
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
             
@@ -51,12 +103,7 @@
 </swiper>
  </div> 
   </div>
-
-
-
-
-
-            <img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2" src="../assets/images/team/dots.svg" alt="">
+<img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2" src="../assets/images/team/dots.svg" alt="">
 
             <div class="w-full px-4 lg:w-1/2 ">
               <div class="text-center lg:px-10 md:mb-16">
@@ -76,6 +123,7 @@
                 <div class="flex items-start mb-10">
                   <img class="rotate-180" src="../assets/images/team/quote.png" alt="">
                   <div class="max-w-sm mx-auto text-justify -mt-9 ">
+                  <h1 class="mx-2 text-2xl font-medium capitalize text-blue-500">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="">
@@ -85,7 +133,8 @@
                 <img class="block mx-auto mb-12" src="../assets/images/team/dots2.svg" alt="">
                 <div class="flex items-start mb-10">
                   <img class="rotate-180" src="../assets/images/team/quote.png" alt="">
-                  <div class="max-w-sm mx-auto text-justify -mt-9">
+                  <div class="max-w-sm mx-auto text-justify -mt-9 ">
+                  <h1 class="mx-2 text-2xl font-medium capitalize text-blue-500">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="">
@@ -95,13 +144,13 @@
                 <img class="block mx-auto mb-12" src="../assets/images/team/dots2.svg" alt="">
                 <div class="flex items-start mb-10">
                   <img class="rotate-180" src="../assets/images/team/quote.png" alt="">
-                  <div class="max-w-sm mx-auto text-justify -mt-9">
+                  <div class="max-w-sm mx-auto text-justify -mt-9 ">
+                  <h1 class="mx-2 text-2xl font-medium capitalize text-blue-500">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="">
                   </div>
 </swiper-slide>
-
  </swiper>
                 <div class="flex items-center justify-center -mx-4">
               
