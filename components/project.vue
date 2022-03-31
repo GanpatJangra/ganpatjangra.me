@@ -7,12 +7,7 @@
             <h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2>
           </div>
           <div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">
-            <swiper
-              :spaceBetween="10"
-              :pagination="{ dynamicBullets: true, clickable: true }"
-              :modules="modules"
-              :thumbs="{ swiper: thumbsSwiper }"
-              class="mx-10 select-none mySwiper2">
+            <swiper :spaceBetween="10" :pagination="{ dynamicBullets: true, clickable: true }" :modules="modules" :thumbs="{ swiper: thumbsSwiper }" class="mx-10 select-none mySwiper2">
               <swiper-slide>
                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
@@ -23,29 +18,17 @@
                       </div>
                       <!-- <div class="flex sm:space-x-20 mb-14"> -->
                       <div class="flex flex-col">
-                        <h1 class="flex items-center uppercase">
-                          <img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html
-                        </h1>
-                        <h1 class="flex items-center uppercase">
-                          <img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css
-                        </h1>
-                        <h1 class="flex items-center uppercase">
-                          <img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java
-                        </h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java</h1>
                       </div>
                       <div>
-                        <h1 class="flex items-center uppercase">
-                          <img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js
-                        </h1>
-                        <h1 class="flex items-center uppercase">
-                          <img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js
-                        </h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1>
                       </div>
                       <!-- </div> -->
                     </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"
-                      >Founder</span
-                    >
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
               </swiper-slide>
@@ -59,29 +42,17 @@
 
                       <div class="flex space-x-8 sm:space-x-20">
                         <div>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java
-                          </h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java</h1>
                         </div>
                         <div>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js
-                          </h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1>
                         </div>
                       </div>
                     </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"
-                      >Founder</span
-                    >
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
               </swiper-slide>
@@ -96,29 +67,17 @@
                       </div>
                       <div class="flex sm:space-x-20 mb-14">
                         <div>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java
-                          </h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/html-5.svg" alt="" />html</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/javascript.svg" alt="" />java</h1>
                         </div>
                         <div>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js
-                          </h1>
-                          <h1 class="flex items-center uppercase">
-                            <img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js
-                          </h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                          <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="../assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1>
                         </div>
                       </div>
                     </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"
-                      >Founder</span
-                    >
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
                   </div>
                 </div>
               </swiper-slide>
@@ -130,13 +89,7 @@
         <div class="w-full px-4 lg:w-1/2">
           <div class="text-center lg:px-10 md:mb-16">
             <h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>
-            <swiper
-              @swiper="setThumbsSwiper"
-              :spaceBetween="10"
-              :slidesPerView="1"
-              :freeMode="false"
-              :watchSlidesProgress="true"
-              class="mx-5 mySwiper">
+            <swiper @swiper="setThumbsSwiper" :spaceBetween="10" :slidesPerView="1" :freeMode="false" :watchSlidesProgress="true" class="mx-5 mySwiper">
               <swiper-slide>
                 <img class="block mx-auto mb-12" src="../assets/images/team/dots2.svg" alt="" />
                 <div class="flex items-start mb-10">
@@ -144,8 +97,7 @@
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non
-                      ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
+                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
                     </p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="" />
@@ -158,8 +110,7 @@
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non
-                      ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
+                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
                     </p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="" />
@@ -172,8 +123,7 @@
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non
-                      ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
+                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
                     </p>
                   </div>
                   <img src="../assets/images/team/quote.png" alt="" />

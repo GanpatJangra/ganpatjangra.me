@@ -903,7 +903,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.cs
 
 // --------------------
 const $id_f75548e1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: \"DM Sans\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}\n\n*, *::before, *::after {\n  --animation-duration: 1s;\n  --animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@-webkit-keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@-webkit-keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@-webkit-keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n\n@keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n*, ::before, ::after {\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(206 209 215 / var(--tw-border-opacity));\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n}\n.container {\n  width: 100%;\n}\n@media (min-width: 640px) {\n\n  .container {\n    max-width: 640px;\n  }\n}\n@media (min-width: 768px) {\n\n  .container {\n    max-width: 768px;\n  }\n}\n@media (min-width: 1024px) {\n\n  .container {\n    max-width: 1024px;\n  }\n}\n@media (min-width: 1280px) {\n\n  .container {\n    max-width: 1280px;\n  }\n}\n@media (min-width: 1536px) {\n\n  .container {\n    max-width: 1536px;\n  }\n}\n.absolute {\n  position: absolute;\n}\n.relative {\n  position: relative;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.top-0 {\n  top: 0px;\n}\n.left-1\\/2 {\n  left: 50%;\n}\n.left-\\[40\\%\\] {\n  left: 40%;\n}\n.left-\\[60\\%\\] {\n  left: 60%;\n}\n.z-10 {\n  z-index: 10;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.-mx-1 {\n  margin-left: -0.25rem;\n  margin-right: -0.25rem;\n}\n.mx-10 {\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n}\n.mx-5 {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n}\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.mb-24 {\n  margin-bottom: 6rem;\n}\n.mb-16 {\n  margin-bottom: 4rem;\n}\n.mt-1 {\n  margin-top: 0.25rem;\n}\n.-mt-9 {\n  margin-top: -2.25rem;\n}\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\n.mb-6 {\n  margin-bottom: 1.5rem;\n}\n.mr-6 {\n  margin-right: 1.5rem;\n}\n.mb-20 {\n  margin-bottom: 5rem;\n}\n.mb-4 {\n  margin-bottom: 1rem;\n}\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\n.-mt-5 {\n  margin-top: -1.25rem;\n}\n.mb-14 {\n  margin-bottom: 3.5rem;\n}\n.mr-2 {\n  margin-right: 0.5rem;\n}\n.mt-8 {\n  margin-top: 2rem;\n}\n.mb-12 {\n  margin-bottom: 3rem;\n}\n.mt-10 {\n  margin-top: 2.5rem;\n}\n.mt-14 {\n  margin-top: 3.5rem;\n}\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\n.block {\n  display: block;\n}\n.inline-block {\n  display: inline-block;\n}\n.flex {\n  display: flex;\n}\n.grid {\n  display: grid;\n}\n.hidden {\n  display: none;\n}\n.h-64 {\n  height: 16rem;\n}\n.h-56 {\n  height: 14rem;\n}\n.h-48 {\n  height: 12rem;\n}\n.h-14 {\n  height: 3.5rem;\n}\n.h-20 {\n  height: 5rem;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.h-1\\/2 {\n  height: 50%;\n}\n.h-full {\n  height: 100%;\n}\n.w-full {\n  width: 100%;\n}\n.w-64 {\n  width: 16rem;\n}\n.w-56 {\n  width: 14rem;\n}\n.w-48 {\n  width: 12rem;\n}\n.w-36 {\n  width: 9rem;\n}\n.w-20 {\n  width: 5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.w-1\\/3 {\n  width: 33.333333%;\n}\n.max-w-xl {\n  max-width: 36rem;\n}\n.max-w-none {\n  max-width: none;\n}\n.max-w-sm {\n  max-width: 24rem;\n}\n.shrink-0 {\n  flex-shrink: 0;\n}\n.translate-x-1\\/2 {\n  --tw-translate-x: 50%;\n  transform: var(--tw-transform);\n}\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: var(--tw-transform);\n}\n.-translate-y-1\\/2 {\n  --tw-translate-y: -50%;\n  transform: var(--tw-transform);\n}\n.rotate-180 {\n  --tw-rotate: 180deg;\n  transform: var(--tw-transform);\n}\n.transform {\n  transform: var(--tw-transform);\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.select-none {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.flex-col {\n  flex-direction: column;\n}\n.flex-wrap {\n  flex-wrap: wrap;\n}\n.place-items-center {\n  place-items: center;\n}\n.items-start {\n  align-items: flex-start;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-7xl {\n  border-radius: 1.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.rounded-b-10xl {\n  border-bottom-right-radius: 5rem;\n  border-bottom-left-radius: 5rem;\n}\n.border-4 {\n  border-width: 4px;\n}\n.border-gray-700 {\n  --tw-border-opacity: 1;\n  border-color: rgb(45 53 71 / var(--tw-border-opacity));\n}\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(119 126 142 / var(--tw-border-opacity));\n}\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(236 237 239 / var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\n.bg-purple-500 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(109 50 240 / var(--tw-bg-opacity));\n}\n.p-2 {\n  padding: 0.5rem;\n}\n.py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n.px-1 {\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.pt-10 {\n  padding-top: 2.5rem;\n}\n.pb-12 {\n  padding-bottom: 3rem;\n}\n.pb-6 {\n  padding-bottom: 1.5rem;\n}\n.pt-16 {\n  padding-top: 4rem;\n}\n.pb-8 {\n  padding-bottom: 2rem;\n}\n.pb-4 {\n  padding-bottom: 1rem;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.font-heading {\n  font-family: \"Poppins\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n.text-9xl {\n  font-size: 3rem;\n}\n.text-xl {\n  font-size: 1.25rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n}\n.text-6xl {\n  font-size: 2rem;\n}\n.text-3xl {\n  font-size: 1.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n}\n.text-2xl {\n  font-size: 1.375rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.font-bold {\n  font-weight: 700;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.lowercase {\n  text-transform: lowercase;\n}\n.capitalize {\n  text-transform: capitalize;\n}\n.leading-none {\n  line-height: 1;\n}\n.leading-snug {\n  line-height: 1.375;\n}\n.text-blueGray-700 {\n  --tw-text-opacity: 1;\n  color: rgb(60 98 149 / var(--tw-text-opacity));\n}\n.text-darkBlueGray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(90 93 123 / var(--tw-text-opacity));\n}\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\n.text-blue-500 {\n  --tw-text-opacity: 1;\n  color: rgb(50 107 255 / var(--tw-text-opacity));\n}\n.text-red-500 {\n  --tw-text-opacity: 1;\n  color: rgb(255 77 53 / var(--tw-text-opacity));\n}\n.text-black {\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\n.text-\\[\\#00749A\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 116 154 / var(--tw-text-opacity));\n}\n.underline {\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\n.shadow-2xl {\n  --tw-shadow: 14px 13px 32px 0 rgba(0, 0, 0, 0.03);\n  --tw-shadow-colored: 14px 13px 32px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-inner {\n  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-gray-900 {\n  --tw-shadow-color: #1d232e;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-gray-300 {\n  --tw-shadow-color: #b1b5bf;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-blueGray-900 {\n  --tw-shadow-color: #1c2d45;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.transition {\n  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:text-blueGray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(120 155 201 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n\n  .sm\\:w-40 {\n    width: 10rem;\n  }\n\n  .sm\\:w-4\\/5 {\n    width: 80%;\n  }\n\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n\n  .sm\\:space-x-20 > :not([hidden]) ~ :not([hidden]) {\n    --tw-space-x-reverse: 0;\n    margin-right: calc(5rem * var(--tw-space-x-reverse));\n    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n}\n@media (min-width: 768px) {\n\n  .md\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .md\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .md\\:block {\n    display: block;\n  }\n\n  .md\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .md\\:text-10xl {\n    font-size: 4rem;\n  }\n}\n@media (min-width: 1024px) {\n\n  .lg\\:mx-14 {\n    margin-left: 3.5rem;\n    margin-right: 3.5rem;\n  }\n\n  .lg\\:-mx-24 {\n    margin-left: -6rem;\n    margin-right: -6rem;\n  }\n\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .lg\\:mt-2 {\n    margin-top: 0.5rem;\n  }\n\n  .lg\\:mb-24 {\n    margin-bottom: 6rem;\n  }\n\n  .lg\\:mt-20 {\n    margin-top: 5rem;\n  }\n\n  .lg\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .lg\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .lg\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n}\n@media (min-width: 1280px) {\n\n  .xl\\:-left-8 {\n    left: -2rem;\n  }\n\n  .xl\\:-right-8 {\n    right: -2rem;\n  }\n\n  .xl\\:ml-4 {\n    margin-left: 1rem;\n  }\n\n  .xl\\:mt-8 {\n    margin-top: 2rem;\n  }\n\n  .xl\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .xl\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .xl\\:block {\n    display: block;\n  }\n\n  .xl\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .xl\\:w-auto {\n    width: auto;\n  }\n\n  .xl\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n\n  .xl\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .xl\\:pt-20 {\n    padding-top: 5rem;\n  }\n\n  .xl\\:text-11xl {\n    font-size: 5rem;\n  }\n}\n@media (min-width: 1536px) {\n\n  .\\32xl\\:py-20 {\n    padding-top: 5rem;\n    padding-bottom: 5rem;\n  }\n}\n";
+__vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: \"DM Sans\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}\n\n*, *::before, *::after {\n  --animation-duration: 1s;\n  --animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@-webkit-keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@-webkit-keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@-webkit-keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n\n@keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n*, ::before, ::after {\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(206 209 215 / var(--tw-border-opacity));\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n}\n.container {\n  width: 100%;\n}\n@media (min-width: 640px) {\n\n  .container {\n    max-width: 640px;\n  }\n}\n@media (min-width: 768px) {\n\n  .container {\n    max-width: 768px;\n  }\n}\n@media (min-width: 1024px) {\n\n  .container {\n    max-width: 1024px;\n  }\n}\n@media (min-width: 1280px) {\n\n  .container {\n    max-width: 1280px;\n  }\n}\n@media (min-width: 1536px) {\n\n  .container {\n    max-width: 1536px;\n  }\n}\n.absolute {\n  position: absolute;\n}\n.relative {\n  position: relative;\n}\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.top-0 {\n  top: 0px;\n}\n.left-1\\/2 {\n  left: 50%;\n}\n.left-\\[38\\%\\] {\n  left: 38%;\n}\n.left-\\[62\\%\\] {\n  left: 62%;\n}\n.left-\\[40\\%\\] {\n  left: 40%;\n}\n.left-\\[60\\%\\] {\n  left: 60%;\n}\n.left-\\[4\\%\\] {\n  left: 4%;\n}\n.left-\\[\\%\\] {\n  left: %;\n}\n.left-\\[3\\%\\] {\n  left: 3%;\n}\n.left-\\[35\\%\\] {\n  left: 35%;\n}\n.left-\\[6\\%\\] {\n  left: 6%;\n}\n.z-10 {\n  z-index: 10;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\n.-mx-1 {\n  margin-left: -0.25rem;\n  margin-right: -0.25rem;\n}\n.mx-10 {\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n}\n.mx-5 {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n}\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.mb-24 {\n  margin-bottom: 6rem;\n}\n.mb-16 {\n  margin-bottom: 4rem;\n}\n.mt-1 {\n  margin-top: 0.25rem;\n}\n.-mt-9 {\n  margin-top: -2.25rem;\n}\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\n.mb-6 {\n  margin-bottom: 1.5rem;\n}\n.mr-6 {\n  margin-right: 1.5rem;\n}\n.mb-20 {\n  margin-bottom: 5rem;\n}\n.mb-4 {\n  margin-bottom: 1rem;\n}\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\n.-mt-5 {\n  margin-top: -1.25rem;\n}\n.mb-14 {\n  margin-bottom: 3.5rem;\n}\n.mr-2 {\n  margin-right: 0.5rem;\n}\n.mt-8 {\n  margin-top: 2rem;\n}\n.mb-12 {\n  margin-bottom: 3rem;\n}\n.mt-10 {\n  margin-top: 2.5rem;\n}\n.mt-14 {\n  margin-top: 3.5rem;\n}\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\n.block {\n  display: block;\n}\n.inline-block {\n  display: inline-block;\n}\n.flex {\n  display: flex;\n}\n.grid {\n  display: grid;\n}\n.hidden {\n  display: none;\n}\n.h-64 {\n  height: 16rem;\n}\n.h-56 {\n  height: 14rem;\n}\n.h-48 {\n  height: 12rem;\n}\n.h-14 {\n  height: 3.5rem;\n}\n.h-20 {\n  height: 5rem;\n}\n.h-1 {\n  height: 0.25rem;\n}\n.h-1\\/2 {\n  height: 50%;\n}\n.h-full {\n  height: 100%;\n}\n.w-full {\n  width: 100%;\n}\n.w-64 {\n  width: 16rem;\n}\n.w-56 {\n  width: 14rem;\n}\n.w-48 {\n  width: 12rem;\n}\n.w-36 {\n  width: 9rem;\n}\n.w-20 {\n  width: 5rem;\n}\n.w-6 {\n  width: 1.5rem;\n}\n.w-1\\/3 {\n  width: 33.333333%;\n}\n.max-w-xl {\n  max-width: 36rem;\n}\n.max-w-none {\n  max-width: none;\n}\n.max-w-sm {\n  max-width: 24rem;\n}\n.shrink-0 {\n  flex-shrink: 0;\n}\n.translate-x-1\\/2 {\n  --tw-translate-x: 50%;\n  transform: var(--tw-transform);\n}\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: var(--tw-transform);\n}\n.-translate-y-1\\/2 {\n  --tw-translate-y: -50%;\n  transform: var(--tw-transform);\n}\n.rotate-180 {\n  --tw-rotate: 180deg;\n  transform: var(--tw-transform);\n}\n.transform {\n  transform: var(--tw-transform);\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.select-none {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.flex-col {\n  flex-direction: column;\n}\n.flex-wrap {\n  flex-wrap: wrap;\n}\n.place-items-center {\n  place-items: center;\n}\n.items-start {\n  align-items: flex-start;\n}\n.items-center {\n  align-items: center;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.space-x-8 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(2rem * var(--tw-space-x-reverse));\n  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-7xl {\n  border-radius: 1.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.rounded-b-10xl {\n  border-bottom-right-radius: 5rem;\n  border-bottom-left-radius: 5rem;\n}\n.border-4 {\n  border-width: 4px;\n}\n.border-gray-700 {\n  --tw-border-opacity: 1;\n  border-color: rgb(45 53 71 / var(--tw-border-opacity));\n}\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(119 126 142 / var(--tw-border-opacity));\n}\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(236 237 239 / var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\n.bg-purple-500 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(109 50 240 / var(--tw-bg-opacity));\n}\n.p-2 {\n  padding: 0.5rem;\n}\n.py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n.px-1 {\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.pt-10 {\n  padding-top: 2.5rem;\n}\n.pb-12 {\n  padding-bottom: 3rem;\n}\n.pb-6 {\n  padding-bottom: 1.5rem;\n}\n.pt-16 {\n  padding-top: 4rem;\n}\n.pb-8 {\n  padding-bottom: 2rem;\n}\n.pb-4 {\n  padding-bottom: 1rem;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.font-heading {\n  font-family: \"Poppins\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n.text-9xl {\n  font-size: 3rem;\n}\n.text-xl {\n  font-size: 1.25rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n}\n.text-6xl {\n  font-size: 2rem;\n}\n.text-3xl {\n  font-size: 1.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n}\n.text-2xl {\n  font-size: 1.375rem;\n}\n.font-medium {\n  font-weight: 500;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.font-bold {\n  font-weight: 700;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.lowercase {\n  text-transform: lowercase;\n}\n.capitalize {\n  text-transform: capitalize;\n}\n.leading-none {\n  line-height: 1;\n}\n.leading-snug {\n  line-height: 1.375;\n}\n.text-blueGray-700 {\n  --tw-text-opacity: 1;\n  color: rgb(60 98 149 / var(--tw-text-opacity));\n}\n.text-darkBlueGray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(90 93 123 / var(--tw-text-opacity));\n}\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\n.text-blue-500 {\n  --tw-text-opacity: 1;\n  color: rgb(50 107 255 / var(--tw-text-opacity));\n}\n.text-red-500 {\n  --tw-text-opacity: 1;\n  color: rgb(255 77 53 / var(--tw-text-opacity));\n}\n.text-black {\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\n.text-\\[\\#00749A\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 116 154 / var(--tw-text-opacity));\n}\n.text-blue-50 {\n  --tw-text-opacity: 1;\n  color: rgb(245 248 255 / var(--tw-text-opacity));\n}\n.text-indigo-500 {\n  --tw-text-opacity: 1;\n  color: rgb(139 92 246 / var(--tw-text-opacity));\n}\n.text-indigo-400 {\n  --tw-text-opacity: 1;\n  color: rgb(167 139 250 / var(--tw-text-opacity));\n}\n.underline {\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\n.shadow-2xl {\n  --tw-shadow: 14px 13px 32px 0 rgba(0, 0, 0, 0.03);\n  --tw-shadow-colored: 14px 13px 32px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-inner {\n  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-gray-900 {\n  --tw-shadow-color: #1d232e;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-gray-300 {\n  --tw-shadow-color: #b1b5bf;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-blueGray-900 {\n  --tw-shadow-color: #1c2d45;\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.transition {\n  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.hover\\:text-blueGray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(120 155 201 / var(--tw-text-opacity));\n}\n@media (min-width: 640px) {\n\n  .sm\\:w-40 {\n    width: 10rem;\n  }\n\n  .sm\\:w-4\\/5 {\n    width: 80%;\n  }\n\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n\n  .sm\\:space-x-20 > :not([hidden]) ~ :not([hidden]) {\n    --tw-space-x-reverse: 0;\n    margin-right: calc(5rem * var(--tw-space-x-reverse));\n    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n}\n@media (min-width: 768px) {\n\n  .md\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .md\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .md\\:block {\n    display: block;\n  }\n\n  .md\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .md\\:text-10xl {\n    font-size: 4rem;\n  }\n}\n@media (min-width: 1024px) {\n\n  .lg\\:mx-14 {\n    margin-left: 3.5rem;\n    margin-right: 3.5rem;\n  }\n\n  .lg\\:-mx-24 {\n    margin-left: -6rem;\n    margin-right: -6rem;\n  }\n\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .lg\\:mt-2 {\n    margin-top: 0.5rem;\n  }\n\n  .lg\\:mb-24 {\n    margin-bottom: 6rem;\n  }\n\n  .lg\\:mt-20 {\n    margin-top: 5rem;\n  }\n\n  .lg\\:mb-20 {\n    margin-bottom: 5rem;\n  }\n\n  .lg\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .lg\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .lg\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n}\n@media (min-width: 1280px) {\n\n  .xl\\:-left-8 {\n    left: -2rem;\n  }\n\n  .xl\\:-right-8 {\n    right: -2rem;\n  }\n\n  .xl\\:ml-4 {\n    margin-left: 1rem;\n  }\n\n  .xl\\:mt-8 {\n    margin-top: 2rem;\n  }\n\n  .xl\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .xl\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .xl\\:block {\n    display: block;\n  }\n\n  .xl\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .xl\\:w-auto {\n    width: auto;\n  }\n\n  .xl\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n\n  .xl\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .xl\\:pt-20 {\n    padding-top: 5rem;\n  }\n\n  .xl\\:text-11xl {\n    font-size: 5rem;\n  }\n}\n@media (min-width: 1536px) {\n\n  .\\32xl\\:py-20 {\n    padding-top: 5rem;\n    padding-bottom: 5rem;\n  }\n}\n";
 }
 
 
@@ -2288,31 +2288,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
                 _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/css3.svg" alt=""${
+              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]" src="/assets/images/mycollection/css3.svg" alt=""${
                 _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>class, id, basic animation, transition <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>CSS 3</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/tailwindcss.svg" alt=""${
+              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]" src="/assets/images/mycollection/tailwindcss.svg" alt=""${
                 _scopeId
               }><h4 class="mb-1 text-sm font-medium font-heading"${
                 _scopeId
               }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
                 _scopeId
-              }>flex, grid, animation, transition <span class="lowercase"${
+              }>class, id, flex, grid, animation, transition <span class="lowercase"${
                 _scopeId
               }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
                 _scopeId
-              }>TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
+              }>CSS 3 <span class="text-indigo-400"${
+                _scopeId
+              }>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${
                 _scopeId
               }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
                 _scopeId
@@ -2342,7 +2332,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
                 _scopeId
-              }>vue js &amp; nuxt js</span></div></div></div></div><!-- skills for slider end  --></div></div></section>`)
+              }>vue js <span class="text-indigo-400"${
+                _scopeId
+              }>||</span> nuxt js</span></div></div></div></div><!-- skills for slider end  --></div></div></section>`)
             } else {
               return [
                 __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
@@ -2373,34 +2365,28 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
                             __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
-                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
                                 src: "/assets/images/mycollection/css3.svg",
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("class, id, basic animation, transition "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
-                              ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "CSS 3")
-                            ])
-                          ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
-                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
                                 src: "/assets/images/mycollection/tailwindcss.svg",
                                 alt: ""
                               }),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("flex, grid, animation, transition "),
+                                __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "TAILWINd CSS")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                __vite_ssr_import_6__.createTextVNode("CSS 3 "),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
+                              ])
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
                             __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
@@ -2432,7 +2418,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "vue js & nuxt js")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                __vite_ssr_import_6__.createTextVNode("vue js "),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createTextVNode(" nuxt js")
+                              ])
                             ])
                           ])
                         ])
@@ -2598,35 +2588,32 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
                 _scopeId
-              }>canva</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="/assets/images/mycollection/vscode.svg" alt=""${
-                _scopeId
-              }><h4 class="mb-4 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>.vscode, theme, plugin, shortcut <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>vs code</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
+              }>canva</span></div></div><!-- <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20">
+                  <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
+                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="/assets/images/mycollection/vscode.svg" alt="">
+                    <h4 class="mb-4 text-sm font-medium font-heading">Advance</h4>
+                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">.vscode, theme, plugin, shortcut <span class="lowercase">etc</span> </h4>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 ">vs code</span>
+                  </div>
+                </div> --><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
                 _scopeId
               }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
                 _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/git.svg" alt=""${
+              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]" src="/assets/images/mycollection/vscode.svg" alt=""${
+                _scopeId
+              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]" src="/assets/images/mycollection/git.svg" alt=""${
                 _scopeId
               }><h4 class="mb-1 text-sm font-medium font-heading"${
                 _scopeId
               }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
                 _scopeId
-              }>pull, put, repo, clone <span class="lowercase"${
+              }>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${
                 _scopeId
               }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
                 _scopeId
-              }>git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
+              }>vs code <span class="text-indigo-400"${
+                _scopeId
+              }>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
                 _scopeId
               }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
                 _scopeId
@@ -2676,34 +2663,29 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                          __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
+                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
-                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
+                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
                                 src: "/assets/images/mycollection/vscode.svg",
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode(".vscode, theme, plugin, shortcut "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
-                              ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "vs code")
-                            ])
-                          ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
-                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                                class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
                                 src: "/assets/images/mycollection/git.svg",
                                 alt: ""
                               }),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("pull, put, repo, clone "),
+                                __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "git")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                __vite_ssr_import_6__.createTextVNode("vs code "),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createTextVNode(" git")
+                              ])
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
@@ -2759,34 +2741,28 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
                           __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
-                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
                               src: "/assets/images/mycollection/css3.svg",
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("class, id, basic animation, transition "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
-                            ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "CSS 3")
-                          ])
-                        ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
-                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
                               src: "/assets/images/mycollection/tailwindcss.svg",
                               alt: ""
                             }),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("flex, grid, animation, transition "),
+                              __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "TAILWINd CSS")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createTextVNode("CSS 3 "),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
+                            ])
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
                           __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
@@ -2818,7 +2794,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "vue js & nuxt js")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createTextVNode("vue js "),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createTextVNode(" nuxt js")
+                            ])
                           ])
                         ])
                       ])
@@ -2924,34 +2904,29 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                        __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
+                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
-                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
+                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
                               src: "/assets/images/mycollection/vscode.svg",
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode(".vscode, theme, plugin, shortcut "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
-                            ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "vs code")
-                          ])
-                        ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
-                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
+                              class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
                               src: "/assets/images/mycollection/git.svg",
                               alt: ""
                             }),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("pull, put, repo, clone "),
+                              __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "git")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createTextVNode("vs code "),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createTextVNode(" git")
+                            ])
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
@@ -3478,24 +3453,23 @@ const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/swiper/sw
 
 
 // install Swiper modules
-__vite_ssr_import_7__.default.use([__vite_ssr_import_7__.FreeMode, __vite_ssr_import_7__.Navigation, __vite_ssr_import_7__.Thumbs,__vite_ssr_import_7__.Pagination]);
+__vite_ssr_import_7__.default.use([__vite_ssr_import_7__.FreeMode, __vite_ssr_import_7__.Navigation, __vite_ssr_import_7__.Thumbs, __vite_ssr_import_7__.Pagination]);
 
 const _sfc_main = {
-    components: {
-        Swiper: __vite_ssr_import_1__.Swiper,
-        SwiperSlide: __vite_ssr_import_1__.SwiperSlide,
+  components: {
+    Swiper: __vite_ssr_import_1__.Swiper,
+    SwiperSlide: __vite_ssr_import_1__.SwiperSlide,
+  },
+  data() {
+    return {
+      thumbsSwiper: null,
+    };
+  },
+  methods: {
+    setThumbsSwiper(swiper) {
+      this.thumbsSwiper = swiper;
     },
-    data() {
-        return {
-            thumbsSwiper: null,
-            
-        };
-    },
-    methods: {
-        setThumbsSwiper(swiper) {
-            this.thumbsSwiper = swiper;
-        },
-    },
+  },
 };
 
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -3510,10 +3484,10 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   _push(`<section${__vite_ssr_import_9__.ssrRenderAttrs(__vite_ssr_import_8__.mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`)
   _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
-    pagination: {dynamicBullets: true,clickable: true},
+    pagination: { dynamicBullets: true, clickable: true },
     modules: _ctx.modules,
     thumbs: { swiper: $data.thumbsSwiper },
-    class: "mx-10 mySwiper2 select-none"
+    class: "mx-10 select-none mySwiper2"
   }, {
     default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
@@ -3526,13 +3500,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${
                 _scopeId
-              }>Project Technologies</h4><div class="flex flex-col sm:flex-row justify-between lg:mx-14"${
+              }>Project Technologies</h4><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${
                 _scopeId
               }><div${
                 _scopeId
               }><img class="w-20 h-20 mx-auto mb-5" src="/_nuxt/assets/images/team/placeholder-photo.png" alt=""${
                 _scopeId
-              }></div><!-- <div class="flex  sm:space-x-20 mb-14"> --><div class="flex flex-col"${
+              }></div><!-- <div class="flex sm:space-x-20 mb-14"> --><div class="flex flex-col"${
                 _scopeId
               }><h1 class="flex items-center uppercase"${
                 _scopeId
@@ -3564,7 +3538,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
                   __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
                     __vite_ssr_import_8__.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col sm:flex-row justify-between lg:mx-14" }, [
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
                       __vite_ssr_import_8__.createVNode("div", null, [
                         __vite_ssr_import_8__.createVNode("img", {
                           class: "w-20 h-20 mx-auto mb-5",
@@ -3572,7 +3546,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           alt: ""
                         })
                       ]),
-                      __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex  sm:space-x-20 mb-14\"> "),
+                      __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
                       __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
                         __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                           __vite_ssr_import_8__.createVNode("img", {
@@ -3636,11 +3610,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${
                 _scopeId
-              }>Project Technologies</h4><div class="flex justify-between items-center flex-col sm:flex-row"${
+              }>Project Technologies</h4><div class="flex flex-col items-center justify-between sm:flex-row"${
                 _scopeId
-              }><img class="w-20 sm:w-40 rounded-md pb-6" src="/_nuxt/assets/images/team/photo4.png" alt=""${
+              }><img class="w-20 pb-6 rounded-md sm:w-40" src="/_nuxt/assets/images/team/photo4.png" alt=""${
                 _scopeId
-              }><div class="flex sm:space-x-20 space-x-8"${
+              }><div class="flex space-x-8 sm:space-x-20"${
                 _scopeId
               }><div${
                 _scopeId
@@ -3674,13 +3648,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
                   __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
                     __vite_ssr_import_8__.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-center flex-col sm:flex-row" }, [
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
                       __vite_ssr_import_8__.createVNode("img", {
-                        class: "w-20 sm:w-40 rounded-md pb-6",
+                        class: "w-20 pb-6 rounded-md sm:w-40",
                         src: "/_nuxt/assets/images/team/photo4.png",
                         alt: ""
                       }),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex sm:space-x-20 space-x-8" }, [
+                      __vite_ssr_import_8__.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
                         __vite_ssr_import_8__.createVNode("div", null, [
                           __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                             __vite_ssr_import_8__.createVNode("img", {
@@ -3854,7 +3828,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
                 __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
                   __vite_ssr_import_8__.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col sm:flex-row justify-between lg:mx-14" }, [
+                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
                     __vite_ssr_import_8__.createVNode("div", null, [
                       __vite_ssr_import_8__.createVNode("img", {
                         class: "w-20 h-20 mx-auto mb-5",
@@ -3862,7 +3836,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex  sm:space-x-20 mb-14\"> "),
+                    __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
                     __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
                       __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                         __vite_ssr_import_8__.createVNode("img", {
@@ -3920,13 +3894,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
                 __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
                   __vite_ssr_import_8__.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-center flex-col sm:flex-row" }, [
+                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
                     __vite_ssr_import_8__.createVNode("img", {
-                      class: "w-20 sm:w-40 rounded-md pb-6",
+                      class: "w-20 pb-6 rounded-md sm:w-40",
                       src: "/_nuxt/assets/images/team/photo4.png",
                       alt: ""
                     }),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex sm:space-x-20 space-x-8" }, [
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
                       __vite_ssr_import_8__.createVNode("div", null, [
                         __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                           __vite_ssr_import_8__.createVNode("img", {
@@ -4071,11 +4045,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
                 _scopeId
-              }><h1 class="mx-2 text-2xl font-medium capitalize text-blue-500"${
+              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }>Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
+              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
                 _scopeId
               }></div>`)
             } else {
@@ -4092,8 +4066,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
                     src: "/_nuxt/assets/images/team/quote.png",
@@ -4116,11 +4090,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
                 _scopeId
-              }><h1 class="mx-2 text-2xl font-medium capitalize text-blue-500"${
+              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }>Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
+              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
                 _scopeId
               }></div>`)
             } else {
@@ -4137,8 +4111,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
                     src: "/_nuxt/assets/images/team/quote.png",
@@ -4161,11 +4135,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
                 _scopeId
-              }><h1 class="mx-2 text-2xl font-medium capitalize text-blue-500"${
+              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }>Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!</p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
+              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img src="/_nuxt/assets/images/team/quote.png" alt=""${
                 _scopeId
               }></div>`)
             } else {
@@ -4182,8 +4156,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
                     src: "/_nuxt/assets/images/team/quote.png",
@@ -4211,8 +4185,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
                   src: "/_nuxt/assets/images/team/quote.png",
@@ -4236,8 +4210,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
                   src: "/_nuxt/assets/images/team/quote.png",
@@ -4261,8 +4235,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium capitalize text-blue-500" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!")
+                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
                   src: "/_nuxt/assets/images/team/quote.png",
@@ -4329,7 +4303,7 @@ __vite_ssr_exports__.default = "";
 
 // --------------------
 const $id_ebf4cadc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.swiper-pagination-bullet{\r\n  height: 15px;\r\n  width: 15px;\r\n \r\n  background-color: red;\n}\r\n";
+__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n\r\n  background-color: red;\n}\r\n";
 }
 
 

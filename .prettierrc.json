@@ -11,7 +11,7 @@
             "./nuxt.config.{js,ts}"
           ], 
           "options": {
-            "printWidth": 140
+            "printWidth": 240
           }
         }
       ]

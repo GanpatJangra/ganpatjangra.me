@@ -25,23 +25,18 @@
                     <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">HTML 5</span>
                   </div>
                 </div>
+              
                 <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20">
                   <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
-                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/css3.svg" alt="">
-                    <h4 class="mb-1 text-sm font-medium font-heading">Basic</h4>
-                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">class, id, basic animation, transition <span class="lowercase">etc</span></h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">CSS 3</span>
-                  </div>
-                </div>
-                <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20">
-                  <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
-                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/tailwindcss.svg" alt="">
+                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]" src="/assets/images/mycollection/css3.svg" alt="">
+                    
+                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%] " src="/assets/images/mycollection/tailwindcss.svg" alt="">
                     <h4 class="mb-1 text-sm font-medium font-heading">Advance</h4>
-                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">flex, grid, animation, transition <span class="lowercase">etc</span></h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">TAILWINd CSS</span>
+                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">class, id, flex, grid, animation, transition <span class="lowercase">etc</span></h4>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">CSS 3 <span class="text-indigo-400">||</span> TAILWINd CSS</span>
                   </div>
                 </div>
-              <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 ">
+              <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20 ">
                   <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
                     <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="/assets/images/mycollection/javascript.svg" alt="">
                     <h4 class="mb-1 text-sm font-medium font-heading">Basic</h4>
@@ -57,7 +52,7 @@
                     
                     <h4 class="mb-1 text-sm font-medium font-heading">Basic</h4>
                     <h4 class="mb-4 text-sm font-medium capitalize font-heading">fundamentals, advanced components, transitions & animations, vuex, form validation, routing <span class="lowercase">etc</span></h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">vue js & nuxt js</span>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">vue js <span class="text-indigo-400">||</span> nuxt js</span>
                   </div>
                 </div>
               </div>
@@ -132,20 +127,21 @@
                     <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">canva</span>
                   </div>
                 </div>
-                <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20">
+                <!-- <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20">
                   <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
                     <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="/assets/images/mycollection/vscode.svg" alt="">
                     <h4 class="mb-4 text-sm font-medium font-heading">Advance</h4>
                     <h4 class="mb-4 text-sm font-medium capitalize font-heading">.vscode, theme, plugin, shortcut <span class="lowercase">etc</span> </h4>
                     <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 ">vs code</span>
                   </div>
-                </div>
-                 <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0">
+                </div> -->
+                 <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20">
                   <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300">
-                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2" src="/assets/images/mycollection/git.svg" alt="">
-                    <h4 class="mb-1 text-sm font-medium font-heading">Advance</h4>
-                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">pull, put, repo, clone <span class="lowercase">etc</span></h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">git</span>
+                   <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]" src="/assets/images/mycollection/vscode.svg" alt="">
+                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%] " src="/assets/images/mycollection/git.svg" alt="">
+                   <h4 class="mb-1 text-sm font-medium font-heading">Advance</h4>
+                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase">etc</span></h4>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">vs code <span class="text-indigo-400">||</span> git</span>
                   </div>
                 </div>
                 <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0">

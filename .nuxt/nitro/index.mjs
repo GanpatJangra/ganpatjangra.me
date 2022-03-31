@@ -130,7 +130,7 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "C:/Users/acer/Downloads/temp/nuxt3-tailwind3-starter-main/nuxt3-tailwind3-starter-main/dist" + "/" + "1648710682";
+const STATIC_ASSETS_BASE = "C:/Users/acer/Downloads/temp/nuxt3-tailwind3-starter-main/nuxt3-tailwind3-starter-main/dist" + "/" + "1648746773";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('file:///C:/Users/acer/Downloads/temp/nuxt3-tailwind3-starter-main/nuxt3-tailwind3-starter-main/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('file:///C:/Users/acer/Downloads/temp/nuxt3-tailwind3-starter-main/nuxt3-tailwind3-starter-main/.nuxt/dist/server/server.mjs'));
