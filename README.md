@@ -867,6 +867,4 @@ I also included a [Tailwind UI](https://tailwindui.com/components/marketing/sect
 npm install @heroicons/vue
 ```
 
-
-
-# ganpatjangra.me
+# [ganpatjangra.me](https://ganpatjangra.me)
