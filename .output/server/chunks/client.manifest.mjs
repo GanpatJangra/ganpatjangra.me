@@ -1,4 +1,4 @@
-{
+const client_manifest = {
   "node_modules/nuxt3/dist/app/entry.mjs": {
     "file": "entry-0f52be4f.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
@@ -73,4 +73,6 @@
       "_navigation.min-de0b0133.mjs"
     ]
   }
-}
+};
+
+export { client_manifest as default };

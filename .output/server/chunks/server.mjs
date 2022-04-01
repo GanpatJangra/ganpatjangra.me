@@ -1,3 +1,9 @@
+import { v as vue_cjs_prod, r as require$$0, s as serverRenderer } from './index.mjs';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import SwiperCore, { FreeMode, Navigation, Thumbs, Pagination, Keyboard } from 'swiper';
+import 'unenv/runtime/mock/proxy';
+import 'stream';
+
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
 var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -17,15 +23,6 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-import require$$0, { reactive, getCurrentInstance, ref, computed, defineComponent, resolveComponent, withCtx, createVNode, resolveDynamicComponent, openBlock, createBlock, useSSRContext, h, Transition, Suspense, createCommentVNode, shallowRef, defineAsyncComponent, createApp, mergeProps, createTextVNode } from "vue";
-import { ssrRenderComponent, ssrRenderVNode, ssrRenderSuspense, ssrRenderAttr, ssrRenderAttrs } from "vue/server-renderer";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import SwiperCore, { Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
-import "swiper/css/free-mode";
-import "swiper/css/thumbs";
 const entry$1 = (ctx) => Promise.resolve().then(function() {
   return bootstrap$1;
 }).then((m) => m.default(ctx));
@@ -257,7 +254,7 @@ function createNuxtApp(options) {
   const nuxtApp = __spreadValues({
     provide: void 0,
     globalName: "nuxt",
-    payload: reactive(__spreadValues({
+    payload: vue_cjs_prod.reactive(__spreadValues({
       data: {},
       state: {},
       _errors: {}
@@ -342,7 +339,7 @@ function callWithNuxt(nuxt, setup) {
   return p;
 }
 function useNuxtApp() {
-  const vm = getCurrentInstance();
+  const vm = vue_cjs_prod.getCurrentInstance();
   if (!vm) {
     if (!currentNuxtAppInstance) {
       throw new Error("nuxt instance unavailable");
@@ -2087,7 +2084,6 @@ function destr(val) {
     return val;
   }
 }
-const tailwind = "";
 const preload = defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.mixin({
     beforeCreate() {
@@ -2397,7 +2393,7 @@ const vueuseHead_3afa30fb = defineNuxtPlugin((nuxtApp) => {
   const head = createHead();
   nuxtApp.vueApp.use(head);
   nuxtApp._useMeta = (meta) => {
-    const headObj = ref(meta);
+    const headObj = vue_cjs_prod.ref(meta);
     head.addHeadObjs(headObj);
     {
       return;
@@ -2827,7 +2823,7 @@ shared_cjs_prod.toNumber = toNumber;
 shared_cjs_prod.toRawType = toRawType;
 shared_cjs_prod.toTypeString = toTypeString;
 function useMeta(meta) {
-  const resolvedMeta = isFunction_1(meta) ? computed(meta) : meta;
+  const resolvedMeta = isFunction_1(meta) ? vue_cjs_prod.computed(meta) : meta;
   useNuxtApp()._useMeta(resolvedMeta);
 }
 const removeUndefinedProps = (props) => Object.fromEntries(Object.entries(props).filter(([, value]) => value !== void 0));
@@ -2883,7 +2879,7 @@ const globalProps = {
   title: String,
   translate: String
 };
-const Script = defineComponent({
+const Script = vue_cjs_prod.defineComponent({
   name: "Script",
   props: __spreadProps(__spreadValues({}, globalProps), {
     async: Boolean,
@@ -2905,7 +2901,7 @@ const Script = defineComponent({
     script: [script]
   }))
 });
-const Link = defineComponent({
+const Link = vue_cjs_prod.defineComponent({
   name: "Link",
   props: __spreadProps(__spreadValues({}, globalProps), {
     as: String,
@@ -2933,7 +2929,7 @@ const Link = defineComponent({
     link: [link]
   }))
 });
-const Base = defineComponent({
+const Base = vue_cjs_prod.defineComponent({
   name: "Base",
   props: __spreadProps(__spreadValues({}, globalProps), {
     href: String,
@@ -2943,7 +2939,7 @@ const Base = defineComponent({
     base
   }))
 });
-const Title = defineComponent({
+const Title = vue_cjs_prod.defineComponent({
   name: "Title",
   setup: setupForUseMeta((_, { slots }) => {
     var _a, _b;
@@ -2953,7 +2949,7 @@ const Title = defineComponent({
     };
   })
 });
-const Meta = defineComponent({
+const Meta = vue_cjs_prod.defineComponent({
   name: "Meta",
   props: __spreadProps(__spreadValues({}, globalProps), {
     charset: String,
@@ -2966,7 +2962,7 @@ const Meta = defineComponent({
     meta: [meta]
   }))
 });
-const Style = defineComponent({
+const Style = vue_cjs_prod.defineComponent({
   name: "Style",
   props: __spreadProps(__spreadValues({}, globalProps), {
     type: String,
@@ -2990,11 +2986,11 @@ const Style = defineComponent({
     };
   })
 });
-const Head = defineComponent({
+const Head = vue_cjs_prod.defineComponent({
   name: "Head",
   setup: (_props, ctx) => ctx.slots.default
 });
-const Html = defineComponent({
+const Html = vue_cjs_prod.defineComponent({
   name: "Html",
   props: __spreadProps(__spreadValues({}, globalProps), {
     manifest: String,
@@ -3003,7 +2999,7 @@ const Html = defineComponent({
   }),
   setup: setupForUseMeta((htmlAttrs) => ({ htmlAttrs }), true)
 });
-const Body = defineComponent({
+const Body = vue_cjs_prod.defineComponent({
   name: "Body",
   props: globalProps,
   setup: setupForUseMeta((bodyAttrs) => ({ bodyAttrs }), true)
@@ -3027,7 +3023,7 @@ const plugin_38218222 = defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.mixin({
     [metaConfig.mixinKey]() {
       var _a;
-      const instance = getCurrentInstance();
+      const instance = vue_cjs_prod.getCurrentInstance();
       const options = (instance == null ? void 0 : instance.type) || ((_a = instance == null ? void 0 : instance.proxy) == null ? void 0 : _a.$options);
       if (!options || !("head" in options)) {
         return;
@@ -3050,16 +3046,16 @@ const _sfc_main$7 = {
   name: "NuxtNestedPage"
 };
 function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_RouterView = resolveComponent("RouterView");
-  _push(ssrRenderComponent(_component_RouterView, _attrs, {
-    default: withCtx(({ Component }, _push2, _parent2, _scopeId) => {
+  const _component_RouterView = vue_cjs_prod.resolveComponent("RouterView");
+  _push(serverRenderer.exports.ssrRenderComponent(_component_RouterView, _attrs, {
+    default: vue_cjs_prod.withCtx(({ Component }, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        ssrRenderVNode(_push2, createVNode(resolveDynamicComponent(Component), {
+        serverRenderer.exports.ssrRenderVNode(_push2, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Component), {
           key: _ctx.$route.path
         }, null), _parent2, _scopeId);
       } else {
         return [
-          (openBlock(), createBlock(resolveDynamicComponent(Component), {
+          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(Component), {
             key: _ctx.$route.path
           }))
         ];
@@ -3070,13 +3066,13 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 }
 const _sfc_setup$7 = _sfc_main$7.setup;
 _sfc_main$7.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/nested-page.vue");
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
 const NuxtNestedPage = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7]]);
 const layouts = {};
-const NuxtLayout = defineComponent({
+const NuxtLayout = vue_cjs_prod.defineComponent({
   props: {
     name: {
       type: [String, Boolean],
@@ -3089,7 +3085,7 @@ const NuxtLayout = defineComponent({
       if (!layouts[layout]) {
         return context.slots.default();
       }
-      return h(layouts[layout], props, context.slots);
+      return vue_cjs_prod.h(layouts[layout], props, context.slots);
     };
   }
 });
@@ -3119,20 +3115,20 @@ const _sfc_main$6 = {
   }
 };
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_RouterView = resolveComponent("RouterView");
-  const _component_NuxtLayout = resolveComponent("NuxtLayout");
-  _push(ssrRenderComponent(_component_RouterView, _attrs, {
-    default: withCtx(({ Component }, _push2, _parent2, _scopeId) => {
+  const _component_RouterView = vue_cjs_prod.resolveComponent("RouterView");
+  const _component_NuxtLayout = vue_cjs_prod.resolveComponent("NuxtLayout");
+  _push(serverRenderer.exports.ssrRenderComponent(_component_RouterView, _attrs, {
+    default: vue_cjs_prod.withCtx(({ Component }, _push2, _parent2, _scopeId) => {
       if (_push2) {
         if (Component) {
-          _push2(ssrRenderComponent(_component_NuxtLayout, {
+          _push2(serverRenderer.exports.ssrRenderComponent(_component_NuxtLayout, {
             name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
           }, {
-            default: withCtx((_, _push3, _parent3, _scopeId2) => {
+            default: vue_cjs_prod.withCtx((_, _push3, _parent3, _scopeId2) => {
               if (_push3) {
-                ssrRenderSuspense(_push3, {
+                serverRenderer.exports.ssrRenderSuspense(_push3, {
                   default: () => {
-                    ssrRenderVNode(_push3, createVNode(resolveDynamicComponent(Component), {
+                    serverRenderer.exports.ssrRenderVNode(_push3, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Component), {
                       key: _ctx.$route.path
                     }, null), _parent3, _scopeId2);
                   },
@@ -3140,17 +3136,17 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
                 });
               } else {
                 return [
-                  createVNode(Transition, {
+                  vue_cjs_prod.createVNode(vue_cjs_prod.Transition, {
                     name: "page",
                     mode: "out-in"
                   }, {
-                    default: withCtx(() => [
-                      (openBlock(), createBlock(Suspense, {
+                    default: vue_cjs_prod.withCtx(() => [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Suspense, {
                         onPending: () => $setup.onSuspensePending(Component),
                         onResolve: () => $setup.onSuspenseResolved(Component)
                       }, {
-                        default: withCtx(() => [
-                          (openBlock(), createBlock(resolveDynamicComponent(Component), {
+                        default: vue_cjs_prod.withCtx(() => [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(Component), {
                             key: _ctx.$route.path
                           }))
                         ]),
@@ -3169,22 +3165,22 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }
       } else {
         return [
-          Component ? (openBlock(), createBlock(_component_NuxtLayout, {
+          Component ? (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(_component_NuxtLayout, {
             key: 0,
             name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
           }, {
-            default: withCtx(() => [
-              createVNode(Transition, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode(vue_cjs_prod.Transition, {
                 name: "page",
                 mode: "out-in"
               }, {
-                default: withCtx(() => [
-                  (openBlock(), createBlock(Suspense, {
+                default: vue_cjs_prod.withCtx(() => [
+                  (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Suspense, {
                     onPending: () => $setup.onSuspensePending(Component),
                     onResolve: () => $setup.onSuspenseResolved(Component)
                   }, {
-                    default: withCtx(() => [
-                      (openBlock(), createBlock(resolveDynamicComponent(Component), {
+                    default: vue_cjs_prod.withCtx(() => [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(Component), {
                         key: _ctx.$route.path
                       }))
                     ]),
@@ -3195,7 +3191,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
               }, 1024)
             ]),
             _: 2
-          }, 1032, ["name"])) : createCommentVNode("", true)
+          }, 1032, ["name"])) : vue_cjs_prod.createCommentVNode("", true)
         ];
       }
     }),
@@ -3204,7 +3200,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 }
 const _sfc_setup$6 = _sfc_main$6.setup;
 _sfc_main$6.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/page.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
@@ -3232,7 +3228,7 @@ const router_35628210 = defineNuxtPlugin((nuxtApp) => {
     routes
   });
   nuxtApp.vueApp.use(router);
-  const previousRoute = shallowRef(router.currentRoute.value);
+  const previousRoute = vue_cjs_prod.shallowRef(router.currentRoute.value);
   router.afterEach((_to, from) => {
     previousRoute.value = from;
   });
@@ -3241,9 +3237,9 @@ const router_35628210 = defineNuxtPlugin((nuxtApp) => {
   });
   const route = {};
   for (const key in router.currentRoute.value) {
-    route[key] = computed(() => router.currentRoute.value[key]);
+    route[key] = vue_cjs_prod.computed(() => router.currentRoute.value[key]);
   }
-  nuxtApp._route = reactive(route);
+  nuxtApp._route = vue_cjs_prod.reactive(route);
   nuxtApp.hook("app:created", async () => {
     {
       router.push(nuxtApp.ssrContext.url);
@@ -3594,7 +3590,7 @@ const _globalThis = function() {
   }
   throw new Error("unable to locate global object");
 }();
-const fetch = _globalThis.fetch || (() => Promise.reject(new Error("[ohmyfetch] global.fetch is not supported!")));
+const fetch = _globalThis.fetch || (() => Promise.reject(new Error("[ohmyfetch] globalThis.fetch is not supported!")));
 const Headers = _globalThis.Headers;
 const $fetch = createFetch({ fetch, Headers });
 if (!globalThis.$fetch) {
@@ -3603,13 +3599,13 @@ if (!globalThis.$fetch) {
 const nitroClient_cac112a2 = () => {
 };
 const components = {
-  "Home": defineAsyncComponent(() => Promise.resolve().then(function() {
+  "Home": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return home;
   }).then((c) => c.default || c)),
-  "Project": defineAsyncComponent(() => Promise.resolve().then(function() {
+  "Project": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return project;
   }).then((c) => c.default || c)),
-  "Skills": defineAsyncComponent(() => Promise.resolve().then(function() {
+  "Skills": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return skills;
   }).then((c) => c.default || c))
 };
@@ -3634,29 +3630,29 @@ const _sfc_main$5 = {
   }
 };
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_App = resolveComponent("App");
-  ssrRenderSuspense(_push, {
+  const _component_App = vue_cjs_prod.resolveComponent("App");
+  serverRenderer.exports.ssrRenderSuspense(_push, {
     default: () => {
-      _push(ssrRenderComponent(_component_App, null, null, _parent));
+      _push(serverRenderer.exports.ssrRenderComponent(_component_App, null, null, _parent));
     },
     _: 1
   });
 }
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/app/components/nuxt-root.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 const RootComponent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
 const _sfc_main$4 = {};
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtPage = resolveComponent("NuxtPage");
-  _push(ssrRenderComponent(_component_NuxtPage, _attrs, null, _parent));
+  const _component_NuxtPage = vue_cjs_prod.resolveComponent("NuxtPage");
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtPage, _attrs, null, _parent));
 }
 const _sfc_setup$4 = _sfc_main$4.setup;
 _sfc_main$4.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/app.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
@@ -3665,7 +3661,7 @@ let entry;
 const plugins = normalizePlugins(_plugins);
 {
   entry = async function createNuxtAppServer(ssrContext = {}) {
-    const vueApp = createApp(RootComponent);
+    const vueApp = vue_cjs_prod.createApp(RootComponent);
     vueApp.component("App", AppComponent);
     const nuxt = createNuxtApp({ vueApp, ssrContext });
     await applyPlugins(nuxt, plugins);
@@ -3693,7 +3689,6 @@ const _imports_10 = "/_nuxt/assets/canva-icon.00b39470.svg";
 const _imports_11 = "/_nuxt/assets/vscode.ac6dde88.svg";
 const _imports_12 = "/_nuxt/assets/git.717a57ea.svg";
 const _imports_13 = "/_nuxt/assets/digitalocean-icon.91247310.svg";
-const skills_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$3 = {
   head: {
     title: "skills",
@@ -3716,107 +3711,107 @@ const _sfc_main$3 = {
   }
 };
 function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_swiper = resolveComponent("swiper");
-  const _component_swiper_slide = resolveComponent("swiper-slide");
-  _push(ssrRenderComponent(_component_swiper, mergeProps({
+  const _component_swiper = vue_cjs_prod.resolveComponent("swiper");
+  const _component_swiper_slide = vue_cjs_prod.resolveComponent("swiper-slide");
+  _push(serverRenderer.exports.ssrRenderComponent(_component_swiper, vue_cjs_prod.mergeProps({
     navigation: true,
     keyboard: { enabled: true },
     pagination: { dynamicBullets: true, clickable: true },
     modules: $setup.modules,
     class: "mySwiper cursor-pointer select-none mt-10"
   }, _attrs), {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><div class="flex flex-col justify-center"${_scopeId2}><h1 class="text-2xl font-semibold text-center text-red-500"${_scopeId2}> FRONT END </h1><span class="text-sm text-center text-black"${_scopeId2}>MEVN Learner</span></div><div class="flex flex-wrap items-center justify-center -mx-4 lg:-mx-24"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Semantic Tags Structure, SEO Tags <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>HTML 5</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]"${ssrRenderAttr("src", _imports_1$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]"${ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>class, id, flex, grid, animation, transition <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>CSS 3 <span class="text-indigo-400"${_scopeId2}>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>DOM, loop,validation, condition,event <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Java script</span></div></div><div class="w-full px-4 pb-4 md:w-1/2 lg:w-1/4"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>fundamentals, advanced components, transitions &amp; animations, vuex, form validation, routing <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vue js <span class="text-indigo-400"${_scopeId2}>||</span> nuxt js</span></div></div></div></div></div></div></section>`);
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><div class="flex flex-col justify-center"${_scopeId2}><h1 class="text-2xl font-semibold text-center text-red-500"${_scopeId2}> FRONT END </h1><span class="text-sm text-center text-black"${_scopeId2}>MEVN Learner</span></div><div class="flex flex-wrap items-center justify-center -mx-4 lg:-mx-24"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Semantic Tags Structure, SEO Tags <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>HTML 5</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_1$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>class, id, flex, grid, animation, transition <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>CSS 3 <span class="text-indigo-400"${_scopeId2}>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>DOM, loop,validation, condition,event <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Java script</span></div></div><div class="w-full px-4 pb-4 md:w-1/2 lg:w-1/4"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>fundamentals, advanced components, transitions &amp; animations, vuex, form validation, routing <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vue js <span class="text-indigo-400"${_scopeId2}>||</span> nuxt js</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                createVNode("section", { class: "bg-white" }, [
-                  createVNode("div", { class: "container px-4 mx-auto" }, [
-                    createVNode("div", { class: "flex flex-col justify-center" }, [
-                      createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, " FRONT END "),
-                      createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
+                vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                  vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-col justify-center" }, [
+                      vue_cjs_prod.createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, " FRONT END "),
+                      vue_cjs_prod.createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
                     ]),
-                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
-                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
+                      vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_1$2,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
-                                createTextVNode("Semantic Tags Structure, SEO Tags "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
+                                vue_cjs_prod.createTextVNode("Semantic Tags Structure, SEO Tags "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
                                 src: _imports_1$1,
                                 alt: ""
                               }),
-                              createVNode("img", {
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
                                 src: _imports_2$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("class, id, flex, grid, animation, transition "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("class, id, flex, grid, animation, transition "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                createTextVNode("CSS 3 "),
-                                createVNode("span", { class: "text-indigo-400" }, "||"),
-                                createTextVNode(" TAILWINd CSS")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                vue_cjs_prod.createTextVNode("CSS 3 "),
+                                vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                vue_cjs_prod.createTextVNode(" TAILWINd CSS")
                               ])
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
                                 src: _imports_3$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("DOM, loop,validation, condition,event "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("DOM, loop,validation, condition,event "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]",
                                 src: _imports_4$1,
                                 alt: ""
                               }),
-                              createVNode("img", {
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]",
                                 src: _imports_5$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                createTextVNode("vue js "),
-                                createVNode("span", { class: "text-indigo-400" }, "||"),
-                                createTextVNode(" nuxt js")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                vue_cjs_prod.createTextVNode("vue js "),
+                                vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                vue_cjs_prod.createTextVNode(" nuxt js")
                               ])
                             ])
                           ])
@@ -3830,54 +3825,54 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><h1 class="flex justify-center text-2xl font-semibold text-black"${_scopeId2}> BACK END</h1><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_6$2)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>express js</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_7$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>mongo db</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${ssrRenderAttr("src", _imports_8$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud oppression <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>maria db</span></div></div></div></div></div></div></section>`);
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><h1 class="flex justify-center text-2xl font-semibold text-black"${_scopeId2}> BACK END</h1><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_6$2)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>express js</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_7$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>mongo db</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_8$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud oppression <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>maria db</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                createVNode("section", { class: "bg-white" }, [
-                  createVNode("div", { class: "container px-4 mx-auto" }, [
-                    createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, " BACK END"),
-                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                  vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, " BACK END"),
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                      vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_6$2,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_7$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
                                 src: _imports_8$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("crud oppression "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("crud oppression "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
                             ])
                           ])
                         ])
@@ -3890,81 +3885,81 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><h1 class="text-[#00749A] text-2xl justify-center flex font-semibold"${_scopeId2}> OTHER</h1><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_9$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>theme create &amp; edit, plugin <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>wordpress</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>video banner &amp; ads, image editor <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>canva</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]"${ssrRenderAttr("src", _imports_11)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]"${ssrRenderAttr("src", _imports_12)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vs code <span class="text-indigo-400"${_scopeId2}>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_13)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>digital ocean</span></div></div></div></div></div></div></section>`);
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><h1 class="text-[#00749A] text-2xl justify-center flex font-semibold"${_scopeId2}> OTHER</h1><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_9$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>theme create &amp; edit, plugin <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>wordpress</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>video banner &amp; ads, image editor <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>canva</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_11)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]"${serverRenderer.exports.ssrRenderAttr("src", _imports_12)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vs code <span class="text-indigo-400"${_scopeId2}>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_13)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>digital ocean</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                createVNode("section", { class: "bg-white" }, [
-                  createVNode("div", { class: "container px-4 mx-auto" }, [
-                    createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, " OTHER"),
-                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                  vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, " OTHER"),
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                      vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_9$1,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("theme create & edit, plugin "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("theme create & edit, plugin "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_10,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("video banner & ads, image editor "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("video banner & ads, image editor "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
                                 src: _imports_11,
                                 alt: ""
                               }),
-                              createVNode("img", {
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
                                 src: _imports_12,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
-                                createVNode("span", { class: "lowercase" }, "etc")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                vue_cjs_prod.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
+                                vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                createTextVNode("vs code "),
-                                createVNode("span", { class: "text-indigo-400" }, "||"),
-                                createTextVNode(" git")
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                vue_cjs_prod.createTextVNode("vs code "),
+                                vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                vue_cjs_prod.createTextVNode(" git")
                               ])
                             ])
                           ]),
-                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              createVNode("img", {
+                          vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              vue_cjs_prod.createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                                 src: _imports_13,
                                 alt: ""
                               }),
-                              createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                              vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
+                              vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
                             ])
                           ])
                         ])
@@ -3979,92 +3974,92 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }, _parent2, _scopeId));
       } else {
         return [
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("section", { class: "bg-white" }, [
-                createVNode("div", { class: "container px-4 mx-auto" }, [
-                  createVNode("div", { class: "flex flex-col justify-center" }, [
-                    createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, " FRONT END "),
-                    createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-col justify-center" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, " FRONT END "),
+                    vue_cjs_prod.createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
                   ]),
-                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
-                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_1$2,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
-                              createTextVNode("Semantic Tags Structure, SEO Tags "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
+                              vue_cjs_prod.createTextVNode("Semantic Tags Structure, SEO Tags "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
                               src: _imports_1$1,
                               alt: ""
                             }),
-                            createVNode("img", {
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
                               src: _imports_2$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("class, id, flex, grid, animation, transition "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("class, id, flex, grid, animation, transition "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              createTextVNode("CSS 3 "),
-                              createVNode("span", { class: "text-indigo-400" }, "||"),
-                              createTextVNode(" TAILWINd CSS")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              vue_cjs_prod.createTextVNode("CSS 3 "),
+                              vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              vue_cjs_prod.createTextVNode(" TAILWINd CSS")
                             ])
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
                               src: _imports_3$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("DOM, loop,validation, condition,event "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("DOM, loop,validation, condition,event "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]",
                               src: _imports_4$1,
                               alt: ""
                             }),
-                            createVNode("img", {
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]",
                               src: _imports_5$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              createTextVNode("vue js "),
-                              createVNode("span", { class: "text-indigo-400" }, "||"),
-                              createTextVNode(" nuxt js")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              vue_cjs_prod.createTextVNode("vue js "),
+                              vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              vue_cjs_prod.createTextVNode(" nuxt js")
                             ])
                           ])
                         ])
@@ -4076,50 +4071,50 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("section", { class: "bg-white" }, [
-                createVNode("div", { class: "container px-4 mx-auto" }, [
-                  createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, " BACK END"),
-                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, " BACK END"),
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_6$2,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_7$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
                               src: _imports_8$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("crud oppression "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("crud oppression "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
                           ])
                         ])
                       ])
@@ -4130,77 +4125,77 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("section", { class: "bg-white" }, [
-                createVNode("div", { class: "container px-4 mx-auto" }, [
-                  createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, " OTHER"),
-                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("section", { class: "bg-white" }, [
+                vue_cjs_prod.createVNode("div", { class: "container px-4 mx-auto" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, " OTHER"),
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      vue_cjs_prod.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_9$1,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("theme create & edit, plugin "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("theme create & edit, plugin "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_10,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("video banner & ads, image editor "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("video banner & ads, image editor "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
                               src: _imports_11,
                               alt: ""
                             }),
-                            createVNode("img", {
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
                               src: _imports_12,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
-                              createVNode("span", { class: "lowercase" }, "etc")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              vue_cjs_prod.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
+                              vue_cjs_prod.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              createTextVNode("vs code "),
-                              createVNode("span", { class: "text-indigo-400" }, "||"),
-                              createTextVNode(" git")
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              vue_cjs_prod.createTextVNode("vs code "),
+                              vue_cjs_prod.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              vue_cjs_prod.createTextVNode(" git")
                             ])
                           ])
                         ]),
-                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          vue_cjs_prod.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
                               src: _imports_13,
                               alt: ""
                             }),
-                            createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                            vue_cjs_prod.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
+                            vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
                           ])
                         ])
                       ])
@@ -4219,7 +4214,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/skills.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
@@ -4234,7 +4229,6 @@ const _imports_6$1 = "/_nuxt/assets/photo4.21c13b80.png";
 const _imports_7 = "/_nuxt/assets/dots.1c4c2d6c.svg";
 const _imports_8 = "/_nuxt/assets/dots2.79aeb633.svg";
 const _imports_9 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgB7ZTBrcIwDIZ/8+C969sAGKFMACMwAmcubIDYgANC3GAEmIDeQagbUDYIAxBjVJAqEaoaLHHpd6kUN84XJzF1hszQwEgPc2qHQpIrlU8TCmr4MpVAJVAJfF2gLo1l8DRKWOINiDBij//8GBPGBLRezgkNFnbHgk4YIhryVhbpvoqrj0B26WCIWkBqc4YVUk29AEwrcNIfASOGHUe1gCc7AdnMRicgZ5bMKYEN7vKHWFuBCaxgrJMpufIC2ftfwQLJ5X22mXIC2YQejPBAP1lQWk7gvvhjwoe4Gkmu3D0qEnDSqCf+F5HB4lmuBtr7GcX5QD309w8j2hnddm5gcGtetwsXil8BQ2ld5eFPsDUAAAAASUVORK5CYII=";
-const project_vue_vue_type_style_index_0_lang = "";
 SwiperCore.use([FreeMode, Navigation, Thumbs, Pagination]);
 const _sfc_main$2 = {
   head: {
@@ -4263,81 +4257,81 @@ const _sfc_main$2 = {
   }
 };
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_swiper = resolveComponent("swiper");
-  const _component_swiper_slide = resolveComponent("swiper-slide");
-  _push(`<section${ssrRenderAttrs(mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`);
-  _push(ssrRenderComponent(_component_swiper, {
+  const _component_swiper = vue_cjs_prod.resolveComponent("swiper");
+  const _component_swiper_slide = vue_cjs_prod.resolveComponent("swiper-slide");
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
     pagination: { dynamicBullets: true, clickable: true },
     modules: _ctx.modules,
     thumbs: { swiper: $data.thumbsSwiper },
     class: "mx-10 select-none mySwiper2"
   }, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${_scopeId2}><div${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex flex-col"${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${_scopeId2}><div${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex flex-col"${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                    createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                      createVNode("div", null, [
-                        createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-20 h-20 mx-auto mb-5",
                           src: _imports_0$1,
                           alt: ""
                         })
                       ]),
-                      createVNode("div", { class: "flex flex-col" }, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                      vue_cjs_prod.createVNode("div", { class: "flex flex-col" }, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_1$2,
                             alt: ""
                           }),
-                          createTextVNode("html")
+                          vue_cjs_prod.createTextVNode("html")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_2$1,
                             alt: ""
                           }),
-                          createTextVNode("tailwind css")
+                          vue_cjs_prod.createTextVNode("tailwind css")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_3$1,
                             alt: ""
                           }),
-                          createTextVNode("java")
+                          vue_cjs_prod.createTextVNode("java")
                         ])
                       ]),
-                      createVNode("div", null, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_4$1,
                             alt: ""
                           }),
-                          createTextVNode("vue js")
+                          vue_cjs_prod.createTextVNode("vue js")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_5$1,
                             alt: ""
                           }),
-                          createTextVNode("nuxt js")
+                          vue_cjs_prod.createTextVNode("nuxt js")
                         ])
                       ])
                     ]),
-                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
               ];
@@ -4345,69 +4339,69 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex flex-col items-center justify-between sm:flex-row"${_scopeId2}><img class="w-20 pb-6 mx-auto rounded-md sm:w-40"${ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}><div class="flex space-x-8 sm:space-x-20"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex flex-col items-center justify-between sm:flex-row"${_scopeId2}><img class="w-20 pb-6 mx-auto rounded-md sm:w-40"${serverRenderer.exports.ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}><div class="flex space-x-8 sm:space-x-20"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                    createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
-                      createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
+                      vue_cjs_prod.createVNode("img", {
                         class: "w-20 pb-6 mx-auto rounded-md sm:w-40",
                         src: _imports_6$1,
                         alt: ""
                       }),
-                      createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
-                        createVNode("div", null, [
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                      vue_cjs_prod.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
+                        vue_cjs_prod.createVNode("div", null, [
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_1$2,
                               alt: ""
                             }),
-                            createTextVNode("html")
+                            vue_cjs_prod.createTextVNode("html")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_2$1,
                               alt: ""
                             }),
-                            createTextVNode("tailwind css")
+                            vue_cjs_prod.createTextVNode("tailwind css")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_3$1,
                               alt: ""
                             }),
-                            createTextVNode("java")
+                            vue_cjs_prod.createTextVNode("java")
                           ])
                         ]),
-                        createVNode("div", null, [
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", null, [
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_4$1,
                               alt: ""
                             }),
-                            createTextVNode("vue js")
+                            vue_cjs_prod.createTextVNode("vue js")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_5$1,
                               alt: ""
                             }),
-                            createTextVNode("nuxt js")
+                            vue_cjs_prod.createTextVNode("nuxt js")
                           ])
                         ])
                       ])
                     ]),
-                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
               ];
@@ -4415,71 +4409,71 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex justify-between"${_scopeId2}><div class="mx-auto"${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex sm:space-x-20 mb-14"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><h4 class="mb-5 -mt-5 text-xl font-medium font-heading"${_scopeId2}>Project Technologies</h4><div class="flex justify-between"${_scopeId2}><div class="mx-auto"${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex sm:space-x-20 mb-14"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_1$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${serverRenderer.exports.ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                    createVNode("div", { class: "flex justify-between" }, [
-                      createVNode("div", { class: "mx-auto" }, [
-                        createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                    vue_cjs_prod.createVNode("div", { class: "flex justify-between" }, [
+                      vue_cjs_prod.createVNode("div", { class: "mx-auto" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-20 h-20 mx-auto mb-5",
                           src: _imports_0$1,
                           alt: ""
                         })
                       ]),
-                      createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
-                        createVNode("div", null, [
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                      vue_cjs_prod.createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
+                        vue_cjs_prod.createVNode("div", null, [
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_1$2,
                               alt: ""
                             }),
-                            createTextVNode("html")
+                            vue_cjs_prod.createTextVNode("html")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_2$1,
                               alt: ""
                             }),
-                            createTextVNode("tailwind css")
+                            vue_cjs_prod.createTextVNode("tailwind css")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_3$1,
                               alt: ""
                             }),
-                            createTextVNode("java")
+                            vue_cjs_prod.createTextVNode("java")
                           ])
                         ]),
-                        createVNode("div", null, [
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                        vue_cjs_prod.createVNode("div", null, [
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_4$1,
                               alt: ""
                             }),
-                            createTextVNode("vue js")
+                            vue_cjs_prod.createTextVNode("vue js")
                           ]),
-                          createVNode("h1", { class: "flex items-center uppercase" }, [
-                            createVNode("img", {
+                          vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                            vue_cjs_prod.createVNode("img", {
                               class: "w-6 mr-2",
                               src: _imports_5$1,
                               alt: ""
                             }),
-                            createTextVNode("nuxt js")
+                            vue_cjs_prod.createTextVNode("nuxt js")
                           ])
                         ])
                       ])
                     ]),
-                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
               ];
@@ -4489,195 +4483,195 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }, _parent2, _scopeId));
       } else {
         return [
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                  createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                    createVNode("div", null, [
-                      createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                    vue_cjs_prod.createVNode("div", null, [
+                      vue_cjs_prod.createVNode("img", {
                         class: "w-20 h-20 mx-auto mb-5",
                         src: _imports_0$1,
                         alt: ""
                       })
                     ]),
-                    createVNode("div", { class: "flex flex-col" }, [
-                      createVNode("h1", { class: "flex items-center uppercase" }, [
-                        createVNode("img", {
+                    vue_cjs_prod.createVNode("div", { class: "flex flex-col" }, [
+                      vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-6 mr-2",
                           src: _imports_1$2,
                           alt: ""
                         }),
-                        createTextVNode("html")
+                        vue_cjs_prod.createTextVNode("html")
                       ]),
-                      createVNode("h1", { class: "flex items-center uppercase" }, [
-                        createVNode("img", {
+                      vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-6 mr-2",
                           src: _imports_2$1,
                           alt: ""
                         }),
-                        createTextVNode("tailwind css")
+                        vue_cjs_prod.createTextVNode("tailwind css")
                       ]),
-                      createVNode("h1", { class: "flex items-center uppercase" }, [
-                        createVNode("img", {
+                      vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-6 mr-2",
                           src: _imports_3$1,
                           alt: ""
                         }),
-                        createTextVNode("java")
+                        vue_cjs_prod.createTextVNode("java")
                       ])
                     ]),
-                    createVNode("div", null, [
-                      createVNode("h1", { class: "flex items-center uppercase" }, [
-                        createVNode("img", {
+                    vue_cjs_prod.createVNode("div", null, [
+                      vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-6 mr-2",
                           src: _imports_4$1,
                           alt: ""
                         }),
-                        createTextVNode("vue js")
+                        vue_cjs_prod.createTextVNode("vue js")
                       ]),
-                      createVNode("h1", { class: "flex items-center uppercase" }, [
-                        createVNode("img", {
+                      vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        vue_cjs_prod.createVNode("img", {
                           class: "w-6 mr-2",
                           src: _imports_5$1,
                           alt: ""
                         }),
-                        createTextVNode("nuxt js")
+                        vue_cjs_prod.createTextVNode("nuxt js")
                       ])
                     ])
                   ]),
-                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                  createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
-                    createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                  vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
+                    vue_cjs_prod.createVNode("img", {
                       class: "w-20 pb-6 mx-auto rounded-md sm:w-40",
                       src: _imports_6$1,
                       alt: ""
                     }),
-                    createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
-                      createVNode("div", null, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                    vue_cjs_prod.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_1$2,
                             alt: ""
                           }),
-                          createTextVNode("html")
+                          vue_cjs_prod.createTextVNode("html")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_2$1,
                             alt: ""
                           }),
-                          createTextVNode("tailwind css")
+                          vue_cjs_prod.createTextVNode("tailwind css")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_3$1,
                             alt: ""
                           }),
-                          createTextVNode("java")
+                          vue_cjs_prod.createTextVNode("java")
                         ])
                       ]),
-                      createVNode("div", null, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_4$1,
                             alt: ""
                           }),
-                          createTextVNode("vue js")
+                          vue_cjs_prod.createTextVNode("vue js")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_5$1,
                             alt: ""
                           }),
-                          createTextVNode("nuxt js")
+                          vue_cjs_prod.createTextVNode("nuxt js")
                         ])
                       ])
                     ])
                   ]),
-                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
-                  createVNode("div", { class: "flex justify-between" }, [
-                    createVNode("div", { class: "mx-auto" }, [
-                      createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                vue_cjs_prod.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  vue_cjs_prod.createVNode("h4", { class: "mb-5 -mt-5 text-xl font-medium font-heading" }, "Project Technologies"),
+                  vue_cjs_prod.createVNode("div", { class: "flex justify-between" }, [
+                    vue_cjs_prod.createVNode("div", { class: "mx-auto" }, [
+                      vue_cjs_prod.createVNode("img", {
                         class: "w-20 h-20 mx-auto mb-5",
                         src: _imports_0$1,
                         alt: ""
                       })
                     ]),
-                    createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
-                      createVNode("div", null, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                    vue_cjs_prod.createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_1$2,
                             alt: ""
                           }),
-                          createTextVNode("html")
+                          vue_cjs_prod.createTextVNode("html")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_2$1,
                             alt: ""
                           }),
-                          createTextVNode("tailwind css")
+                          vue_cjs_prod.createTextVNode("tailwind css")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_3$1,
                             alt: ""
                           }),
-                          createTextVNode("java")
+                          vue_cjs_prod.createTextVNode("java")
                         ])
                       ]),
-                      createVNode("div", null, [
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                      vue_cjs_prod.createVNode("div", null, [
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_4$1,
                             alt: ""
                           }),
-                          createTextVNode("vue js")
+                          vue_cjs_prod.createTextVNode("vue js")
                         ]),
-                        createVNode("h1", { class: "flex items-center uppercase" }, [
-                          createVNode("img", {
+                        vue_cjs_prod.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          vue_cjs_prod.createVNode("img", {
                             class: "w-6 mr-2",
                             src: _imports_5$1,
                             alt: ""
                           }),
-                          createTextVNode("nuxt js")
+                          vue_cjs_prod.createTextVNode("nuxt js")
                         ])
                       ])
                     ])
                   ]),
-                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  vue_cjs_prod.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
@@ -4688,38 +4682,38 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${ssrRenderAttr("src", _imports_7)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`);
-  _push(ssrRenderComponent(_component_swiper, {
+  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${serverRenderer.exports.ssrRenderAttr("src", _imports_7)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
     slidesPerView: 1,
     freeMode: false,
     watchSlidesProgress: true,
     class: "mx-5 mySwiper"
   }, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
+              _push3(`<img class="block mx-auto mb-12"${serverRenderer.exports.ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   class: "block mx-auto mb-12",
                   src: _imports_8,
                   alt: ""
                 }),
-                createVNode("div", { class: "flex items-start mb-10" }, [
-                  createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                  vue_cjs_prod.createVNode("img", {
                     class: "rotate-180",
                     src: _imports_9,
                     alt: ""
                   }),
-                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  createVNode("img", {
+                  vue_cjs_prod.createVNode("img", {
                     src: _imports_9,
                     alt: ""
                   })
@@ -4729,28 +4723,28 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
+              _push3(`<img class="block mx-auto mb-12"${serverRenderer.exports.ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   class: "block mx-auto mb-12",
                   src: _imports_8,
                   alt: ""
                 }),
-                createVNode("div", { class: "flex items-start mb-10" }, [
-                  createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                  vue_cjs_prod.createVNode("img", {
                     class: "rotate-180",
                     src: _imports_9,
                     alt: ""
                   }),
-                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  createVNode("img", {
+                  vue_cjs_prod.createVNode("img", {
                     src: _imports_9,
                     alt: ""
                   })
@@ -4760,28 +4754,28 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_swiper_slide, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
+              _push3(`<img class="block mx-auto mb-12"${serverRenderer.exports.ssrRenderAttr("src", _imports_8)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   class: "block mx-auto mb-12",
                   src: _imports_8,
                   alt: ""
                 }),
-                createVNode("div", { class: "flex items-start mb-10" }, [
-                  createVNode("img", {
+                vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                  vue_cjs_prod.createVNode("img", {
                     class: "rotate-180",
                     src: _imports_9,
                     alt: ""
                   }),
-                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  createVNode("img", {
+                  vue_cjs_prod.createVNode("img", {
                     src: _imports_9,
                     alt: ""
                   })
@@ -4793,24 +4787,24 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }, _parent2, _scopeId));
       } else {
         return [
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("img", {
                 class: "block mx-auto mb-12",
                 src: _imports_8,
                 alt: ""
               }),
-              createVNode("div", { class: "flex items-start mb-10" }, [
-                createVNode("img", {
+              vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                vue_cjs_prod.createVNode("img", {
                   class: "rotate-180",
                   src: _imports_9,
                   alt: ""
                 }),
-                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   src: _imports_9,
                   alt: ""
                 })
@@ -4818,24 +4812,24 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("img", {
                 class: "block mx-auto mb-12",
                 src: _imports_8,
                 alt: ""
               }),
-              createVNode("div", { class: "flex items-start mb-10" }, [
-                createVNode("img", {
+              vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                vue_cjs_prod.createVNode("img", {
                   class: "rotate-180",
                   src: _imports_9,
                   alt: ""
                 }),
-                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   src: _imports_9,
                   alt: ""
                 })
@@ -4843,24 +4837,24 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             ]),
             _: 1
           }),
-          createVNode(_component_swiper_slide, null, {
-            default: withCtx(() => [
-              createVNode("img", {
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("img", {
                 class: "block mx-auto mb-12",
                 src: _imports_8,
                 alt: ""
               }),
-              createVNode("div", { class: "flex items-start mb-10" }, [
-                createVNode("img", {
+              vue_cjs_prod.createVNode("div", { class: "flex items-start mb-10" }, [
+                vue_cjs_prod.createVNode("img", {
                   class: "rotate-180",
                   src: _imports_9,
                   alt: ""
                 }),
-                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                vue_cjs_prod.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  vue_cjs_prod.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                createVNode("img", {
+                vue_cjs_prod.createVNode("img", {
                   src: _imports_9,
                   alt: ""
                 })
@@ -4877,7 +4871,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 }
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/project.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
@@ -4908,11 +4902,11 @@ const _sfc_main$1 = {
   }
 };
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${ssrRenderAttrs(_attrs)}><section id="home" class="py-16 overflow-hidden 2xl:py-20"><div class="relative bg-gray-100 shadow-2xl shadow-gray-900 rounded-b-10xl"><div class="container px-4 mx-auto"><div class="flex flex-wrap items-center py-10 -mx-4"><div class="w-full px-4 mb-24 lg:w-1/2 lg:mb-0"><h1 class="max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl"><span>Hi, it&#39;s me <span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra and I am a </span><span class="relative inline-block"><span class="absolute inset-0 xl:-left-8 xl:-right-8"><img class="absolute inset-0 w-full max-w-non"${ssrRenderAttr("src", _imports_0)} alt=""><img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"${ssrRenderAttr("src", _imports_1)} alt=""></span><span class="relative z-10"> web dev.</span></span></h1><div class="space-y-2"><h1 class="text-xl capitalize">previous study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">In 2020, I complete my engineering.</p><h1 class="text-xl capitalize">currently study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">leaning MEVN and communication skills in English language.</p><h1 class="text-xl capitalize">future study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">BCA in Australia.</p></div></div><div class="w-full px-4 lg:w-1/2"><div class="relative mx-auto"><div class="w-64 h-64 mx-auto border-4 border-gray-700 rounded-full"><div class="w-56 h-56 mx-auto border-4 border-gray-400 rounded-full"><div class="relative flex items-center justify-center w-48 h-48 mx-auto border-4 rounded-full"><img class="w-36 -mt-9"${ssrRenderAttr("src", _imports_2)} alt=""></div></div></div></div></div></div><div class="mb-5"><h1 class="capitalize text-6xl font-semibold mb-5">Contact</h1><div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center"><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_3)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_4)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_5)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_6)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 8708423836</h1></a></div></div></div></div></div></section></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}><section id="home" class="py-16 overflow-hidden 2xl:py-20"><div class="relative bg-gray-100 shadow-2xl shadow-gray-900 rounded-b-10xl"><div class="container px-4 mx-auto"><div class="flex flex-wrap items-center py-10 -mx-4"><div class="w-full px-4 mb-24 lg:w-1/2 lg:mb-0"><h1 class="max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl"><span>Hi, it&#39;s me <span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra and I am a </span><span class="relative inline-block"><span class="absolute inset-0 xl:-left-8 xl:-right-8"><img class="absolute inset-0 w-full max-w-non"${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt=""><img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"${serverRenderer.exports.ssrRenderAttr("src", _imports_1)} alt=""></span><span class="relative z-10"> web dev.</span></span></h1><div class="space-y-2"><h1 class="text-xl capitalize">previous study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">In 2020, I complete my engineering.</p><h1 class="text-xl capitalize">currently study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">leaning MEVN and communication skills in English language.</p><h1 class="text-xl capitalize">future study</h1><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">BCA in Australia.</p></div></div><div class="w-full px-4 lg:w-1/2"><div class="relative mx-auto"><div class="w-64 h-64 mx-auto border-4 border-gray-700 rounded-full"><div class="w-56 h-56 mx-auto border-4 border-gray-400 rounded-full"><div class="relative flex items-center justify-center w-48 h-48 mx-auto border-4 rounded-full"><img class="w-36 -mt-9"${serverRenderer.exports.ssrRenderAttr("src", _imports_2)} alt=""></div></div></div></div></div></div><div class="mb-5"><h1 class="capitalize text-6xl font-semibold mb-5">Contact</h1><div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center"><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_3)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_4)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_5)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_6)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 8708423836</h1></a></div></div></div></div></div></section></div>`);
 }
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/home.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
@@ -4927,15 +4921,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_skills = __nuxt_component_0;
   const _component_project = __nuxt_component_1;
   const _component_home = __nuxt_component_2;
-  _push(`<div${ssrRenderAttrs(_attrs)}>`);
-  _push(ssrRenderComponent(_component_skills, null, null, _parent));
-  _push(ssrRenderComponent(_component_project, null, null, _parent));
-  _push(ssrRenderComponent(_component_home, null, null, _parent));
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_skills, null, null, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_project, null, null, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_home, null, null, _parent));
   _push(`</div>`);
 }
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
@@ -4945,4 +4939,5 @@ const index$1 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": index
 });
+
 export { entry$1 as default };

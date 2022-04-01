@@ -38,7 +38,7 @@
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
                     <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
                     <div class="flex flex-col items-center justify-between sm:flex-row">
-                      <img class="w-20 pb-6 rounded-md sm:w-40" src="../assets/images/team/photo4.png" alt="" />
+                      <img class="w-20 pb-6 mx-auto rounded-md sm:w-40" src="../assets/images/team/photo4.png" alt="" />
 
                       <div class="flex space-x-8 sm:space-x-20">
                         <div>
@@ -162,6 +162,16 @@ import SwiperCore, { FreeMode, Navigation, Thumbs, Pagination } from "swiper";
 SwiperCore.use([FreeMode, Navigation, Thumbs, Pagination]);
 
 export default {
+   head: {
+    title: 'Projects',
+    meta: [
+      {
+        hid: 'description',
+        name: 'MEVN developer | website developer',
+        content: 'I am create multiple websites and also modified existing websites.'
+      }
+    ],
+  },
   components: {
     Swiper,
     SwiperSlide,
