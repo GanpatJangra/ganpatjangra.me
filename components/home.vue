@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import '~/assets/css/style.css';
+
 export default {
   name: "home",
   head: {
