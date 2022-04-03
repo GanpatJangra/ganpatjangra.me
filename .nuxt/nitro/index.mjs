@@ -130,7 +130,7 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/ganpatjangra.me/dist" + "/" + "1648908617";
+const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/ganpatjangra.me/dist" + "/" + "1649013854";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/dist/server/server.mjs'));

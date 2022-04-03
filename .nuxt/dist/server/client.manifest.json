@@ -10,7 +10,8 @@
     "components/skills.vue?vue&type=style&index=0&lang.css",
     "node_modules/swiper/modules/free-mode/free-mode.min.css",
     "node_modules/swiper/modules/thumbs/thumbs.min.css",
-    "components/project.vue?vue&type=style&index=0&lang.css"
+    "components/project.vue?vue&type=style&index=0&lang.css",
+    "assets/css/style.css"
   ],
   "initial": [
     "@vite/client",
@@ -22,7 +23,8 @@
     "components/skills.vue?vue&type=style&index=0&lang.css",
     "node_modules/swiper/modules/free-mode/free-mode.min.css",
     "node_modules/swiper/modules/thumbs/thumbs.min.css",
-    "components/project.vue?vue&type=style&index=0&lang.css"
+    "components/project.vue?vue&type=style&index=0&lang.css",
+    "assets/css/style.css"
   ],
   "async": [],
   "modules": {}
