@@ -2,6 +2,13 @@
 
 This is a minimal starter template for Nuxt 3 projects with Tailwind CSS 3. It includes a simple template `pages/index.vue`. To make the Tailwind UI component work this setup includes [heroicons](https://heroicons.com/). You can either clone this repo or use the steps below to to create a new Nuxt 3 + Tailwind CSS 3 project.
 
+
+
+![Folder_Structure](https://user-images.githubusercontent.com/69577968/161445587-eea4de6d-c006-404f-8fa8-5da66c9c09ff.png)
+
+
+
+
 ## Steps
 
 Start by creating a new Nuxt 3 project named `tailwind 3` with the following command:
