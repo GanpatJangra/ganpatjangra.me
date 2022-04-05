@@ -1,4 +1,4 @@
-globalThis.__timing__.logStart('Load chunks/render');import destr from 'destr';
+import destr from 'destr';
 import defu from 'defu';
 
 const _runtimeConfig = {public:{app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null}},private:{}};
@@ -527,7 +527,7 @@ const htmlTemplate = (params) => `<!DOCTYPE html>
 </html>
 `;
 
-const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/ganpatjangra.me/dist" + "/" + "1649142192";
+const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/ganpatjangra.me/dist" + "/" + "1649145673";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('./client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('./server.mjs'));
@@ -652,4 +652,4 @@ function cachedResult(fn) {
   };
 }
 
-export { renderMiddleware };;globalThis.__timing__.logEnd('Load chunks/render');
+export { renderMiddleware };

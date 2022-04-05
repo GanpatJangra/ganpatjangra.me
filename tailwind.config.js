@@ -46,7 +46,7 @@ module.exports = {
 
             },
             animation: {
-                "tracking-in-expand": "tracking-in-expand 5s ease-in 2s  alternate both",
+                "tracking-in-expand": "tracking-in-expand 2s ease-in 1s  alternate both",
                 "slide-tl": "slide-tl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both"
                 ,
                 "slide-tr": "slide-tr 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both",

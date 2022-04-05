@@ -1,14 +1,14 @@
 {
   "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-c3846218.mjs",
+    "file": "entry-667e0f5d.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
-      "_bootstrap-38e012a3.mjs"
+      "_bootstrap-1c35b7e5.mjs"
     ]
   },
-  "_bootstrap-38e012a3.mjs": {
-    "file": "bootstrap-38e012a3.mjs",
+  "_bootstrap-1c35b7e5.mjs": {
+    "file": "bootstrap-1c35b7e5.mjs",
     "isDynamicEntry": true,
     "dynamicImports": [
       "pages/index.vue",
@@ -17,7 +17,7 @@
       "components/skills.vue"
     ],
     "css": [
-      "assets/bootstrap.0d7d76a1.css"
+      "assets/bootstrap.2d6db9fb.css"
     ],
     "assets": [
       "assets/Weather-Moon.617d8515.svg",
@@ -27,11 +27,11 @@
     ]
   },
   "components/home.vue": {
-    "file": "home-6ee098a4.mjs",
+    "file": "home-55dac896.mjs",
     "src": "components/home.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_bootstrap-38e012a3.mjs"
+      "_bootstrap-1c35b7e5.mjs"
     ],
     "assets": [
       "assets/lines-blue1.11a8413a.svg",
@@ -47,12 +47,12 @@
     ]
   },
   "components/project.vue": {
-    "file": "project-7177c4b4.mjs",
+    "file": "project-dfe524bd.mjs",
     "src": "components/project.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-d5928045.mjs",
-      "_bootstrap-38e012a3.mjs"
+      "_nuxt-3d32af6f.mjs",
+      "_bootstrap-1c35b7e5.mjs"
     ],
     "css": [
       "assets/project.a352a431.css"
@@ -65,10 +65,10 @@
       "assets/dots2.79aeb633.svg"
     ]
   },
-  "_nuxt-d5928045.mjs": {
-    "file": "nuxt-d5928045.mjs",
+  "_nuxt-3d32af6f.mjs": {
+    "file": "nuxt-3d32af6f.mjs",
     "imports": [
-      "_bootstrap-38e012a3.mjs"
+      "_bootstrap-1c35b7e5.mjs"
     ],
     "css": [
       "assets/nuxt.f7502460.css"
@@ -82,12 +82,12 @@
     ]
   },
   "components/skills.vue": {
-    "file": "skills-341f655b.mjs",
+    "file": "skills-4ba1f435.mjs",
     "src": "components/skills.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-d5928045.mjs",
-      "_bootstrap-38e012a3.mjs"
+      "_nuxt-3d32af6f.mjs",
+      "_bootstrap-1c35b7e5.mjs"
     ],
     "css": [
       "assets/skills.a6dba478.css"
@@ -108,15 +108,15 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-b2fac676.mjs",
+    "file": "index-7f276bcf.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "components/skills.vue",
       "components/project.vue",
       "components/home.vue",
-      "_bootstrap-38e012a3.mjs",
-      "_nuxt-d5928045.mjs"
+      "_bootstrap-1c35b7e5.mjs",
+      "_nuxt-3d32af6f.mjs"
     ]
   }
 }

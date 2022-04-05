@@ -12,9 +12,9 @@
       <div class="absolute animate-slide-tl h-44 w-full bg-elephant bg-no-repeat bg-left-top bg-[length:400px_150px] "></div>
 
 
-              <h1  class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl animate-tracking-in-expand">
+              <h1  class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl">
                
-                <span>Hi, it's me <span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra and I am a </span>
+                <span>Hi, it's me <h2 class="animate-tracking-in-expand"><span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra</h2> and I am a </span>
                 <span class="relative inline-block">
                   <span class="absolute inset-0 xl:-left-8 xl:-right-8">
                     <img class="absolute inset-0 w-full max-w-non" src="~/assets/images/mycollection/lines-blue1.svg" alt="" /><img

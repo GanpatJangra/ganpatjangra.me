@@ -1,4 +1,4 @@
-globalThis.entryURL = import.meta.url;(function() { const start = () => Date.now();const end = s => Date.now() - s;const _s = {};const metrics = [];const logStart = id => { _s[id] = Date.now(); };const logEnd = id => { const t = end(_s[id]); delete _s[id]; metrics.push([id, t]); console.debug('>', id + ' (' + t + 'ms)'); };globalThis.__timing__ = { start, end, metrics, logStart, logEnd }; })();globalThis.__timing__.logStart('Cold Start');import 'unenv/runtime/polyfill/fetch.node';
+globalThis.entryURL = import.meta.url;import 'unenv/runtime/polyfill/fetch.node';
 import { Server } from 'http';
 import destr from 'destr';
 import { createApp, useBase } from 'h3';
@@ -128,4 +128,4 @@ server.listen(port, hostname, (err) => {
 });
 const server$1 = {};
 
-export { server$1 as default };;globalThis.__timing__.logEnd('Cold Start');
+export { server$1 as default };

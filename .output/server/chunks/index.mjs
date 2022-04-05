@@ -1,4 +1,4 @@
-globalThis.__timing__.logStart('Load chunks/index');import require$$0$1 from 'unenv/runtime/mock/proxy';
+import require$$0$1 from 'unenv/runtime/mock/proxy';
 import * as stream from 'stream';
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : "undefined" !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -10374,4 +10374,4 @@ serverRenderer_cjs_prod.ssrRenderVNode = renderVNode;
   serverRenderer.exports = serverRenderer_cjs_prod;
 }
 
-export { require$$0 as r, serverRenderer as s, vue_cjs_prod as v };;globalThis.__timing__.logEnd('Load chunks/index');
+export { require$$0 as r, serverRenderer as s, vue_cjs_prod as v };

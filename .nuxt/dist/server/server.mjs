@@ -1,319 +1,179 @@
-
-// --------------------
-// Request: C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry
-// Parents: 
-// - <entry> ($id_c757eb9e)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// --------------------
-const $id_0bdfba74 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const entry = true ? (ctx) => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default(ctx)) : () => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default);
-if (false) {
-  entry();
-}
-__vite_ssr_exports__.default = entry;
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/bootstrap.mjs
-// Parents: 
-// - C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry ($id_0bdfba74)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs ($id_838a58c0)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs ($id_f92004e9)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs ($id_f17181d1)
-// --------------------
-const $id_fef466a9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs");
-
-let entry;
-const plugins = __vite_ssr_import_1__.normalizePlugins(__vite_ssr_import_3__.default);
-if (true) {
-  entry = async function createNuxtAppServer(ssrContext = {}) {
-    const vueApp = __vite_ssr_import_0__.createApp(__vite_ssr_import_4__.default);
-    vueApp.component("App", __vite_ssr_import_5__.default);
-    const nuxt = __vite_ssr_import_1__.createNuxtApp({ vueApp, ssrContext });
-    await __vite_ssr_import_1__.applyPlugins(nuxt, plugins);
-    await nuxt.hooks.callHook("app:created", vueApp);
-    return vueApp;
-  };
-}
-if (false) {
-  if (true && __vite_ssr_import_meta__.webpackHot) {
-    __vite_ssr_import_meta__.webpackHot.accept();
-  }
-  entry = async function initApp() {
-    const isSSR = Boolean(window.__NUXT__?.serverRendered);
-    const vueApp = isSSR ? __vite_ssr_import_0__.createSSRApp(__vite_ssr_import_4__.default) : __vite_ssr_import_0__.createApp(__vite_ssr_import_4__.default);
-    vueApp.component("App", __vite_ssr_import_5__.default);
-    const nuxt = __vite_ssr_import_1__.createNuxtApp({ vueApp });
-    await __vite_ssr_import_1__.applyPlugins(nuxt, plugins);
-    await nuxt.hooks.callHook("app:created", vueApp);
-    await nuxt.hooks.callHook("app:beforeMount", vueApp);
-    nuxt.hooks.hookOnce("page:finish", () => {
-      nuxt.isHydrating = false;
-    });
-    vueApp.mount("#__nuxt");
-    await nuxt.hooks.callHook("app:mounted", vueApp);
-    await __vite_ssr_import_0__.nextTick();
-  };
-  entry().catch((error) => {
-    console.error("Error while mounting app:", error);
-  });
-}
-__vite_ssr_exports__.default = (ctx) => entry(ctx);
-;
-}
-
-
-// --------------------
-// Request: /node_modules/vue/dist/vue.cjs.js
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// - /node_modules/nuxt3/dist/app/composables/component.mjs ($id_b47c3881)
-// - /node_modules/nuxt3/dist/app/composables/asyncData.mjs ($id_a2ef143e)
-// - /node_modules/nuxt3/dist/app/composables/state.mjs ($id_d232db97)
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
-// - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /node_modules/nuxt3/dist/pages/runtime/nested-page.vue ($id_c268603a)
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs ($id_45f47c42)
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// - /components/home.vue ($id_4ae345a3)
-// - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
-// - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
-// - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
-// Dependencies: 
-
-// --------------------
-const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// - /node_modules/nuxt3/dist/app/composables/asyncData.mjs ($id_a2ef143e)
-// - /node_modules/nuxt3/dist/app/composables/hydrate.mjs ($id_43a772c2)
-// - /node_modules/nuxt3/dist/app/composables/state.mjs ($id_d232db97)
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// - /node_modules/nuxt3/dist/app/composables/ssr.mjs ($id_4d0dc923)
-// - /node_modules/nuxt3/dist/app/plugins/preload.server.mjs ($id_b9f3c557)
-// - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// --------------------
-const $id_d8c2af0f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/nuxt.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/index.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_1__);
-const isVue2 = false;
-Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return isVue2 }});
-const isVue3 = true;
-Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return isVue3 }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/nuxt.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /node_modules/nuxt3/dist/app/compat/legacy-app.mjs ($id_75047751)
-// - /node_modules/nuxt3/dist/app/composables/component.mjs ($id_b47c3881)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/hookable/dist/index.mjs ($id_a2c811c4)
-// - /node_modules/nuxt3/dist/app/compat/legacy-app.mjs ($id_75047751)
-// --------------------
-const $id_bf77ef36 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/hookable/dist/index.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/compat/legacy-app.mjs");
-
-const NuxtPluginIndicator = "__nuxt_plugin";
-Object.defineProperty(__vite_ssr_exports__, "NuxtPluginIndicator", { enumerable: true, configurable: true, get(){ return NuxtPluginIndicator }});
-function createNuxtApp(options) {
-  const nuxtApp = {
-    provide: void 0,
-    globalName: "nuxt",
-    payload: __vite_ssr_import_0__.reactive({
-      data: {},
-      state: {},
-      _errors: {},
-      ...false ? window.__NUXT__ : { serverRendered: true }
-    }),
-    isHydrating: false,
-    _asyncDataPromises: {},
-    ...options
-  };
-  nuxtApp.hooks = __vite_ssr_import_1__.createHooks();
-  nuxtApp.hook = nuxtApp.hooks.hook;
-  nuxtApp.callHook = nuxtApp.hooks.callHook;
-  nuxtApp.provide = (name, value) => {
-    const $name = "$" + name;
-    defineGetter(nuxtApp, $name, value);
-    defineGetter(nuxtApp.vueApp.config.globalProperties, $name, value);
-  };
-  defineGetter(nuxtApp.vueApp, "$nuxt", nuxtApp);
-  defineGetter(nuxtApp.vueApp.config.globalProperties, "$nuxt", nuxtApp);
-  if (nuxtApp.ssrContext) {
-    nuxtApp.ssrContext.nuxt = nuxtApp;
-  }
-  if (true) {
-    nuxtApp.ssrContext = nuxtApp.ssrContext || {};
-    nuxtApp.ssrContext.payload = nuxtApp.payload;
-  }
-  if (true) {
-    nuxtApp.provide("config", options.ssrContext.runtimeConfig.private);
-    nuxtApp.payload.config = options.ssrContext.runtimeConfig.public;
-  } else {
-    nuxtApp.provide("config", __vite_ssr_import_0__.reactive(nuxtApp.payload.config));
-  }
-  return nuxtApp;
-}
-Object.defineProperty(__vite_ssr_exports__, "createNuxtApp", { enumerable: true, configurable: true, get(){ return createNuxtApp }});
-async function applyPlugin(nuxtApp, plugin) {
-  if (typeof plugin !== "function") {
-    return;
-  }
-  const { provide } = await callWithNuxt(nuxtApp, () => plugin(nuxtApp)) || {};
-  if (provide && typeof provide === "object") {
-    for (const key in provide) {
-      nuxtApp.provide(key, provide[key]);
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+import require$$0, { reactive, getCurrentInstance, ref, computed, defineComponent, resolveComponent, withCtx, createVNode, resolveDynamicComponent, openBlock, createBlock, useSSRContext, h, Transition, Suspense, createCommentVNode, shallowRef, defineAsyncComponent, createApp, mergeProps, createTextVNode } from "vue";
+import { ssrRenderComponent, ssrRenderVNode, ssrRenderSuspense, ssrRenderAttr, ssrRenderAttrs } from "vue/server-renderer";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import SwiperCore, { Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import "swiper/css/free-mode";
+import "swiper/css/thumbs";
+const entry$1 = (ctx) => Promise.resolve().then(function() {
+  return bootstrap$1;
+}).then((m) => m.default(ctx));
+function flatHooks(configHooks, hooks = {}, parentName) {
+  for (const key in configHooks) {
+    const subHook = configHooks[key];
+    const name = parentName ? `${parentName}:${key}` : key;
+    if (typeof subHook === "object" && subHook !== null) {
+      flatHooks(subHook, hooks, name);
+    } else if (typeof subHook === "function") {
+      hooks[name] = subHook;
     }
   }
+  return hooks;
 }
-Object.defineProperty(__vite_ssr_exports__, "applyPlugin", { enumerable: true, configurable: true, get(){ return applyPlugin }});
-async function applyPlugins(nuxtApp, plugins) {
-  for (const plugin of plugins) {
-    await applyPlugin(nuxtApp, plugin);
+function serialCaller(hooks, args) {
+  return hooks.reduce((promise, hookFn) => promise.then(() => hookFn.apply(void 0, args)), Promise.resolve(null));
+}
+function parallelCaller(hooks, args) {
+  return Promise.all(hooks.map((hook) => hook.apply(void 0, args)));
+}
+class Hookable {
+  constructor() {
+    this._hooks = {};
+    this._deprecatedHooks = {};
+    this.hook = this.hook.bind(this);
+    this.callHook = this.callHook.bind(this);
+    this.callHookWith = this.callHookWith.bind(this);
   }
-}
-Object.defineProperty(__vite_ssr_exports__, "applyPlugins", { enumerable: true, configurable: true, get(){ return applyPlugins }});
-function normalizePlugins(_plugins) {
-  let needsLegacyContext = false;
-  const plugins = _plugins.map((plugin) => {
-    if (typeof plugin !== "function") {
+  hook(name, fn) {
+    if (!name || typeof fn !== "function") {
       return () => {
       };
     }
-    if (isLegacyPlugin(plugin)) {
-      needsLegacyContext = true;
-      return (nuxtApp) => plugin(nuxtApp._legacyContext, nuxtApp.provide);
+    const originalName = name;
+    let deprecatedHookObj;
+    while (this._deprecatedHooks[name]) {
+      const deprecatedHook = this._deprecatedHooks[name];
+      if (typeof deprecatedHook === "string") {
+        deprecatedHookObj = { to: deprecatedHook };
+      } else {
+        deprecatedHookObj = deprecatedHook;
+      }
+      name = deprecatedHookObj.to;
     }
-    return plugin;
+    if (deprecatedHookObj) {
+      if (!deprecatedHookObj.message) {
+        console.warn(`${originalName} hook has been deprecated` + (deprecatedHookObj.to ? `, please use ${deprecatedHookObj.to}` : ""));
+      } else {
+        console.warn(deprecatedHookObj.message);
+      }
+    }
+    this._hooks[name] = this._hooks[name] || [];
+    this._hooks[name].push(fn);
+    return () => {
+      if (fn) {
+        this.removeHook(name, fn);
+        fn = null;
+      }
+    };
+  }
+  hookOnce(name, fn) {
+    let _unreg;
+    let _fn = (...args) => {
+      _unreg();
+      _unreg = null;
+      _fn = null;
+      return fn(...args);
+    };
+    _unreg = this.hook(name, _fn);
+    return _unreg;
+  }
+  removeHook(name, fn) {
+    if (this._hooks[name]) {
+      const idx = this._hooks[name].indexOf(fn);
+      if (idx !== -1) {
+        this._hooks[name].splice(idx, 1);
+      }
+      if (this._hooks[name].length === 0) {
+        delete this._hooks[name];
+      }
+    }
+  }
+  deprecateHook(name, deprecated) {
+    this._deprecatedHooks[name] = deprecated;
+  }
+  deprecateHooks(deprecatedHooks) {
+    Object.assign(this._deprecatedHooks, deprecatedHooks);
+  }
+  addHooks(configHooks) {
+    const hooks = flatHooks(configHooks);
+    const removeFns = Object.keys(hooks).map((key) => this.hook(key, hooks[key]));
+    return () => {
+      removeFns.splice(0, removeFns.length).forEach((unreg) => unreg());
+    };
+  }
+  removeHooks(configHooks) {
+    const hooks = flatHooks(configHooks);
+    for (const key in hooks) {
+      this.removeHook(key, hooks[key]);
+    }
+  }
+  callHook(name, ...args) {
+    return serialCaller(this._hooks[name] || [], args);
+  }
+  callHookParallel(name, ...args) {
+    return parallelCaller(this._hooks[name] || [], args);
+  }
+  callHookWith(caller, name, ...args) {
+    return caller(this._hooks[name] || [], args);
+  }
+}
+function createHooks() {
+  return new Hookable();
+}
+function createMock(name, overrides = {}) {
+  const fn = function() {
+  };
+  fn.prototype.name = name;
+  const props = {};
+  return new Proxy(fn, {
+    get(_target, prop) {
+      if (prop === "caller") {
+        return null;
+      }
+      if (prop === "__createMock__") {
+        return createMock;
+      }
+      if (prop in overrides) {
+        return overrides[prop];
+      }
+      return props[prop] = props[prop] || createMock(`${name}.${prop.toString()}`);
+    },
+    apply(_target, _this, _args) {
+      return createMock(`${name}()`);
+    },
+    construct(_target, _args, _newT) {
+      return createMock(`[${name}]`);
+    },
+    enumerate(_target) {
+      return [];
+    }
   });
-  if (needsLegacyContext) {
-    plugins.unshift(__vite_ssr_import_2__.legacyPlugin);
-  }
-  return plugins;
 }
-Object.defineProperty(__vite_ssr_exports__, "normalizePlugins", { enumerable: true, configurable: true, get(){ return normalizePlugins }});
-function defineNuxtPlugin(plugin) {
-  plugin[NuxtPluginIndicator] = true;
-  return plugin;
-}
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtPlugin", { enumerable: true, configurable: true, get(){ return defineNuxtPlugin }});
-function isLegacyPlugin(plugin) {
-  return !plugin[NuxtPluginIndicator];
-}
-Object.defineProperty(__vite_ssr_exports__, "isLegacyPlugin", { enumerable: true, configurable: true, get(){ return isLegacyPlugin }});
-let currentNuxtAppInstance;
-const setNuxtAppInstance = (nuxt) => {
-  currentNuxtAppInstance = nuxt;
-};
-Object.defineProperty(__vite_ssr_exports__, "setNuxtAppInstance", { enumerable: true, configurable: true, get(){ return setNuxtAppInstance }});
-function callWithNuxt(nuxt, setup) {
-  setNuxtAppInstance(nuxt);
-  const p = setup();
-  if (true) {
-    setNuxtAppInstance(null);
-  }
-  return p;
-}
-Object.defineProperty(__vite_ssr_exports__, "callWithNuxt", { enumerable: true, configurable: true, get(){ return callWithNuxt }});
-function useNuxtApp() {
-  const vm = __vite_ssr_import_0__.getCurrentInstance();
-  if (!vm) {
-    if (!currentNuxtAppInstance) {
-      throw new Error("nuxt instance unavailable");
-    }
-    return currentNuxtAppInstance;
-  }
-  return vm.appContext.app.$nuxt;
-}
-Object.defineProperty(__vite_ssr_exports__, "useNuxtApp", { enumerable: true, configurable: true, get(){ return useNuxtApp }});
-function useRuntimeConfig() {
-  return useNuxtApp().$config;
-}
-Object.defineProperty(__vite_ssr_exports__, "useRuntimeConfig", { enumerable: true, configurable: true, get(){ return useRuntimeConfig }});
-function defineGetter(obj, key, val) {
-  Object.defineProperty(obj, key, { get: () => val });
-}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/hookable/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// Dependencies: 
-
-// --------------------
-const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/hookable/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/hookable/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/compat/legacy-app.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// Dependencies: 
-// - /node_modules/unenv/runtime/mock/proxy.mjs ($id_39e12da7)
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// --------------------
-const $id_75047751 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/unenv/runtime/mock/proxy.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/nuxt.mjs");
-
+const mockContext = createMock("mock");
 function mock(warning) {
   console.warn(warning);
-  return __vite_ssr_import_0__.default;
+  return mockContext;
 }
 const unsupported = new Set([
   "store",
@@ -334,16 +194,11 @@ const todo = new Set([
   "beforeNuxtRender",
   "beforeSerialize"
 ]);
-const serverProperties = new Set([
-  "req",
-  "res",
-  "ssrContext"
-]);
 const routerKeys = ["route", "params", "query"];
 const staticFlags = {
   isClient: false,
   isServer: true,
-  isDev: true,
+  isDev: false,
   isStatic: void 0,
   target: "server",
   modern: false
@@ -370,13 +225,10 @@ const legacyPlugin = (nuxtApp) => {
         }
       }
       if (p === "$config" || p === "env") {
-        return __vite_ssr_import_1__.useRuntimeConfig();
+        return useRuntimeConfig();
       }
       if (p in staticFlags) {
         return staticFlags[p];
-      }
-      if (false && serverProperties.has(p)) {
-        return void 0;
       }
       if (p === "ssrContext") {
         return nuxt._legacyContext;
@@ -399,561 +251,1844 @@ const legacyPlugin = (nuxtApp) => {
       return mock(`Accessing ${p} is not supported in Nuxt3.`);
     }
   });
-  if (false) {
-    nuxtApp.hook("app:created", () => {
-      const legacyApp = { ...nuxtApp.vueApp };
-      legacyApp.$root = legacyApp;
-      legacyApp.constructor = legacyApp;
-      window[`$${nuxtApp.globalName}`] = legacyApp;
-    });
-  }
 };
-Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, configurable: true, get(){ return legacyPlugin }});
-;
+const NuxtPluginIndicator = "__nuxt_plugin";
+function createNuxtApp(options) {
+  const nuxtApp = __spreadValues({
+    provide: void 0,
+    globalName: "nuxt",
+    payload: reactive(__spreadValues({
+      data: {},
+      state: {},
+      _errors: {}
+    }, { serverRendered: true })),
+    isHydrating: false,
+    _asyncDataPromises: {}
+  }, options);
+  nuxtApp.hooks = createHooks();
+  nuxtApp.hook = nuxtApp.hooks.hook;
+  nuxtApp.callHook = nuxtApp.hooks.callHook;
+  nuxtApp.provide = (name, value) => {
+    const $name = "$" + name;
+    defineGetter(nuxtApp, $name, value);
+    defineGetter(nuxtApp.vueApp.config.globalProperties, $name, value);
+  };
+  defineGetter(nuxtApp.vueApp, "$nuxt", nuxtApp);
+  defineGetter(nuxtApp.vueApp.config.globalProperties, "$nuxt", nuxtApp);
+  if (nuxtApp.ssrContext) {
+    nuxtApp.ssrContext.nuxt = nuxtApp;
+  }
+  {
+    nuxtApp.ssrContext = nuxtApp.ssrContext || {};
+    nuxtApp.ssrContext.payload = nuxtApp.payload;
+  }
+  {
+    nuxtApp.provide("config", options.ssrContext.runtimeConfig.private);
+    nuxtApp.payload.config = options.ssrContext.runtimeConfig.public;
+  }
+  return nuxtApp;
 }
-
-
-// --------------------
-// Request: /node_modules/unenv/runtime/mock/proxy.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/compat/legacy-app.mjs ($id_75047751)
-// Dependencies: 
-
-// --------------------
-const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/composables/component.mjs ($id_b47c3881)
-// - /node_modules/nuxt3/dist/app/composables/asyncData.mjs ($id_a2ef143e)
-// - /node_modules/nuxt3/dist/app/composables/hydrate.mjs ($id_43a772c2)
-// - /node_modules/nuxt3/dist/app/composables/state.mjs ($id_d232db97)
-// - /node_modules/nuxt3/dist/app/composables/fetch.mjs ($id_765a0ed7)
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// - /node_modules/nuxt3/dist/app/composables/ssr.mjs ($id_4d0dc923)
-// --------------------
-const $id_42ae3d5d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/component.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.defineNuxtComponent }});
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/asyncData.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.useAsyncData }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.useLazyAsyncData }});
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/hydrate.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useHydration", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useHydration }});
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/state.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useState }});
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/fetch.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.useFetch }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.useLazyFetch }});
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/cookie.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.useCookie }});
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/ssr.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRequestHeaders }});
-;
+async function applyPlugin(nuxtApp, plugin) {
+  if (typeof plugin !== "function") {
+    return;
+  }
+  const { provide } = await callWithNuxt(nuxtApp, () => plugin(nuxtApp)) || {};
+  if (provide && typeof provide === "object") {
+    for (const key in provide) {
+      nuxtApp.provide(key, provide[key]);
+    }
+  }
 }
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/component.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
-// - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
-// - /node_modules/nuxt3/dist/app/composables/asyncData.mjs ($id_a2ef143e)
-// --------------------
-const $id_b47c3881 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-router/dist/vue-router.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/nuxt.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/asyncData.mjs");
-
-const NuxtComponentIndicator = "__nuxt_component";
-Object.defineProperty(__vite_ssr_exports__, "NuxtComponentIndicator", { enumerable: true, configurable: true, get(){ return NuxtComponentIndicator }});
-async function runLegacyAsyncData(res, fn) {
-  const nuxt = __vite_ssr_import_2__.useNuxtApp();
-  const route = __vite_ssr_import_1__.useRoute();
-  const vm = __vite_ssr_import_0__.getCurrentInstance();
-  const { fetchKey } = vm.proxy.$options;
-  const key = typeof fetchKey === "function" ? fetchKey(() => "") : fetchKey || route.fullPath;
-  const { data } = await __vite_ssr_import_3__.useAsyncData(`options:asyncdata:${key}`, () => fn(nuxt._legacyContext));
-  Object.assign(await res, __vite_ssr_import_0__.toRefs(data));
+async function applyPlugins(nuxtApp, plugins2) {
+  for (const plugin of plugins2) {
+    await applyPlugin(nuxtApp, plugin);
+  }
 }
-const defineNuxtComponent = function defineNuxtComponent2(options) {
-  const { setup } = options;
-  if (!setup && !options.asyncData) {
+function normalizePlugins(_plugins2) {
+  let needsLegacyContext = false;
+  const plugins2 = _plugins2.map((plugin) => {
+    if (typeof plugin !== "function") {
+      return () => {
+      };
+    }
+    if (isLegacyPlugin(plugin)) {
+      needsLegacyContext = true;
+      return (nuxtApp) => plugin(nuxtApp._legacyContext, nuxtApp.provide);
+    }
+    return plugin;
+  });
+  if (needsLegacyContext) {
+    plugins2.unshift(legacyPlugin);
+  }
+  return plugins2;
+}
+function defineNuxtPlugin(plugin) {
+  plugin[NuxtPluginIndicator] = true;
+  return plugin;
+}
+function isLegacyPlugin(plugin) {
+  return !plugin[NuxtPluginIndicator];
+}
+let currentNuxtAppInstance;
+const setNuxtAppInstance = (nuxt) => {
+  currentNuxtAppInstance = nuxt;
+};
+function callWithNuxt(nuxt, setup) {
+  setNuxtAppInstance(nuxt);
+  const p = setup();
+  {
+    setNuxtAppInstance(null);
+  }
+  return p;
+}
+function useNuxtApp() {
+  const vm = getCurrentInstance();
+  if (!vm) {
+    if (!currentNuxtAppInstance) {
+      throw new Error("nuxt instance unavailable");
+    }
+    return currentNuxtAppInstance;
+  }
+  return vm.appContext.app.$nuxt;
+}
+function useRuntimeConfig() {
+  return useNuxtApp().$config;
+}
+function defineGetter(obj, key, val) {
+  Object.defineProperty(obj, key, { get: () => val });
+}
+var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+var vueRouter_cjs_prod = {};
+/*!
+  * vue-router v4.0.12
+  * (c) 2021 Eduardo San Martin Morote
+  * @license MIT
+  */
+(function(exports) {
+  Object.defineProperty(exports, "__esModule", { value: true });
+  var vue = require$$0;
+  const hasSymbol = typeof Symbol === "function" && typeof Symbol.toStringTag === "symbol";
+  const PolySymbol = (name) => hasSymbol ? Symbol(name) : "_vr_" + name;
+  const matchedRouteKey = /* @__PURE__ */ PolySymbol("rvlm");
+  const viewDepthKey = /* @__PURE__ */ PolySymbol("rvd");
+  const routerKey = /* @__PURE__ */ PolySymbol("r");
+  const routeLocationKey = /* @__PURE__ */ PolySymbol("rl");
+  const routerViewLocationKey = /* @__PURE__ */ PolySymbol("rvl");
+  function isESModule(obj) {
+    return obj.__esModule || hasSymbol && obj[Symbol.toStringTag] === "Module";
+  }
+  const assign = Object.assign;
+  function applyToParams(fn, params) {
+    const newParams = {};
+    for (const key in params) {
+      const value = params[key];
+      newParams[key] = Array.isArray(value) ? value.map(fn) : fn(value);
+    }
+    return newParams;
+  }
+  const noop = () => {
+  };
+  const TRAILING_SLASH_RE2 = /\/$/;
+  const removeTrailingSlash = (path) => path.replace(TRAILING_SLASH_RE2, "");
+  function parseURL2(parseQuery3, location2, currentLocation = "/") {
+    let path, query = {}, searchString = "", hash = "";
+    const searchPos = location2.indexOf("?");
+    const hashPos = location2.indexOf("#", searchPos > -1 ? searchPos : 0);
+    if (searchPos > -1) {
+      path = location2.slice(0, searchPos);
+      searchString = location2.slice(searchPos + 1, hashPos > -1 ? hashPos : location2.length);
+      query = parseQuery3(searchString);
+    }
+    if (hashPos > -1) {
+      path = path || location2.slice(0, hashPos);
+      hash = location2.slice(hashPos, location2.length);
+    }
+    path = resolveRelativePath(path != null ? path : location2, currentLocation);
     return {
-      [NuxtComponentIndicator]: true,
-      ...options
+      fullPath: path + (searchString && "?") + searchString + hash,
+      path,
+      query,
+      hash
     };
   }
-  return {
-    [NuxtComponentIndicator]: true,
-    ...options,
-    setup(props, ctx) {
-      const res = setup?.(props, ctx) || {};
-      let promises = [];
-      promises = promises || [];
-      if (options.asyncData) {
-        promises.push(runLegacyAsyncData(res, options.asyncData));
-      }
-      return Promise.resolve(res).then(() => Promise.all(promises)).then(() => res).finally(() => {
-        promises.length = 0;
-        promises = null;
-      });
+  function stringifyURL(stringifyQuery3, location2) {
+    const query = location2.query ? stringifyQuery3(location2.query) : "";
+    return location2.path + (query && "?") + query + (location2.hash || "");
+  }
+  function stripBase(pathname, base) {
+    if (!base || !pathname.toLowerCase().startsWith(base.toLowerCase()))
+      return pathname;
+    return pathname.slice(base.length) || "/";
+  }
+  function isSameRouteLocation(stringifyQuery3, a, b) {
+    const aLastIndex = a.matched.length - 1;
+    const bLastIndex = b.matched.length - 1;
+    return aLastIndex > -1 && aLastIndex === bLastIndex && isSameRouteRecord(a.matched[aLastIndex], b.matched[bLastIndex]) && isSameRouteLocationParams(a.params, b.params) && stringifyQuery3(a.query) === stringifyQuery3(b.query) && a.hash === b.hash;
+  }
+  function isSameRouteRecord(a, b) {
+    return (a.aliasOf || a) === (b.aliasOf || b);
+  }
+  function isSameRouteLocationParams(a, b) {
+    if (Object.keys(a).length !== Object.keys(b).length)
+      return false;
+    for (const key in a) {
+      if (!isSameRouteLocationParamsValue(a[key], b[key]))
+        return false;
     }
-  };
-};
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return defineNuxtComponent }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/vue-router/dist/vue-router.cjs.js
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/component.mjs ($id_b47c3881)
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// Dependencies: 
-
-// --------------------
-const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/asyncData.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/component.mjs ($id_b47c3881)
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// - /node_modules/nuxt3/dist/app/composables/fetch.mjs ($id_765a0ed7)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_a2ef143e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const getDefault = () => null;
-function useAsyncData(key, handler, options = {}) {
-  if (typeof key !== "string") {
-    throw new TypeError("asyncData key must be a string");
+    return true;
   }
-  if (typeof handler !== "function") {
-    throw new TypeError("asyncData handler must be a function");
+  function isSameRouteLocationParamsValue(a, b) {
+    return Array.isArray(a) ? isEquivalentArray(a, b) : Array.isArray(b) ? isEquivalentArray(b, a) : a === b;
   }
-  options = { server: true, default: getDefault, ...options };
-  if (options.defer) {
-    console.warn("[useAsyncData] `defer` has been renamed to `lazy`. Support for `defer` will be removed in RC.");
+  function isEquivalentArray(a, b) {
+    return Array.isArray(b) ? a.length === b.length && a.every((value, i) => value === b[i]) : a.length === 1 && a[0] === b;
   }
-  options.lazy = options.lazy ?? options.defer ?? false;
-  const nuxt = __vite_ssr_import_1__.useNuxtApp();
-  const instance = __vite_ssr_import_0__.getCurrentInstance();
-  if (instance && !instance._nuxtOnBeforeMountCbs) {
-    const cbs = instance._nuxtOnBeforeMountCbs = [];
-    if (instance && false) {
-      __vite_ssr_import_0__.onBeforeMount(() => {
-        cbs.forEach((cb) => {
-          cb();
+  function resolveRelativePath(to, from) {
+    if (to.startsWith("/"))
+      return to;
+    if (!to)
+      return from;
+    const fromSegments = from.split("/");
+    const toSegments = to.split("/");
+    let position = fromSegments.length - 1;
+    let toPosition;
+    let segment;
+    for (toPosition = 0; toPosition < toSegments.length; toPosition++) {
+      segment = toSegments[toPosition];
+      if (position === 1 || segment === ".")
+        continue;
+      if (segment === "..")
+        position--;
+      else
+        break;
+    }
+    return fromSegments.slice(0, position).join("/") + "/" + toSegments.slice(toPosition - (toPosition === toSegments.length ? 1 : 0)).join("/");
+  }
+  var NavigationType;
+  (function(NavigationType2) {
+    NavigationType2["pop"] = "pop";
+    NavigationType2["push"] = "push";
+  })(NavigationType || (NavigationType = {}));
+  var NavigationDirection;
+  (function(NavigationDirection2) {
+    NavigationDirection2["back"] = "back";
+    NavigationDirection2["forward"] = "forward";
+    NavigationDirection2["unknown"] = "";
+  })(NavigationDirection || (NavigationDirection = {}));
+  const START = "";
+  function normalizeBase(base) {
+    if (!base) {
+      {
+        base = "/";
+      }
+    }
+    if (base[0] !== "/" && base[0] !== "#")
+      base = "/" + base;
+    return removeTrailingSlash(base);
+  }
+  const BEFORE_HASH_RE = /^[^#]+#/;
+  function createHref(base, location2) {
+    return base.replace(BEFORE_HASH_RE, "#") + location2;
+  }
+  const computeScrollPosition = () => ({
+    left: window.pageXOffset,
+    top: window.pageYOffset
+  });
+  let createBaseLocation = () => location.protocol + "//" + location.host;
+  function createCurrentLocation(base, location2) {
+    const { pathname, search, hash } = location2;
+    const hashPos = base.indexOf("#");
+    if (hashPos > -1) {
+      let slicePos = hash.includes(base.slice(hashPos)) ? base.slice(hashPos).length : 1;
+      let pathFromHash = hash.slice(slicePos);
+      if (pathFromHash[0] !== "/")
+        pathFromHash = "/" + pathFromHash;
+      return stripBase(pathFromHash, "");
+    }
+    const path = stripBase(pathname, base);
+    return path + search + hash;
+  }
+  function useHistoryListeners(base, historyState, currentLocation, replace) {
+    let listeners = [];
+    let teardowns = [];
+    let pauseState = null;
+    const popStateHandler = ({ state }) => {
+      const to = createCurrentLocation(base, location);
+      const from = currentLocation.value;
+      const fromState = historyState.value;
+      let delta = 0;
+      if (state) {
+        currentLocation.value = to;
+        historyState.value = state;
+        if (pauseState && pauseState === from) {
+          pauseState = null;
+          return;
+        }
+        delta = fromState ? state.position - fromState.position : 0;
+      } else {
+        replace(to);
+      }
+      listeners.forEach((listener) => {
+        listener(currentLocation.value, from, {
+          delta,
+          type: NavigationType.pop,
+          direction: delta ? delta > 0 ? NavigationDirection.forward : NavigationDirection.back : NavigationDirection.unknown
         });
-        cbs.splice(0, cbs.length);
       });
-      __vite_ssr_import_0__.onUnmounted(() => cbs.splice(0, cbs.length));
+    };
+    function pauseListeners() {
+      pauseState = currentLocation.value;
     }
+    function listen(callback) {
+      listeners.push(callback);
+      const teardown = () => {
+        const index2 = listeners.indexOf(callback);
+        if (index2 > -1)
+          listeners.splice(index2, 1);
+      };
+      teardowns.push(teardown);
+      return teardown;
+    }
+    function beforeUnloadListener() {
+      const { history: history2 } = window;
+      if (!history2.state)
+        return;
+      history2.replaceState(assign({}, history2.state, { scroll: computeScrollPosition() }), "");
+    }
+    function destroy() {
+      for (const teardown of teardowns)
+        teardown();
+      teardowns = [];
+      window.removeEventListener("popstate", popStateHandler);
+      window.removeEventListener("beforeunload", beforeUnloadListener);
+    }
+    window.addEventListener("popstate", popStateHandler);
+    window.addEventListener("beforeunload", beforeUnloadListener);
+    return {
+      pauseListeners,
+      listen,
+      destroy
+    };
   }
-  const asyncData = {
-    data: __vite_ssr_import_0__.ref(nuxt.payload.data[key] ?? options.default()),
-    pending: __vite_ssr_import_0__.ref(true),
-    error: __vite_ssr_import_0__.ref(nuxt.payload._errors[key] ?? null)
-  };
-  asyncData.refresh = (force) => {
-    if (nuxt._asyncDataPromises[key] && !force) {
-      return nuxt._asyncDataPromises[key];
+  function buildState(back, current, forward, replaced = false, computeScroll = false) {
+    return {
+      back,
+      current,
+      forward,
+      replaced,
+      position: window.history.length,
+      scroll: computeScroll ? computeScrollPosition() : null
+    };
+  }
+  function useHistoryStateNavigation(base) {
+    const { history: history2, location: location2 } = window;
+    const currentLocation = {
+      value: createCurrentLocation(base, location2)
+    };
+    const historyState = { value: history2.state };
+    if (!historyState.value) {
+      changeLocation(currentLocation.value, {
+        back: null,
+        current: currentLocation.value,
+        forward: null,
+        position: history2.length - 1,
+        replaced: true,
+        scroll: null
+      }, true);
     }
-    asyncData.pending.value = true;
-    nuxt._asyncDataPromises[key] = Promise.resolve(handler(nuxt)).then((result) => {
-      if (options.transform) {
-        result = options.transform(result);
+    function changeLocation(to, state, replace2) {
+      const hashIndex = base.indexOf("#");
+      const url = hashIndex > -1 ? (location2.host && document.querySelector("base") ? base : base.slice(hashIndex)) + to : createBaseLocation() + base + to;
+      try {
+        history2[replace2 ? "replaceState" : "pushState"](state, "", url);
+        historyState.value = state;
+      } catch (err) {
+        {
+          console.error(err);
+        }
+        location2[replace2 ? "replace" : "assign"](url);
       }
-      if (options.pick) {
-        result = pick(result, options.pick);
-      }
-      asyncData.data.value = result;
-      asyncData.error.value = null;
-    }).catch((error) => {
-      asyncData.error.value = error;
-      asyncData.data.value = options.default();
-    }).finally(() => {
-      asyncData.pending.value = false;
-      nuxt.payload.data[key] = asyncData.data.value;
-      if (asyncData.error.value) {
-        nuxt.payload._errors[key] = true;
-      }
-      delete nuxt._asyncDataPromises[key];
+    }
+    function replace(to, data) {
+      const state = assign({}, history2.state, buildState(historyState.value.back, to, historyState.value.forward, true), data, { position: historyState.value.position });
+      changeLocation(to, state, true);
+      currentLocation.value = to;
+    }
+    function push(to, data) {
+      const currentState = assign({}, historyState.value, history2.state, {
+        forward: to,
+        scroll: computeScrollPosition()
+      });
+      changeLocation(currentState.current, currentState, true);
+      const state = assign({}, buildState(currentLocation.value, to, null), { position: currentState.position + 1 }, data);
+      changeLocation(to, state, false);
+      currentLocation.value = to;
+    }
+    return {
+      location: currentLocation,
+      state: historyState,
+      push,
+      replace
+    };
+  }
+  function createWebHistory(base) {
+    base = normalizeBase(base);
+    const historyNavigation = useHistoryStateNavigation(base);
+    const historyListeners = useHistoryListeners(base, historyNavigation.state, historyNavigation.location, historyNavigation.replace);
+    function go(delta, triggerListeners = true) {
+      if (!triggerListeners)
+        historyListeners.pauseListeners();
+      history.go(delta);
+    }
+    const routerHistory = assign({
+      location: "",
+      base,
+      go,
+      createHref: createHref.bind(null, base)
+    }, historyNavigation, historyListeners);
+    Object.defineProperty(routerHistory, "location", {
+      enumerable: true,
+      get: () => historyNavigation.location.value
     });
-    return nuxt._asyncDataPromises[key];
-  };
-  const fetchOnServer = options.server !== false && nuxt.payload.serverRendered;
-  if (true && fetchOnServer) {
-    const promise = asyncData.refresh();
-    __vite_ssr_import_0__.onServerPrefetch(() => promise);
+    Object.defineProperty(routerHistory, "state", {
+      enumerable: true,
+      get: () => historyNavigation.state.value
+    });
+    return routerHistory;
   }
-  if (false) {
-    if (fetchOnServer && nuxt.isHydrating) {
-      asyncData.pending.value = false;
-    } else if (instance && (nuxt.isHydrating || options.lazy)) {
-      instance._nuxtOnBeforeMountCbs.push(asyncData.refresh);
+  function createMemoryHistory(base = "") {
+    let listeners = [];
+    let queue = [START];
+    let position = 0;
+    base = normalizeBase(base);
+    function setLocation(location2) {
+      position++;
+      if (position === queue.length) {
+        queue.push(location2);
+      } else {
+        queue.splice(position);
+        queue.push(location2);
+      }
+    }
+    function triggerListeners(to, from, { direction, delta }) {
+      const info = {
+        direction,
+        delta,
+        type: NavigationType.pop
+      };
+      for (const callback of listeners) {
+        callback(to, from, info);
+      }
+    }
+    const routerHistory = {
+      location: START,
+      state: {},
+      base,
+      createHref: createHref.bind(null, base),
+      replace(to) {
+        queue.splice(position--, 1);
+        setLocation(to);
+      },
+      push(to, data) {
+        setLocation(to);
+      },
+      listen(callback) {
+        listeners.push(callback);
+        return () => {
+          const index2 = listeners.indexOf(callback);
+          if (index2 > -1)
+            listeners.splice(index2, 1);
+        };
+      },
+      destroy() {
+        listeners = [];
+        queue = [START];
+        position = 0;
+      },
+      go(delta, shouldTrigger = true) {
+        const from = this.location;
+        const direction = delta < 0 ? NavigationDirection.back : NavigationDirection.forward;
+        position = Math.max(0, Math.min(position + delta, queue.length - 1));
+        if (shouldTrigger) {
+          triggerListeners(this.location, from, {
+            direction,
+            delta
+          });
+        }
+      }
+    };
+    Object.defineProperty(routerHistory, "location", {
+      enumerable: true,
+      get: () => queue[position]
+    });
+    return routerHistory;
+  }
+  function createWebHashHistory(base) {
+    base = location.host ? base || location.pathname + location.search : "";
+    if (!base.includes("#"))
+      base += "#";
+    return createWebHistory(base);
+  }
+  function isRouteLocation(route) {
+    return typeof route === "string" || route && typeof route === "object";
+  }
+  function isRouteName(name) {
+    return typeof name === "string" || typeof name === "symbol";
+  }
+  const START_LOCATION_NORMALIZED = {
+    path: "/",
+    name: void 0,
+    params: {},
+    query: {},
+    hash: "",
+    fullPath: "/",
+    matched: [],
+    meta: {},
+    redirectedFrom: void 0
+  };
+  const NavigationFailureSymbol = /* @__PURE__ */ PolySymbol("nf");
+  exports.NavigationFailureType = void 0;
+  (function(NavigationFailureType) {
+    NavigationFailureType[NavigationFailureType["aborted"] = 4] = "aborted";
+    NavigationFailureType[NavigationFailureType["cancelled"] = 8] = "cancelled";
+    NavigationFailureType[NavigationFailureType["duplicated"] = 16] = "duplicated";
+  })(exports.NavigationFailureType || (exports.NavigationFailureType = {}));
+  const ErrorTypeMessages = {
+    [1]({ location: location2, currentLocation }) {
+      return `No match for
+ ${JSON.stringify(location2)}${currentLocation ? "\nwhile being at\n" + JSON.stringify(currentLocation) : ""}`;
+    },
+    [2]({ from, to }) {
+      return `Redirected from "${from.fullPath}" to "${stringifyRoute(to)}" via a navigation guard.`;
+    },
+    [4]({ from, to }) {
+      return `Navigation aborted from "${from.fullPath}" to "${to.fullPath}" via a navigation guard.`;
+    },
+    [8]({ from, to }) {
+      return `Navigation cancelled from "${from.fullPath}" to "${to.fullPath}" with a new navigation.`;
+    },
+    [16]({ from, to }) {
+      return `Avoided redundant navigation to current location: "${from.fullPath}".`;
+    }
+  };
+  function createRouterError(type, params) {
+    {
+      return assign(new Error(ErrorTypeMessages[type](params)), {
+        type,
+        [NavigationFailureSymbol]: true
+      }, params);
+    }
+  }
+  function isNavigationFailure(error, type) {
+    return error instanceof Error && NavigationFailureSymbol in error && (type == null || !!(error.type & type));
+  }
+  const propertiesToLog = ["params", "query", "hash"];
+  function stringifyRoute(to) {
+    if (typeof to === "string")
+      return to;
+    if ("path" in to)
+      return to.path;
+    const location2 = {};
+    for (const key of propertiesToLog) {
+      if (key in to)
+        location2[key] = to[key];
+    }
+    return JSON.stringify(location2, null, 2);
+  }
+  const BASE_PARAM_PATTERN = "[^/]+?";
+  const BASE_PATH_PARSER_OPTIONS = {
+    sensitive: false,
+    strict: false,
+    start: true,
+    end: true
+  };
+  const REGEX_CHARS_RE = /[.+*?^${}()[\]/\\]/g;
+  function tokensToParser(segments, extraOptions) {
+    const options = assign({}, BASE_PATH_PARSER_OPTIONS, extraOptions);
+    const score = [];
+    let pattern = options.start ? "^" : "";
+    const keys = [];
+    for (const segment of segments) {
+      const segmentScores = segment.length ? [] : [90];
+      if (options.strict && !segment.length)
+        pattern += "/";
+      for (let tokenIndex = 0; tokenIndex < segment.length; tokenIndex++) {
+        const token = segment[tokenIndex];
+        let subSegmentScore = 40 + (options.sensitive ? 0.25 : 0);
+        if (token.type === 0) {
+          if (!tokenIndex)
+            pattern += "/";
+          pattern += token.value.replace(REGEX_CHARS_RE, "\\$&");
+          subSegmentScore += 40;
+        } else if (token.type === 1) {
+          const { value, repeatable, optional, regexp } = token;
+          keys.push({
+            name: value,
+            repeatable,
+            optional
+          });
+          const re2 = regexp ? regexp : BASE_PARAM_PATTERN;
+          if (re2 !== BASE_PARAM_PATTERN) {
+            subSegmentScore += 10;
+            try {
+              new RegExp(`(${re2})`);
+            } catch (err) {
+              throw new Error(`Invalid custom RegExp for param "${value}" (${re2}): ` + err.message);
+            }
+          }
+          let subPattern = repeatable ? `((?:${re2})(?:/(?:${re2}))*)` : `(${re2})`;
+          if (!tokenIndex)
+            subPattern = optional && segment.length < 2 ? `(?:/${subPattern})` : "/" + subPattern;
+          if (optional)
+            subPattern += "?";
+          pattern += subPattern;
+          subSegmentScore += 20;
+          if (optional)
+            subSegmentScore += -8;
+          if (repeatable)
+            subSegmentScore += -20;
+          if (re2 === ".*")
+            subSegmentScore += -50;
+        }
+        segmentScores.push(subSegmentScore);
+      }
+      score.push(segmentScores);
+    }
+    if (options.strict && options.end) {
+      const i = score.length - 1;
+      score[i][score[i].length - 1] += 0.7000000000000001;
+    }
+    if (!options.strict)
+      pattern += "/?";
+    if (options.end)
+      pattern += "$";
+    else if (options.strict)
+      pattern += "(?:/|$)";
+    const re = new RegExp(pattern, options.sensitive ? "" : "i");
+    function parse(path) {
+      const match = path.match(re);
+      const params = {};
+      if (!match)
+        return null;
+      for (let i = 1; i < match.length; i++) {
+        const value = match[i] || "";
+        const key = keys[i - 1];
+        params[key.name] = value && key.repeatable ? value.split("/") : value;
+      }
+      return params;
+    }
+    function stringify(params) {
+      let path = "";
+      let avoidDuplicatedSlash = false;
+      for (const segment of segments) {
+        if (!avoidDuplicatedSlash || !path.endsWith("/"))
+          path += "/";
+        avoidDuplicatedSlash = false;
+        for (const token of segment) {
+          if (token.type === 0) {
+            path += token.value;
+          } else if (token.type === 1) {
+            const { value, repeatable, optional } = token;
+            const param = value in params ? params[value] : "";
+            if (Array.isArray(param) && !repeatable)
+              throw new Error(`Provided param "${value}" is an array but it is not repeatable (* or + modifiers)`);
+            const text = Array.isArray(param) ? param.join("/") : param;
+            if (!text) {
+              if (optional) {
+                if (segment.length < 2) {
+                  if (path.endsWith("/"))
+                    path = path.slice(0, -1);
+                  else
+                    avoidDuplicatedSlash = true;
+                }
+              } else
+                throw new Error(`Missing required param "${value}"`);
+            }
+            path += text;
+          }
+        }
+      }
+      return path;
+    }
+    return {
+      re,
+      score,
+      keys,
+      parse,
+      stringify
+    };
+  }
+  function compareScoreArray(a, b) {
+    let i = 0;
+    while (i < a.length && i < b.length) {
+      const diff = b[i] - a[i];
+      if (diff)
+        return diff;
+      i++;
+    }
+    if (a.length < b.length) {
+      return a.length === 1 && a[0] === 40 + 40 ? -1 : 1;
+    } else if (a.length > b.length) {
+      return b.length === 1 && b[0] === 40 + 40 ? 1 : -1;
+    }
+    return 0;
+  }
+  function comparePathParserScore(a, b) {
+    let i = 0;
+    const aScore = a.score;
+    const bScore = b.score;
+    while (i < aScore.length && i < bScore.length) {
+      const comp = compareScoreArray(aScore[i], bScore[i]);
+      if (comp)
+        return comp;
+      i++;
+    }
+    return bScore.length - aScore.length;
+  }
+  const ROOT_TOKEN = {
+    type: 0,
+    value: ""
+  };
+  const VALID_PARAM_RE = /[a-zA-Z0-9_]/;
+  function tokenizePath(path) {
+    if (!path)
+      return [[]];
+    if (path === "/")
+      return [[ROOT_TOKEN]];
+    if (!path.startsWith("/")) {
+      throw new Error(`Invalid path "${path}"`);
+    }
+    function crash(message) {
+      throw new Error(`ERR (${state})/"${buffer}": ${message}`);
+    }
+    let state = 0;
+    let previousState = state;
+    const tokens = [];
+    let segment;
+    function finalizeSegment() {
+      if (segment)
+        tokens.push(segment);
+      segment = [];
+    }
+    let i = 0;
+    let char;
+    let buffer = "";
+    let customRe = "";
+    function consumeBuffer() {
+      if (!buffer)
+        return;
+      if (state === 0) {
+        segment.push({
+          type: 0,
+          value: buffer
+        });
+      } else if (state === 1 || state === 2 || state === 3) {
+        if (segment.length > 1 && (char === "*" || char === "+"))
+          crash(`A repeatable param (${buffer}) must be alone in its segment. eg: '/:ids+.`);
+        segment.push({
+          type: 1,
+          value: buffer,
+          regexp: customRe,
+          repeatable: char === "*" || char === "+",
+          optional: char === "*" || char === "?"
+        });
+      } else {
+        crash("Invalid state to consume buffer");
+      }
+      buffer = "";
+    }
+    function addCharToBuffer() {
+      buffer += char;
+    }
+    while (i < path.length) {
+      char = path[i++];
+      if (char === "\\" && state !== 2) {
+        previousState = state;
+        state = 4;
+        continue;
+      }
+      switch (state) {
+        case 0:
+          if (char === "/") {
+            if (buffer) {
+              consumeBuffer();
+            }
+            finalizeSegment();
+          } else if (char === ":") {
+            consumeBuffer();
+            state = 1;
+          } else {
+            addCharToBuffer();
+          }
+          break;
+        case 4:
+          addCharToBuffer();
+          state = previousState;
+          break;
+        case 1:
+          if (char === "(") {
+            state = 2;
+          } else if (VALID_PARAM_RE.test(char)) {
+            addCharToBuffer();
+          } else {
+            consumeBuffer();
+            state = 0;
+            if (char !== "*" && char !== "?" && char !== "+")
+              i--;
+          }
+          break;
+        case 2:
+          if (char === ")") {
+            if (customRe[customRe.length - 1] == "\\")
+              customRe = customRe.slice(0, -1) + char;
+            else
+              state = 3;
+          } else {
+            customRe += char;
+          }
+          break;
+        case 3:
+          consumeBuffer();
+          state = 0;
+          if (char !== "*" && char !== "?" && char !== "+")
+            i--;
+          customRe = "";
+          break;
+        default:
+          crash("Unknown state");
+          break;
+      }
+    }
+    if (state === 2)
+      crash(`Unfinished custom RegExp for param "${buffer}"`);
+    consumeBuffer();
+    finalizeSegment();
+    return tokens;
+  }
+  function createRouteRecordMatcher(record, parent, options) {
+    const parser = tokensToParser(tokenizePath(record.path), options);
+    const matcher = assign(parser, {
+      record,
+      parent,
+      children: [],
+      alias: []
+    });
+    if (parent) {
+      if (!matcher.record.aliasOf === !parent.record.aliasOf)
+        parent.children.push(matcher);
+    }
+    return matcher;
+  }
+  function createRouterMatcher(routes2, globalOptions) {
+    const matchers = [];
+    const matcherMap = new Map();
+    globalOptions = mergeOptions({ strict: false, end: true, sensitive: false }, globalOptions);
+    function getRecordMatcher(name) {
+      return matcherMap.get(name);
+    }
+    function addRoute(record, parent, originalRecord) {
+      const isRootAdd = !originalRecord;
+      const mainNormalizedRecord = normalizeRouteRecord(record);
+      mainNormalizedRecord.aliasOf = originalRecord && originalRecord.record;
+      const options = mergeOptions(globalOptions, record);
+      const normalizedRecords = [
+        mainNormalizedRecord
+      ];
+      if ("alias" in record) {
+        const aliases = typeof record.alias === "string" ? [record.alias] : record.alias;
+        for (const alias of aliases) {
+          normalizedRecords.push(assign({}, mainNormalizedRecord, {
+            components: originalRecord ? originalRecord.record.components : mainNormalizedRecord.components,
+            path: alias,
+            aliasOf: originalRecord ? originalRecord.record : mainNormalizedRecord
+          }));
+        }
+      }
+      let matcher;
+      let originalMatcher;
+      for (const normalizedRecord of normalizedRecords) {
+        const { path } = normalizedRecord;
+        if (parent && path[0] !== "/") {
+          const parentPath = parent.record.path;
+          const connectingSlash = parentPath[parentPath.length - 1] === "/" ? "" : "/";
+          normalizedRecord.path = parent.record.path + (path && connectingSlash + path);
+        }
+        matcher = createRouteRecordMatcher(normalizedRecord, parent, options);
+        if (originalRecord) {
+          originalRecord.alias.push(matcher);
+        } else {
+          originalMatcher = originalMatcher || matcher;
+          if (originalMatcher !== matcher)
+            originalMatcher.alias.push(matcher);
+          if (isRootAdd && record.name && !isAliasRecord(matcher))
+            removeRoute(record.name);
+        }
+        if ("children" in mainNormalizedRecord) {
+          const children = mainNormalizedRecord.children;
+          for (let i = 0; i < children.length; i++) {
+            addRoute(children[i], matcher, originalRecord && originalRecord.children[i]);
+          }
+        }
+        originalRecord = originalRecord || matcher;
+        insertMatcher(matcher);
+      }
+      return originalMatcher ? () => {
+        removeRoute(originalMatcher);
+      } : noop;
+    }
+    function removeRoute(matcherRef) {
+      if (isRouteName(matcherRef)) {
+        const matcher = matcherMap.get(matcherRef);
+        if (matcher) {
+          matcherMap.delete(matcherRef);
+          matchers.splice(matchers.indexOf(matcher), 1);
+          matcher.children.forEach(removeRoute);
+          matcher.alias.forEach(removeRoute);
+        }
+      } else {
+        const index2 = matchers.indexOf(matcherRef);
+        if (index2 > -1) {
+          matchers.splice(index2, 1);
+          if (matcherRef.record.name)
+            matcherMap.delete(matcherRef.record.name);
+          matcherRef.children.forEach(removeRoute);
+          matcherRef.alias.forEach(removeRoute);
+        }
+      }
+    }
+    function getRoutes() {
+      return matchers;
+    }
+    function insertMatcher(matcher) {
+      let i = 0;
+      while (i < matchers.length && comparePathParserScore(matcher, matchers[i]) >= 0)
+        i++;
+      matchers.splice(i, 0, matcher);
+      if (matcher.record.name && !isAliasRecord(matcher))
+        matcherMap.set(matcher.record.name, matcher);
+    }
+    function resolve(location2, currentLocation) {
+      let matcher;
+      let params = {};
+      let path;
+      let name;
+      if ("name" in location2 && location2.name) {
+        matcher = matcherMap.get(location2.name);
+        if (!matcher)
+          throw createRouterError(1, {
+            location: location2
+          });
+        name = matcher.record.name;
+        params = assign(paramsFromLocation(currentLocation.params, matcher.keys.filter((k) => !k.optional).map((k) => k.name)), location2.params);
+        path = matcher.stringify(params);
+      } else if ("path" in location2) {
+        path = location2.path;
+        matcher = matchers.find((m) => m.re.test(path));
+        if (matcher) {
+          params = matcher.parse(path);
+          name = matcher.record.name;
+        }
+      } else {
+        matcher = currentLocation.name ? matcherMap.get(currentLocation.name) : matchers.find((m) => m.re.test(currentLocation.path));
+        if (!matcher)
+          throw createRouterError(1, {
+            location: location2,
+            currentLocation
+          });
+        name = matcher.record.name;
+        params = assign({}, currentLocation.params, location2.params);
+        path = matcher.stringify(params);
+      }
+      const matched = [];
+      let parentMatcher = matcher;
+      while (parentMatcher) {
+        matched.unshift(parentMatcher.record);
+        parentMatcher = parentMatcher.parent;
+      }
+      return {
+        name,
+        path,
+        params,
+        matched,
+        meta: mergeMetaFields(matched)
+      };
+    }
+    routes2.forEach((route) => addRoute(route));
+    return { addRoute, resolve, removeRoute, getRoutes, getRecordMatcher };
+  }
+  function paramsFromLocation(params, keys) {
+    const newParams = {};
+    for (const key of keys) {
+      if (key in params)
+        newParams[key] = params[key];
+    }
+    return newParams;
+  }
+  function normalizeRouteRecord(record) {
+    return {
+      path: record.path,
+      redirect: record.redirect,
+      name: record.name,
+      meta: record.meta || {},
+      aliasOf: void 0,
+      beforeEnter: record.beforeEnter,
+      props: normalizeRecordProps(record),
+      children: record.children || [],
+      instances: {},
+      leaveGuards: new Set(),
+      updateGuards: new Set(),
+      enterCallbacks: {},
+      components: "components" in record ? record.components || {} : { default: record.component }
+    };
+  }
+  function normalizeRecordProps(record) {
+    const propsObject = {};
+    const props = record.props || false;
+    if ("component" in record) {
+      propsObject.default = props;
     } else {
-      asyncData.refresh();
+      for (const name in record.components)
+        propsObject[name] = typeof props === "boolean" ? props : props[name];
     }
+    return propsObject;
   }
-  const asyncDataPromise = Promise.resolve(nuxt._asyncDataPromises[key]).then(() => asyncData);
-  Object.assign(asyncDataPromise, asyncData);
-  return asyncDataPromise;
-}
-Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return useAsyncData }});
-function useLazyAsyncData(key, handler, options = {}) {
-  return useAsyncData(key, handler, { ...options, lazy: true });
-}
-Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return useLazyAsyncData }});
-function pick(obj, keys) {
-  const newObj = {};
-  for (const key of keys) {
-    newObj[key] = obj[key];
-  }
-  return newObj;
-}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/hydrate.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_43a772c2 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const useHydration = (key, get, set) => {
-  const nuxt = __vite_ssr_import_0__.useNuxtApp();
-  if (true) {
-    nuxt.hooks.hook("app:rendered", () => {
-      nuxt.payload[key] = get();
-    });
-  }
-  if (false) {
-    nuxt.hooks.hook("app:created", () => {
-      set(nuxt.payload[key]);
-    });
-  }
-};
-Object.defineProperty(__vite_ssr_exports__, "useHydration", { enumerable: true, configurable: true, get(){ return useHydration }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/state.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_d232db97 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const useState = (key, init) => {
-  const nuxt = __vite_ssr_import_1__.useNuxtApp();
-  const state = __vite_ssr_import_0__.toRef(nuxt.payload.state, key);
-  if (state.value === void 0 && init) {
-    state.value = init();
-  }
-  return state;
-};
-Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return useState }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/fetch.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/murmurhash-es/dist/index.mjs ($id_fbf6dac3)
-// - /node_modules/nuxt3/dist/app/composables/asyncData.mjs ($id_a2ef143e)
-// --------------------
-const $id_765a0ed7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/murmurhash-es/dist/index.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/asyncData.mjs");
-
-function useFetch(url, opts = {}) {
-  if (!opts.key) {
-    const keys = { u: url };
-    if (opts.baseURL) {
-      keys.b = opts.baseURL;
+  function isAliasRecord(record) {
+    while (record) {
+      if (record.record.aliasOf)
+        return true;
+      record = record.parent;
     }
-    if (opts.method && opts.method.toLowerCase() !== "get") {
-      keys.m = opts.method.toLowerCase();
-    }
-    if (opts.params) {
-      keys.p = opts.params;
-    }
-    opts.key = generateKey(keys);
+    return false;
   }
-  return __vite_ssr_import_1__.useAsyncData(opts.key, () => $fetch(url, opts), opts);
-}
-Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return useFetch }});
-function useLazyFetch(url, opts = {}) {
-  return useFetch(url, { ...opts, lazy: true });
-}
-Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return useLazyFetch }});
-function generateKey(keys) {
-  return "$f" + __vite_ssr_import_0__.murmurHashV3(JSON.stringify(keys));
-}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/murmurhash-es/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/fetch.mjs ($id_765a0ed7)
-// Dependencies: 
-
-// --------------------
-const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/cookie.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/cookie-es/dist/index.mjs ($id_f4975261)
-// - /node_modules/h3/dist/index.mjs ($id_57d7ded6)
-// - /node_modules/destr/dist/index.mjs ($id_03d15ecd)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_792d64c4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/cookie-es/dist/index.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/h3/dist/index.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/destr/dist/index.mjs");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const CookieDefaults = {
-  decode: (val) => __vite_ssr_import_3__.default(decodeURIComponent(val)),
-  encode: (val) => encodeURIComponent(typeof val === "string" ? val : JSON.stringify(val))
-};
-function useCookie(name, _opts) {
-  const opts = { ...CookieDefaults, ..._opts };
-  const cookies = readRawCookies(opts);
-  const cookie = __vite_ssr_import_0__.ref(cookies[name] ?? opts.default?.());
-  if (false) {
-    __vite_ssr_import_0__.watch(cookie, () => {
-      writeClientCookie(name, cookie.value, opts);
-    });
-  } else if (true) {
-    const initialValue = cookie.value;
-    const nuxtApp = __vite_ssr_import_4__.useNuxtApp();
-    nuxtApp.hooks.hookOnce("app:rendered", () => {
-      if (cookie.value !== initialValue) {
-        writeServerCookie(useSSRRes(nuxtApp), name, cookie.value, opts);
+  function mergeMetaFields(matched) {
+    return matched.reduce((meta, record) => assign(meta, record.meta), {});
+  }
+  function mergeOptions(defaults, partialOptions) {
+    const options = {};
+    for (const key in defaults) {
+      options[key] = key in partialOptions ? partialOptions[key] : defaults[key];
+    }
+    return options;
+  }
+  const HASH_RE2 = /#/g;
+  const AMPERSAND_RE2 = /&/g;
+  const SLASH_RE = /\//g;
+  const EQUAL_RE2 = /=/g;
+  const IM_RE = /\?/g;
+  const PLUS_RE2 = /\+/g;
+  const ENC_BRACKET_OPEN_RE2 = /%5B/g;
+  const ENC_BRACKET_CLOSE_RE2 = /%5D/g;
+  const ENC_CARET_RE2 = /%5E/g;
+  const ENC_BACKTICK_RE2 = /%60/g;
+  const ENC_CURLY_OPEN_RE2 = /%7B/g;
+  const ENC_PIPE_RE2 = /%7C/g;
+  const ENC_CURLY_CLOSE_RE2 = /%7D/g;
+  const ENC_SPACE_RE2 = /%20/g;
+  function commonEncode(text) {
+    return encodeURI("" + text).replace(ENC_PIPE_RE2, "|").replace(ENC_BRACKET_OPEN_RE2, "[").replace(ENC_BRACKET_CLOSE_RE2, "]");
+  }
+  function encodeHash(text) {
+    return commonEncode(text).replace(ENC_CURLY_OPEN_RE2, "{").replace(ENC_CURLY_CLOSE_RE2, "}").replace(ENC_CARET_RE2, "^");
+  }
+  function encodeQueryValue2(text) {
+    return commonEncode(text).replace(PLUS_RE2, "%2B").replace(ENC_SPACE_RE2, "+").replace(HASH_RE2, "%23").replace(AMPERSAND_RE2, "%26").replace(ENC_BACKTICK_RE2, "`").replace(ENC_CURLY_OPEN_RE2, "{").replace(ENC_CURLY_CLOSE_RE2, "}").replace(ENC_CARET_RE2, "^");
+  }
+  function encodeQueryKey2(text) {
+    return encodeQueryValue2(text).replace(EQUAL_RE2, "%3D");
+  }
+  function encodePath(text) {
+    return commonEncode(text).replace(HASH_RE2, "%23").replace(IM_RE, "%3F");
+  }
+  function encodeParam(text) {
+    return text == null ? "" : encodePath(text).replace(SLASH_RE, "%2F");
+  }
+  function decode2(text) {
+    try {
+      return decodeURIComponent("" + text);
+    } catch (err) {
+    }
+    return "" + text;
+  }
+  function parseQuery2(search) {
+    const query = {};
+    if (search === "" || search === "?")
+      return query;
+    const hasLeadingIM = search[0] === "?";
+    const searchParams = (hasLeadingIM ? search.slice(1) : search).split("&");
+    for (let i = 0; i < searchParams.length; ++i) {
+      const searchParam = searchParams[i].replace(PLUS_RE2, " ");
+      const eqPos = searchParam.indexOf("=");
+      const key = decode2(eqPos < 0 ? searchParam : searchParam.slice(0, eqPos));
+      const value = eqPos < 0 ? null : decode2(searchParam.slice(eqPos + 1));
+      if (key in query) {
+        let currentValue = query[key];
+        if (!Array.isArray(currentValue)) {
+          currentValue = query[key] = [currentValue];
+        }
+        currentValue.push(value);
+      } else {
+        query[key] = value;
       }
+    }
+    return query;
+  }
+  function stringifyQuery2(query) {
+    let search = "";
+    for (let key in query) {
+      const value = query[key];
+      key = encodeQueryKey2(key);
+      if (value == null) {
+        if (value !== void 0) {
+          search += (search.length ? "&" : "") + key;
+        }
+        continue;
+      }
+      const values = Array.isArray(value) ? value.map((v) => v && encodeQueryValue2(v)) : [value && encodeQueryValue2(value)];
+      values.forEach((value2) => {
+        if (value2 !== void 0) {
+          search += (search.length ? "&" : "") + key;
+          if (value2 != null)
+            search += "=" + value2;
+        }
+      });
+    }
+    return search;
+  }
+  function normalizeQuery(query) {
+    const normalizedQuery = {};
+    for (const key in query) {
+      const value = query[key];
+      if (value !== void 0) {
+        normalizedQuery[key] = Array.isArray(value) ? value.map((v) => v == null ? null : "" + v) : value == null ? value : "" + value;
+      }
+    }
+    return normalizedQuery;
+  }
+  function useCallbacks() {
+    let handlers = [];
+    function add(handler) {
+      handlers.push(handler);
+      return () => {
+        const i = handlers.indexOf(handler);
+        if (i > -1)
+          handlers.splice(i, 1);
+      };
+    }
+    function reset() {
+      handlers = [];
+    }
+    return {
+      add,
+      list: () => handlers,
+      reset
+    };
+  }
+  function registerGuard(record, name, guard) {
+    const removeFromList = () => {
+      record[name].delete(guard);
+    };
+    vue.onUnmounted(removeFromList);
+    vue.onDeactivated(removeFromList);
+    vue.onActivated(() => {
+      record[name].add(guard);
+    });
+    record[name].add(guard);
+  }
+  function onBeforeRouteLeave(leaveGuard) {
+    const activeRecord = vue.inject(matchedRouteKey, {}).value;
+    if (!activeRecord) {
+      return;
+    }
+    registerGuard(activeRecord, "leaveGuards", leaveGuard);
+  }
+  function onBeforeRouteUpdate(updateGuard) {
+    const activeRecord = vue.inject(matchedRouteKey, {}).value;
+    if (!activeRecord) {
+      return;
+    }
+    registerGuard(activeRecord, "updateGuards", updateGuard);
+  }
+  function guardToPromiseFn(guard, to, from, record, name) {
+    const enterCallbackArray = record && (record.enterCallbacks[name] = record.enterCallbacks[name] || []);
+    return () => new Promise((resolve, reject) => {
+      const next = (valid) => {
+        if (valid === false)
+          reject(createRouterError(4, {
+            from,
+            to
+          }));
+        else if (valid instanceof Error) {
+          reject(valid);
+        } else if (isRouteLocation(valid)) {
+          reject(createRouterError(2, {
+            from: to,
+            to: valid
+          }));
+        } else {
+          if (enterCallbackArray && record.enterCallbacks[name] === enterCallbackArray && typeof valid === "function")
+            enterCallbackArray.push(valid);
+          resolve();
+        }
+      };
+      const guardReturn = guard.call(record && record.instances[name], to, from, next);
+      let guardCall = Promise.resolve(guardReturn);
+      if (guard.length < 3)
+        guardCall = guardCall.then(next);
+      guardCall.catch((err) => reject(err));
     });
   }
-  return cookie;
+  function extractComponentsGuards(matched, guardType, to, from) {
+    const guards = [];
+    for (const record of matched) {
+      for (const name in record.components) {
+        let rawComponent = record.components[name];
+        if (guardType !== "beforeRouteEnter" && !record.instances[name])
+          continue;
+        if (isRouteComponent(rawComponent)) {
+          const options = rawComponent.__vccOpts || rawComponent;
+          const guard = options[guardType];
+          guard && guards.push(guardToPromiseFn(guard, to, from, record, name));
+        } else {
+          let componentPromise = rawComponent();
+          guards.push(() => componentPromise.then((resolved) => {
+            if (!resolved)
+              return Promise.reject(new Error(`Couldn't resolve component "${name}" at "${record.path}"`));
+            const resolvedComponent = isESModule(resolved) ? resolved.default : resolved;
+            record.components[name] = resolvedComponent;
+            const options = resolvedComponent.__vccOpts || resolvedComponent;
+            const guard = options[guardType];
+            return guard && guardToPromiseFn(guard, to, from, record, name)();
+          }));
+        }
+      }
+    }
+    return guards;
+  }
+  function isRouteComponent(component) {
+    return typeof component === "object" || "displayName" in component || "props" in component || "__vccOpts" in component;
+  }
+  function useLink(props) {
+    const router = vue.inject(routerKey);
+    const currentRoute = vue.inject(routeLocationKey);
+    const route = vue.computed(() => router.resolve(vue.unref(props.to)));
+    const activeRecordIndex = vue.computed(() => {
+      const { matched } = route.value;
+      const { length } = matched;
+      const routeMatched = matched[length - 1];
+      const currentMatched = currentRoute.matched;
+      if (!routeMatched || !currentMatched.length)
+        return -1;
+      const index2 = currentMatched.findIndex(isSameRouteRecord.bind(null, routeMatched));
+      if (index2 > -1)
+        return index2;
+      const parentRecordPath = getOriginalPath(matched[length - 2]);
+      return length > 1 && getOriginalPath(routeMatched) === parentRecordPath && currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index2;
+    });
+    const isActive = vue.computed(() => activeRecordIndex.value > -1 && includesParams(currentRoute.params, route.value.params));
+    const isExactActive = vue.computed(() => activeRecordIndex.value > -1 && activeRecordIndex.value === currentRoute.matched.length - 1 && isSameRouteLocationParams(currentRoute.params, route.value.params));
+    function navigate(e = {}) {
+      if (guardEvent(e)) {
+        return router[vue.unref(props.replace) ? "replace" : "push"](vue.unref(props.to)).catch(noop);
+      }
+      return Promise.resolve();
+    }
+    return {
+      route,
+      href: vue.computed(() => route.value.href),
+      isActive,
+      isExactActive,
+      navigate
+    };
+  }
+  const RouterLinkImpl = /* @__PURE__ */ vue.defineComponent({
+    name: "RouterLink",
+    props: {
+      to: {
+        type: [String, Object],
+        required: true
+      },
+      replace: Boolean,
+      activeClass: String,
+      exactActiveClass: String,
+      custom: Boolean,
+      ariaCurrentValue: {
+        type: String,
+        default: "page"
+      }
+    },
+    useLink,
+    setup(props, { slots }) {
+      const link = vue.reactive(useLink(props));
+      const { options } = vue.inject(routerKey);
+      const elClass = vue.computed(() => ({
+        [getLinkClass(props.activeClass, options.linkActiveClass, "router-link-active")]: link.isActive,
+        [getLinkClass(props.exactActiveClass, options.linkExactActiveClass, "router-link-exact-active")]: link.isExactActive
+      }));
+      return () => {
+        const children = slots.default && slots.default(link);
+        return props.custom ? children : vue.h("a", {
+          "aria-current": link.isExactActive ? props.ariaCurrentValue : null,
+          href: link.href,
+          onClick: link.navigate,
+          class: elClass.value
+        }, children);
+      };
+    }
+  });
+  const RouterLink = RouterLinkImpl;
+  function guardEvent(e) {
+    if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
+      return;
+    if (e.defaultPrevented)
+      return;
+    if (e.button !== void 0 && e.button !== 0)
+      return;
+    if (e.currentTarget && e.currentTarget.getAttribute) {
+      const target = e.currentTarget.getAttribute("target");
+      if (/\b_blank\b/i.test(target))
+        return;
+    }
+    if (e.preventDefault)
+      e.preventDefault();
+    return true;
+  }
+  function includesParams(outer, inner) {
+    for (const key in inner) {
+      const innerValue = inner[key];
+      const outerValue = outer[key];
+      if (typeof innerValue === "string") {
+        if (innerValue !== outerValue)
+          return false;
+      } else {
+        if (!Array.isArray(outerValue) || outerValue.length !== innerValue.length || innerValue.some((value, i) => value !== outerValue[i]))
+          return false;
+      }
+    }
+    return true;
+  }
+  function getOriginalPath(record) {
+    return record ? record.aliasOf ? record.aliasOf.path : record.path : "";
+  }
+  const getLinkClass = (propClass, globalClass, defaultClass) => propClass != null ? propClass : globalClass != null ? globalClass : defaultClass;
+  const RouterViewImpl = /* @__PURE__ */ vue.defineComponent({
+    name: "RouterView",
+    inheritAttrs: false,
+    props: {
+      name: {
+        type: String,
+        default: "default"
+      },
+      route: Object
+    },
+    setup(props, { attrs, slots }) {
+      const injectedRoute = vue.inject(routerViewLocationKey);
+      const routeToDisplay = vue.computed(() => props.route || injectedRoute.value);
+      const depth = vue.inject(viewDepthKey, 0);
+      const matchedRouteRef = vue.computed(() => routeToDisplay.value.matched[depth]);
+      vue.provide(viewDepthKey, depth + 1);
+      vue.provide(matchedRouteKey, matchedRouteRef);
+      vue.provide(routerViewLocationKey, routeToDisplay);
+      const viewRef = vue.ref();
+      vue.watch(() => [viewRef.value, matchedRouteRef.value, props.name], ([instance, to, name], [oldInstance, from, oldName]) => {
+        if (to) {
+          to.instances[name] = instance;
+          if (from && from !== to && instance && instance === oldInstance) {
+            if (!to.leaveGuards.size) {
+              to.leaveGuards = from.leaveGuards;
+            }
+            if (!to.updateGuards.size) {
+              to.updateGuards = from.updateGuards;
+            }
+          }
+        }
+        if (instance && to && (!from || !isSameRouteRecord(to, from) || !oldInstance)) {
+          (to.enterCallbacks[name] || []).forEach((callback) => callback(instance));
+        }
+      }, { flush: "post" });
+      return () => {
+        const route = routeToDisplay.value;
+        const matchedRoute = matchedRouteRef.value;
+        const ViewComponent = matchedRoute && matchedRoute.components[props.name];
+        const currentName = props.name;
+        if (!ViewComponent) {
+          return normalizeSlot(slots.default, { Component: ViewComponent, route });
+        }
+        const routePropsOption = matchedRoute.props[props.name];
+        const routeProps = routePropsOption ? routePropsOption === true ? route.params : typeof routePropsOption === "function" ? routePropsOption(route) : routePropsOption : null;
+        const onVnodeUnmounted = (vnode) => {
+          if (vnode.component.isUnmounted) {
+            matchedRoute.instances[currentName] = null;
+          }
+        };
+        const component = vue.h(ViewComponent, assign({}, routeProps, attrs, {
+          onVnodeUnmounted,
+          ref: viewRef
+        }));
+        return normalizeSlot(slots.default, { Component: component, route }) || component;
+      };
+    }
+  });
+  function normalizeSlot(slot, data) {
+    if (!slot)
+      return null;
+    const slotContent = slot(data);
+    return slotContent.length === 1 ? slotContent[0] : slotContent;
+  }
+  const RouterView = RouterViewImpl;
+  function createRouter(options) {
+    const matcher = createRouterMatcher(options.routes, options);
+    const parseQuery$1 = options.parseQuery || parseQuery2;
+    const stringifyQuery$1 = options.stringifyQuery || stringifyQuery2;
+    const routerHistory = options.history;
+    const beforeGuards = useCallbacks();
+    const beforeResolveGuards = useCallbacks();
+    const afterGuards = useCallbacks();
+    const currentRoute = vue.shallowRef(START_LOCATION_NORMALIZED);
+    let pendingLocation = START_LOCATION_NORMALIZED;
+    const normalizeParams = applyToParams.bind(null, (paramValue) => "" + paramValue);
+    const encodeParams = applyToParams.bind(null, encodeParam);
+    const decodeParams = applyToParams.bind(null, decode2);
+    function addRoute(parentOrRoute, route) {
+      let parent;
+      let record;
+      if (isRouteName(parentOrRoute)) {
+        parent = matcher.getRecordMatcher(parentOrRoute);
+        record = route;
+      } else {
+        record = parentOrRoute;
+      }
+      return matcher.addRoute(record, parent);
+    }
+    function removeRoute(name) {
+      const recordMatcher = matcher.getRecordMatcher(name);
+      if (recordMatcher) {
+        matcher.removeRoute(recordMatcher);
+      }
+    }
+    function getRoutes() {
+      return matcher.getRoutes().map((routeMatcher) => routeMatcher.record);
+    }
+    function hasRoute(name) {
+      return !!matcher.getRecordMatcher(name);
+    }
+    function resolve(rawLocation, currentLocation) {
+      currentLocation = assign({}, currentLocation || currentRoute.value);
+      if (typeof rawLocation === "string") {
+        const locationNormalized = parseURL2(parseQuery$1, rawLocation, currentLocation.path);
+        const matchedRoute2 = matcher.resolve({ path: locationNormalized.path }, currentLocation);
+        const href2 = routerHistory.createHref(locationNormalized.fullPath);
+        return assign(locationNormalized, matchedRoute2, {
+          params: decodeParams(matchedRoute2.params),
+          hash: decode2(locationNormalized.hash),
+          redirectedFrom: void 0,
+          href: href2
+        });
+      }
+      let matcherLocation;
+      if ("path" in rawLocation) {
+        matcherLocation = assign({}, rawLocation, {
+          path: parseURL2(parseQuery$1, rawLocation.path, currentLocation.path).path
+        });
+      } else {
+        const targetParams = assign({}, rawLocation.params);
+        for (const key in targetParams) {
+          if (targetParams[key] == null) {
+            delete targetParams[key];
+          }
+        }
+        matcherLocation = assign({}, rawLocation, {
+          params: encodeParams(rawLocation.params)
+        });
+        currentLocation.params = encodeParams(currentLocation.params);
+      }
+      const matchedRoute = matcher.resolve(matcherLocation, currentLocation);
+      const hash = rawLocation.hash || "";
+      matchedRoute.params = normalizeParams(decodeParams(matchedRoute.params));
+      const fullPath = stringifyURL(stringifyQuery$1, assign({}, rawLocation, {
+        hash: encodeHash(hash),
+        path: matchedRoute.path
+      }));
+      const href = routerHistory.createHref(fullPath);
+      return assign({
+        fullPath,
+        hash,
+        query: stringifyQuery$1 === stringifyQuery2 ? normalizeQuery(rawLocation.query) : rawLocation.query || {}
+      }, matchedRoute, {
+        redirectedFrom: void 0,
+        href
+      });
+    }
+    function locationAsObject(to) {
+      return typeof to === "string" ? parseURL2(parseQuery$1, to, currentRoute.value.path) : assign({}, to);
+    }
+    function checkCanceledNavigation(to, from) {
+      if (pendingLocation !== to) {
+        return createRouterError(8, {
+          from,
+          to
+        });
+      }
+    }
+    function push(to) {
+      return pushWithRedirect(to);
+    }
+    function replace(to) {
+      return push(assign(locationAsObject(to), { replace: true }));
+    }
+    function handleRedirectRecord(to) {
+      const lastMatched = to.matched[to.matched.length - 1];
+      if (lastMatched && lastMatched.redirect) {
+        const { redirect } = lastMatched;
+        let newTargetLocation = typeof redirect === "function" ? redirect(to) : redirect;
+        if (typeof newTargetLocation === "string") {
+          newTargetLocation = newTargetLocation.includes("?") || newTargetLocation.includes("#") ? newTargetLocation = locationAsObject(newTargetLocation) : { path: newTargetLocation };
+          newTargetLocation.params = {};
+        }
+        return assign({
+          query: to.query,
+          hash: to.hash,
+          params: to.params
+        }, newTargetLocation);
+      }
+    }
+    function pushWithRedirect(to, redirectedFrom) {
+      const targetLocation = pendingLocation = resolve(to);
+      const from = currentRoute.value;
+      const data = to.state;
+      const force = to.force;
+      const replace2 = to.replace === true;
+      const shouldRedirect = handleRedirectRecord(targetLocation);
+      if (shouldRedirect)
+        return pushWithRedirect(assign(locationAsObject(shouldRedirect), {
+          state: data,
+          force,
+          replace: replace2
+        }), redirectedFrom || targetLocation);
+      const toLocation = targetLocation;
+      toLocation.redirectedFrom = redirectedFrom;
+      let failure;
+      if (!force && isSameRouteLocation(stringifyQuery$1, from, targetLocation)) {
+        failure = createRouterError(16, { to: toLocation, from });
+        handleScroll();
+      }
+      return (failure ? Promise.resolve(failure) : navigate(toLocation, from)).catch((error) => isNavigationFailure(error) ? error : triggerError(error, toLocation, from)).then((failure2) => {
+        if (failure2) {
+          if (isNavigationFailure(failure2, 2)) {
+            return pushWithRedirect(assign(locationAsObject(failure2.to), {
+              state: data,
+              force,
+              replace: replace2
+            }), redirectedFrom || toLocation);
+          }
+        } else {
+          failure2 = finalizeNavigation(toLocation, from, true, replace2, data);
+        }
+        triggerAfterEach(toLocation, from, failure2);
+        return failure2;
+      });
+    }
+    function checkCanceledNavigationAndReject(to, from) {
+      const error = checkCanceledNavigation(to, from);
+      return error ? Promise.reject(error) : Promise.resolve();
+    }
+    function navigate(to, from) {
+      let guards;
+      const [leavingRecords, updatingRecords, enteringRecords] = extractChangingRecords(to, from);
+      guards = extractComponentsGuards(leavingRecords.reverse(), "beforeRouteLeave", to, from);
+      for (const record of leavingRecords) {
+        record.leaveGuards.forEach((guard) => {
+          guards.push(guardToPromiseFn(guard, to, from));
+        });
+      }
+      const canceledNavigationCheck = checkCanceledNavigationAndReject.bind(null, to, from);
+      guards.push(canceledNavigationCheck);
+      return runGuardQueue(guards).then(() => {
+        guards = [];
+        for (const guard of beforeGuards.list()) {
+          guards.push(guardToPromiseFn(guard, to, from));
+        }
+        guards.push(canceledNavigationCheck);
+        return runGuardQueue(guards);
+      }).then(() => {
+        guards = extractComponentsGuards(updatingRecords, "beforeRouteUpdate", to, from);
+        for (const record of updatingRecords) {
+          record.updateGuards.forEach((guard) => {
+            guards.push(guardToPromiseFn(guard, to, from));
+          });
+        }
+        guards.push(canceledNavigationCheck);
+        return runGuardQueue(guards);
+      }).then(() => {
+        guards = [];
+        for (const record of to.matched) {
+          if (record.beforeEnter && !from.matched.includes(record)) {
+            if (Array.isArray(record.beforeEnter)) {
+              for (const beforeEnter of record.beforeEnter)
+                guards.push(guardToPromiseFn(beforeEnter, to, from));
+            } else {
+              guards.push(guardToPromiseFn(record.beforeEnter, to, from));
+            }
+          }
+        }
+        guards.push(canceledNavigationCheck);
+        return runGuardQueue(guards);
+      }).then(() => {
+        to.matched.forEach((record) => record.enterCallbacks = {});
+        guards = extractComponentsGuards(enteringRecords, "beforeRouteEnter", to, from);
+        guards.push(canceledNavigationCheck);
+        return runGuardQueue(guards);
+      }).then(() => {
+        guards = [];
+        for (const guard of beforeResolveGuards.list()) {
+          guards.push(guardToPromiseFn(guard, to, from));
+        }
+        guards.push(canceledNavigationCheck);
+        return runGuardQueue(guards);
+      }).catch((err) => isNavigationFailure(err, 8) ? err : Promise.reject(err));
+    }
+    function triggerAfterEach(to, from, failure) {
+      for (const guard of afterGuards.list())
+        guard(to, from, failure);
+    }
+    function finalizeNavigation(toLocation, from, isPush, replace2, data) {
+      const error = checkCanceledNavigation(toLocation, from);
+      if (error)
+        return error;
+      const isFirstNavigation = from === START_LOCATION_NORMALIZED;
+      const state = {};
+      if (isPush) {
+        if (replace2 || isFirstNavigation)
+          routerHistory.replace(toLocation.fullPath, assign({
+            scroll: isFirstNavigation && state && state.scroll
+          }, data));
+        else
+          routerHistory.push(toLocation.fullPath, data);
+      }
+      currentRoute.value = toLocation;
+      handleScroll();
+      markAsReady();
+    }
+    let removeHistoryListener;
+    function setupListeners() {
+      removeHistoryListener = routerHistory.listen((to, _from, info) => {
+        const toLocation = resolve(to);
+        const shouldRedirect = handleRedirectRecord(toLocation);
+        if (shouldRedirect) {
+          pushWithRedirect(assign(shouldRedirect, { replace: true }), toLocation).catch(noop);
+          return;
+        }
+        pendingLocation = toLocation;
+        const from = currentRoute.value;
+        navigate(toLocation, from).catch((error) => {
+          if (isNavigationFailure(error, 4 | 8)) {
+            return error;
+          }
+          if (isNavigationFailure(error, 2)) {
+            pushWithRedirect(error.to, toLocation).then((failure) => {
+              if (isNavigationFailure(failure, 4 | 16) && !info.delta && info.type === NavigationType.pop) {
+                routerHistory.go(-1, false);
+              }
+            }).catch(noop);
+            return Promise.reject();
+          }
+          if (info.delta)
+            routerHistory.go(-info.delta, false);
+          return triggerError(error, toLocation, from);
+        }).then((failure) => {
+          failure = failure || finalizeNavigation(toLocation, from, false);
+          if (failure) {
+            if (info.delta) {
+              routerHistory.go(-info.delta, false);
+            } else if (info.type === NavigationType.pop && isNavigationFailure(failure, 4 | 16)) {
+              routerHistory.go(-1, false);
+            }
+          }
+          triggerAfterEach(toLocation, from, failure);
+        }).catch(noop);
+      });
+    }
+    let readyHandlers = useCallbacks();
+    let errorHandlers = useCallbacks();
+    let ready;
+    function triggerError(error, to, from) {
+      markAsReady(error);
+      const list = errorHandlers.list();
+      if (list.length) {
+        list.forEach((handler) => handler(error, to, from));
+      } else {
+        console.error(error);
+      }
+      return Promise.reject(error);
+    }
+    function isReady() {
+      if (ready && currentRoute.value !== START_LOCATION_NORMALIZED)
+        return Promise.resolve();
+      return new Promise((resolve2, reject) => {
+        readyHandlers.add([resolve2, reject]);
+      });
+    }
+    function markAsReady(err) {
+      if (ready)
+        return;
+      ready = true;
+      setupListeners();
+      readyHandlers.list().forEach(([resolve2, reject]) => err ? reject(err) : resolve2());
+      readyHandlers.reset();
+    }
+    function handleScroll(to, from, isPush, isFirstNavigation) {
+      return Promise.resolve();
+    }
+    const go = (delta) => routerHistory.go(delta);
+    const installedApps = new Set();
+    const router = {
+      currentRoute,
+      addRoute,
+      removeRoute,
+      hasRoute,
+      getRoutes,
+      resolve,
+      options,
+      push,
+      replace,
+      go,
+      back: () => go(-1),
+      forward: () => go(1),
+      beforeEach: beforeGuards.add,
+      beforeResolve: beforeResolveGuards.add,
+      afterEach: afterGuards.add,
+      onError: errorHandlers.add,
+      isReady,
+      install(app) {
+        const router2 = this;
+        app.component("RouterLink", RouterLink);
+        app.component("RouterView", RouterView);
+        app.config.globalProperties.$router = router2;
+        Object.defineProperty(app.config.globalProperties, "$route", {
+          enumerable: true,
+          get: () => vue.unref(currentRoute)
+        });
+        const reactiveRoute = {};
+        for (const key in START_LOCATION_NORMALIZED) {
+          reactiveRoute[key] = vue.computed(() => currentRoute.value[key]);
+        }
+        app.provide(routerKey, router2);
+        app.provide(routeLocationKey, vue.reactive(reactiveRoute));
+        app.provide(routerViewLocationKey, currentRoute);
+        const unmountApp = app.unmount;
+        installedApps.add(app);
+        app.unmount = function() {
+          installedApps.delete(app);
+          if (installedApps.size < 1) {
+            pendingLocation = START_LOCATION_NORMALIZED;
+            removeHistoryListener && removeHistoryListener();
+            currentRoute.value = START_LOCATION_NORMALIZED;
+            ready = false;
+          }
+          unmountApp();
+        };
+      }
+    };
+    return router;
+  }
+  function runGuardQueue(guards) {
+    return guards.reduce((promise, guard) => promise.then(() => guard()), Promise.resolve());
+  }
+  function extractChangingRecords(to, from) {
+    const leavingRecords = [];
+    const updatingRecords = [];
+    const enteringRecords = [];
+    const len = Math.max(from.matched.length, to.matched.length);
+    for (let i = 0; i < len; i++) {
+      const recordFrom = from.matched[i];
+      if (recordFrom) {
+        if (to.matched.find((record) => isSameRouteRecord(record, recordFrom)))
+          updatingRecords.push(recordFrom);
+        else
+          leavingRecords.push(recordFrom);
+      }
+      const recordTo = to.matched[i];
+      if (recordTo) {
+        if (!from.matched.find((record) => isSameRouteRecord(record, recordTo))) {
+          enteringRecords.push(recordTo);
+        }
+      }
+    }
+    return [leavingRecords, updatingRecords, enteringRecords];
+  }
+  function useRouter() {
+    return vue.inject(routerKey);
+  }
+  function useRoute() {
+    return vue.inject(routeLocationKey);
+  }
+  exports.RouterLink = RouterLink;
+  exports.RouterView = RouterView;
+  exports.START_LOCATION = START_LOCATION_NORMALIZED;
+  exports.createMemoryHistory = createMemoryHistory;
+  exports.createRouter = createRouter;
+  exports.createRouterMatcher = createRouterMatcher;
+  exports.createWebHashHistory = createWebHashHistory;
+  exports.createWebHistory = createWebHistory;
+  exports.isNavigationFailure = isNavigationFailure;
+  exports.matchedRouteKey = matchedRouteKey;
+  exports.onBeforeRouteLeave = onBeforeRouteLeave;
+  exports.onBeforeRouteUpdate = onBeforeRouteUpdate;
+  exports.parseQuery = parseQuery2;
+  exports.routeLocationKey = routeLocationKey;
+  exports.routerKey = routerKey;
+  exports.routerViewLocationKey = routerViewLocationKey;
+  exports.stringifyQuery = stringifyQuery2;
+  exports.useLink = useLink;
+  exports.useRoute = useRoute;
+  exports.useRouter = useRouter;
+  exports.viewDepthKey = viewDepthKey;
+})(vueRouter_cjs_prod);
+const suspectProtoRx = /"(?:_|\\u005[Ff])(?:_|\\u005[Ff])(?:p|\\u0070)(?:r|\\u0072)(?:o|\\u006[Ff])(?:t|\\u0074)(?:o|\\u006[Ff])(?:_|\\u005[Ff])(?:_|\\u005[Ff])"\s*:/;
+const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
+const JsonSigRx = /^["{[]|^-?[0-9][0-9.]{0,14}$/;
+function jsonParseTransform(key, value) {
+  if (key === "__proto__" || key === "constructor") {
+    return;
+  }
+  return value;
 }
-Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return useCookie }});
-function useSSRReq(nuxtApp = __vite_ssr_import_4__.useNuxtApp()) {
-  return nuxtApp.ssrContext?.req;
-}
-function useSSRRes(nuxtApp = __vite_ssr_import_4__.useNuxtApp()) {
-  return nuxtApp.ssrContext?.res;
-}
-function readRawCookies(opts = {}) {
-  if (true) {
-    return __vite_ssr_import_1__.parse(useSSRReq().headers.cookie || "", opts);
-  } else if (false) {
-    return __vite_ssr_import_1__.parse(document.cookie, opts);
+function destr(val) {
+  if (typeof val !== "string") {
+    return val;
+  }
+  const _lval = val.toLowerCase();
+  if (_lval === "true") {
+    return true;
+  }
+  if (_lval === "false") {
+    return false;
+  }
+  if (_lval === "null") {
+    return null;
+  }
+  if (_lval === "nan") {
+    return NaN;
+  }
+  if (_lval === "infinity") {
+    return Infinity;
+  }
+  if (_lval === "undefined") {
+    return void 0;
+  }
+  if (!JsonSigRx.test(val)) {
+    return val;
+  }
+  try {
+    if (suspectProtoRx.test(val) || suspectConstructorRx.test(val)) {
+      return JSON.parse(val, jsonParseTransform);
+    }
+    return JSON.parse(val);
+  } catch (_e) {
+    return val;
   }
 }
-function serializeCookie(name, value, opts = {}) {
-  if (value === null || value === void 0) {
-    return __vite_ssr_import_1__.serialize(name, value, { ...opts, maxAge: -1 });
-  }
-  return __vite_ssr_import_1__.serialize(name, value, opts);
-}
-function writeClientCookie(name, value, opts = {}) {
-  if (false) {
-    document.cookie = serializeCookie(name, value, opts);
-  }
-}
-function writeServerCookie(res, name, value, opts = {}) {
-  if (res) {
-    __vite_ssr_import_2__.appendHeader(res, "Set-Cookie", serializeCookie(name, value, opts));
-  }
-}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/cookie-es/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// Dependencies: 
-
-// --------------------
-const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/h3/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// Dependencies: 
-
-// --------------------
-const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/h3/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/h3/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/destr/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
-// Dependencies: 
-
-// --------------------
-const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/destr/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/destr/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/composables/ssr.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_4d0dc923 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-function useRequestHeaders(include) {
-  if (false) {
-    return {};
-  }
-  const headers = __vite_ssr_import_0__.useNuxtApp().ssrContext?.req.headers ?? {};
-  if (!include) {
-    return headers;
-  }
-  return Object.fromEntries(include.filter((key) => headers[key]).map((key) => [key, headers[key]]));
-}
-Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return useRequestHeaders }});
-;
-}
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// Dependencies: 
-// - /assets/css/tailwind.css ($id_f75548e1)
-// --------------------
-const $id_838a58c0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.css");
-;
-}
-
-
-// --------------------
-// Request: /assets/css/tailwind.css
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs ($id_838a58c0)
-// Dependencies: 
-
-// --------------------
-const $id_f75548e1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: \"DM Sans\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}\n\n*, *::before, *::after {\n  --animation-duration: 1s;\n  --animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@-webkit-keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@-webkit-keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@-webkit-keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n\n@keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\r\n*, ::before, ::after {\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(206 209 215 / var(--tw-border-opacity));\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\r\n.container {\n  width: 100%;\n}\r\n@media (min-width: 640px) {\n\n  .container {\n    max-width: 640px;\n  }\n}\r\n@media (min-width: 768px) {\n\n  .container {\n    max-width: 768px;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .container {\n    max-width: 1024px;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .container {\n    max-width: 1280px;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .container {\n    max-width: 1536px;\n  }\n}\r\n/* code  */\r\n.absolute {\n  position: absolute;\n}\r\n.relative {\n  position: relative;\n}\r\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\r\n.top-5 {\n  top: 1.25rem;\n}\r\n.right-2 {\n  right: 0.5rem;\n}\r\n.top-0 {\n  top: 0px;\n}\r\n.left-1\\/2 {\n  left: 50%;\n}\r\n.left-\\[38\\%\\] {\n  left: 38%;\n}\r\n.left-\\[62\\%\\] {\n  left: 62%;\n}\r\n.left-\\[40\\%\\] {\n  left: 40%;\n}\r\n.left-\\[60\\%\\] {\n  left: 60%;\n}\r\n.left-\\[35\\%\\] {\n  left: 35%;\n}\r\n.left-\\[65\\%\\] {\n  left: 65%;\n}\r\n.z-10 {\n  z-index: 10;\n}\r\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\r\n.mx-4 {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\r\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\r\n.-mx-1 {\n  margin-left: -0.25rem;\n  margin-right: -0.25rem;\n}\r\n.mx-10 {\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n}\r\n.mx-5 {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n}\r\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\r\n.mb-24 {\n  margin-bottom: 6rem;\n}\r\n.mb-16 {\n  margin-bottom: 4rem;\n}\r\n.mt-1 {\n  margin-top: 0.25rem;\n}\r\n.-mt-9 {\n  margin-top: -2.25rem;\n}\r\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\r\n.mb-6 {\n  margin-bottom: 1.5rem;\n}\r\n.mr-6 {\n  margin-right: 1.5rem;\n}\r\n.mb-20 {\n  margin-bottom: 5rem;\n}\r\n.mb-4 {\n  margin-bottom: 1rem;\n}\r\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\r\n.mb-8 {\n  margin-bottom: 2rem;\n}\r\n.-mt-8 {\n  margin-top: -2rem;\n}\r\n.mb-14 {\n  margin-bottom: 3.5rem;\n}\r\n.mr-2 {\n  margin-right: 0.5rem;\n}\r\n.mt-8 {\n  margin-top: 2rem;\n}\r\n.mb-12 {\n  margin-bottom: 3rem;\n}\r\n.mt-10 {\n  margin-top: 2.5rem;\n}\r\n.ml-2 {\n  margin-left: 0.5rem;\n}\r\n.-mb-\\[11px\\] {\n  margin-bottom: -11px;\n}\r\n.-mr-1 {\n  margin-right: -0.25rem;\n}\r\n.mt-14 {\n  margin-top: 3.5rem;\n}\r\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\r\n.mr-\\[64px\\] {\n  margin-right: 64px;\n}\r\n.-mb-\\[13px\\] {\n  margin-bottom: -13px;\n}\r\n.-mr-\\[3px\\] {\n  margin-right: -3px;\n}\r\n.block {\n  display: block;\n}\r\n.inline-block {\n  display: inline-block;\n}\r\n.flex {\n  display: flex;\n}\r\n.grid {\n  display: grid;\n}\r\n.hidden {\n  display: none;\n}\r\n.h-32 {\n  height: 8rem;\n}\r\n.h-44 {\n  height: 11rem;\n}\r\n.h-96 {\n  height: 24rem;\n}\r\n.h-64 {\n  height: 16rem;\n}\r\n.h-56 {\n  height: 14rem;\n}\r\n.h-48 {\n  height: 12rem;\n}\r\n.h-80 {\n  height: 20rem;\n}\r\n.h-14 {\n  height: 3.5rem;\n}\r\n.h-20 {\n  height: 5rem;\n}\r\n.h-1 {\n  height: 0.25rem;\n}\r\n.h-1\\/2 {\n  height: 50%;\n}\r\n.h-full {\n  height: 100%;\n}\r\n.w-32 {\n  width: 8rem;\n}\r\n.w-full {\n  width: 100%;\n}\r\n.w-10 {\n  width: 2.5rem;\n}\r\n.w-96 {\n  width: 24rem;\n}\r\n.w-64 {\n  width: 16rem;\n}\r\n.w-56 {\n  width: 14rem;\n}\r\n.w-48 {\n  width: 12rem;\n}\r\n.w-36 {\n  width: 9rem;\n}\r\n.w-44 {\n  width: 11rem;\n}\r\n.w-20 {\n  width: 5rem;\n}\r\n.w-6 {\n  width: 1.5rem;\n}\r\n.w-1\\/3 {\n  width: 33.333333%;\n}\r\n.w-5 {\n  width: 1.25rem;\n}\r\n.max-w-xl {\n  max-width: 36rem;\n}\r\n.max-w-none {\n  max-width: none;\n}\r\n.max-w-sm {\n  max-width: 24rem;\n}\r\n.shrink-0 {\n  flex-shrink: 0;\n}\r\n.translate-x-1\\/2 {\n  --tw-translate-x: 50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-y-1\\/2 {\n  --tw-translate-y: -50%;\n  transform: var(--tw-transform);\n}\r\n.rotate-180 {\n  --tw-rotate: 180deg;\n  transform: var(--tw-transform);\n}\r\n.transform {\n  transform: var(--tw-transform);\n}\r\n@-webkit-keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tl {\n  animation: slide-tl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n.animate-tracking-in-expand {\n  -webkit-animation: tracking-in-expand 5s ease-in 2s  alternate both;\n          animation: tracking-in-expand 5s ease-in 2s  alternate both;\n}\r\n@-webkit-keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n@keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n.animate-slide-left {\n  animation: slide-left 10s ease-in-out  infinite alternate-reverse both;\n}\r\n@-webkit-keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tr {\n  animation: slide-tr 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n.cursor-pointer {\n  cursor: pointer;\n}\r\n.select-none {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\r\n.flex-col {\n  flex-direction: column;\n}\r\n.flex-wrap {\n  flex-wrap: wrap;\n}\r\n.place-items-center {\n  place-items: center;\n}\r\n.items-start {\n  align-items: flex-start;\n}\r\n.items-center {\n  align-items: center;\n}\r\n.justify-center {\n  justify-content: center;\n}\r\n.justify-between {\n  justify-content: space-between;\n}\r\n.space-y-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\r\n.space-x-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\r\n.space-x-8 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(2rem * var(--tw-space-x-reverse));\n  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n}\r\n.overflow-hidden {\n  overflow: hidden;\n}\r\n.rounded-full {\n  border-radius: 9999px;\n}\r\n.rounded-7xl {\n  border-radius: 1.5rem;\n}\r\n.rounded-md {\n  border-radius: 0.375rem;\n}\r\n.rounded-lg {\n  border-radius: 0.5rem;\n}\r\n.rounded-b-10xl {\n  border-bottom-right-radius: 5rem;\n  border-bottom-left-radius: 5rem;\n}\r\n.border-4 {\n  border-width: 4px;\n}\r\n.border-gray-700 {\n  --tw-border-opacity: 1;\n  border-color: rgb(45 53 71 / var(--tw-border-opacity));\n}\r\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(119 126 142 / var(--tw-border-opacity));\n}\r\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\r\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\r\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(236 237 239 / var(--tw-bg-opacity));\n}\r\n.bg-purple-500 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(109 50 240 / var(--tw-bg-opacity));\n}\r\n.bg-moon {\n  background-image: url(/_nuxt/assets/images/animals/Weather-Moon.svg);\n}\r\n.bg-elephant {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_7.svg);\n}\r\n.bg-tiger {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_2.svg);\n}\r\n.bg-animal {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_5.svg);\n}\r\n.bg-\\[length\\:400px_150px\\] {\n  background-size: 400px 150px;\n}\r\n.bg-\\[length\\:200px\\] {\n  background-size: 200px;\n}\r\n.bg-left-top {\n  background-position: left top;\n}\r\n.bg-center {\n  background-position: center;\n}\r\n.bg-no-repeat {\n  background-repeat: no-repeat;\n}\r\n.p-2 {\n  padding: 0.5rem;\n}\r\n.py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\r\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\r\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\r\n.px-1 {\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\r\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\r\n.pt-10 {\n  padding-top: 2.5rem;\n}\r\n.pb-12 {\n  padding-bottom: 3rem;\n}\r\n.pb-6 {\n  padding-bottom: 1.5rem;\n}\r\n.pt-16 {\n  padding-top: 4rem;\n}\r\n.pb-8 {\n  padding-bottom: 2rem;\n}\r\n.pb-4 {\n  padding-bottom: 1rem;\n}\r\n.text-center {\n  text-align: center;\n}\r\n.text-justify {\n  text-align: justify;\n}\r\n.font-heading {\n  font-family: \"Poppins\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\r\n.text-9xl {\n  font-size: 3rem;\n}\r\n.text-xl {\n  font-size: 1.25rem;\n}\r\n.text-lg {\n  font-size: 1.125rem;\n}\r\n.text-6xl {\n  font-size: 2rem;\n}\r\n.text-3xl {\n  font-size: 1.5rem;\n}\r\n.text-sm {\n  font-size: 0.875rem;\n}\r\n.text-2xl {\n  font-size: 1.375rem;\n}\r\n.font-medium {\n  font-weight: 500;\n}\r\n.font-semibold {\n  font-weight: 600;\n}\r\n.font-bold {\n  font-weight: 700;\n}\r\n.uppercase {\n  text-transform: uppercase;\n}\r\n.lowercase {\n  text-transform: lowercase;\n}\r\n.capitalize {\n  text-transform: capitalize;\n}\r\n.leading-none {\n  line-height: 1;\n}\r\n.leading-snug {\n  line-height: 1.375;\n}\r\n.text-blueGray-700 {\n  --tw-text-opacity: 1;\n  color: rgb(60 98 149 / var(--tw-text-opacity));\n}\r\n.text-darkBlueGray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(90 93 123 / var(--tw-text-opacity));\n}\r\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\r\n.text-blue-500 {\n  --tw-text-opacity: 1;\n  color: rgb(50 107 255 / var(--tw-text-opacity));\n}\r\n.text-red-500 {\n  --tw-text-opacity: 1;\n  color: rgb(255 77 53 / var(--tw-text-opacity));\n}\r\n.text-black {\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\r\n.text-indigo-400 {\n  --tw-text-opacity: 1;\n  color: rgb(167 139 250 / var(--tw-text-opacity));\n}\r\n.text-\\[\\#00749A\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 116 154 / var(--tw-text-opacity));\n}\r\n.underline {\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\r\n.shadow-2xl {\n  --tw-shadow: 14px 13px 32px 0 rgba(0, 0, 0, 0.03);\n  --tw-shadow-colored: 14px 13px 32px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-sm {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-inner {\n  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-gray-900 {\n  --tw-shadow-color: #1d232e;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-gray-300 {\n  --tw-shadow-color: #b1b5bf;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-blueGray-900 {\n  --tw-shadow-color: #1c2d45;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.backdrop-blur-sm {\n  --tw-backdrop-blur: blur(4px);\n  -webkit-backdrop-filter: var(--tw-backdrop-filter);\n          backdrop-filter: var(--tw-backdrop-filter);\n}\r\n.transition {\n  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\r\n.hover\\:text-blueGray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(120 155 201 / var(--tw-text-opacity));\n}\r\n@media (min-width: 640px) {\n\n  .sm\\:w-40 {\n    width: 10rem;\n  }\n\n  .sm\\:w-4\\/5 {\n    width: 80%;\n  }\n\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n\n  .sm\\:space-x-20 > :not([hidden]) ~ :not([hidden]) {\n    --tw-space-x-reverse: 0;\n    margin-right: calc(5rem * var(--tw-space-x-reverse));\n    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n}\r\n@media (min-width: 768px) {\n\n  .md\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .md\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .md\\:block {\n    display: block;\n  }\n\n  .md\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .md\\:text-10xl {\n    font-size: 4rem;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .lg\\:right-7 {\n    right: 1.75rem;\n  }\n\n  .lg\\:top-7 {\n    top: 1.75rem;\n  }\n\n  .lg\\:mx-7 {\n    margin-left: 1.75rem;\n    margin-right: 1.75rem;\n  }\n\n  .lg\\:mx-14 {\n    margin-left: 3.5rem;\n    margin-right: 3.5rem;\n  }\n\n  .lg\\:-mx-24 {\n    margin-left: -6rem;\n    margin-right: -6rem;\n  }\n\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .lg\\:mt-2 {\n    margin-top: 0.5rem;\n  }\n\n  .lg\\:mb-24 {\n    margin-bottom: 6rem;\n  }\n\n  .lg\\:mt-20 {\n    margin-top: 5rem;\n  }\n\n  .lg\\:block {\n    display: block;\n  }\n\n  .lg\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .lg\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .lg\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .xl\\:-left-8 {\n    left: -2rem;\n  }\n\n  .xl\\:-right-8 {\n    right: -2rem;\n  }\n\n  .xl\\:ml-4 {\n    margin-left: 1rem;\n  }\n\n  .xl\\:mt-8 {\n    margin-top: 2rem;\n  }\n\n  .xl\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .xl\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .xl\\:block {\n    display: block;\n  }\n\n  .xl\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .xl\\:w-auto {\n    width: auto;\n  }\n\n  .xl\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n\n  .xl\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .xl\\:bg-right {\n    background-position: right;\n  }\n\n  .xl\\:pt-20 {\n    padding-top: 5rem;\n  }\n\n  .xl\\:text-11xl {\n    font-size: 5rem;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .\\32xl\\:py-20 {\n    padding-top: 5rem;\n    padding-bottom: 5rem;\n  }\n}\r\n";
-}
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/plugins/preload.server.mjs ($id_b9f3c557)
-// - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs ($id_7b587af2)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
-// --------------------
-const $id_197ba429 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/plugins/preload.server.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/plugin.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/router.mjs");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs");
-
-__vite_ssr_exports__.default = [
-  __vite_ssr_import_0__.default,
-__vite_ssr_import_1__.default,
-  __vite_ssr_import_2__.default,
-  __vite_ssr_import_3__.default,
-  __vite_ssr_import_4__.default,
-  __vite_ssr_import_5__.default
-];
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/plugins/preload.server.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_b9f3c557 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-__vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) => {
+const tailwind = "";
+const preload = defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.mixin({
     beforeCreate() {
       const { _registeredComponents } = this.$nuxt.ssrContext;
@@ -962,96 +2097,31 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
     }
   });
 });
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_cbe5172d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@vueuse/head/dist/index.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-__vite_ssr_exports__.default = __vite_ssr_import_2__.defineNuxtPlugin((nuxtApp) => {
-  const head = __vite_ssr_import_0__.createHead();
-  nuxtApp.vueApp.use(head);
-  nuxtApp._useMeta = (meta) => {
-    const headObj = __vite_ssr_import_1__.ref(meta);
-    head.addHeadObjs(headObj);
-    if (true) {
-      return;
-    }
-    __vite_ssr_import_1__.watchEffect(() => {
-      head.updateDOM();
-    });
-    const vm = __vite_ssr_import_1__.getCurrentInstance();
-    if (!vm) {
-      return;
-    }
-    __vite_ssr_import_1__.onBeforeUnmount(() => {
-      head.removeHeadObjs(headObj);
-      head.updateDOM();
-    });
-  };
-  if (true) {
-    nuxtApp.ssrContext.renderMeta = () => __vite_ssr_import_0__.renderHeadToString(head);
-  }
-});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/@vueuse/head/dist/index.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_c032264e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
+var __defProp2 = Object.defineProperty;
+var __defProps2 = Object.defineProperties;
+var __getOwnPropDescs2 = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols2 = Object.getOwnPropertySymbols;
+var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+var __propIsEnum2 = Object.prototype.propertyIsEnumerable;
+var __defNormalProp2 = (obj, key, value) => key in obj ? __defProp2(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues2 = (a, b) => {
   for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
+    if (__hasOwnProp2.call(b, prop))
+      __defNormalProp2(a, prop, b[prop]);
+  if (__getOwnPropSymbols2)
+    for (var prop of __getOwnPropSymbols2(b)) {
+      if (__propIsEnum2.call(b, prop))
+        __defNormalProp2(a, prop, b[prop]);
     }
   return a;
 };
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-
-// src/index.ts
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-// src/constants.ts
+var __spreadProps2 = (a, b) => __defProps2(a, __getOwnPropDescs2(b));
 var PROVIDE_KEY = `usehead`;
 var HEAD_COUNT_KEY = `head:count`;
 var HEAD_ATTRS_KEY = `data-head-attrs`;
 var SELF_CLOSING_TAGS = ["meta", "link", "base"];
-
-// src/create-element.ts
-var createElement = (tag, attrs, document) => {
-  const el = document.createElement(tag);
+var createElement = (tag, attrs, document2) => {
+  const el = document2.createElement(tag);
   for (const key of Object.keys(attrs)) {
     let value = attrs[key];
     if (key === "key" || value === false) {
@@ -1065,8 +2135,6 @@ var createElement = (tag, attrs, document) => {
   }
   return el;
 };
-
-// src/stringify-attrs.ts
 var htmlEscape = (str) => str.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 var stringifyAttrs = (attributes) => {
   const handledAttributes = [];
@@ -1085,8 +2153,6 @@ var stringifyAttrs = (attributes) => {
   }
   return handledAttributes.length > 0 ? " " + handledAttributes.join(" ") : "";
 };
-
-// src/utils.ts
 function isEqualNode(oldTag, newTag) {
   if (oldTag instanceof HTMLElement && newTag instanceof HTMLElement) {
     const nonce = newTag.getAttribute("nonce");
@@ -1099,8 +2165,6 @@ function isEqualNode(oldTag, newTag) {
   }
   return oldTag.isEqualNode(newTag);
 }
-
-// src/index.ts
 var getTagKey = (props) => {
   const names = ["key", "id", "name", "property"];
   for (const n of names) {
@@ -1109,13 +2173,6 @@ var getTagKey = (props) => {
       return { name: n, value };
     }
   }
-};
-var injectHead = () => {
-  const head = __vite_ssr_import_0__.inject(PROVIDE_KEY);
-  if (!head) {
-    throw new Error(`You may forget to apply app.use(head)`);
-  }
-  return head;
 };
 var acceptFields = [
   "title",
@@ -1135,7 +2192,7 @@ var headObjToTags = (obj) => {
     if (key === "title") {
       tags.push({ tag: key, props: { children: obj[key] } });
     } else if (key === "base") {
-      tags.push({ tag: key, props: __spreadValues({ key: "default" }, obj[key]) });
+      tags.push({ tag: key, props: __spreadValues2({ key: "default" }, obj[key]) });
     } else if (acceptFields.includes(key)) {
       const value = obj[key];
       if (Array.isArray(value)) {
@@ -1176,9 +2233,9 @@ var setAttrs = (el, attrs) => {
     el.removeAttribute(HEAD_ATTRS_KEY);
   }
 };
-var updateElements = (document = window.document, type, tags) => {
+var updateElements = (document2 = window.document, type, tags) => {
   var _a;
-  const head = document.head;
+  const head = document2.head;
   let headCountEl = head.querySelector(`meta[name="${HEAD_COUNT_KEY}"]`);
   const headCount = headCountEl ? Number(headCountEl.getAttribute("content")) : 0;
   const oldElements = [];
@@ -1189,12 +2246,12 @@ var updateElements = (document = window.document, type, tags) => {
       }
     }
   } else {
-    headCountEl = document.createElement("meta");
+    headCountEl = document2.createElement("meta");
     headCountEl.setAttribute("name", HEAD_COUNT_KEY);
     headCountEl.setAttribute("content", "0");
     head.append(headCountEl);
   }
-  let newElements = tags.map((tag) => createElement(tag.tag, tag.props, document));
+  let newElements = tags.map((tag) => createElement(tag.tag, tag.props, document2));
   newElements = newElements.filter((newEl) => {
     for (let i = 0; i < oldElements.length; i++) {
       const oldEl = oldElements[i];
@@ -1237,18 +2294,18 @@ var createHead = () => {
           if (tag.tag === "meta" || tag.tag === "base" || tag.tag === "script") {
             const key = getTagKey(tag.props);
             if (key) {
-              let index = -1;
+              let index2 = -1;
               for (let i = 0; i < deduped.length; i++) {
                 const prev = deduped[i];
                 const prevValue = prev.props[key.name];
                 const nextValue = tag.props[key.name];
                 if (prev.tag === tag.tag && prevValue === nextValue) {
-                  index = i;
+                  index2 = i;
                   break;
                 }
               }
-              if (index !== -1) {
-                deduped.splice(index, 1);
+              if (index2 !== -1) {
+                deduped.splice(index2, 1);
               }
             }
           }
@@ -1263,7 +2320,7 @@ var createHead = () => {
     removeHeadObjs(objs) {
       allHeadObjs = allHeadObjs.filter((_objs) => _objs !== objs);
     },
-    updateDOM(document = window.document) {
+    updateDOM(document2 = window.document) {
       let title;
       let htmlAttrs = {};
       let bodyAttrs = {};
@@ -1285,31 +2342,16 @@ var createHead = () => {
         actualTags[tag.tag].push(tag);
       }
       if (title !== void 0) {
-        document.title = title;
+        document2.title = title;
       }
-      setAttrs(document.documentElement, htmlAttrs);
-      setAttrs(document.body, bodyAttrs);
+      setAttrs(document2.documentElement, htmlAttrs);
+      setAttrs(document2.body, bodyAttrs);
       for (const name of Object.keys(actualTags)) {
-        updateElements(document, name, actualTags[name]);
+        updateElements(document2, name, actualTags[name]);
       }
     }
   };
   return head;
-};
-var IS_BROWSER = "undefined" !== "undefined";
-var useHead = (obj) => {
-  const headObj = __vite_ssr_import_0__.ref(obj);
-  const head = injectHead();
-  head.addHeadObjs(headObj);
-  if (IS_BROWSER) {
-    __vite_ssr_import_0__.watchEffect(() => {
-      head.updateDOM();
-    });
-    __vite_ssr_import_0__.onBeforeUnmount(() => {
-      head.removeHeadObjs(headObj);
-      head.updateDOM();
-    });
-  }
 };
 var tagToString = (tag) => {
   let attrs = stringifyAttrs(tag.props);
@@ -1340,144 +2382,461 @@ var renderHeadToString = (head) => {
       return titleTag + tags.join("");
     },
     get htmlAttrs() {
-      return stringifyAttrs(__spreadProps(__spreadValues({}, htmlAttrs), {
+      return stringifyAttrs(__spreadProps2(__spreadValues2({}, htmlAttrs), {
         [HEAD_ATTRS_KEY]: Object.keys(htmlAttrs).join(",")
       }));
     },
     get bodyAttrs() {
-      return stringifyAttrs(__spreadProps(__spreadValues({}, bodyAttrs), {
+      return stringifyAttrs(__spreadProps2(__spreadValues2({}, bodyAttrs), {
         [HEAD_ATTRS_KEY]: Object.keys(bodyAttrs).join(",")
       }));
     }
   };
 };
-var vnodesToHeadObj = (nodes) => {
-  const obj = {
-    title: void 0,
-    htmlAttrs: void 0,
-    bodyAttrs: void 0,
-    base: void 0,
-    meta: [],
-    link: [],
-    style: [],
-    script: []
-  };
-  for (const node of nodes) {
-    const type = node.type === "html" ? "htmlAttrs" : node.type === "body" ? "bodyAttrs" : node.type;
-    if (typeof type !== "string" || !(type in obj))
-      continue;
-    const props = __spreadProps(__spreadValues({}, node.props), {
-      children: Array.isArray(node.children) ? node.children[0].children : node.children
-    });
-    if (Array.isArray(obj[type])) {
-      ;
-      obj[type].push(props);
-    } else if (type === "title") {
-      obj.title = props.children;
-    } else {
-      ;
-      obj[type] = props;
+const vueuseHead_7016c5ba = defineNuxtPlugin((nuxtApp) => {
+  const head = createHead();
+  nuxtApp.vueApp.use(head);
+  nuxtApp._useMeta = (meta) => {
+    const headObj = ref(meta);
+    head.addHeadObjs(headObj);
+    {
+      return;
     }
-  }
-  return obj;
-};
-var Head = /* @__PURE__ */ __vite_ssr_import_0__.defineComponent({
-  name: "Head",
-  setup(_, { slots }) {
-    const head = injectHead();
-    let obj;
-    __vite_ssr_import_0__.onBeforeUnmount(() => {
-      if (obj) {
-        head.removeHeadObjs(obj);
-        head.updateDOM();
-      }
-    });
-    return () => {
-      __vite_ssr_import_0__.watchEffect(() => {
-        if (!slots.default)
-          return;
-        if (obj) {
-          head.removeHeadObjs(obj);
-        }
-        obj = __vite_ssr_import_0__.ref(vnodesToHeadObj(slots.default()));
-        head.addHeadObjs(obj);
-        if (IS_BROWSER) {
-          head.updateDOM();
-        }
-      });
-      return null;
-    };
+  };
+  {
+    nuxtApp.ssrContext.renderMeta = () => renderHeadToString(head);
   }
 });
-
-Object.defineProperty(__vite_ssr_exports__, "Head", { enumerable: true, configurable: true, get(){ return Head }});
-Object.defineProperty(__vite_ssr_exports__, "createHead", { enumerable: true, configurable: true, get(){ return createHead }});
-Object.defineProperty(__vite_ssr_exports__, "injectHead", { enumerable: true, configurable: true, get(){ return injectHead }});
-Object.defineProperty(__vite_ssr_exports__, "renderHeadToString", { enumerable: true, configurable: true, get(){ return renderHeadToString }});
-Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return useHead }});
-;
+var shared_cjs_prod = {};
+Object.defineProperty(shared_cjs_prod, "__esModule", { value: true });
+function makeMap(str, expectsLowerCase) {
+  const map = Object.create(null);
+  const list = str.split(",");
+  for (let i = 0; i < list.length; i++) {
+    map[list[i]] = true;
+  }
+  return expectsLowerCase ? (val) => !!map[val.toLowerCase()] : (val) => !!map[val];
 }
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/plugin.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs ($id_36430d24)
-// --------------------
-const $id_9fd5f35e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/components.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs");
-
-__vite_ssr_exports__.default = __vite_ssr_import_3__.defineNuxtPlugin((nuxtApp) => {
-  __vite_ssr_import_2__.useMeta(__vite_ssr_import_4__.default.globalMeta);
-  nuxtApp.vueApp.mixin({
-    [__vite_ssr_import_4__.default.mixinKey]() {
-      const instance = __vite_ssr_import_0__.getCurrentInstance();
-      const options = instance?.type || instance?.proxy?.$options;
-      if (!options || !("head" in options)) {
-        return;
+const PatchFlagNames = {
+  [1]: `TEXT`,
+  [2]: `CLASS`,
+  [4]: `STYLE`,
+  [8]: `PROPS`,
+  [16]: `FULL_PROPS`,
+  [32]: `HYDRATE_EVENTS`,
+  [64]: `STABLE_FRAGMENT`,
+  [128]: `KEYED_FRAGMENT`,
+  [256]: `UNKEYED_FRAGMENT`,
+  [512]: `NEED_PATCH`,
+  [1024]: `DYNAMIC_SLOTS`,
+  [2048]: `DEV_ROOT_FRAGMENT`,
+  [-1]: `HOISTED`,
+  [-2]: `BAIL`
+};
+const slotFlagsText = {
+  [1]: "STABLE",
+  [2]: "DYNAMIC",
+  [3]: "FORWARDED"
+};
+const GLOBALS_WHITE_LISTED = "Infinity,undefined,NaN,isFinite,isNaN,parseFloat,parseInt,decodeURI,decodeURIComponent,encodeURI,encodeURIComponent,Math,Number,Date,Array,Object,Boolean,String,RegExp,Map,Set,JSON,Intl,BigInt";
+const isGloballyWhitelisted = /* @__PURE__ */ makeMap(GLOBALS_WHITE_LISTED);
+const range = 2;
+function generateCodeFrame(source, start = 0, end = source.length) {
+  let lines = source.split(/(\r?\n)/);
+  const newlineSequences = lines.filter((_, idx) => idx % 2 === 1);
+  lines = lines.filter((_, idx) => idx % 2 === 0);
+  let count = 0;
+  const res = [];
+  for (let i = 0; i < lines.length; i++) {
+    count += lines[i].length + (newlineSequences[i] && newlineSequences[i].length || 0);
+    if (count >= start) {
+      for (let j = i - range; j <= i + range || end > count; j++) {
+        if (j < 0 || j >= lines.length)
+          continue;
+        const line = j + 1;
+        res.push(`${line}${" ".repeat(Math.max(3 - String(line).length, 0))}|  ${lines[j]}`);
+        const lineLength = lines[j].length;
+        const newLineSeqLength = newlineSequences[j] && newlineSequences[j].length || 0;
+        if (j === i) {
+          const pad = start - (count - (lineLength + newLineSeqLength));
+          const length = Math.max(1, end > count ? lineLength - pad : end - start);
+          res.push(`   |  ` + " ".repeat(pad) + "^".repeat(length));
+        } else if (j > i) {
+          if (end > count) {
+            const length = Math.max(Math.min(end - count, lineLength), 1);
+            res.push(`   |  ` + "^".repeat(length));
+          }
+          count += lineLength + newLineSeqLength;
+        }
       }
-      __vite_ssr_import_2__.useMeta(options.head);
+      break;
+    }
+  }
+  return res.join("\n");
+}
+const specialBooleanAttrs = `itemscope,allowfullscreen,formnovalidate,ismap,nomodule,novalidate,readonly`;
+const isSpecialBooleanAttr = /* @__PURE__ */ makeMap(specialBooleanAttrs);
+const isBooleanAttr = /* @__PURE__ */ makeMap(specialBooleanAttrs + `,async,autofocus,autoplay,controls,default,defer,disabled,hidden,loop,open,required,reversed,scoped,seamless,checked,muted,multiple,selected`);
+function includeBooleanAttr(value) {
+  return !!value || value === "";
+}
+const unsafeAttrCharRE = /[>/="'\u0009\u000a\u000c\u0020]/;
+const attrValidationCache = {};
+function isSSRSafeAttrName(name) {
+  if (attrValidationCache.hasOwnProperty(name)) {
+    return attrValidationCache[name];
+  }
+  const isUnsafe = unsafeAttrCharRE.test(name);
+  if (isUnsafe) {
+    console.error(`unsafe attribute name: ${name}`);
+  }
+  return attrValidationCache[name] = !isUnsafe;
+}
+const propsToAttrMap = {
+  acceptCharset: "accept-charset",
+  className: "class",
+  htmlFor: "for",
+  httpEquiv: "http-equiv"
+};
+const isNoUnitNumericStyleProp = /* @__PURE__ */ makeMap(`animation-iteration-count,border-image-outset,border-image-slice,border-image-width,box-flex,box-flex-group,box-ordinal-group,column-count,columns,flex,flex-grow,flex-positive,flex-shrink,flex-negative,flex-order,grid-row,grid-row-end,grid-row-span,grid-row-start,grid-column,grid-column-end,grid-column-span,grid-column-start,font-weight,line-clamp,line-height,opacity,order,orphans,tab-size,widows,z-index,zoom,fill-opacity,flood-opacity,stop-opacity,stroke-dasharray,stroke-dashoffset,stroke-miterlimit,stroke-opacity,stroke-width`);
+const isKnownHtmlAttr = /* @__PURE__ */ makeMap(`accept,accept-charset,accesskey,action,align,allow,alt,async,autocapitalize,autocomplete,autofocus,autoplay,background,bgcolor,border,buffered,capture,challenge,charset,checked,cite,class,code,codebase,color,cols,colspan,content,contenteditable,contextmenu,controls,coords,crossorigin,csp,data,datetime,decoding,default,defer,dir,dirname,disabled,download,draggable,dropzone,enctype,enterkeyhint,for,form,formaction,formenctype,formmethod,formnovalidate,formtarget,headers,height,hidden,high,href,hreflang,http-equiv,icon,id,importance,integrity,ismap,itemprop,keytype,kind,label,lang,language,loading,list,loop,low,manifest,max,maxlength,minlength,media,min,multiple,muted,name,novalidate,open,optimum,pattern,ping,placeholder,poster,preload,radiogroup,readonly,referrerpolicy,rel,required,reversed,rows,rowspan,sandbox,scope,scoped,selected,shape,size,sizes,slot,span,spellcheck,src,srcdoc,srclang,srcset,start,step,style,summary,tabindex,target,title,translate,type,usemap,value,width,wrap`);
+const isKnownSvgAttr = /* @__PURE__ */ makeMap(`xmlns,accent-height,accumulate,additive,alignment-baseline,alphabetic,amplitude,arabic-form,ascent,attributeName,attributeType,azimuth,baseFrequency,baseline-shift,baseProfile,bbox,begin,bias,by,calcMode,cap-height,class,clip,clipPathUnits,clip-path,clip-rule,color,color-interpolation,color-interpolation-filters,color-profile,color-rendering,contentScriptType,contentStyleType,crossorigin,cursor,cx,cy,d,decelerate,descent,diffuseConstant,direction,display,divisor,dominant-baseline,dur,dx,dy,edgeMode,elevation,enable-background,end,exponent,fill,fill-opacity,fill-rule,filter,filterRes,filterUnits,flood-color,flood-opacity,font-family,font-size,font-size-adjust,font-stretch,font-style,font-variant,font-weight,format,from,fr,fx,fy,g1,g2,glyph-name,glyph-orientation-horizontal,glyph-orientation-vertical,glyphRef,gradientTransform,gradientUnits,hanging,height,href,hreflang,horiz-adv-x,horiz-origin-x,id,ideographic,image-rendering,in,in2,intercept,k,k1,k2,k3,k4,kernelMatrix,kernelUnitLength,kerning,keyPoints,keySplines,keyTimes,lang,lengthAdjust,letter-spacing,lighting-color,limitingConeAngle,local,marker-end,marker-mid,marker-start,markerHeight,markerUnits,markerWidth,mask,maskContentUnits,maskUnits,mathematical,max,media,method,min,mode,name,numOctaves,offset,opacity,operator,order,orient,orientation,origin,overflow,overline-position,overline-thickness,panose-1,paint-order,path,pathLength,patternContentUnits,patternTransform,patternUnits,ping,pointer-events,points,pointsAtX,pointsAtY,pointsAtZ,preserveAlpha,preserveAspectRatio,primitiveUnits,r,radius,referrerPolicy,refX,refY,rel,rendering-intent,repeatCount,repeatDur,requiredExtensions,requiredFeatures,restart,result,rotate,rx,ry,scale,seed,shape-rendering,slope,spacing,specularConstant,specularExponent,speed,spreadMethod,startOffset,stdDeviation,stemh,stemv,stitchTiles,stop-color,stop-opacity,strikethrough-position,strikethrough-thickness,string,stroke,stroke-dasharray,stroke-dashoffset,stroke-linecap,stroke-linejoin,stroke-miterlimit,stroke-opacity,stroke-width,style,surfaceScale,systemLanguage,tabindex,tableValues,target,targetX,targetY,text-anchor,text-decoration,text-rendering,textLength,to,transform,transform-origin,type,u1,u2,underline-position,underline-thickness,unicode,unicode-bidi,unicode-range,units-per-em,v-alphabetic,v-hanging,v-ideographic,v-mathematical,values,vector-effect,version,vert-adv-y,vert-origin-x,vert-origin-y,viewBox,viewTarget,visibility,width,widths,word-spacing,writing-mode,x,x-height,x1,x2,xChannelSelector,xlink:actuate,xlink:arcrole,xlink:href,xlink:role,xlink:show,xlink:title,xlink:type,xml:base,xml:lang,xml:space,y,y1,y2,yChannelSelector,z,zoomAndPan`);
+function normalizeStyle(value) {
+  if (isArray(value)) {
+    const res = {};
+    for (let i = 0; i < value.length; i++) {
+      const item = value[i];
+      const normalized = isString(item) ? parseStringStyle(item) : normalizeStyle(item);
+      if (normalized) {
+        for (const key in normalized) {
+          res[key] = normalized[key];
+        }
+      }
+    }
+    return res;
+  } else if (isString(value)) {
+    return value;
+  } else if (isObject(value)) {
+    return value;
+  }
+}
+const listDelimiterRE = /;(?![^(]*\))/g;
+const propertyDelimiterRE = /:(.+)/;
+function parseStringStyle(cssText) {
+  const ret = {};
+  cssText.split(listDelimiterRE).forEach((item) => {
+    if (item) {
+      const tmp = item.split(propertyDelimiterRE);
+      tmp.length > 1 && (ret[tmp[0].trim()] = tmp[1].trim());
     }
   });
-  for (const name in __vite_ssr_import_1__) {
-    nuxtApp.vueApp.component(name, __vite_ssr_import_1__[name]);
-  }
-});
-;
+  return ret;
 }
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/components.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// --------------------
-const $id_94744df3 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
-
+function stringifyStyle(styles) {
+  let ret = "";
+  if (!styles || isString(styles)) {
+    return ret;
+  }
+  for (const key in styles) {
+    const value = styles[key];
+    const normalizedKey = key.startsWith(`--`) ? key : hyphenate(key);
+    if (isString(value) || typeof value === "number" && isNoUnitNumericStyleProp(normalizedKey)) {
+      ret += `${normalizedKey}:${value};`;
+    }
+  }
+  return ret;
+}
+function normalizeClass(value) {
+  let res = "";
+  if (isString(value)) {
+    res = value;
+  } else if (isArray(value)) {
+    for (let i = 0; i < value.length; i++) {
+      const normalized = normalizeClass(value[i]);
+      if (normalized) {
+        res += normalized + " ";
+      }
+    }
+  } else if (isObject(value)) {
+    for (const name in value) {
+      if (value[name]) {
+        res += name + " ";
+      }
+    }
+  }
+  return res.trim();
+}
+function normalizeProps(props) {
+  if (!props)
+    return null;
+  let { class: klass, style } = props;
+  if (klass && !isString(klass)) {
+    props.class = normalizeClass(klass);
+  }
+  if (style) {
+    props.style = normalizeStyle(style);
+  }
+  return props;
+}
+const HTML_TAGS = "html,body,base,head,link,meta,style,title,address,article,aside,footer,header,h1,h2,h3,h4,h5,h6,nav,section,div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,ruby,s,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,embed,object,param,source,canvas,script,noscript,del,ins,caption,col,colgroup,table,thead,tbody,td,th,tr,button,datalist,fieldset,form,input,label,legend,meter,optgroup,option,output,progress,select,textarea,details,dialog,menu,summary,template,blockquote,iframe,tfoot";
+const SVG_TAGS = "svg,animate,animateMotion,animateTransform,circle,clipPath,color-profile,defs,desc,discard,ellipse,feBlend,feColorMatrix,feComponentTransfer,feComposite,feConvolveMatrix,feDiffuseLighting,feDisplacementMap,feDistanceLight,feDropShadow,feFlood,feFuncA,feFuncB,feFuncG,feFuncR,feGaussianBlur,feImage,feMerge,feMergeNode,feMorphology,feOffset,fePointLight,feSpecularLighting,feSpotLight,feTile,feTurbulence,filter,foreignObject,g,hatch,hatchpath,image,line,linearGradient,marker,mask,mesh,meshgradient,meshpatch,meshrow,metadata,mpath,path,pattern,polygon,polyline,radialGradient,rect,set,solidcolor,stop,switch,symbol,text,textPath,title,tspan,unknown,use,view";
+const VOID_TAGS = "area,base,br,col,embed,hr,img,input,link,meta,param,source,track,wbr";
+const isHTMLTag = /* @__PURE__ */ makeMap(HTML_TAGS);
+const isSVGTag = /* @__PURE__ */ makeMap(SVG_TAGS);
+const isVoidTag = /* @__PURE__ */ makeMap(VOID_TAGS);
+const escapeRE = /["'&<>]/;
+function escapeHtml(string) {
+  const str = "" + string;
+  const match = escapeRE.exec(str);
+  if (!match) {
+    return str;
+  }
+  let html = "";
+  let escaped;
+  let index2;
+  let lastIndex = 0;
+  for (index2 = match.index; index2 < str.length; index2++) {
+    switch (str.charCodeAt(index2)) {
+      case 34:
+        escaped = "&quot;";
+        break;
+      case 38:
+        escaped = "&amp;";
+        break;
+      case 39:
+        escaped = "&#39;";
+        break;
+      case 60:
+        escaped = "&lt;";
+        break;
+      case 62:
+        escaped = "&gt;";
+        break;
+      default:
+        continue;
+    }
+    if (lastIndex !== index2) {
+      html += str.slice(lastIndex, index2);
+    }
+    lastIndex = index2 + 1;
+    html += escaped;
+  }
+  return lastIndex !== index2 ? html + str.slice(lastIndex, index2) : html;
+}
+const commentStripRE = /^-?>|<!--|-->|--!>|<!-$/g;
+function escapeHtmlComment(src) {
+  return src.replace(commentStripRE, "");
+}
+function looseCompareArrays(a, b) {
+  if (a.length !== b.length)
+    return false;
+  let equal = true;
+  for (let i = 0; equal && i < a.length; i++) {
+    equal = looseEqual(a[i], b[i]);
+  }
+  return equal;
+}
+function looseEqual(a, b) {
+  if (a === b)
+    return true;
+  let aValidType = isDate(a);
+  let bValidType = isDate(b);
+  if (aValidType || bValidType) {
+    return aValidType && bValidType ? a.getTime() === b.getTime() : false;
+  }
+  aValidType = isArray(a);
+  bValidType = isArray(b);
+  if (aValidType || bValidType) {
+    return aValidType && bValidType ? looseCompareArrays(a, b) : false;
+  }
+  aValidType = isObject(a);
+  bValidType = isObject(b);
+  if (aValidType || bValidType) {
+    if (!aValidType || !bValidType) {
+      return false;
+    }
+    const aKeysCount = Object.keys(a).length;
+    const bKeysCount = Object.keys(b).length;
+    if (aKeysCount !== bKeysCount) {
+      return false;
+    }
+    for (const key in a) {
+      const aHasKey = a.hasOwnProperty(key);
+      const bHasKey = b.hasOwnProperty(key);
+      if (aHasKey && !bHasKey || !aHasKey && bHasKey || !looseEqual(a[key], b[key])) {
+        return false;
+      }
+    }
+  }
+  return String(a) === String(b);
+}
+function looseIndexOf(arr, val) {
+  return arr.findIndex((item) => looseEqual(item, val));
+}
+const toDisplayString = (val) => {
+  return val == null ? "" : isArray(val) || isObject(val) && (val.toString === objectToString || !isFunction(val.toString)) ? JSON.stringify(val, replacer, 2) : String(val);
+};
+const replacer = (_key, val) => {
+  if (val && val.__v_isRef) {
+    return replacer(_key, val.value);
+  } else if (isMap(val)) {
+    return {
+      [`Map(${val.size})`]: [...val.entries()].reduce((entries, [key, val2]) => {
+        entries[`${key} =>`] = val2;
+        return entries;
+      }, {})
+    };
+  } else if (isSet(val)) {
+    return {
+      [`Set(${val.size})`]: [...val.values()]
+    };
+  } else if (isObject(val) && !isArray(val) && !isPlainObject(val)) {
+    return String(val);
+  }
+  return val;
+};
+const EMPTY_OBJ = {};
+const EMPTY_ARR = [];
+const NOOP = () => {
+};
+const NO = () => false;
+const onRE = /^on[^a-z]/;
+const isOn = (key) => onRE.test(key);
+const isModelListener = (key) => key.startsWith("onUpdate:");
+const extend = Object.assign;
+const remove = (arr, el) => {
+  const i = arr.indexOf(el);
+  if (i > -1) {
+    arr.splice(i, 1);
+  }
+};
+const hasOwnProperty = Object.prototype.hasOwnProperty;
+const hasOwn = (val, key) => hasOwnProperty.call(val, key);
+const isArray = Array.isArray;
+const isMap = (val) => toTypeString(val) === "[object Map]";
+const isSet = (val) => toTypeString(val) === "[object Set]";
+const isDate = (val) => val instanceof Date;
+const isFunction = (val) => typeof val === "function";
+const isString = (val) => typeof val === "string";
+const isSymbol = (val) => typeof val === "symbol";
+const isObject = (val) => val !== null && typeof val === "object";
+const isPromise = (val) => {
+  return isObject(val) && isFunction(val.then) && isFunction(val.catch);
+};
+const objectToString = Object.prototype.toString;
+const toTypeString = (value) => objectToString.call(value);
+const toRawType = (value) => {
+  return toTypeString(value).slice(8, -1);
+};
+const isPlainObject = (val) => toTypeString(val) === "[object Object]";
+const isIntegerKey = (key) => isString(key) && key !== "NaN" && key[0] !== "-" && "" + parseInt(key, 10) === key;
+const isReservedProp = /* @__PURE__ */ makeMap(",key,ref,ref_for,ref_key,onVnodeBeforeMount,onVnodeMounted,onVnodeBeforeUpdate,onVnodeUpdated,onVnodeBeforeUnmount,onVnodeUnmounted");
+const cacheStringFunction = (fn) => {
+  const cache = Object.create(null);
+  return (str) => {
+    const hit = cache[str];
+    return hit || (cache[str] = fn(str));
+  };
+};
+const camelizeRE = /-(\w)/g;
+const camelize = cacheStringFunction((str) => {
+  return str.replace(camelizeRE, (_, c) => c ? c.toUpperCase() : "");
+});
+const hyphenateRE = /\B([A-Z])/g;
+const hyphenate = cacheStringFunction((str) => str.replace(hyphenateRE, "-$1").toLowerCase());
+const capitalize = cacheStringFunction((str) => str.charAt(0).toUpperCase() + str.slice(1));
+const toHandlerKey = cacheStringFunction((str) => str ? `on${capitalize(str)}` : ``);
+const hasChanged = (value, oldValue) => !Object.is(value, oldValue);
+const invokeArrayFns = (fns, arg) => {
+  for (let i = 0; i < fns.length; i++) {
+    fns[i](arg);
+  }
+};
+const def = (obj, key, value) => {
+  Object.defineProperty(obj, key, {
+    configurable: true,
+    enumerable: false,
+    value
+  });
+};
+const toNumber = (val) => {
+  const n = parseFloat(val);
+  return isNaN(n) ? val : n;
+};
+let _globalThis$1;
+const getGlobalThis = () => {
+  return _globalThis$1 || (_globalThis$1 = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof commonjsGlobal !== "undefined" ? commonjsGlobal : {});
+};
+shared_cjs_prod.EMPTY_ARR = EMPTY_ARR;
+shared_cjs_prod.EMPTY_OBJ = EMPTY_OBJ;
+shared_cjs_prod.NO = NO;
+shared_cjs_prod.NOOP = NOOP;
+shared_cjs_prod.PatchFlagNames = PatchFlagNames;
+shared_cjs_prod.camelize = camelize;
+shared_cjs_prod.capitalize = capitalize;
+shared_cjs_prod.def = def;
+shared_cjs_prod.escapeHtml = escapeHtml;
+shared_cjs_prod.escapeHtmlComment = escapeHtmlComment;
+shared_cjs_prod.extend = extend;
+shared_cjs_prod.generateCodeFrame = generateCodeFrame;
+shared_cjs_prod.getGlobalThis = getGlobalThis;
+shared_cjs_prod.hasChanged = hasChanged;
+shared_cjs_prod.hasOwn = hasOwn;
+shared_cjs_prod.hyphenate = hyphenate;
+shared_cjs_prod.includeBooleanAttr = includeBooleanAttr;
+shared_cjs_prod.invokeArrayFns = invokeArrayFns;
+shared_cjs_prod.isArray = isArray;
+shared_cjs_prod.isBooleanAttr = isBooleanAttr;
+shared_cjs_prod.isDate = isDate;
+var isFunction_1 = shared_cjs_prod.isFunction = isFunction;
+shared_cjs_prod.isGloballyWhitelisted = isGloballyWhitelisted;
+shared_cjs_prod.isHTMLTag = isHTMLTag;
+shared_cjs_prod.isIntegerKey = isIntegerKey;
+shared_cjs_prod.isKnownHtmlAttr = isKnownHtmlAttr;
+shared_cjs_prod.isKnownSvgAttr = isKnownSvgAttr;
+shared_cjs_prod.isMap = isMap;
+shared_cjs_prod.isModelListener = isModelListener;
+shared_cjs_prod.isNoUnitNumericStyleProp = isNoUnitNumericStyleProp;
+shared_cjs_prod.isObject = isObject;
+shared_cjs_prod.isOn = isOn;
+shared_cjs_prod.isPlainObject = isPlainObject;
+shared_cjs_prod.isPromise = isPromise;
+shared_cjs_prod.isReservedProp = isReservedProp;
+shared_cjs_prod.isSSRSafeAttrName = isSSRSafeAttrName;
+shared_cjs_prod.isSVGTag = isSVGTag;
+shared_cjs_prod.isSet = isSet;
+shared_cjs_prod.isSpecialBooleanAttr = isSpecialBooleanAttr;
+shared_cjs_prod.isString = isString;
+shared_cjs_prod.isSymbol = isSymbol;
+shared_cjs_prod.isVoidTag = isVoidTag;
+shared_cjs_prod.looseEqual = looseEqual;
+shared_cjs_prod.looseIndexOf = looseIndexOf;
+shared_cjs_prod.makeMap = makeMap;
+shared_cjs_prod.normalizeClass = normalizeClass;
+shared_cjs_prod.normalizeProps = normalizeProps;
+shared_cjs_prod.normalizeStyle = normalizeStyle;
+shared_cjs_prod.objectToString = objectToString;
+shared_cjs_prod.parseStringStyle = parseStringStyle;
+shared_cjs_prod.propsToAttrMap = propsToAttrMap;
+shared_cjs_prod.remove = remove;
+shared_cjs_prod.slotFlagsText = slotFlagsText;
+shared_cjs_prod.stringifyStyle = stringifyStyle;
+shared_cjs_prod.toDisplayString = toDisplayString;
+shared_cjs_prod.toHandlerKey = toHandlerKey;
+shared_cjs_prod.toNumber = toNumber;
+shared_cjs_prod.toRawType = toRawType;
+shared_cjs_prod.toTypeString = toTypeString;
+function useMeta(meta) {
+  const resolvedMeta = isFunction_1(meta) ? computed(meta) : meta;
+  useNuxtApp()._useMeta(resolvedMeta);
+}
 const removeUndefinedProps = (props) => Object.fromEntries(Object.entries(props).filter(([, value]) => value !== void 0));
 const setupForUseMeta = (metaFactory, renderChild) => (props, ctx) => {
-  __vite_ssr_import_1__.useMeta(() => metaFactory({ ...removeUndefinedProps(props), ...ctx.attrs }, ctx));
-  return () => renderChild ? ctx.slots.default?.() : null;
+  useMeta(() => metaFactory(__spreadValues(__spreadValues({}, removeUndefinedProps(props)), ctx.attrs), ctx));
+  return () => {
+    var _a, _b;
+    return renderChild ? (_b = (_a = ctx.slots).default) == null ? void 0 : _b.call(_a) : null;
+  };
 };
 const globalProps = {
   accesskey: String,
@@ -1524,10 +2883,9 @@ const globalProps = {
   title: String,
   translate: String
 };
-const Script = __vite_ssr_import_0__.defineComponent({
+const Script = defineComponent({
   name: "Script",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     async: Boolean,
     crossorigin: {
       type: [Boolean, String],
@@ -1542,16 +2900,14 @@ const Script = __vite_ssr_import_0__.defineComponent({
     type: String,
     charset: String,
     language: String
-  },
+  }),
   setup: setupForUseMeta((script) => ({
     script: [script]
   }))
 });
-Object.defineProperty(__vite_ssr_exports__, "Script", { enumerable: true, configurable: true, get(){ return Script }});
-const Link = __vite_ssr_import_0__.defineComponent({
+const Link = defineComponent({
   name: "Link",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     as: String,
     crossorigin: String,
     disabled: Boolean,
@@ -1572,56 +2928,47 @@ const Link = __vite_ssr_import_0__.defineComponent({
     type: String,
     methods: String,
     target: String
-  },
+  }),
   setup: setupForUseMeta((link) => ({
     link: [link]
   }))
 });
-Object.defineProperty(__vite_ssr_exports__, "Link", { enumerable: true, configurable: true, get(){ return Link }});
-const Base = __vite_ssr_import_0__.defineComponent({
+const Base = defineComponent({
   name: "Base",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     href: String,
     target: String
-  },
+  }),
   setup: setupForUseMeta((base) => ({
     base
   }))
 });
-Object.defineProperty(__vite_ssr_exports__, "Base", { enumerable: true, configurable: true, get(){ return Base }});
-const Title = __vite_ssr_import_0__.defineComponent({
+const Title = defineComponent({
   name: "Title",
   setup: setupForUseMeta((_, { slots }) => {
-    const title = slots.default()?.[0]?.children || null;
-    if (true && title && typeof title !== "string") {
-      console.error("<Title> can only take a string in its default slot.");
-    }
+    var _a, _b;
+    const title = ((_b = (_a = slots.default()) == null ? void 0 : _a[0]) == null ? void 0 : _b.children) || null;
     return {
       title
     };
   })
 });
-Object.defineProperty(__vite_ssr_exports__, "Title", { enumerable: true, configurable: true, get(){ return Title }});
-const Meta = __vite_ssr_import_0__.defineComponent({
+const Meta = defineComponent({
   name: "Meta",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     charset: String,
     content: String,
     httpEquiv: String,
     key: String,
     name: String
-  },
+  }),
   setup: setupForUseMeta((meta) => ({
     meta: [meta]
   }))
 });
-Object.defineProperty(__vite_ssr_exports__, "Meta", { enumerable: true, configurable: true, get(){ return Meta }});
-const Style = __vite_ssr_import_0__.defineComponent({
+const Style = defineComponent({
   name: "Style",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     type: String,
     media: String,
     nonce: String,
@@ -1630,14 +2977,12 @@ const Style = __vite_ssr_import_0__.defineComponent({
       type: Boolean,
       default: void 0
     }
-  },
+  }),
   setup: setupForUseMeta((props, { slots }) => {
-    const style = { ...props };
-    const textContent = slots.default?.()?.[0]?.children;
+    var _a, _b, _c;
+    const style = __spreadValues({}, props);
+    const textContent = (_c = (_b = (_a = slots.default) == null ? void 0 : _a.call(slots)) == null ? void 0 : _b[0]) == null ? void 0 : _c.children;
     if (textContent) {
-      if (true && typeof textContent !== "string") {
-        console.error("<Style> can only take a string in its default slot.");
-      }
       style.children = textContent;
     }
     return {
@@ -1645,437 +2990,93 @@ const Style = __vite_ssr_import_0__.defineComponent({
     };
   })
 });
-Object.defineProperty(__vite_ssr_exports__, "Style", { enumerable: true, configurable: true, get(){ return Style }});
-const Head = __vite_ssr_import_0__.defineComponent({
+const Head = defineComponent({
   name: "Head",
   setup: (_props, ctx) => ctx.slots.default
 });
-Object.defineProperty(__vite_ssr_exports__, "Head", { enumerable: true, configurable: true, get(){ return Head }});
-const Html = __vite_ssr_import_0__.defineComponent({
+const Html = defineComponent({
   name: "Html",
-  props: {
-    ...globalProps,
+  props: __spreadProps(__spreadValues({}, globalProps), {
     manifest: String,
     version: String,
     xmlns: String
-  },
+  }),
   setup: setupForUseMeta((htmlAttrs) => ({ htmlAttrs }), true)
 });
-Object.defineProperty(__vite_ssr_exports__, "Html", { enumerable: true, configurable: true, get(){ return Html }});
-const Body = __vite_ssr_import_0__.defineComponent({
+const Body = defineComponent({
   name: "Body",
   props: globalProps,
   setup: setupForUseMeta((bodyAttrs) => ({ bodyAttrs }), true)
 });
-Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configurable: true, get(){ return Body }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/composables.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// Dependencies: 
-// - /node_modules/@vue/shared/dist/shared.cjs.js ($id_852b06a2)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_ca9295be = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@vue/shared/dist/shared.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-function useMeta(meta) {
-  const resolvedMeta = __vite_ssr_import_0__.isFunction(meta) ? __vite_ssr_import_1__.computed(meta) : meta;
-  __vite_ssr_import_2__.useNuxtApp()._useMeta(resolvedMeta);
-}
-Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, configurable: true, get(){ return useMeta }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/@vue/shared/dist/shared.cjs.js
-// Parents: 
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// Dependencies: 
-
-// --------------------
-const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js".') })
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
-// Dependencies: 
-
-// --------------------
-const $id_36430d24 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[],"style":[],"script":[]},"mixinKey":"created"};
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/router.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
-// - /node_modules/nuxt3/dist/pages/runtime/nested-page.vue ($id_c268603a)
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs ($id_313442dd)
-// --------------------
-const $id_a4d6cb5b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-router/dist/vue-router.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/nested-page.vue");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/page.vue");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/layout.mjs");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs");
-
-__vite_ssr_exports__.default = __vite_ssr_import_5__.defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component("NuxtNestedPage", __vite_ssr_import_2__.default);
-  nuxtApp.vueApp.component("NuxtPage", __vite_ssr_import_3__.default);
-  nuxtApp.vueApp.component("NuxtLayout", __vite_ssr_import_4__.default);
-  nuxtApp.vueApp.component("NuxtLink", __vite_ssr_import_1__.RouterLink);
-  nuxtApp.vueApp.component("NuxtChild", __vite_ssr_import_2__.default);
-  const routerHistory = false ? __vite_ssr_import_1__.createWebHistory() : __vite_ssr_import_1__.createMemoryHistory();
-  const router = __vite_ssr_import_1__.createRouter({
-    history: routerHistory,
-    routes: __vite_ssr_import_6__.default
-  });
-  nuxtApp.vueApp.use(router);
-  const previousRoute = __vite_ssr_import_0__.shallowRef(router.currentRoute.value);
-  router.afterEach((_to, from) => {
-    previousRoute.value = from;
-  });
-  Object.defineProperty(nuxtApp.vueApp.config.globalProperties, "previousRoute", {
-    get: () => previousRoute.value
-  });
-  const route = {};
-  for (const key in router.currentRoute.value) {
-    route[key] = __vite_ssr_import_0__.computed(() => router.currentRoute.value[key]);
-  }
-  nuxtApp._route = __vite_ssr_import_0__.reactive(route);
-  nuxtApp.hook("app:created", async () => {
-    if (true) {
-      router.push(nuxtApp.ssrContext.url);
-    }
-    await router.isReady();
-    const is404 = router.currentRoute.value.matched.length === 0;
-    if (true && is404) {
-      const error = new Error(`Page not found: ${nuxtApp.ssrContext.url}`);
-      error.statusCode = 404;
-      nuxtApp.ssrContext.error = error;
-    }
-  });
-  return { provide: { router } };
+const Components = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  Script,
+  Link,
+  Base,
+  Title,
+  Meta,
+  Style,
+  Head,
+  Html,
+  Body
 });
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/nested-page.vue
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_c268603a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-
-const _sfc_main = {
-  name: 'NuxtNestedPage'
-}
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_RouterView = __vite_ssr_import_0__.resolveComponent("RouterView")
-
-  _push(__vite_ssr_import_1__.ssrRenderComponent(_component_RouterView, _attrs, {
-    default: __vite_ssr_import_0__.withCtx(({ Component }, _push, _parent, _scopeId) => {
-      if (_push) {
-        __vite_ssr_import_1__.ssrRenderVNode(_push, __vite_ssr_import_0__.createVNode(__vite_ssr_import_0__.resolveDynamicComponent(Component), {
-          key: _ctx.$route.path
-        }, null), _parent, _scopeId)
-      } else {
-        return [
-          (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock(__vite_ssr_import_0__.resolveDynamicComponent(Component), {
-            key: _ctx.$route.path
-          }))
-        ]
+const metaConfig = { "globalMeta": { "meta": [{ "charset": "utf-8" }, { "name": "viewport", "content": "width=device-width, initial-scale=1" }], "link": [], "style": [], "script": [] }, "mixinKey": "created" };
+const plugin_87199ca4 = defineNuxtPlugin((nuxtApp) => {
+  useMeta(metaConfig.globalMeta);
+  nuxtApp.vueApp.mixin({
+    [metaConfig.mixinKey]() {
+      var _a;
+      const instance = getCurrentInstance();
+      const options = (instance == null ? void 0 : instance.type) || ((_a = instance == null ? void 0 : instance.proxy) == null ? void 0 : _a.$options);
+      if (!options || !("head" in options)) {
+        return;
       }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/nested-page.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/nested-page.vue"]]);
-}
-
-
-// --------------------
-// Request: /node_modules/vue/server-renderer/index.js
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/nested-page.vue ($id_c268603a)
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// - /components/home.vue ($id_4ae345a3)
-// - /pages/index.vue ($id_cca58e97)
-// - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
-// - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
-// Dependencies: 
-
-// --------------------
-const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/server-renderer/index.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/server-renderer/index.js".') })
-
-
-// --------------------
-// Request: /@id/plugin-vue:export-helper
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/nested-page.vue ($id_c268603a)
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// - /components/home.vue ($id_4ae345a3)
-// - /pages/index.vue ($id_cca58e97)
-// - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
-// - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
-// Dependencies: 
-
-// --------------------
-const $id_bbb863c1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-__vite_ssr_exports__.default = (sfc, props) => {
+      useMeta(options.head);
+    }
+  });
+  for (const name in Components) {
+    nuxtApp.vueApp.component(name, Components[name]);
+  }
+});
+const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
     target[key] = val;
   }
   return target;
-}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/page.vue
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_10628d40 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/layout.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-
-const _sfc_main = {
-  name: 'NuxtPage',
-  components: { NuxtLayout: __vite_ssr_import_1__.default },
-  props: {
-    layout: {
-      type: String,
-      default: null
-    }
-  },
-  setup () {
-    // Disable HMR reactivity in production
-    const updatedComponentLayout = true ? __vite_ssr_import_0__.ref(null) : null
-
-    const nuxtApp = __vite_ssr_import_2__.useNuxtApp()
-
-    function onSuspensePending (Component) {
-      if (true) {
-        updatedComponentLayout.value = Component.type.layout || null
-      }
-      return nuxtApp.callHook('page:start', Component)
-    }
-
-    function onSuspenseResolved (Component) {
-      return nuxtApp.callHook('page:finish', Component)
-    }
-
-    return {
-      updatedComponentLayout,
-      onSuspensePending,
-      onSuspenseResolved
-    }
-  }
-}
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_RouterView = __vite_ssr_import_3__.resolveComponent("RouterView")
-  const _component_NuxtLayout = __vite_ssr_import_3__.resolveComponent("NuxtLayout")
-
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_RouterView, _attrs, {
-    default: __vite_ssr_import_3__.withCtx(({ Component }, _push, _parent, _scopeId) => {
-      if (_push) {
-        if (Component) {
-          _push(__vite_ssr_import_4__.ssrRenderComponent(_component_NuxtLayout, {
-            name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
-          }, {
-            default: __vite_ssr_import_3__.withCtx((_, _push, _parent, _scopeId) => {
-              if (_push) {
-                _push(`<!-- <keep-alive> -->`)
-                __vite_ssr_import_4__.ssrRenderSuspense(_push, {
-                  default: () => {
-                    __vite_ssr_import_4__.ssrRenderVNode(_push, __vite_ssr_import_3__.createVNode(__vite_ssr_import_3__.resolveDynamicComponent(Component), {
-                      key: _ctx.$route.path
-                    }, null), _parent, _scopeId)
-                  },
-                  _: 2 /* DYNAMIC */
-                })
-                _push(`<!-- <keep-alive -->`)
-              } else {
-                return [
-                  __vite_ssr_import_3__.createVNode(__vite_ssr_import_3__.Transition, {
-                    name: "page",
-                    mode: "out-in"
-                  }, {
-                    default: __vite_ssr_import_3__.withCtx(() => [
-                      (__vite_ssr_import_3__.openBlock(), __vite_ssr_import_3__.createBlock(__vite_ssr_import_3__.Suspense, {
-                        onPending: () => $setup.onSuspensePending(Component),
-                        onResolve: () => $setup.onSuspenseResolved(Component)
-                      }, {
-                        default: __vite_ssr_import_3__.withCtx(() => [
-                          (__vite_ssr_import_3__.openBlock(), __vite_ssr_import_3__.createBlock(__vite_ssr_import_3__.resolveDynamicComponent(Component), {
-                            key: _ctx.$route.path
-                          }))
-                        ]),
-                        _: 2 /* DYNAMIC */
-                      }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["onPending", "onResolve"]))
-                    ]),
-                    _: 2 /* DYNAMIC */
-                  }, 1024 /* DYNAMIC_SLOTS */)
-                ]
-              }
-            }),
-            _: 2 /* DYNAMIC */
-          }, _parent, _scopeId))
-        } else {
-          _push(`<!---->`)
-        }
-        _push(`<!-- TODO: Handle 404 placeholder -->`)
+};
+const _sfc_main$7 = {
+  name: "NuxtNestedPage"
+};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_RouterView = resolveComponent("RouterView");
+  _push(ssrRenderComponent(_component_RouterView, _attrs, {
+    default: withCtx(({ Component }, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        ssrRenderVNode(_push2, createVNode(resolveDynamicComponent(Component), {
+          key: _ctx.$route.path
+        }, null), _parent2, _scopeId);
       } else {
         return [
-          Component
-            ? (__vite_ssr_import_3__.openBlock(), __vite_ssr_import_3__.createBlock(_component_NuxtLayout, {
-                key: 0,
-                name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
-              }, {
-                default: __vite_ssr_import_3__.withCtx(() => [
-                  __vite_ssr_import_3__.createVNode(__vite_ssr_import_3__.Transition, {
-                    name: "page",
-                    mode: "out-in"
-                  }, {
-                    default: __vite_ssr_import_3__.withCtx(() => [
-                      (__vite_ssr_import_3__.openBlock(), __vite_ssr_import_3__.createBlock(__vite_ssr_import_3__.Suspense, {
-                        onPending: () => $setup.onSuspensePending(Component),
-                        onResolve: () => $setup.onSuspenseResolved(Component)
-                      }, {
-                        default: __vite_ssr_import_3__.withCtx(() => [
-                          (__vite_ssr_import_3__.openBlock(), __vite_ssr_import_3__.createBlock(__vite_ssr_import_3__.resolveDynamicComponent(Component), {
-                            key: _ctx.$route.path
-                          }))
-                        ]),
-                        _: 2 /* DYNAMIC */
-                      }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["onPending", "onResolve"]))
-                    ]),
-                    _: 2 /* DYNAMIC */
-                  }, 1024 /* DYNAMIC_SLOTS */)
-                ]),
-                _: 2 /* DYNAMIC */
-              }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["name"]))
-            : __vite_ssr_import_3__.createCommentVNode("v-if", true),
-          __vite_ssr_import_3__.createCommentVNode(" TODO: Handle 404 placeholder ")
-        ]
+          (openBlock(), createBlock(resolveDynamicComponent(Component), {
+            key: _ctx.$route.path
+          }))
+        ];
       }
     }),
-    _: 1 /* STABLE */
-  }, _parent))
+    _: 1
+  }, _parent));
 }
-
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_5__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/page.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/page.vue"]]);
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/layout.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs ($id_45f47c42)
-// --------------------
-const $id_9b68c93f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs");
-
-__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/nested-page.vue");
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
+};
+const NuxtNestedPage = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7]]);
+const layouts = {};
+const NuxtLayout = defineComponent({
   props: {
     name: {
       type: [String, Boolean],
@@ -2085,566 +3086,815 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   setup(props, context) {
     return () => {
       const layout = props.name;
-      if (!__vite_ssr_import_1__.default[layout]) {
-        if (true && layout && layout !== "default") {
-          console.warn(`Invalid layout \`${layout}\` selected.`);
-        }
+      if (!layouts[layout]) {
         return context.slots.default();
       }
-      return __vite_ssr_import_0__.h(__vite_ssr_import_1__.default[layout], props, context.slots);
+      return h(layouts[layout], props, context.slots);
     };
   }
 });
-;
+const _sfc_main$6 = {
+  name: "NuxtPage",
+  components: { NuxtLayout },
+  props: {
+    layout: {
+      type: String,
+      default: null
+    }
+  },
+  setup() {
+    const updatedComponentLayout = null;
+    const nuxtApp = useNuxtApp();
+    function onSuspensePending(Component) {
+      return nuxtApp.callHook("page:start", Component);
+    }
+    function onSuspenseResolved(Component) {
+      return nuxtApp.callHook("page:finish", Component);
+    }
+    return {
+      updatedComponentLayout,
+      onSuspensePending,
+      onSuspenseResolved
+    };
+  }
+};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_RouterView = resolveComponent("RouterView");
+  const _component_NuxtLayout = resolveComponent("NuxtLayout");
+  _push(ssrRenderComponent(_component_RouterView, _attrs, {
+    default: withCtx(({ Component }, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        if (Component) {
+          _push2(ssrRenderComponent(_component_NuxtLayout, {
+            name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
+          }, {
+            default: withCtx((_, _push3, _parent3, _scopeId2) => {
+              if (_push3) {
+                ssrRenderSuspense(_push3, {
+                  default: () => {
+                    ssrRenderVNode(_push3, createVNode(resolveDynamicComponent(Component), {
+                      key: _ctx.$route.path
+                    }, null), _parent3, _scopeId2);
+                  },
+                  _: 2
+                });
+              } else {
+                return [
+                  createVNode(Transition, {
+                    name: "page",
+                    mode: "out-in"
+                  }, {
+                    default: withCtx(() => [
+                      (openBlock(), createBlock(Suspense, {
+                        onPending: () => $setup.onSuspensePending(Component),
+                        onResolve: () => $setup.onSuspenseResolved(Component)
+                      }, {
+                        default: withCtx(() => [
+                          (openBlock(), createBlock(resolveDynamicComponent(Component), {
+                            key: _ctx.$route.path
+                          }))
+                        ]),
+                        _: 2
+                      }, 1032, ["onPending", "onResolve"]))
+                    ]),
+                    _: 2
+                  }, 1024)
+                ];
+              }
+            }),
+            _: 2
+          }, _parent2, _scopeId));
+        } else {
+          _push2(`<!---->`);
+        }
+      } else {
+        return [
+          Component ? (openBlock(), createBlock(_component_NuxtLayout, {
+            key: 0,
+            name: $props.layout || $setup.updatedComponentLayout || Component.type.layout
+          }, {
+            default: withCtx(() => [
+              createVNode(Transition, {
+                name: "page",
+                mode: "out-in"
+              }, {
+                default: withCtx(() => [
+                  (openBlock(), createBlock(Suspense, {
+                    onPending: () => $setup.onSuspensePending(Component),
+                    onResolve: () => $setup.onSuspenseResolved(Component)
+                  }, {
+                    default: withCtx(() => [
+                      (openBlock(), createBlock(resolveDynamicComponent(Component), {
+                        key: _ctx.$route.path
+                      }))
+                    ]),
+                    _: 2
+                  }, 1032, ["onPending", "onResolve"]))
+                ]),
+                _: 2
+              }, 1024)
+            ]),
+            _: 2
+          }, 1032, ["name"])) : createCommentVNode("", true)
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_45f47c42 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-__vite_ssr_exports__.default = {};
-}
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// Dependencies: 
-// - /pages/index.vue ($id_cca58e97)
-// --------------------
-const $id_313442dd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = [
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/page.vue");
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+};
+const NuxtPage = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6]]);
+const routes = [
   {
     "name": "index",
     "path": "/",
     "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/index.vue",
     "children": [],
-    "component": () => __vite_ssr_dynamic_import__('/pages/index.vue')
+    "component": () => Promise.resolve().then(function() {
+      return index$1;
+    })
   }
 ];
+const router_6d5ce731 = defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component("NuxtNestedPage", NuxtNestedPage);
+  nuxtApp.vueApp.component("NuxtPage", NuxtPage);
+  nuxtApp.vueApp.component("NuxtLayout", NuxtLayout);
+  nuxtApp.vueApp.component("NuxtLink", vueRouter_cjs_prod.RouterLink);
+  nuxtApp.vueApp.component("NuxtChild", NuxtNestedPage);
+  const routerHistory = vueRouter_cjs_prod.createMemoryHistory();
+  const router = vueRouter_cjs_prod.createRouter({
+    history: routerHistory,
+    routes
+  });
+  nuxtApp.vueApp.use(router);
+  const previousRoute = shallowRef(router.currentRoute.value);
+  router.afterEach((_to, from) => {
+    previousRoute.value = from;
+  });
+  Object.defineProperty(nuxtApp.vueApp.config.globalProperties, "previousRoute", {
+    get: () => previousRoute.value
+  });
+  const route = {};
+  for (const key in router.currentRoute.value) {
+    route[key] = computed(() => router.currentRoute.value[key]);
+  }
+  nuxtApp._route = reactive(route);
+  nuxtApp.hook("app:created", async () => {
+    {
+      router.push(nuxtApp.ssrContext.url);
+    }
+    await router.isReady();
+    const is404 = router.currentRoute.value.matched.length === 0;
+    if (is404) {
+      const error = new Error(`Page not found: ${nuxtApp.ssrContext.url}`);
+      error.statusCode = 404;
+      nuxtApp.ssrContext.error = error;
+    }
+  });
+  return { provide: { router } };
+});
+const HASH_RE = /#/g;
+const AMPERSAND_RE = /&/g;
+const EQUAL_RE = /=/g;
+const PLUS_RE = /\+/g;
+const ENC_BRACKET_OPEN_RE = /%5B/gi;
+const ENC_BRACKET_CLOSE_RE = /%5D/gi;
+const ENC_CARET_RE = /%5E/gi;
+const ENC_BACKTICK_RE = /%60/gi;
+const ENC_CURLY_OPEN_RE = /%7B/gi;
+const ENC_PIPE_RE = /%7C/gi;
+const ENC_CURLY_CLOSE_RE = /%7D/gi;
+const ENC_SPACE_RE = /%20/gi;
+function encode(text) {
+  return encodeURI("" + text).replace(ENC_PIPE_RE, "|").replace(ENC_BRACKET_OPEN_RE, "[").replace(ENC_BRACKET_CLOSE_RE, "]");
 }
-
-
-// --------------------
-// Request: /pages/index.vue
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs ($id_313442dd)
-// Dependencies: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// - /components/home.vue ($id_4ae345a3)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_cca58e97 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/skills.vue");
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/project.vue");
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/home.vue");
-
-const _sfc_main = {}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_skills = __vite_ssr_import_0__.default
-  const _component_project = __vite_ssr_import_1__.default
-  const _component_home = __vite_ssr_import_2__.default
-
-  _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(_attrs)}>`)
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_skills, null, null, _parent))
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_project, null, null, _parent))
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_home, null, null, _parent))
-  _push(`</div>`)
+function encodeQueryValue(text) {
+  return encode(text).replace(PLUS_RE, "%2B").replace(ENC_SPACE_RE, "+").replace(HASH_RE, "%23").replace(AMPERSAND_RE, "%26").replace(ENC_BACKTICK_RE, "`").replace(ENC_CURLY_OPEN_RE, "{").replace(ENC_CURLY_CLOSE_RE, "}").replace(ENC_CARET_RE, "^");
 }
-
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_5__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+function encodeQueryKey(text) {
+  return encodeQueryValue(text).replace(EQUAL_RE, "%3D");
 }
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/pages/index.vue"]]);
+function decode(text = "") {
+  try {
+    return decodeURIComponent("" + text);
+  } catch (_err) {
+    return "" + text;
+  }
 }
-
-
-// --------------------
-// Request: /components/skills.vue
-// Parents: 
-// - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/swiper/vue/swiper-vue.js ($id_72e3deca)
-// - /node_modules/swiper/swiper.min.css ($id_9d54fdba)
-// - /node_modules/swiper/modules/pagination/pagination.min.css ($id_d3ef010f)
-// - /node_modules/swiper/modules/navigation/navigation.min.css ($id_9b8672f2)
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /assets/images/icons8/icons8-f-cute.svg ($id_6417dc97)
-// - /assets/images/mycollection/html-5.svg ($id_9d898b84)
-// - /assets/images/mycollection/css3.svg ($id_687c4c7a)
-// - /assets/images/mycollection/tailwindcss.svg ($id_efe33b41)
-// - /assets/images/mycollection/javascript.svg ($id_188644a4)
-// - /assets/images/mycollection/vue.svg ($id_abef9de1)
-// - /assets/images/mycollection/nuxt.svg ($id_b2bb126b)
-// - /assets/images/icons8/icons8-b-cute.svg ($id_5321ef9e)
-// - /assets/images/mycollection/expressjs-icon.svg ($id_25e013d0)
-// - /assets/images/mycollection/mongodb-icon.svg ($id_6efcfe6b)
-// - /assets/images/mycollection/mariadb-icon.svg ($id_da57e3e6)
-// - /assets/images/icons8/icons8-o-cute.svg ($id_b6503303)
-// - /assets/images/mycollection/wordpress-icon.svg ($id_9d8e64d7)
-// - /assets/images/mycollection/canva-icon.svg ($id_bc6cd90f)
-// - /assets/images/mycollection/vscode.svg ($id_1b35e04e)
-// - /assets/images/mycollection/git.svg ($id_8f65d5a4)
-// - /assets/images/mycollection/digitalocean-icon.svg ($id_a2d143a7)
-// - /components/skills.vue?vue&type=style&index=0&lang.css ($id_cfe411c4)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_43fa255d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-// Import Swiper Vue.js components
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/swiper/vue/swiper-vue.js");
-
-
-// Import Swiper styles
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/swiper/swiper.min.css");
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/swiper/modules/pagination/pagination.min.css");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/swiper/modules/navigation/navigation.min.css");
-
-
-// import required modules
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/swiper/swiper.esm.js");
-
-
-const _sfc_main = {
+function decodeQueryValue(text) {
+  return decode(text.replace(PLUS_RE, " "));
+}
+function parseQuery(paramsStr = "") {
+  const obj = {};
+  if (paramsStr[0] === "?") {
+    paramsStr = paramsStr.substr(1);
+  }
+  for (const param of paramsStr.split("&")) {
+    const s = param.match(/([^=]+)=?(.*)/) || [];
+    if (s.length < 2) {
+      continue;
+    }
+    const key = decode(s[1]);
+    if (key === "__proto__" || key === "constructor") {
+      continue;
+    }
+    const value = decodeQueryValue(s[2] || "");
+    if (obj[key]) {
+      if (Array.isArray(obj[key])) {
+        obj[key].push(value);
+      } else {
+        obj[key] = [obj[key], value];
+      }
+    } else {
+      obj[key] = value;
+    }
+  }
+  return obj;
+}
+function encodeQueryItem(key, val) {
+  if (!val) {
+    return encodeQueryKey(key);
+  }
+  if (Array.isArray(val)) {
+    return val.map((_val) => `${encodeQueryKey(key)}=${encodeQueryValue(_val)}`).join("&");
+  }
+  return `${encodeQueryKey(key)}=${encodeQueryValue(val)}`;
+}
+function stringifyQuery(query) {
+  return Object.keys(query).map((k) => encodeQueryItem(k, query[k])).join("&");
+}
+function hasProtocol(inputStr, acceptProtocolRelative = false) {
+  return /^\w+:\/\/.+/.test(inputStr) || acceptProtocolRelative && /^\/\/[^/]+/.test(inputStr);
+}
+const TRAILING_SLASH_RE = /\/$|\/\?/;
+function hasTrailingSlash(input = "", queryParams = false) {
+  if (!queryParams) {
+    return input.endsWith("/");
+  }
+  return TRAILING_SLASH_RE.test(input);
+}
+function withoutTrailingSlash(input = "", queryParams = false) {
+  if (!queryParams) {
+    return (hasTrailingSlash(input) ? input.slice(0, -1) : input) || "/";
+  }
+  if (!hasTrailingSlash(input, true)) {
+    return input || "/";
+  }
+  const [s0, ...s] = input.split("?");
+  return (s0.slice(0, -1) || "/") + (s.length ? `?${s.join("?")}` : "");
+}
+function withTrailingSlash(input = "", queryParams = false) {
+  if (!queryParams) {
+    return input.endsWith("/") ? input : input + "/";
+  }
+  if (hasTrailingSlash(input, true)) {
+    return input || "/";
+  }
+  const [s0, ...s] = input.split("?");
+  return s0 + "/" + (s.length ? `?${s.join("?")}` : "");
+}
+function hasLeadingSlash(input = "") {
+  return input.startsWith("/");
+}
+function withoutLeadingSlash(input = "") {
+  return (hasLeadingSlash(input) ? input.substr(1) : input) || "/";
+}
+function withBase(input, base) {
+  if (isEmptyURL(base)) {
+    return input;
+  }
+  const _base = withoutTrailingSlash(base);
+  if (input.startsWith(_base)) {
+    return input;
+  }
+  return joinURL(_base, input);
+}
+function withQuery(input, query) {
+  const parsed = parseURL(input);
+  const mergedQuery = __spreadValues(__spreadValues({}, parseQuery(parsed.search)), query);
+  parsed.search = stringifyQuery(mergedQuery);
+  return stringifyParsedURL(parsed);
+}
+function isEmptyURL(url) {
+  return !url || url === "/";
+}
+function isNonEmptyURL(url) {
+  return url && url !== "/";
+}
+function joinURL(base, ...input) {
+  let url = base || "";
+  for (const i of input.filter(isNonEmptyURL)) {
+    url = url ? withTrailingSlash(url) + withoutLeadingSlash(i) : i;
+  }
+  return url;
+}
+function parseURL(input = "", defaultProto) {
+  if (!hasProtocol(input, true)) {
+    return defaultProto ? parseURL(defaultProto + input) : parsePath(input);
+  }
+  const [protocol = "", auth, hostAndPath] = (input.match(/([^:/]+:)?\/\/([^/@]+@)?(.*)/) || []).splice(1);
+  const [host = "", path = ""] = (hostAndPath.match(/([^/?]*)(.*)?/) || []).splice(1);
+  const { pathname, search, hash } = parsePath(path);
+  return {
+    protocol,
+    auth: auth ? auth.substr(0, auth.length - 1) : "",
+    host,
+    pathname,
+    search,
+    hash
+  };
+}
+function parsePath(input = "") {
+  const [pathname = "", search = "", hash = ""] = (input.match(/([^#?]*)(\?[^#]*)?(#.*)?/) || []).splice(1);
+  return {
+    pathname,
+    search,
+    hash
+  };
+}
+function stringifyParsedURL(parsed) {
+  const fullpath = parsed.pathname + (parsed.search ? (parsed.search.startsWith("?") ? "" : "?") + parsed.search : "") + parsed.hash;
+  if (!parsed.protocol) {
+    return fullpath;
+  }
+  return parsed.protocol + "//" + (parsed.auth ? parsed.auth + "@" : "") + parsed.host + fullpath;
+}
+class FetchError extends Error {
+  constructor() {
+    super(...arguments);
+    this.name = "FetchError";
+  }
+}
+function createFetchError(request, error, response) {
+  let message = "";
+  if (request && response) {
+    message = `${response.status} ${response.statusText} (${request.toString()})`;
+  }
+  if (error) {
+    message = `${error.message} (${message})`;
+  }
+  const fetchError = new FetchError(message);
+  Object.defineProperty(fetchError, "request", { get() {
+    return request;
+  } });
+  Object.defineProperty(fetchError, "response", { get() {
+    return response;
+  } });
+  Object.defineProperty(fetchError, "data", { get() {
+    return response && response.data;
+  } });
+  return fetchError;
+}
+const payloadMethods = new Set(Object.freeze(["PATCH", "POST", "PUT", "DELETE"]));
+function isPayloadMethod(method = "GET") {
+  return payloadMethods.has(method.toUpperCase());
+}
+function isJSONSerializable(val) {
+  if (val === void 0) {
+    return false;
+  }
+  const t = typeof val;
+  if (t === "string" || t === "number" || t === "boolean" || t === null) {
+    return true;
+  }
+  if (t !== "object") {
+    return false;
+  }
+  if (Array.isArray(val)) {
+    return true;
+  }
+  return val.constructor && val.constructor.name === "Object" || typeof val.toJSON === "function";
+}
+const textTypes = /* @__PURE__ */ new Set([
+  "image/svg",
+  "application/xml",
+  "application/xhtml",
+  "application/html"
+]);
+const jsonTypes = /* @__PURE__ */ new Set(["application/json", "application/ld+json"]);
+function detectResponseType(_contentType = "") {
+  if (!_contentType) {
+    return "json";
+  }
+  const contentType = _contentType.split(";").shift();
+  if (jsonTypes.has(contentType)) {
+    return "json";
+  }
+  if (textTypes.has(contentType) || contentType.startsWith("text/")) {
+    return "text";
+  }
+  return "blob";
+}
+const retryStatusCodes = /* @__PURE__ */ new Set([
+  408,
+  409,
+  425,
+  429,
+  500,
+  502,
+  503,
+  504
+]);
+function createFetch(globalOptions) {
+  const { fetch: fetch2, Headers: Headers2 } = globalOptions;
+  function onError(ctx) {
+    if (ctx.options.retry !== false) {
+      const retries = typeof ctx.options.retry === "number" ? ctx.options.retry : isPayloadMethod(ctx.options.method) ? 0 : 1;
+      const responseCode = ctx.response && ctx.response.status || 500;
+      if (retries > 0 && retryStatusCodes.has(responseCode)) {
+        return $fetchRaw(ctx.request, __spreadProps(__spreadValues({}, ctx.options), {
+          retry: retries - 1
+        }));
+      }
+    }
+    const err = createFetchError(ctx.request, ctx.error, ctx.response);
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(err, $fetchRaw);
+    }
+    throw err;
+  }
+  const $fetchRaw = async function $fetchRaw2(_request, _opts = {}) {
+    const ctx = {
+      request: _request,
+      options: __spreadValues(__spreadValues({}, globalOptions.defaults), _opts),
+      response: void 0,
+      error: void 0
+    };
+    if (ctx.options.onRequest) {
+      await ctx.options.onRequest(ctx);
+    }
+    if (typeof ctx.request === "string") {
+      if (ctx.options.baseURL) {
+        ctx.request = withBase(ctx.request, ctx.options.baseURL);
+      }
+      if (ctx.options.params) {
+        ctx.request = withQuery(ctx.request, ctx.options.params);
+      }
+      if (ctx.options.body && isPayloadMethod(ctx.options.method)) {
+        if (isJSONSerializable(ctx.options.body)) {
+          ctx.options.body = JSON.stringify(ctx.options.body);
+          ctx.options.headers = new Headers2(ctx.options.headers);
+          if (!ctx.options.headers.has("content-type")) {
+            ctx.options.headers.set("content-type", "application/json");
+          }
+          if (!ctx.options.headers.has("accept")) {
+            ctx.options.headers.set("accept", "application/json");
+          }
+        }
+      }
+    }
+    ctx.response = await fetch2(ctx.request, ctx.options).catch(async (error) => {
+      ctx.error = error;
+      if (ctx.options.onRequestError) {
+        await ctx.options.onRequestError(ctx);
+      }
+      return onError(ctx);
+    });
+    const responseType = (ctx.options.parseResponse ? "json" : ctx.options.responseType) || detectResponseType(ctx.response.headers.get("content-type") || "");
+    if (responseType === "json") {
+      const data = await ctx.response.text();
+      const parseFn = ctx.options.parseResponse || destr;
+      ctx.response.data = parseFn(data);
+    } else {
+      ctx.response.data = await ctx.response[responseType]();
+    }
+    if (ctx.options.onResponse) {
+      await ctx.options.onResponse(ctx);
+    }
+    if (!ctx.response.ok) {
+      if (ctx.options.onResponseError) {
+        await ctx.options.onResponseError(ctx);
+      }
+    }
+    return ctx.response.ok ? ctx.response : onError(ctx);
+  };
+  const $fetch2 = function $fetch22(request, opts) {
+    return $fetchRaw(request, opts).then((r) => r.data);
+  };
+  $fetch2.raw = $fetchRaw;
+  $fetch2.create = (defaultOptions = {}) => createFetch(__spreadProps(__spreadValues({}, globalOptions), {
+    defaults: __spreadValues(__spreadValues({}, globalOptions.defaults), defaultOptions)
+  }));
+  return $fetch2;
+}
+const _globalThis = function() {
+  if (typeof globalThis !== "undefined") {
+    return globalThis;
+  }
+  if (typeof self !== "undefined") {
+    return self;
+  }
+  if (typeof global !== "undefined") {
+    return global;
+  }
+  throw new Error("unable to locate global object");
+}();
+const fetch = _globalThis.fetch || (() => Promise.reject(new Error("[ohmyfetch] global.fetch is not supported!")));
+const Headers = _globalThis.Headers;
+const $fetch = createFetch({ fetch, Headers });
+if (!globalThis.$fetch) {
+  globalThis.$fetch = $fetch;
+}
+const nitroClient_7b4dce10 = () => {
+};
+const components = {
+  "Home": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return home;
+  }).then((c) => c.default || c)),
+  "Project": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return project;
+  }).then((c) => c.default || c)),
+  "Skills": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return skills;
+  }).then((c) => c.default || c))
+};
+function components_515c5644(nuxtApp) {
+  for (const name in components) {
+    nuxtApp.vueApp.component(name, components[name]);
+    nuxtApp.vueApp.component("Lazy" + name, components[name]);
+  }
+}
+const _plugins = [
+  preload,
+  vueuseHead_7016c5ba,
+  plugin_87199ca4,
+  router_6d5ce731,
+  nitroClient_7b4dce10,
+  components_515c5644
+];
+const _sfc_main$5 = {
+  setup() {
+    const nuxtApp = useNuxtApp();
+    nuxtApp.hooks.callHookWith((hooks) => hooks.map((hook) => hook()), "vue:setup");
+  }
+};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_App = resolveComponent("App");
+  ssrRenderSuspense(_push, {
+    default: () => {
+      _push(ssrRenderComponent(_component_App, null, null, _parent));
+    },
+    _: 1
+  });
+}
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/app/components/nuxt-root.vue");
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+};
+const RootComponent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
+const _sfc_main$4 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+  const _component_NuxtPage = resolveComponent("NuxtPage");
+  _push(ssrRenderComponent(_component_NuxtPage, _attrs, null, _parent));
+}
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/app.vue");
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+};
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4]]);
+let entry;
+const plugins = normalizePlugins(_plugins);
+{
+  entry = async function createNuxtAppServer(ssrContext = {}) {
+    const vueApp = createApp(RootComponent);
+    vueApp.component("App", AppComponent);
+    const nuxt = createNuxtApp({ vueApp, ssrContext });
+    await applyPlugins(nuxt, plugins);
+    await nuxt.hooks.callHook("app:created", vueApp);
+    return vueApp;
+  };
+}
+const bootstrap = (ctx) => entry(ctx);
+const bootstrap$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": bootstrap
+});
+const _imports_0$2 = "/_nuxt/assets/icons8-f-cute.3b02a426.svg";
+const _imports_2$2 = "/_nuxt/assets/html-5.765166f2.svg";
+const _imports_2$1 = "/_nuxt/assets/css3.20d99463.svg";
+const _imports_3$1 = "/_nuxt/assets/tailwindcss.7c29d970.svg";
+const _imports_4$1 = "/_nuxt/assets/javascript.01c2ca6e.svg";
+const _imports_5$1 = "/_nuxt/assets/vue.7e7c7361.svg";
+const _imports_6$1 = "/_nuxt/assets/nuxt.1cd02af8.svg";
+const _imports_7$2 = "/_nuxt/assets/icons8-b-cute.19cdcf7e.svg";
+const _imports_8$2 = "/_nuxt/assets/expressjs-icon.44e8ea18.svg";
+const _imports_9$2 = "/_nuxt/assets/mongodb-icon.64a21d47.svg";
+const _imports_10$1 = "/_nuxt/assets/mariadb-icon.5b3b5ddf.svg";
+const _imports_11 = "/_nuxt/assets/icons8-o-cute.44026c20.svg";
+const _imports_12 = "/_nuxt/assets/wordpress-icon.1dbcce02.svg";
+const _imports_13 = "/_nuxt/assets/canva-icon.00b39470.svg";
+const _imports_14 = "/_nuxt/assets/vscode.ac6dde88.svg";
+const _imports_15 = "/_nuxt/assets/git.717a57ea.svg";
+const _imports_16 = "/_nuxt/assets/digitalocean-icon.91247310.svg";
+const skills_vue_vue_type_style_index_0_lang = "";
+const _sfc_main$3 = {
   head: {
     title: "skills",
     meta: [
       {
         hid: "description",
         name: "MEVN developer | website developer",
-        content: "I know front end and some basic of backend. html, css, javascript, vscode, vue js, nuxt js, many more.",
-      },
-    ],
+        content: "I know front end and some basic of backend. html, css, javascript, vscode, vue js, nuxt js, many more."
+      }
+    ]
   },
-
   components: {
-    Swiper: __vite_ssr_import_1__.Swiper,
-    SwiperSlide: __vite_ssr_import_1__.SwiperSlide,
+    Swiper,
+    SwiperSlide
   },
   setup() {
     return {
-      modules: [__vite_ssr_import_5__.Pagination, __vite_ssr_import_5__.Navigation, __vite_ssr_import_5__.Keyboard],
+      modules: [Pagination, Navigation, Keyboard]
     };
-  },
+  }
 };
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/assets/images/icons8/icons8-f-cute.svg");
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/assets/images/mycollection/html-5.svg");
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/assets/images/mycollection/css3.svg");
-
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/assets/images/mycollection/tailwindcss.svg");
-
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/assets/images/mycollection/javascript.svg");
-
-const __vite_ssr_import_13__ = await __vite_ssr_import__("/assets/images/mycollection/vue.svg");
-
-const __vite_ssr_import_14__ = await __vite_ssr_import__("/assets/images/mycollection/nuxt.svg");
-
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/assets/images/icons8/icons8-b-cute.svg");
-
-const __vite_ssr_import_16__ = await __vite_ssr_import__("/assets/images/mycollection/expressjs-icon.svg");
-
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/assets/images/mycollection/mongodb-icon.svg");
-
-const __vite_ssr_import_18__ = await __vite_ssr_import__("/assets/images/mycollection/mariadb-icon.svg");
-
-const __vite_ssr_import_19__ = await __vite_ssr_import__("/assets/images/icons8/icons8-o-cute.svg");
-
-const __vite_ssr_import_20__ = await __vite_ssr_import__("/assets/images/mycollection/wordpress-icon.svg");
-
-const __vite_ssr_import_21__ = await __vite_ssr_import__("/assets/images/mycollection/canva-icon.svg");
-
-const __vite_ssr_import_22__ = await __vite_ssr_import__("/assets/images/mycollection/vscode.svg");
-
-const __vite_ssr_import_23__ = await __vite_ssr_import__("/assets/images/mycollection/git.svg");
-
-const __vite_ssr_import_24__ = await __vite_ssr_import__("/assets/images/mycollection/digitalocean-icon.svg");
-
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_swiper = __vite_ssr_import_6__.resolveComponent("swiper")
-  const _component_swiper_slide = __vite_ssr_import_6__.resolveComponent("swiper-slide")
-
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_swiper, __vite_ssr_import_6__.mergeProps({
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_swiper = resolveComponent("swiper");
+  const _component_swiper_slide = resolveComponent("swiper-slide");
+  _push(ssrRenderComponent(_component_swiper, mergeProps({
     navigation: true,
     keyboard: { enabled: true },
     pagination: { dynamicBullets: true, clickable: true },
     modules: $setup.modules,
     class: "mySwiper cursor-pointer select-none mt-10"
   }, _attrs), {
-    default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<section class="bg-white"${
-                _scopeId
-              }><div class="container px-4 mx-auto"${
-                _scopeId
-              }><div class="flex flex-col justify-center"${
-                _scopeId
-              }><!-- <div class="ml-2">
-              <img class="w-5 -mb-[11px] mx-auto" src="~/assets/images/icons8/icons8-penguin.svg" alt="" />
-            </div> --><div class="flex items-center justify-center"${
-                _scopeId
-              }><img class="w-6 -mr-1"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_8__.default)
-              } alt=""${
-                _scopeId
-              }><h1 class="text-2xl font-semibold text-center text-red-500"${
-                _scopeId
-              }>RONT END</h1></div><span class="text-sm text-center text-black"${
-                _scopeId
-              }>MEVN Learner</span></div><div class="flex flex-wrap items-center justify-center -mx-4 lg:-mx-24"${
-                _scopeId
-              }><!-- html skills for slider  --><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${
-                _scopeId
-              }><div class="flex flex-wrap items-start -mx-4"${
-                _scopeId
-              }><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_9__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium font-heading"${
-                _scopeId
-              }>Semantic Tags Structure, SEO Tags <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>HTML 5</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-              } alt=""${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_11__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>class, id, flex, grid, animation, transition <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>CSS 3 <span class="text-indigo-400"${
-                _scopeId
-              }>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_12__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>DOM, loop,validation, condition,event <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>Java script</span></div></div><div class="w-full px-4 pb-4 md:w-1/2 lg:w-1/4"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
-              } alt=""${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>fundamentals, advanced components, transitions &amp; animations, vuex, form validation, routing <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>vue js <span class="text-indigo-400"${
-                _scopeId
-              }>||</span> nuxt js</span></div></div></div></div><!-- skills for slider end  --></div></div></section>`)
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><div class="flex flex-col justify-center"${_scopeId2}><div class="flex items-center justify-center"${_scopeId2}><img class="w-6 -mr-1"${ssrRenderAttr("src", _imports_0$2)} alt=""${_scopeId2}><h1 class="text-2xl font-semibold text-center text-red-500"${_scopeId2}>RONT END</h1></div><span class="text-sm text-center text-black"${_scopeId2}>MEVN Learner</span></div><div class="flex flex-wrap items-center justify-center -mx-4 lg:-mx-24"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_2$2)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Semantic Tags Structure, SEO Tags <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>HTML 5</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]"${ssrRenderAttr("src", _imports_2$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>class, id, flex, grid, animation, transition <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>CSS 3 <span class="text-indigo-400"${_scopeId2}>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>DOM, loop,validation, condition,event <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Java script</span></div></div><div class="w-full px-4 pb-4 md:w-1/2 lg:w-1/4"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]"${ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>fundamentals, advanced components, transitions &amp; animations, vuex, form validation, routing <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vue js <span class="text-indigo-400"${_scopeId2}>||</span> nuxt js</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                  __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-col justify-center" }, [
-                      __vite_ssr_import_6__.createCommentVNode(" <div class=\"ml-2\">\r\n              <img class=\"w-5 -mb-[11px] mx-auto\" src=\"~/assets/images/icons8/icons8-penguin.svg\" alt=\"\" />\r\n            </div> "),
-                      __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                        __vite_ssr_import_6__.createVNode("img", {
+                createVNode("section", { class: "bg-white" }, [
+                  createVNode("div", { class: "container px-4 mx-auto" }, [
+                    createVNode("div", { class: "flex flex-col justify-center" }, [
+                      createVNode("div", { class: "flex items-center justify-center" }, [
+                        createVNode("img", {
                           class: "w-6 -mr-1",
-                          src: __vite_ssr_import_8__.default,
+                          src: _imports_0$2,
                           alt: ""
                         }),
-                        __vite_ssr_import_6__.createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, "RONT END")
+                        createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, "RONT END")
                       ]),
-                      __vite_ssr_import_6__.createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
+                      createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
                     ]),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
-                      __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                      __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
+                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_9__.default,
+                                src: _imports_2$2,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("Semantic Tags Structure, SEO Tags "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
+                                createTextVNode("Semantic Tags Structure, SEO Tags "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
-                                src: __vite_ssr_import_10__.default,
+                                src: _imports_2$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("img", {
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
-                                src: __vite_ssr_import_11__.default,
+                                src: _imports_3$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("class, id, flex, grid, animation, transition "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                __vite_ssr_import_6__.createTextVNode("CSS 3 "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                                __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                createTextVNode("CSS 3 "),
+                                createVNode("span", { class: "text-indigo-400" }, "||"),
+                                createTextVNode(" TAILWINd CSS")
                               ])
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
-                                src: __vite_ssr_import_12__.default,
+                                src: _imports_4$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("DOM, loop,validation, condition,event "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("DOM, loop,validation, condition,event "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]",
-                                src: __vite_ssr_import_13__.default,
+                                src: _imports_5$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("img", {
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]",
-                                src: __vite_ssr_import_14__.default,
+                                src: _imports_6$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                __vite_ssr_import_6__.createTextVNode("vue js "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                                __vite_ssr_import_6__.createTextVNode(" nuxt js")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                createTextVNode("vue js "),
+                                createVNode("span", { class: "text-indigo-400" }, "||"),
+                                createTextVNode(" nuxt js")
                               ])
                             ])
                           ])
                         ])
-                      ]),
-                      __vite_ssr_import_6__.createCommentVNode(" skills for slider end  ")
+                      ])
                     ])
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<section class="bg-white"${
-                _scopeId
-              }><div class="container px-4 mx-auto"${
-                _scopeId
-              }><!-- <div class="mr-[64px]">
-              <img class="w-5 -mb-[13px] mx-auto" src="~/assets/images/icons8/icons8-snoopy.svg" alt="" />
-            </div> --><div class="flex items-center justify-center"${
-                _scopeId
-              }><img class="w-6 -mr-1"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }><h1 class="flex justify-center text-2xl font-semibold text-black"${
-                _scopeId
-              }>ACK END</h1></div><div class="flex flex-wrap items-center justify-center -mx-4"${
-                _scopeId
-              }><!-- html skills for slider  --><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${
-                _scopeId
-              }><div class="flex flex-wrap items-start -mx-4"${
-                _scopeId
-              }><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>express js</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_17__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>newbie</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>mongo db</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_18__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>crud oppression <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>maria db</span></div></div></div></div></div></div></section>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><div class="flex items-center justify-center"${_scopeId2}><img class="w-6 -mr-1"${ssrRenderAttr("src", _imports_7$2)} alt=""${_scopeId2}><h1 class="flex justify-center text-2xl font-semibold text-black"${_scopeId2}>ACK END</h1></div><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_8$2)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>express js</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_9$2)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>newbie</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>mongo db</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2"${ssrRenderAttr("src", _imports_10$1)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium capitalize font-heading"${_scopeId2}>basic</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>crud oppression <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>maria db</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                  __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" <div class=\"mr-[64px]\">\r\n              <img class=\"w-5 -mb-[13px] mx-auto\" src=\"~/assets/images/icons8/icons8-snoopy.svg\" alt=\"\" />\r\n            </div> "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                      __vite_ssr_import_6__.createVNode("img", {
+                createVNode("section", { class: "bg-white" }, [
+                  createVNode("div", { class: "container px-4 mx-auto" }, [
+                    createVNode("div", { class: "flex items-center justify-center" }, [
+                      createVNode("img", {
                         class: "w-6 -mr-1",
-                        src: __vite_ssr_import_15__.default,
+                        src: _imports_7$2,
                         alt: ""
                       }),
-                      __vite_ssr_import_6__.createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, "ACK END")
+                      createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, "ACK END")
                     ]),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                      __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                      __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_16__.default,
+                                src: _imports_8$2,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_17__.default,
+                                src: _imports_9$2,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
-                                src: __vite_ssr_import_18__.default,
+                                src: _imports_10$1,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("crud oppression "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("crud oppression "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
                             ])
                           ])
                         ])
@@ -2652,189 +3902,93 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     ])
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<section class="bg-white"${
-                _scopeId
-              }><div class="container px-4 mx-auto"${
-                _scopeId
-              }><!-- <div class="ml-2">
-              <img class="w-5 -mb-[11px] mx-auto" src="~/assets/images/icons8/icons8-penguin.svg" alt="" />
-            </div> --><div class="flex items-center justify-center"${
-                _scopeId
-              }><img class="w-6 -mr-[3px]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
-              } alt=""${
-                _scopeId
-              }><h1 class="text-[#00749A] text-2xl justify-center flex font-semibold"${
-                _scopeId
-              }>THER</h1></div><div class="flex flex-wrap items-center justify-center -mx-4"${
-                _scopeId
-              }><!-- html skills for slider  --><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${
-                _scopeId
-              }><div class="flex flex-wrap items-start -mx-4"${
-                _scopeId
-              }><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>theme create &amp; edit, plugin <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>wordpress</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_21__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>video banner &amp; ads, image editor <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>canva</span></div></div><!-- <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20">
-                  <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
-                    <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="~/assets/images/mycollection/vscode.svg" alt="">
-                    <h4 class="mb-4 text-sm font-medium font-heading">Advance</h4>
-                    <h4 class="mb-4 text-sm font-medium capitalize font-heading">.vscode, theme, plugin, shortcut <span class="lowercase">etc</span> </h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 ">vs code</span>
-                  </div>
-                </div> --><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_22__.default)
-              } alt=""${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-1 text-sm font-medium font-heading"${
-                _scopeId
-              }>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
-                _scopeId
-              }>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${
-                _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>vs code <span class="text-indigo-400"${
-                _scopeId
-              }>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
-                _scopeId
-              }><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${
-                __vite_ssr_import_7__.ssrRenderAttr("src", __vite_ssr_import_24__.default)
-              } alt=""${
-                _scopeId
-              }><h4 class="mb-4 text-sm font-medium font-heading"${
-                _scopeId
-              }>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>digital ocean</span></div></div></div></div></div></div></section>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<section class="bg-white"${_scopeId2}><div class="container px-4 mx-auto"${_scopeId2}><div class="flex items-center justify-center"${_scopeId2}><img class="w-6 -mr-[3px]"${ssrRenderAttr("src", _imports_11)} alt=""${_scopeId2}><h1 class="text-[#00749A] text-2xl justify-center flex font-semibold"${_scopeId2}>THER</h1></div><div class="flex flex-wrap items-center justify-center -mx-4"${_scopeId2}><div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0"${_scopeId2}><div class="flex flex-wrap items-start -mx-4"${_scopeId2}><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_12)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>theme create &amp; edit, plugin <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>wordpress</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_13)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>video banner &amp; ads, image editor <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>canva</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]"${ssrRenderAttr("src", _imports_14)} alt=""${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]"${ssrRenderAttr("src", _imports_15)} alt=""${_scopeId2}><h4 class="mb-1 text-sm font-medium font-heading"${_scopeId2}>Advance</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${_scopeId2}>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${_scopeId2}>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>vs code <span class="text-indigo-400"${_scopeId2}>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${_scopeId2}><div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300"${_scopeId2}><img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2"${ssrRenderAttr("src", _imports_16)} alt=""${_scopeId2}><h4 class="mb-4 text-sm font-medium font-heading"${_scopeId2}>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>digital ocean</span></div></div></div></div></div></div></section>`);
             } else {
               return [
-                __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                  __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" <div class=\"ml-2\">\r\n              <img class=\"w-5 -mb-[11px] mx-auto\" src=\"~/assets/images/icons8/icons8-penguin.svg\" alt=\"\" />\r\n            </div> "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                      __vite_ssr_import_6__.createVNode("img", {
+                createVNode("section", { class: "bg-white" }, [
+                  createVNode("div", { class: "container px-4 mx-auto" }, [
+                    createVNode("div", { class: "flex items-center justify-center" }, [
+                      createVNode("img", {
                         class: "w-6 -mr-[3px]",
-                        src: __vite_ssr_import_19__.default,
+                        src: _imports_11,
                         alt: ""
                       }),
-                      __vite_ssr_import_6__.createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, "THER")
+                      createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, "THER")
                     ]),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                      __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                      __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                      createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                        createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_20__.default,
+                                src: _imports_12,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("theme create & edit, plugin "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("theme create & edit, plugin "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_21__.default,
+                                src: _imports_13,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("video banner & ads, image editor "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("video banner & ads, image editor "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
-                                src: __vite_ssr_import_22__.default,
+                                src: _imports_14,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("img", {
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
-                                src: __vite_ssr_import_23__.default,
+                                src: _imports_15,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                                __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                              createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                              createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                                createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
+                                createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                                __vite_ssr_import_6__.createTextVNode("vs code "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                                __vite_ssr_import_6__.createTextVNode(" git")
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                                createTextVNode("vs code "),
+                                createVNode("span", { class: "text-indigo-400" }, "||"),
+                                createTextVNode(" git")
                               ])
                             ])
                           ]),
-                          __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                            __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                              __vite_ssr_import_6__.createVNode("img", {
+                          createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                            createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                              createVNode("img", {
                                 class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                                src: __vite_ssr_import_24__.default,
+                                src: _imports_16,
                                 alt: ""
                               }),
-                              __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                              createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
+                              createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
                             ])
                           ])
                         ])
@@ -2842,173 +3996,168 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     ])
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
+          _: 1
+        }, _parent2, _scopeId));
       } else {
         return [
-          __vite_ssr_import_6__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_6__.withCtx(() => [
-              __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex flex-col justify-center" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" <div class=\"ml-2\">\r\n              <img class=\"w-5 -mb-[11px] mx-auto\" src=\"~/assets/images/icons8/icons8-penguin.svg\" alt=\"\" />\r\n            </div> "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                      __vite_ssr_import_6__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("section", { class: "bg-white" }, [
+                createVNode("div", { class: "container px-4 mx-auto" }, [
+                  createVNode("div", { class: "flex flex-col justify-center" }, [
+                    createVNode("div", { class: "flex items-center justify-center" }, [
+                      createVNode("img", {
                         class: "w-6 -mr-1",
-                        src: __vite_ssr_import_8__.default,
+                        src: _imports_0$2,
                         alt: ""
                       }),
-                      __vite_ssr_import_6__.createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, "RONT END")
+                      createVNode("h1", { class: "text-2xl font-semibold text-center text-red-500" }, "RONT END")
                     ]),
-                    __vite_ssr_import_6__.createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
+                    createVNode("span", { class: "text-sm text-center text-black" }, "MEVN Learner")
                   ]),
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4 lg:-mx-24" }, [
+                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_9__.default,
+                              src: _imports_2$2,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("Semantic Tags Structure, SEO Tags "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, [
+                              createTextVNode("Semantic Tags Structure, SEO Tags "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[38%]",
-                              src: __vite_ssr_import_10__.default,
+                              src: _imports_2$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("img", {
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[62%]",
-                              src: __vite_ssr_import_11__.default,
+                              src: _imports_3$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("class, id, flex, grid, animation, transition "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              __vite_ssr_import_6__.createTextVNode("CSS 3 "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                              __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              createTextVNode("CSS 3 "),
+                              createVNode("span", { class: "text-indigo-400" }, "||"),
+                              createTextVNode(" TAILWINd CSS")
                             ])
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
-                              src: __vite_ssr_import_12__.default,
+                              src: _imports_4$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("DOM, loop,validation, condition,event "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("DOM, loop,validation, condition,event "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[40%]",
-                              src: __vite_ssr_import_13__.default,
+                              src: _imports_5$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("img", {
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[60%]",
-                              src: __vite_ssr_import_14__.default,
+                              src: _imports_6$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Basic"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              __vite_ssr_import_6__.createTextVNode("vue js "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                              __vite_ssr_import_6__.createTextVNode(" nuxt js")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              createTextVNode("vue js "),
+                              createVNode("span", { class: "text-indigo-400" }, "||"),
+                              createTextVNode(" nuxt js")
                             ])
                           ])
                         ])
                       ])
-                    ]),
-                    __vite_ssr_import_6__.createCommentVNode(" skills for slider end  ")
+                    ])
                   ])
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_6__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_6__.withCtx(() => [
-              __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                  __vite_ssr_import_6__.createCommentVNode(" <div class=\"mr-[64px]\">\r\n              <img class=\"w-5 -mb-[13px] mx-auto\" src=\"~/assets/images/icons8/icons8-snoopy.svg\" alt=\"\" />\r\n            </div> "),
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                    __vite_ssr_import_6__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("section", { class: "bg-white" }, [
+                createVNode("div", { class: "container px-4 mx-auto" }, [
+                  createVNode("div", { class: "flex items-center justify-center" }, [
+                    createVNode("img", {
                       class: "w-6 -mr-1",
-                      src: __vite_ssr_import_15__.default,
+                      src: _imports_7$2,
                       alt: ""
                     }),
-                    __vite_ssr_import_6__.createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, "ACK END")
+                    createVNode("h1", { class: "flex justify-center text-2xl font-semibold text-black" }, "ACK END")
                   ]),
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_16__.default,
+                              src: _imports_8$2,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_17__.default,
+                              src: _imports_9$2,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2",
-                              src: __vite_ssr_import_18__.default,
+                              src: _imports_10$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("crud oppression "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "basic"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("crud oppression "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
                           ])
                         ])
                       ])
@@ -3017,89 +4166,86 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_6__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_6__.withCtx(() => [
-              __vite_ssr_import_6__.createVNode("section", { class: "bg-white" }, [
-                __vite_ssr_import_6__.createVNode("div", { class: "container px-4 mx-auto" }, [
-                  __vite_ssr_import_6__.createCommentVNode(" <div class=\"ml-2\">\r\n              <img class=\"w-5 -mb-[11px] mx-auto\" src=\"~/assets/images/icons8/icons8-penguin.svg\" alt=\"\" />\r\n            </div> "),
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex items-center justify-center" }, [
-                    __vite_ssr_import_6__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("section", { class: "bg-white" }, [
+                createVNode("div", { class: "container px-4 mx-auto" }, [
+                  createVNode("div", { class: "flex items-center justify-center" }, [
+                    createVNode("img", {
                       class: "w-6 -mr-[3px]",
-                      src: __vite_ssr_import_19__.default,
+                      src: _imports_11,
                       alt: ""
                     }),
-                    __vite_ssr_import_6__.createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, "THER")
+                    createVNode("h1", { class: "text-[#00749A] text-2xl justify-center flex font-semibold" }, "THER")
                   ]),
-                  __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
-                    __vite_ssr_import_6__.createCommentVNode(" html skills for slider  "),
-                    __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
-                      __vite_ssr_import_6__.createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                  createVNode("div", { class: "flex flex-wrap items-center justify-center -mx-4" }, [
+                    createVNode("div", { class: "w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0" }, [
+                      createVNode("div", { class: "flex flex-wrap items-start -mx-4" }, [
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_20__.default,
+                              src: _imports_12,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("theme create & edit, plugin "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("theme create & edit, plugin "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_21__.default,
+                              src: _imports_13,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("video banner & ads, image editor "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("video banner & ads, image editor "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[35%]",
-                              src: __vite_ssr_import_22__.default,
+                              src: _imports_14,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("img", {
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-[65%]",
-                              src: __vite_ssr_import_23__.default,
+                              src: _imports_15,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
-                              __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
+                            createVNode("h4", { class: "mb-1 text-sm font-medium font-heading" }, "Advance"),
+                            createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, [
+                              createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
+                              createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
-                              __vite_ssr_import_6__.createTextVNode("vs code "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
-                              __vite_ssr_import_6__.createTextVNode(" git")
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              createTextVNode("vs code "),
+                              createVNode("span", { class: "text-indigo-400" }, "||"),
+                              createTextVNode(" git")
                             ])
                           ])
                         ]),
-                        __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
-                          __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
-                            __vite_ssr_import_6__.createVNode("img", {
+                        createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0" }, [
+                          createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
+                            createVNode("img", {
                               class: "absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 left-1/2",
-                              src: __vite_ssr_import_24__.default,
+                              src: _imports_16,
                               alt: ""
                             }),
-                            __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                            createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
+                            createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
                           ])
                         ])
                       ])
@@ -3108,1825 +4254,732 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           })
-        ]
+        ];
       }
     }),
-    _: 1 /* STABLE */
-  }, _parent))
+    _: 1
+  }, _parent));
 }
-
-const __vite_ssr_import_25__ = await __vite_ssr_import__("/components/skills.vue?vue&type=style&index=0&lang.css");
-
-
-const __vite_ssr_import_26__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_26__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/skills.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_27__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_27__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/skills.vue"]]);
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/vue/swiper-vue.js
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_72e3deca = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/swiper.min.css
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_9d54fdba = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/**\n * Swiper 8.0.7\n * Most modern mobile touch slider and framework with hardware accelerated transitions\n * https://swiperjs.com\n *\n * Copyright 2014-2022 Vladimir Kharlampidi\n *\n * Released under the MIT License\n *\n * Released on: March 4, 2022\n */\n\n@font-face{font-family:swiper-icons;src:url('data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA');font-weight:400;font-style:normal}\n\n:root{--swiper-theme-color:#007aff}\n\n.swiper{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}\n\n.swiper-vertical>.swiper-wrapper{flex-direction:column}\n\n.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;transition-property:transform;box-sizing:content-box}\n\n.swiper-android .swiper-slide,.swiper-wrapper{transform:translate3d(0px,0,0)}\n\n.swiper-pointer-events{touch-action:pan-y}\n\n.swiper-pointer-events.swiper-vertical{touch-action:pan-x}\n\n.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;transition-property:transform}\n\n.swiper-slide-invisible-blank{visibility:hidden}\n\n.swiper-autoheight,.swiper-autoheight .swiper-slide{height:auto}\n\n.swiper-autoheight .swiper-wrapper{align-items:flex-start;transition-property:transform,height}\n\n.swiper-backface-hidden .swiper-slide{transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden}\n\n.swiper-3d,.swiper-3d.swiper-css-mode .swiper-wrapper{perspective:1200px}\n\n.swiper-3d .swiper-cube-shadow,.swiper-3d .swiper-slide,.swiper-3d .swiper-slide-shadow,.swiper-3d .swiper-slide-shadow-bottom,.swiper-3d .swiper-slide-shadow-left,.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-top,.swiper-3d .swiper-wrapper{transform-style:preserve-3d}\n\n.swiper-3d .swiper-slide-shadow,.swiper-3d .swiper-slide-shadow-bottom,.swiper-3d .swiper-slide-shadow-left,.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-top{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}\n\n.swiper-3d .swiper-slide-shadow{background:rgba(0,0,0,.15)}\n\n.swiper-3d .swiper-slide-shadow-left{background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}\n\n.swiper-3d .swiper-slide-shadow-right{background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}\n\n.swiper-3d .swiper-slide-shadow-top{background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}\n\n.swiper-3d .swiper-slide-shadow-bottom{background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}\n\n.swiper-css-mode>.swiper-wrapper{overflow:auto;scrollbar-width:none;-ms-overflow-style:none}\n\n.swiper-css-mode>.swiper-wrapper::-webkit-scrollbar{display:none}\n\n.swiper-css-mode>.swiper-wrapper>.swiper-slide{scroll-snap-align:start start}\n\n.swiper-horizontal.swiper-css-mode>.swiper-wrapper{-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory}\n\n.swiper-vertical.swiper-css-mode>.swiper-wrapper{-ms-scroll-snap-type:y mandatory;scroll-snap-type:y mandatory}\n\n.swiper-centered>.swiper-wrapper::before{content:'';flex-shrink:0;order:9999}\n\n.swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{-webkit-margin-start:var(--swiper-centered-offset-before);margin-inline-start:var(--swiper-centered-offset-before)}\n\n.swiper-centered.swiper-horizontal>.swiper-wrapper::before{height:100%;min-height:1px;width:var(--swiper-centered-offset-after)}\n\n.swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{-webkit-margin-before:var(--swiper-centered-offset-before);margin-block-start:var(--swiper-centered-offset-before)}\n\n.swiper-centered.swiper-vertical>.swiper-wrapper::before{width:100%;min-width:1px;height:var(--swiper-centered-offset-after)}\n\n.swiper-centered>.swiper-wrapper>.swiper-slide{scroll-snap-align:center center}";
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/pagination/pagination.min.css
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_d3ef010f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = ".swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}.swiper-pagination-bullets-dynamic{overflow:hidden;font-size:0}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transform:scale(.33);position:relative}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev{transform:scale(.33)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{transform:scale(.33)}.swiper-pagination-bullet{width:var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));height:var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));display:inline-block;border-radius:50%;background:var(--swiper-pagination-bullet-inactive-color,#000);opacity:var(--swiper-pagination-bullet-inactive-opacity, .2)}button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}.swiper-pagination-bullet:only-child{display:none!important}.swiper-pagination-bullet-active{opacity:var(--swiper-pagination-bullet-opacity, 1);background:var(--swiper-pagination-color,var(--swiper-theme-color))}.swiper-pagination-vertical.swiper-pagination-bullets,.swiper-vertical>.swiper-pagination-bullets{right:10px;top:50%;transform:translate3d(0px,-50%,0)}.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,.swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:var(--swiper-pagination-bullet-vertical-gap,6px) 0;display:block}.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,.swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{top:50%;transform:translateY(-50%);width:8px}.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,.swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{display:inline-block;transition:.2s transform,.2s top}.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 var(--swiper-pagination-bullet-horizontal-gap,4px)}.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{left:50%;transform:translateX(-50%);white-space:nowrap}.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s left}.swiper-horizontal.swiper-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s right}.swiper-pagination-progressbar{background:rgba(0,0,0,.25);position:absolute}.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:var(--swiper-pagination-color,var(--swiper-theme-color));position:absolute;left:0;top:0;width:100%;height:100%;transform:scale(0);transform-origin:left top}.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{transform-origin:right top}.swiper-horizontal>.swiper-pagination-progressbar,.swiper-pagination-progressbar.swiper-pagination-horizontal,.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{width:100%;height:4px;left:0;top:0}.swiper-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,.swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite,.swiper-pagination-progressbar.swiper-pagination-vertical,.swiper-vertical>.swiper-pagination-progressbar{width:4px;height:100%;left:0;top:0}.swiper-pagination-lock{display:none}";
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/navigation/navigation.min.css
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_9b8672f2 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = ":root{--swiper-navigation-size:44px}.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:calc(var(--swiper-navigation-size)/ 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size)/ 2));z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}.swiper-button-next:after,.swiper-button-prev:after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}.swiper-button-prev,.swiper-rtl .swiper-button-next{left:10px;right:auto}.swiper-button-prev:after,.swiper-rtl .swiper-button-next:after{content:'prev'}.swiper-button-next,.swiper-rtl .swiper-button-prev{right:10px;left:auto}.swiper-button-next:after,.swiper-rtl .swiper-button-prev:after{content:'next'}.swiper-button-lock{display:none}";
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/swiper.esm.js
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-// - /node_modules/swiper/core/core.js ($id_413488a5)
-// - /node_modules/swiper/modules/virtual/virtual.js ($id_cdb0752d)
-// - /node_modules/swiper/modules/keyboard/keyboard.js ($id_b79f366d)
-// - /node_modules/swiper/modules/mousewheel/mousewheel.js ($id_ff1b73b2)
-// - /node_modules/swiper/modules/navigation/navigation.js ($id_3cbacc13)
-// - /node_modules/swiper/modules/pagination/pagination.js ($id_9d25ff48)
-// - /node_modules/swiper/modules/scrollbar/scrollbar.js ($id_b7c15973)
-// - /node_modules/swiper/modules/parallax/parallax.js ($id_2bc0dda6)
-// - /node_modules/swiper/modules/zoom/zoom.js ($id_b6094d1d)
-// - /node_modules/swiper/modules/lazy/lazy.js ($id_27878f55)
-// - /node_modules/swiper/modules/controller/controller.js ($id_224f2e59)
-// - /node_modules/swiper/modules/a11y/a11y.js ($id_7fc5b0be)
-// - /node_modules/swiper/modules/history/history.js ($id_f5205ad9)
-// - /node_modules/swiper/modules/hash-navigation/hash-navigation.js ($id_39f6940c)
-// - /node_modules/swiper/modules/autoplay/autoplay.js ($id_11d42465)
-// - /node_modules/swiper/modules/thumbs/thumbs.js ($id_7f241531)
-// - /node_modules/swiper/modules/free-mode/free-mode.js ($id_adae43c1)
-// - /node_modules/swiper/modules/grid/grid.js ($id_be08b669)
-// - /node_modules/swiper/modules/manipulation/manipulation.js ($id_9ffdf8ef)
-// - /node_modules/swiper/modules/effect-fade/effect-fade.js ($id_ed5701f6)
-// - /node_modules/swiper/modules/effect-cube/effect-cube.js ($id_03914d04)
-// - /node_modules/swiper/modules/effect-flip/effect-flip.js ($id_24c07261)
-// - /node_modules/swiper/modules/effect-coverflow/effect-coverflow.js ($id_0ea540eb)
-// - /node_modules/swiper/modules/effect-creative/effect-creative.js ($id_3ab2d8b1)
-// - /node_modules/swiper/modules/effect-cards/effect-cards.js ($id_597d31c2)
-// --------------------
-const $id_d1eb9a9e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-/**
- * Swiper 8.0.7
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * https://swiperjs.com
- *
- * Copyright 2014-2022 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: March 4, 2022
- */
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/swiper/core/core.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Swiper", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/swiper/modules/virtual/virtual.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Virtual", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.default }});
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/swiper/modules/keyboard/keyboard.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Keyboard", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.default }});
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/swiper/modules/mousewheel/mousewheel.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Mousewheel", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.default }});
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/swiper/modules/navigation/navigation.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Navigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.default }});
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/swiper/modules/pagination/pagination.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Pagination", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.default }});
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/swiper/modules/scrollbar/scrollbar.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Scrollbar", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.default }});
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/swiper/modules/parallax/parallax.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Parallax", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.default }});
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/swiper/modules/zoom/zoom.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Zoom", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.default }});
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/swiper/modules/lazy/lazy.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Lazy", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_9__.default }});
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/swiper/modules/controller/controller.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Controller", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.default }});
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/swiper/modules/a11y/a11y.js");
-
-Object.defineProperty(__vite_ssr_exports__, "A11y", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.default }});
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/swiper/modules/history/history.js");
-
-Object.defineProperty(__vite_ssr_exports__, "History", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_12__.default }});
-const __vite_ssr_import_13__ = await __vite_ssr_import__("/node_modules/swiper/modules/hash-navigation/hash-navigation.js");
-
-Object.defineProperty(__vite_ssr_exports__, "HashNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.default }});
-const __vite_ssr_import_14__ = await __vite_ssr_import__("/node_modules/swiper/modules/autoplay/autoplay.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Autoplay", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.default }});
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/node_modules/swiper/modules/thumbs/thumbs.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Thumbs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.default }});
-const __vite_ssr_import_16__ = await __vite_ssr_import__("/node_modules/swiper/modules/free-mode/free-mode.js");
-
-Object.defineProperty(__vite_ssr_exports__, "FreeMode", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.default }});
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/node_modules/swiper/modules/grid/grid.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Grid", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.default }});
-const __vite_ssr_import_18__ = await __vite_ssr_import__("/node_modules/swiper/modules/manipulation/manipulation.js");
-
-Object.defineProperty(__vite_ssr_exports__, "Manipulation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_18__.default }});
-const __vite_ssr_import_19__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-fade/effect-fade.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectFade", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_19__.default }});
-const __vite_ssr_import_20__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-cube/effect-cube.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectCube", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_20__.default }});
-const __vite_ssr_import_21__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-flip/effect-flip.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectFlip", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_21__.default }});
-const __vite_ssr_import_22__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectCoverflow", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_22__.default }});
-const __vite_ssr_import_23__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-creative/effect-creative.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectCreative", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_23__.default }});
-const __vite_ssr_import_24__ = await __vite_ssr_import__("/node_modules/swiper/modules/effect-cards/effect-cards.js");
-
-Object.defineProperty(__vite_ssr_exports__, "EffectCards", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_24__.default }});;
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/core/core.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_413488a5 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/core/core.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/core/core.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/virtual/virtual.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_cdb0752d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/keyboard/keyboard.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_b79f366d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/mousewheel/mousewheel.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_ff1b73b2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/navigation/navigation.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_3cbacc13 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/pagination/pagination.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_9d25ff48 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/scrollbar/scrollbar.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_b7c15973 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/parallax/parallax.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_2bc0dda6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/zoom/zoom.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_b6094d1d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/lazy/lazy.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_27878f55 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/controller/controller.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_224f2e59 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/a11y/a11y.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_7fc5b0be = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/history/history.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_f5205ad9 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/history/history.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/history/history.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/hash-navigation/hash-navigation.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_39f6940c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/autoplay/autoplay.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_11d42465 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/thumbs/thumbs.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_7f241531 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/free-mode/free-mode.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_adae43c1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/grid/grid.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_be08b669 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/manipulation/manipulation.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_9ffdf8ef = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-fade/effect-fade.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_ed5701f6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-cube/effect-cube.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_03914d04 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-flip/effect-flip.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_24c07261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-coverflow/effect-coverflow.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_0ea540eb = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-creative/effect-creative.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_3ab2d8b1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js".') })
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/effect-cards/effect-cards.js
-// Parents: 
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// Dependencies: 
-
-// --------------------
-const $id_597d31c2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js".') })
-
-
-// --------------------
-// Request: /assets/images/icons8/icons8-f-cute.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_6417dc97 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/icons8/icons8-f-cute.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/html-5.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_9d898b84 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/html-5.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/css3.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_687c4c7a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/css3.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/tailwindcss.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_efe33b41 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/tailwindcss.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/javascript.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_188644a4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/javascript.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/vue.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_abef9de1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/vue.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/nuxt.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_b2bb126b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/nuxt.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/icons8/icons8-b-cute.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_5321ef9e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/icons8/icons8-b-cute.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/expressjs-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_25e013d0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/expressjs-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/mongodb-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_6efcfe6b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/mongodb-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/mariadb-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_da57e3e6 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/mariadb-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/icons8/icons8-o-cute.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_b6503303 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/icons8/icons8-o-cute.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/wordpress-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_9d8e64d7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/wordpress-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/canva-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_bc6cd90f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/canva-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/vscode.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_1b35e04e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/vscode.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/git.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_8f65d5a4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/git.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/digitalocean-icon.svg
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_a2d143a7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/digitalocean-icon.svg";
-}
-
-
-// --------------------
-// Request: /components/skills.vue?vue&type=style&index=0&lang.css
-// Parents: 
-// - /components/skills.vue ($id_43fa255d)
-// Dependencies: 
-
-// --------------------
-const $id_cfe411c4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n\r\n  background-color: red;\n}\n.swiper-button-next,\r\n.swiper-button-prev {\r\n  color: gray;\r\n  top: 5%;\r\n  height: 100%;\r\n  width: 80px;\n}\n.swiper-button-next:hover {\r\n  opacity: 0.2;\r\n\r\n  margin-bottom: 20px;\r\n  background: #e9e9ef;\n}\n.swiper-button-prev:hover {\r\n  opacity: 0.2;\r\n  border-radius: 20px;\r\n  background: #e9e9ef;\n}\r\n";
-}
-
-
-// --------------------
-// Request: /components/project.vue
-// Parents: 
-// - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/swiper/vue/swiper-vue.js ($id_72e3deca)
-// - /node_modules/swiper/swiper.min.css ($id_9d54fdba)
-// - /node_modules/swiper/modules/pagination/pagination.min.css ($id_d3ef010f)
-// - /node_modules/swiper/modules/free-mode/free-mode.min.css ($id_6f2c3b0e)
-// - /node_modules/swiper/modules/navigation/navigation.min.css ($id_9b8672f2)
-// - /node_modules/swiper/modules/thumbs/thumbs.min.css ($id_14412fe5)
-// - /node_modules/swiper/swiper.esm.js ($id_d1eb9a9e)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /assets/images/icons8/icons8-broadcasting.svg ($id_c5664f3a)
-// - /assets/images/team/placeholder-photo.png ($id_2895cd70)
-// - /assets/images/mycollection/html-5.svg ($id_9d898b84)
-// - /assets/images/mycollection/tailwindcss.svg ($id_efe33b41)
-// - /assets/images/mycollection/javascript.svg ($id_188644a4)
-// - /assets/images/mycollection/vue.svg ($id_abef9de1)
-// - /assets/images/mycollection/nuxt.svg ($id_b2bb126b)
-// - /assets/images/team/photo4.png ($id_5e76e404)
-// - /assets/images/team/dots.svg ($id_ed8d99e0)
-// - /assets/images/team/dots2.svg ($id_e24d19d5)
-// - /assets/images/team/quote.png ($id_4c8c4a03)
-// - /components/project.vue?vue&type=style&index=0&lang.css ($id_ebf4cadc)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_9aa3dd9e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-// Import Swiper Vue.js components
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/swiper/vue/swiper-vue.js");
-
-
-// Import Swiper styles
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/swiper/swiper.min.css");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/swiper/modules/pagination/pagination.min.css");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/swiper/modules/free-mode/free-mode.min.css");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/swiper/modules/navigation/navigation.min.css");
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/swiper/modules/thumbs/thumbs.min.css");
-
-
-// import "./style.css";
-
-// import Swiper core and required modules
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/swiper/swiper.esm.js");
-
-
-// install Swiper modules
-__vite_ssr_import_7__.default.use([__vite_ssr_import_7__.FreeMode, __vite_ssr_import_7__.Navigation, __vite_ssr_import_7__.Thumbs, __vite_ssr_import_7__.Pagination]);
-
-const _sfc_main = {
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("components/skills.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3]]);
+const skills = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": __nuxt_component_0
+});
+const _imports_0$1 = "/_nuxt/assets/icons8-broadcasting.1904243b.svg";
+const _imports_1$1 = "/_nuxt/assets/placeholder-photo.3df78d0e.png";
+const _imports_7$1 = "/_nuxt/assets/photo4.21c13b80.png";
+const _imports_8$1 = "/_nuxt/assets/dots.1c4c2d6c.svg";
+const _imports_9$1 = "/_nuxt/assets/dots2.79aeb633.svg";
+const _imports_10 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgB7ZTBrcIwDIZ/8+C969sAGKFMACMwAmcubIDYgANC3GAEmIDeQagbUDYIAxBjVJAqEaoaLHHpd6kUN84XJzF1hszQwEgPc2qHQpIrlU8TCmr4MpVAJVAJfF2gLo1l8DRKWOINiDBij//8GBPGBLRezgkNFnbHgk4YIhryVhbpvoqrj0B26WCIWkBqc4YVUk29AEwrcNIfASOGHUe1gCc7AdnMRicgZ5bMKYEN7vKHWFuBCaxgrJMpufIC2ftfwQLJ5X22mXIC2YQejPBAP1lQWk7gvvhjwoe4Gkmu3D0qEnDSqCf+F5HB4lmuBtr7GcX5QD309w8j2hnddm5gcGtetwsXil8BQ2ld5eFPsDUAAAAASUVORK5CYII=";
+const project_vue_vue_type_style_index_0_lang = "";
+SwiperCore.use([FreeMode, Navigation, Thumbs, Pagination]);
+const _sfc_main$2 = {
   head: {
     title: "Projects",
     meta: [
       {
         hid: "description",
         name: "MEVN developer | website developer",
-        content: "I am create multiple websites and also modified existing websites.",
-      },
-    ],
+        content: "I am create multiple websites and also modified existing websites."
+      }
+    ]
   },
   components: {
-    Swiper: __vite_ssr_import_1__.Swiper,
-    SwiperSlide: __vite_ssr_import_1__.SwiperSlide,
+    Swiper,
+    SwiperSlide
   },
   data() {
     return {
-      thumbsSwiper: null,
+      thumbsSwiper: null
     };
   },
   methods: {
     setThumbsSwiper(swiper) {
       this.thumbsSwiper = swiper;
-    },
-  },
+    }
+  }
 };
-
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/assets/images/icons8/icons8-broadcasting.svg");
-
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/assets/images/team/placeholder-photo.png");
-
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/assets/images/mycollection/html-5.svg");
-
-const __vite_ssr_import_13__ = await __vite_ssr_import__("/assets/images/mycollection/tailwindcss.svg");
-
-const __vite_ssr_import_14__ = await __vite_ssr_import__("/assets/images/mycollection/javascript.svg");
-
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/assets/images/mycollection/vue.svg");
-
-const __vite_ssr_import_16__ = await __vite_ssr_import__("/assets/images/mycollection/nuxt.svg");
-
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/assets/images/team/photo4.png");
-
-const __vite_ssr_import_18__ = await __vite_ssr_import__("/assets/images/team/dots.svg");
-
-const __vite_ssr_import_19__ = await __vite_ssr_import__("/assets/images/team/dots2.svg");
-
-const __vite_ssr_import_20__ = await __vite_ssr_import__("/assets/images/team/quote.png");
-
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_swiper = __vite_ssr_import_8__.resolveComponent("swiper")
-  const _component_swiper_slide = __vite_ssr_import_8__.resolveComponent("swiper-slide")
-
-  _push(`<section${__vite_ssr_import_9__.ssrRenderAttrs(__vite_ssr_import_8__.mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`)
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper, {
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_swiper = resolveComponent("swiper");
+  const _component_swiper_slide = resolveComponent("swiper-slide");
+  _push(`<section${ssrRenderAttrs(mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`);
+  _push(ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
     pagination: { dynamicBullets: true, clickable: true },
     modules: _ctx.modules,
     thumbs: { swiper: $data.thumbsSwiper },
     class: "mx-10 select-none mySwiper2"
   }, {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${
-                _scopeId
-              }><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><div class="flex items-center justify-center mb-8 -mt-8"${
-                _scopeId
-              }><h4 class="text-xl font-medium uppercase font-heading"${
-                _scopeId
-              }>Project TechnologieS</h4><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-              } alt=""${
-                _scopeId
-              }></div><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${
-                _scopeId
-              }><div${
-                _scopeId
-              }><img class="w-20 h-20 mx-auto mb-5"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_11__.default)
-              } alt=""${
-                _scopeId
-              }></div><!-- <div class="flex sm:space-x-20 mb-14"> --><div class="flex flex-col"${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_12__.default)
-              } alt=""${
-                _scopeId
-              }>html</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
-              } alt=""${
-                _scopeId
-              }>tailwind css</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
-              } alt=""${
-                _scopeId
-              }>java</h1></div><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }>vue js</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
-              } alt=""${
-                _scopeId
-              }>nuxt js</h1></div><!-- </div> --></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>Founder</span></div></div>`)
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><div class="flex items-center justify-center mb-8 -mt-8"${_scopeId2}><h4 class="text-xl font-medium uppercase font-heading"${_scopeId2}>Project TechnologieS</h4><img${ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${_scopeId2}><div${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${ssrRenderAttr("src", _imports_1$1)} alt=""${_scopeId2}></div><div class="flex flex-col"${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}>nuxt js</h1></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                      __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                      __vite_ssr_import_8__.createVNode("img", {
-                        src: __vite_ssr_import_10__.default,
+                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                      createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                      createVNode("img", {
+                        src: _imports_0$1,
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                      createVNode("div", null, [
+                        createVNode("img", {
                           class: "w-20 h-20 mx-auto mb-5",
-                          src: __vite_ssr_import_11__.default,
+                          src: _imports_1$1,
                           alt: ""
                         })
                       ]),
-                      __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", { class: "flex flex-col" }, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_12__.default,
+                            src: _imports_2$2,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("html")
+                          createTextVNode("html")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_13__.default,
+                            src: _imports_3$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("tailwind css")
+                          createTextVNode("tailwind css")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_14__.default,
+                            src: _imports_4$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("java")
+                          createTextVNode("java")
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", null, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_15__.default,
+                            src: _imports_5$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("vue js")
+                          createTextVNode("vue js")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_16__.default,
+                            src: _imports_6$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("nuxt js")
+                          createTextVNode("nuxt js")
                         ])
-                      ]),
-                      __vite_ssr_import_8__.createCommentVNode(" </div> ")
+                      ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${
-                _scopeId
-              }><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><div class="flex items-center justify-center mb-8 -mt-8"${
-                _scopeId
-              }><h4 class="text-xl font-medium uppercase font-heading"${
-                _scopeId
-              }>Project TechnologieS</h4><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-              } alt=""${
-                _scopeId
-              }></div><div class="flex flex-col items-center justify-between sm:flex-row"${
-                _scopeId
-              }><img class="w-20 pb-6 mx-auto rounded-md sm:w-40"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_17__.default)
-              } alt=""${
-                _scopeId
-              }><div class="flex space-x-8 sm:space-x-20"${
-                _scopeId
-              }><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_12__.default)
-              } alt=""${
-                _scopeId
-              }>html</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
-              } alt=""${
-                _scopeId
-              }>tailwind css</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
-              } alt=""${
-                _scopeId
-              }>java</h1></div><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }>vue js</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
-              } alt=""${
-                _scopeId
-              }>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>Founder</span></div></div>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><div class="flex items-center justify-center mb-8 -mt-8"${_scopeId2}><h4 class="text-xl font-medium uppercase font-heading"${_scopeId2}>Project TechnologieS</h4><img${ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex flex-col items-center justify-between sm:flex-row"${_scopeId2}><img class="w-20 pb-6 mx-auto rounded-md sm:w-40"${ssrRenderAttr("src", _imports_7$1)} alt=""${_scopeId2}><div class="flex space-x-8 sm:space-x-20"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                      __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                      __vite_ssr_import_8__.createVNode("img", {
-                        src: __vite_ssr_import_10__.default,
+                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                      createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                      createVNode("img", {
+                        src: _imports_0$1,
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
-                      __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
+                      createVNode("img", {
                         class: "w-20 pb-6 mx-auto rounded-md sm:w-40",
-                        src: __vite_ssr_import_17__.default,
+                        src: _imports_7$1,
                         alt: ""
                       }),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
-                        __vite_ssr_import_8__.createVNode("div", null, [
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
+                        createVNode("div", null, [
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_12__.default,
+                              src: _imports_2$2,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("html")
+                            createTextVNode("html")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_13__.default,
+                              src: _imports_3$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("tailwind css")
+                            createTextVNode("tailwind css")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_14__.default,
+                              src: _imports_4$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("java")
+                            createTextVNode("java")
                           ])
                         ]),
-                        __vite_ssr_import_8__.createVNode("div", null, [
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("div", null, [
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_15__.default,
+                              src: _imports_5$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("vue js")
+                            createTextVNode("vue js")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_16__.default,
+                              src: _imports_6$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("nuxt js")
+                            createTextVNode("nuxt js")
                           ])
                         ])
                       ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${
-                _scopeId
-              }><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><div class="flex items-center justify-center mb-8 -mt-8"${
-                _scopeId
-              }><h4 class="text-xl font-medium uppercase font-heading"${
-                _scopeId
-              }>Project TechnologieS</h4><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-              } alt=""${
-                _scopeId
-              }></div><div class="flex justify-between"${
-                _scopeId
-              }><div class="mx-auto"${
-                _scopeId
-              }><img class="w-20 h-20 mx-auto mb-5"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_11__.default)
-              } alt=""${
-                _scopeId
-              }></div><div class="flex sm:space-x-20 mb-14"${
-                _scopeId
-              }><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_12__.default)
-              } alt=""${
-                _scopeId
-              }>html</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
-              } alt=""${
-                _scopeId
-              }>tailwind css</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
-              } alt=""${
-                _scopeId
-              }>java</h1></div><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }>vue js</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
-              } alt=""${
-                _scopeId
-              }>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>Founder</span></div></div>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${_scopeId2}><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${_scopeId2}><div class="flex items-center justify-center mb-8 -mt-8"${_scopeId2}><h4 class="text-xl font-medium uppercase font-heading"${_scopeId2}>Project TechnologieS</h4><img${ssrRenderAttr("src", _imports_0$1)} alt=""${_scopeId2}></div><div class="flex justify-between"${_scopeId2}><div class="mx-auto"${_scopeId2}><img class="w-20 h-20 mx-auto mb-5"${ssrRenderAttr("src", _imports_1$1)} alt=""${_scopeId2}></div><div class="flex sm:space-x-20 mb-14"${_scopeId2}><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_2$2)} alt=""${_scopeId2}>html</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_3$1)} alt=""${_scopeId2}>tailwind css</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_4$1)} alt=""${_scopeId2}>java</h1></div><div${_scopeId2}><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_5$1)} alt=""${_scopeId2}>vue js</h1><h1 class="flex items-center uppercase"${_scopeId2}><img class="w-6 mr-2"${ssrRenderAttr("src", _imports_6$1)} alt=""${_scopeId2}>nuxt js</h1></div></div></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${_scopeId2}>Founder</span></div></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                      __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                      __vite_ssr_import_8__.createVNode("img", {
-                        src: __vite_ssr_import_10__.default,
+                createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                      createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                      createVNode("img", {
+                        src: _imports_0$1,
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "mx-auto" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex justify-between" }, [
+                      createVNode("div", { class: "mx-auto" }, [
+                        createVNode("img", {
                           class: "w-20 h-20 mx-auto mb-5",
-                          src: __vite_ssr_import_11__.default,
+                          src: _imports_1$1,
                           alt: ""
                         })
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
-                        __vite_ssr_import_8__.createVNode("div", null, [
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
+                        createVNode("div", null, [
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_12__.default,
+                              src: _imports_2$2,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("html")
+                            createTextVNode("html")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_13__.default,
+                              src: _imports_3$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("tailwind css")
+                            createTextVNode("tailwind css")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_14__.default,
+                              src: _imports_4$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("java")
+                            createTextVNode("java")
                           ])
                         ]),
-                        __vite_ssr_import_8__.createVNode("div", null, [
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("div", null, [
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_15__.default,
+                              src: _imports_5$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("vue js")
+                            createTextVNode("vue js")
                           ]),
-                          __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                            __vite_ssr_import_8__.createVNode("img", {
+                          createVNode("h1", { class: "flex items-center uppercase" }, [
+                            createVNode("img", {
                               class: "w-6 mr-2",
-                              src: __vite_ssr_import_16__.default,
+                              src: _imports_6$1,
                               alt: ""
                             }),
-                            __vite_ssr_import_8__.createTextVNode("nuxt js")
+                            createTextVNode("nuxt js")
                           ])
                         ])
                       ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                   ])
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
+          _: 1
+        }, _parent2, _scopeId));
       } else {
         return [
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                    __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                    __vite_ssr_import_8__.createVNode("img", {
-                      src: __vite_ssr_import_10__.default,
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                    createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                    createVNode("img", {
+                      src: _imports_0$1,
                       alt: ""
                     })
                   ]),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                    __vite_ssr_import_8__.createVNode("div", null, [
-                      __vite_ssr_import_8__.createVNode("img", {
+                  createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                    createVNode("div", null, [
+                      createVNode("img", {
                         class: "w-20 h-20 mx-auto mb-5",
-                        src: __vite_ssr_import_11__.default,
+                        src: _imports_1$1,
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex flex-col" }, [
+                      createVNode("h1", { class: "flex items-center uppercase" }, [
+                        createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_12__.default,
+                          src: _imports_2$2,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("html")
+                        createTextVNode("html")
                       ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("h1", { class: "flex items-center uppercase" }, [
+                        createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_13__.default,
+                          src: _imports_3$1,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("tailwind css")
+                        createTextVNode("tailwind css")
                       ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("h1", { class: "flex items-center uppercase" }, [
+                        createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_14__.default,
+                          src: _imports_4$1,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("java")
+                        createTextVNode("java")
                       ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", null, [
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", null, [
+                      createVNode("h1", { class: "flex items-center uppercase" }, [
+                        createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_15__.default,
+                          src: _imports_5$1,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("vue js")
+                        createTextVNode("vue js")
                       ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("h1", { class: "flex items-center uppercase" }, [
+                        createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_16__.default,
+                          src: _imports_6$1,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("nuxt js")
+                        createTextVNode("nuxt js")
                       ])
-                    ]),
-                    __vite_ssr_import_8__.createCommentVNode(" </div> ")
+                    ])
                   ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                    __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                    __vite_ssr_import_8__.createVNode("img", {
-                      src: __vite_ssr_import_10__.default,
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                    createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                    createVNode("img", {
+                      src: _imports_0$1,
                       alt: ""
                     })
                   ]),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
-                    __vite_ssr_import_8__.createVNode("img", {
+                  createVNode("div", { class: "flex flex-col items-center justify-between sm:flex-row" }, [
+                    createVNode("img", {
                       class: "w-20 pb-6 mx-auto rounded-md sm:w-40",
-                      src: __vite_ssr_import_17__.default,
+                      src: _imports_7$1,
                       alt: ""
                     }),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex space-x-8 sm:space-x-20" }, [
+                      createVNode("div", null, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_12__.default,
+                            src: _imports_2$2,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("html")
+                          createTextVNode("html")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_13__.default,
+                            src: _imports_3$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("tailwind css")
+                          createTextVNode("tailwind css")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_14__.default,
+                            src: _imports_4$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("java")
+                          createTextVNode("java")
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", null, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_15__.default,
+                            src: _imports_5$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("vue js")
+                          createTextVNode("vue js")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_16__.default,
+                            src: _imports_6$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("nuxt js")
+                          createTextVNode("nuxt js")
                         ])
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                    __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                    __vite_ssr_import_8__.createVNode("img", {
-                      src: __vite_ssr_import_10__.default,
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                    createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                    createVNode("img", {
+                      src: _imports_0$1,
                       alt: ""
                     })
                   ]),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "mx-auto" }, [
-                      __vite_ssr_import_8__.createVNode("img", {
+                  createVNode("div", { class: "flex justify-between" }, [
+                    createVNode("div", { class: "mx-auto" }, [
+                      createVNode("img", {
                         class: "w-20 h-20 mx-auto mb-5",
-                        src: __vite_ssr_import_11__.default,
+                        src: _imports_1$1,
                         alt: ""
                       })
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                    createVNode("div", { class: "flex sm:space-x-20 mb-14" }, [
+                      createVNode("div", null, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_12__.default,
+                            src: _imports_2$2,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("html")
+                          createTextVNode("html")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_13__.default,
+                            src: _imports_3$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("tailwind css")
+                          createTextVNode("tailwind css")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_14__.default,
+                            src: _imports_4$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("java")
+                          createTextVNode("java")
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                      createVNode("div", null, [
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_15__.default,
+                            src: _imports_5$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("vue js")
+                          createTextVNode("vue js")
                         ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
+                        createVNode("h1", { class: "flex items-center uppercase" }, [
+                          createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_16__.default,
+                            src: _imports_6$1,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("nuxt js")
+                          createTextVNode("nuxt js")
                         ])
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
                 ])
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           })
-        ]
+        ];
       }
     }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${__vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_18__.default)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`)
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper, {
+    _: 1
+  }, _parent));
+  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${ssrRenderAttr("src", _imports_8$1)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`);
+  _push(ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
     slidesPerView: 1,
     freeMode: false,
     watchSlidesProgress: true,
     class: "mx-5 mySwiper"
   }, {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
-              } alt=""${
-                _scopeId
-              }><div class="flex items-start mb-10"${
-                _scopeId
-              }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }><div class="max-w-sm mx-auto text-justify -mt-9"${
-                _scopeId
-              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
-                _scopeId
-              }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
-                _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }></div>`)
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_9$1)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("img", {
+                createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_19__.default,
+                  src: _imports_9$1,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                  __vite_ssr_import_8__.createVNode("img", {
+                createVNode("div", { class: "flex items-start mb-10" }, [
+                  createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_20__.default,
+                    src: _imports_10,
                     alt: ""
                   }),
-                  __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_20__.default,
+                  createVNode("img", {
+                    src: _imports_10,
                     alt: ""
                   })
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
-              } alt=""${
-                _scopeId
-              }><div class="flex items-start mb-10"${
-                _scopeId
-              }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }><div class="max-w-sm mx-auto text-justify -mt-9"${
-                _scopeId
-              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
-                _scopeId
-              }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
-                _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }></div>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_9$1)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("img", {
+                createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_19__.default,
+                  src: _imports_9$1,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                  __vite_ssr_import_8__.createVNode("img", {
+                createVNode("div", { class: "flex items-start mb-10" }, [
+                  createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_20__.default,
+                    src: _imports_10,
                     alt: ""
                   }),
-                  __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_20__.default,
+                  createVNode("img", {
+                    src: _imports_10,
                     alt: ""
                   })
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
-              } alt=""${
-                _scopeId
-              }><div class="flex items-start mb-10"${
-                _scopeId
-              }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }><div class="max-w-sm mx-auto text-justify -mt-9"${
-                _scopeId
-              }><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${
-                _scopeId
-              }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
-                _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
-              } alt=""${
-                _scopeId
-              }></div>`)
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_swiper_slide, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<img class="block mx-auto mb-12"${ssrRenderAttr("src", _imports_9$1)} alt=""${_scopeId2}><div class="flex items-start mb-10"${_scopeId2}><img class="rotate-180"${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}><div class="max-w-sm mx-auto text-justify -mt-9"${_scopeId2}><h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize"${_scopeId2}>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${_scopeId2}> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${ssrRenderAttr("src", _imports_10)} alt=""${_scopeId2}></div>`);
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("img", {
+                createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_19__.default,
+                  src: _imports_9$1,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                  __vite_ssr_import_8__.createVNode("img", {
+                createVNode("div", { class: "flex items-start mb-10" }, [
+                  createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_20__.default,
+                    src: _imports_10,
                     alt: ""
                   }),
-                  __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                    __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                    createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                    createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                   ]),
-                  __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_20__.default,
+                  createVNode("img", {
+                    src: _imports_10,
                     alt: ""
                   })
                 ])
-              ]
+              ];
             }
           }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
+          _: 1
+        }, _parent2, _scopeId));
       } else {
         return [
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_19__.default,
+                src: _imports_9$1,
                 alt: ""
               }),
-              __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                __vite_ssr_import_8__.createVNode("img", {
+              createVNode("div", { class: "flex items-start mb-10" }, [
+                createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_20__.default,
+                  src: _imports_10,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_20__.default,
+                createVNode("img", {
+                  src: _imports_10,
                   alt: ""
                 })
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_19__.default,
+                src: _imports_9$1,
                 alt: ""
               }),
-              __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                __vite_ssr_import_8__.createVNode("img", {
+              createVNode("div", { class: "flex items-start mb-10" }, [
+                createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_20__.default,
+                  src: _imports_10,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_20__.default,
+                createVNode("img", {
+                  src: _imports_10,
                   alt: ""
                 })
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           }),
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("img", {
+          createVNode(_component_swiper_slide, null, {
+            default: withCtx(() => [
+              createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_19__.default,
+                src: _imports_9$1,
                 alt: ""
               }),
-              __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
-                __vite_ssr_import_8__.createVNode("img", {
+              createVNode("div", { class: "flex items-start mb-10" }, [
+                createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_20__.default,
+                  src: _imports_10,
                   alt: ""
                 }),
-                __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
+                  createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
+                  createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
                 ]),
-                __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_20__.default,
+                createVNode("img", {
+                  src: _imports_10,
                   alt: ""
                 })
               ])
             ]),
-            _: 1 /* STABLE */
+            _: 1
           })
-        ]
+        ];
       }
     }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`<div class="flex items-center justify-center -mx-4"></div></div><div class="hidden h-1 md:block"><div class="w-64 mx-auto bg-gray-100 rounded-full h-1/2"><div class="w-1/3 h-full bg-purple-500 rounded-full"></div></div></div></div></div></div></section>`)
+    _: 1
+  }, _parent));
+  _push(`<div class="flex items-center justify-center -mx-4"></div></div><div class="hidden h-1 md:block"><div class="w-64 mx-auto bg-gray-100 rounded-full h-1/2"><div class="w-1/3 h-full bg-purple-500 rounded-full"></div></div></div></div></div></div></section>`);
 }
-
-const __vite_ssr_import_21__ = await __vite_ssr_import__("/components/project.vue?vue&type=style&index=0&lang.css");
-
-
-const __vite_ssr_import_22__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_22__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/project.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_23__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_23__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/project.vue"]]);
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/free-mode/free-mode.min.css
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_6f2c3b0e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = ".swiper-free-mode>.swiper-wrapper{transition-timing-function:ease-out;margin:0 auto}";
-}
-
-
-// --------------------
-// Request: /node_modules/swiper/modules/thumbs/thumbs.min.css
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_14412fe5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "";
-}
-
-
-// --------------------
-// Request: /assets/images/icons8/icons8-broadcasting.svg
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_c5664f3a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/icons8/icons8-broadcasting.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/team/placeholder-photo.png
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_2895cd70 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/team/placeholder-photo.png";
-}
-
-
-// --------------------
-// Request: /assets/images/team/photo4.png
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_5e76e404 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/team/photo4.png";
-}
-
-
-// --------------------
-// Request: /assets/images/team/dots.svg
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_ed8d99e0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/team/dots.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/team/dots2.svg
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_e24d19d5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/team/dots2.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/team/quote.png
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_4c8c4a03 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/team/quote.png";
-}
-
-
-// --------------------
-// Request: /components/project.vue?vue&type=style&index=0&lang.css
-// Parents: 
-// - /components/project.vue ($id_9aa3dd9e)
-// Dependencies: 
-
-// --------------------
-const $id_ebf4cadc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n\r\n  background-color: red;\n}\r\n";
-}
-
-
-// --------------------
-// Request: /components/home.vue
-// Parents: 
-// - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
-// Dependencies: 
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /assets/images/mycollection/lines-blue1.svg ($id_bb982fe0)
-// - /assets/images/mycollection/lines-blue2.svg ($id_9b39567b)
-// - /assets/images/mycollection/Diploma.svg ($id_f20728b3)
-// - /assets/images/mycollection/Light-Bulb.svg ($id_6c58f639)
-// - /assets/images/mycollection/Plane.svg ($id_37ed14ad)
-// - /assets/images/mycollection/myAvatar.svg ($id_fb98ae54)
-// - /assets/images/mycollection/github-icon.svg ($id_9d6b8ac8)
-// - /assets/images/mycollection/linkedin-tile.svg ($id_0d8c80e1)
-// - /assets/images/mycollection/gmail-icon.svg ($id_08559e13)
-// - /assets/images/mycollection/icon1.svg ($id_4304f31b)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_4ae345a3 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-
-const _sfc_main = {
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("components/project.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2]]);
+const project = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": __nuxt_component_1
+});
+const _imports_0 = "/_nuxt/assets/lines-blue1.11a8413a.svg";
+const _imports_1 = "/_nuxt/assets/lines-blue2.5f9a9806.svg";
+const _imports_2 = "/_nuxt/assets/Diploma.2a331dda.svg";
+const _imports_3 = "/_nuxt/assets/Light-Bulb.cb5dbe2b.svg";
+const _imports_4 = "/_nuxt/assets/Plane.29e1f36c.svg";
+const _imports_5 = "/_nuxt/assets/myAvatar.3cd73b2b.svg";
+const _imports_6 = "/_nuxt/assets/github-icon.03573308.svg";
+const _imports_7 = "/_nuxt/assets/linkedin-tile.b66e127c.svg";
+const _imports_8 = "/_nuxt/assets/gmail-icon.e9d865c1.svg";
+const _imports_9 = "/_nuxt/assets/icon1.1227f604.svg";
+const _sfc_main$1 = {
   name: "home",
   head: {
     title: "Home",
@@ -4934,574 +4987,47 @@ const _sfc_main = {
       {
         hid: "description",
         name: "MEVN developer | website developer",
-        content: "I am create multiple websites and also modified existing websites.",
-      },
-    ],
-  },
+        content: "I am create multiple websites and also modified existing websites."
+      }
+    ]
+  }
 };
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/assets/images/mycollection/lines-blue1.svg");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/assets/images/mycollection/lines-blue2.svg");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/assets/images/mycollection/Diploma.svg");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/assets/images/mycollection/Light-Bulb.svg");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/assets/images/mycollection/Plane.svg");
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/assets/images/mycollection/myAvatar.svg");
-
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/assets/images/mycollection/github-icon.svg");
-
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/assets/images/mycollection/linkedin-tile.svg");
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/assets/images/mycollection/gmail-icon.svg");
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/assets/images/mycollection/icon1.svg");
-
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${
-    __vite_ssr_import_0__.ssrRenderAttrs(_attrs)
-  }><section id="home" class="py-16 overflow-hidden 2xl:py-20"><div class="relative shadow-2xl shadow-gray-900 rounded-b-10xl"><div class="container px-4 mx-auto relative"><!-- moon bg   --><div class="absolute bg-moon hidden lg:block w-32 h-32 bg-no-repeat top-5 right-2 lg:right-7 lg:top-7"></div><!-- moon bg   --><div class="flex flex-wrap items-center py-10 mx-4 xl:bg-right"><div class="w-full px-4 mb-24 lg:w-1/2 lg:mb-0 relative"><div class="absolute animate-slide-tl h-44 w-full bg-elephant bg-no-repeat bg-left-top bg-[length:400px_150px]"></div><h1 class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl animate-tracking-in-expand"><span>Hi, it&#39;s me <span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra and I am a </span><span class="relative inline-block"><span class="absolute inset-0 xl:-left-8 xl:-right-8"><img class="absolute inset-0 w-full max-w-non"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_1__.default)
-  } alt=""><img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_2__.default)
-  } alt=""></span><!-- full stack --><span class="relative z-10"> web dev.</span></span></h1><div class="space-y-2"><div class="flex space-x-2 items-center"><img class="w-10"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_3__.default)
-  } alt=""><h1 class="text-xl capitalize">previous study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">In 2020, I complete my engineering.</p><div class="flex space-x-2 items-center"><img class="w-10"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_4__.default)
-  } alt=""><h1 class="text-xl capitalize">currently study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">leaning MEVN and communication skills in English language.</p><div class="flex space-x-2 items-center"><img class="w-10"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_5__.default)
-  } alt=""><h1 class="text-xl capitalize">future study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">BCA in Australia.</p></div></div><div class="w-full px-4 lg:w-1/2 relative"><div class="hidden lg:block h-96 w-96 animate-slide-left absolute bg-tiger bg-no-repeat bg-center"></div><div class="relative mx-auto"><div class="w-64 h-64 mx-auto border-4 border-gray-700 rounded-full"><!-- profile image second circule  --><div class="w-56 h-56 mx-auto border-4 border-gray-400 rounded-full"><!-- profile image third circule  --><div class="relative flex items-center justify-center w-48 h-48 mx-auto border-4 rounded-full backdrop-blur-sm"><img class="w-36 -mt-9"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_6__.default)
-  } alt=""></div></div></div></div></div></div><div class="mb-5 mx-4 z-10 lg:mx-7 relative"><h1 class="capitalize text-6xl font-semibold mb-5">Contact</h1><div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center relative"><!-- bg image  --><div class="absolute h-80 w-44 bg-animal bg-no-repeat bg-[length:200px] bg-center animate-slide-tr"></div><!-- bg image  --><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_7__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_8__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_9__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${
-    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 8708423836</h1></a></div></div></div></div></div></section></div>`)
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><section id="home" class="py-16 overflow-hidden 2xl:py-20"><div class="relative shadow-2xl shadow-gray-900 rounded-b-10xl"><div class="container px-4 mx-auto relative"><div class="absolute bg-moon hidden lg:block w-32 h-32 bg-no-repeat top-5 right-2 lg:right-7 lg:top-7"></div><div class="flex flex-wrap items-center py-10 mx-4 xl:bg-right"><div class="w-full px-4 mb-24 lg:w-1/2 lg:mb-0 relative"><div class="absolute animate-slide-tl h-44 w-full bg-elephant bg-no-repeat bg-left-top bg-[length:400px_150px]"></div><h1 class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl"><span>Hi, it&#39;s me <h2 class="animate-tracking-in-expand"><span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra</h2> and I am a </span><span class="relative inline-block"><span class="absolute inset-0 xl:-left-8 xl:-right-8"><img class="absolute inset-0 w-full max-w-non"${ssrRenderAttr("src", _imports_0)} alt=""><img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"${ssrRenderAttr("src", _imports_1)} alt=""></span><span class="relative z-10"> web dev.</span></span></h1><div class="space-y-2"><div class="flex space-x-2 items-center"><img class="w-10"${ssrRenderAttr("src", _imports_2)} alt=""><h1 class="text-xl capitalize">previous study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">In 2020, I complete my engineering.</p><div class="flex space-x-2 items-center"><img class="w-10"${ssrRenderAttr("src", _imports_3)} alt=""><h1 class="text-xl capitalize">currently study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">leaning MEVN and communication skills in English language.</p><div class="flex space-x-2 items-center"><img class="w-10"${ssrRenderAttr("src", _imports_4)} alt=""><h1 class="text-xl capitalize">future study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">BCA in Australia.</p></div></div><div class="w-full px-4 lg:w-1/2 relative"><div class="hidden lg:block h-96 w-96 animate-slide-left absolute bg-tiger bg-no-repeat bg-center"></div><div class="relative mx-auto"><div class="w-64 h-64 mx-auto border-4 border-gray-700 rounded-full"><div class="w-56 h-56 mx-auto border-4 border-gray-400 rounded-full"><div class="relative flex items-center justify-center w-48 h-48 mx-auto border-4 rounded-full backdrop-blur-sm"><img class="w-36 -mt-9"${ssrRenderAttr("src", _imports_5)} alt=""></div></div></div></div></div></div><div class="mb-5 mx-4 z-10 lg:mx-7 relative"><h1 class="capitalize text-6xl font-semibold mb-5">Contact</h1><div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center relative"><div class="absolute h-80 w-44 bg-animal bg-no-repeat bg-[length:200px] bg-center animate-slide-tr"></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_6)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_7)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_8)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="flex items-center w-full mb-6 xl:w-1/2 relative"><img class="mr-6 h-14"${ssrRenderAttr("src", _imports_9)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 8708423836</h1></a></div></div></div></div></div></section></div>`);
 }
-
-
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_11__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/home.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/home.vue"]]);
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/lines-blue1.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_bb982fe0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/lines-blue1.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/lines-blue2.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_9b39567b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/lines-blue2.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/Diploma.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_f20728b3 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/Diploma.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/Light-Bulb.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_6c58f639 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/Light-Bulb.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/Plane.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_37ed14ad = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/Plane.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/myAvatar.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_fb98ae54 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/myAvatar.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/github-icon.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_9d6b8ac8 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/github-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/linkedin-tile.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_0d8c80e1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/linkedin-tile.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/gmail-icon.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_08559e13 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/gmail-icon.svg";
-}
-
-
-// --------------------
-// Request: /assets/images/mycollection/icon1.svg
-// Parents: 
-// - /components/home.vue ($id_4ae345a3)
-// Dependencies: 
-
-// --------------------
-const $id_4304f31b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/icon1.svg";
-}
-
-
-// --------------------
-// Request: /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
-// --------------------
-const $id_7b587af2 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ohmyfetch/dist/index.mjs");
-
-
-if (!globalThis.$fetch) {
-  globalThis.$fetch = __vite_ssr_import_0__.$fetch
-}
-
-__vite_ssr_exports__.default = () => {}
-;
-}
-
-
-// --------------------
-// Request: /node_modules/ohmyfetch/dist/index.mjs
-// Parents: 
-// - /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs ($id_7b587af2)
-// Dependencies: 
-
-// --------------------
-const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs".') })
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /components/home.vue ($id_4ae345a3)
-// - /components/project.vue ($id_9aa3dd9e)
-// - /components/skills.vue ($id_43fa255d)
-// --------------------
-const $id_46c29c57 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-const components = {
-  'Home': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/home.vue').then(c => c.default || c)),
-  'Project': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/project.vue').then(c => c.default || c)),
-  'Skills': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/skills.vue').then(c => c.default || c))
-}
-
-__vite_ssr_exports__.default = function (nuxtApp) {
-  for (const name in components) {
-    nuxtApp.vueApp.component(name, components[name])
-    nuxtApp.vueApp.component('Lazy' + name, components[name])
-  }
-}
-;
-}
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
-// --------------------
-const $id_f92004e9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/components/nuxt-root.vue");
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/app/components/nuxt-root.vue
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs ($id_f92004e9)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_f8564e04 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-
-const _sfc_main = {
-  setup () {
-    const nuxtApp = __vite_ssr_import_0__.useNuxtApp()
-    const results = nuxtApp.hooks.callHookWith(hooks => hooks.map(hook => hook()), 'vue:setup')
-    if (true && results && results.some(i => i && 'then' in i)) {
-      console.error('[nuxt] Error in `vue:setup`. Callbacks must be synchronous.')
-    }
-  }
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_App = __vite_ssr_import_1__.resolveComponent("App")
-
-  __vite_ssr_import_2__.ssrRenderSuspense(_push, {
-    default: () => {
-      _push(__vite_ssr_import_2__.ssrRenderComponent(_component_App, null, null, _parent))
-    },
-    _: 1 /* STABLE */
-  })
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/app/components/nuxt-root.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
-}
-
-
-// --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs
-// Parents: 
-// - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
-// --------------------
-const $id_f17181d1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/app.vue");
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/app.vue
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs ($id_f17181d1)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_0851ff57 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
+const _sfc_setup$1 = _sfc_main$1.setup;
+_sfc_main$1.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("components/home.vue");
+  return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
+};
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1]]);
+const home = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": __nuxt_component_2
+});
+const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtPage = __vite_ssr_import_0__.resolveComponent("NuxtPage")
-
-  _push(__vite_ssr_import_1__.ssrRenderComponent(_component_NuxtPage, _attrs, null, _parent))
+  const _component_skills = __nuxt_component_0;
+  const _component_project = __nuxt_component_1;
+  const _component_home = __nuxt_component_2;
+  _push(`<div${ssrRenderAttrs(_attrs)}>`);
+  _push(ssrRenderComponent(_component_skills, null, null, _parent));
+  _push(ssrRenderComponent(_component_project, null, null, _parent));
+  _push(ssrRenderComponent(_component_home, null, null, _parent));
+  _push(`</div>`);
 }
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
+const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/app.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/app.vue"]]);
-}
-
-
-const __modules__ = {
- 'C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry': $id_0bdfba74,
- '/node_modules/nuxt3/dist/app/bootstrap.mjs': $id_fef466a9,
- '/node_modules/vue/dist/vue.cjs.js': $id_60f0615f,
- '/node_modules/nuxt3/dist/app/index.mjs': $id_d8c2af0f,
- '/node_modules/nuxt3/dist/app/nuxt.mjs': $id_bf77ef36,
- '/node_modules/hookable/dist/index.mjs': $id_a2c811c4,
- '/node_modules/nuxt3/dist/app/compat/legacy-app.mjs': $id_75047751,
- '/node_modules/unenv/runtime/mock/proxy.mjs': $id_39e12da7,
- '/node_modules/nuxt3/dist/app/composables/index.mjs': $id_42ae3d5d,
- '/node_modules/nuxt3/dist/app/composables/component.mjs': $id_b47c3881,
- '/node_modules/vue-router/dist/vue-router.cjs.js': $id_f9a4a698,
- '/node_modules/nuxt3/dist/app/composables/asyncData.mjs': $id_a2ef143e,
- '/node_modules/nuxt3/dist/app/composables/hydrate.mjs': $id_43a772c2,
- '/node_modules/nuxt3/dist/app/composables/state.mjs': $id_d232db97,
- '/node_modules/nuxt3/dist/app/composables/fetch.mjs': $id_765a0ed7,
- '/node_modules/murmurhash-es/dist/index.mjs': $id_fbf6dac3,
- '/node_modules/nuxt3/dist/app/composables/cookie.mjs': $id_792d64c4,
- '/node_modules/cookie-es/dist/index.mjs': $id_f4975261,
- '/node_modules/h3/dist/index.mjs': $id_57d7ded6,
- '/node_modules/destr/dist/index.mjs': $id_03d15ecd,
- '/node_modules/nuxt3/dist/app/composables/ssr.mjs': $id_4d0dc923,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs': $id_838a58c0,
- '/assets/css/tailwind.css': $id_f75548e1,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs': $id_197ba429,
- '/node_modules/nuxt3/dist/app/plugins/preload.server.mjs': $id_b9f3c557,
- '/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs': $id_cbe5172d,
- '/node_modules/@vueuse/head/dist/index.mjs': $id_c032264e,
- '/node_modules/nuxt3/dist/meta/runtime/plugin.mjs': $id_9fd5f35e,
- '/node_modules/nuxt3/dist/meta/runtime/components.mjs': $id_94744df3,
- '/node_modules/nuxt3/dist/meta/runtime/composables.mjs': $id_ca9295be,
- '/node_modules/@vue/shared/dist/shared.cjs.js': $id_852b06a2,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs': $id_36430d24,
- '/node_modules/nuxt3/dist/pages/runtime/router.mjs': $id_a4d6cb5b,
- '/node_modules/nuxt3/dist/pages/runtime/nested-page.vue': $id_c268603a,
- '/node_modules/vue/server-renderer/index.js': $id_b215fa1c,
- '/@id/plugin-vue:export-helper': $id_bbb863c1,
- '/node_modules/nuxt3/dist/pages/runtime/page.vue': $id_10628d40,
- '/node_modules/nuxt3/dist/pages/runtime/layout.mjs': $id_9b68c93f,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs': $id_45f47c42,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs': $id_313442dd,
- '/pages/index.vue': $id_cca58e97,
- '/components/skills.vue': $id_43fa255d,
- '/node_modules/swiper/vue/swiper-vue.js': $id_72e3deca,
- '/node_modules/swiper/swiper.min.css': $id_9d54fdba,
- '/node_modules/swiper/modules/pagination/pagination.min.css': $id_d3ef010f,
- '/node_modules/swiper/modules/navigation/navigation.min.css': $id_9b8672f2,
- '/node_modules/swiper/swiper.esm.js': $id_d1eb9a9e,
- '/node_modules/swiper/core/core.js': $id_413488a5,
- '/node_modules/swiper/modules/virtual/virtual.js': $id_cdb0752d,
- '/node_modules/swiper/modules/keyboard/keyboard.js': $id_b79f366d,
- '/node_modules/swiper/modules/mousewheel/mousewheel.js': $id_ff1b73b2,
- '/node_modules/swiper/modules/navigation/navigation.js': $id_3cbacc13,
- '/node_modules/swiper/modules/pagination/pagination.js': $id_9d25ff48,
- '/node_modules/swiper/modules/scrollbar/scrollbar.js': $id_b7c15973,
- '/node_modules/swiper/modules/parallax/parallax.js': $id_2bc0dda6,
- '/node_modules/swiper/modules/zoom/zoom.js': $id_b6094d1d,
- '/node_modules/swiper/modules/lazy/lazy.js': $id_27878f55,
- '/node_modules/swiper/modules/controller/controller.js': $id_224f2e59,
- '/node_modules/swiper/modules/a11y/a11y.js': $id_7fc5b0be,
- '/node_modules/swiper/modules/history/history.js': $id_f5205ad9,
- '/node_modules/swiper/modules/hash-navigation/hash-navigation.js': $id_39f6940c,
- '/node_modules/swiper/modules/autoplay/autoplay.js': $id_11d42465,
- '/node_modules/swiper/modules/thumbs/thumbs.js': $id_7f241531,
- '/node_modules/swiper/modules/free-mode/free-mode.js': $id_adae43c1,
- '/node_modules/swiper/modules/grid/grid.js': $id_be08b669,
- '/node_modules/swiper/modules/manipulation/manipulation.js': $id_9ffdf8ef,
- '/node_modules/swiper/modules/effect-fade/effect-fade.js': $id_ed5701f6,
- '/node_modules/swiper/modules/effect-cube/effect-cube.js': $id_03914d04,
- '/node_modules/swiper/modules/effect-flip/effect-flip.js': $id_24c07261,
- '/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js': $id_0ea540eb,
- '/node_modules/swiper/modules/effect-creative/effect-creative.js': $id_3ab2d8b1,
- '/node_modules/swiper/modules/effect-cards/effect-cards.js': $id_597d31c2,
- '/assets/images/icons8/icons8-f-cute.svg': $id_6417dc97,
- '/assets/images/mycollection/html-5.svg': $id_9d898b84,
- '/assets/images/mycollection/css3.svg': $id_687c4c7a,
- '/assets/images/mycollection/tailwindcss.svg': $id_efe33b41,
- '/assets/images/mycollection/javascript.svg': $id_188644a4,
- '/assets/images/mycollection/vue.svg': $id_abef9de1,
- '/assets/images/mycollection/nuxt.svg': $id_b2bb126b,
- '/assets/images/icons8/icons8-b-cute.svg': $id_5321ef9e,
- '/assets/images/mycollection/expressjs-icon.svg': $id_25e013d0,
- '/assets/images/mycollection/mongodb-icon.svg': $id_6efcfe6b,
- '/assets/images/mycollection/mariadb-icon.svg': $id_da57e3e6,
- '/assets/images/icons8/icons8-o-cute.svg': $id_b6503303,
- '/assets/images/mycollection/wordpress-icon.svg': $id_9d8e64d7,
- '/assets/images/mycollection/canva-icon.svg': $id_bc6cd90f,
- '/assets/images/mycollection/vscode.svg': $id_1b35e04e,
- '/assets/images/mycollection/git.svg': $id_8f65d5a4,
- '/assets/images/mycollection/digitalocean-icon.svg': $id_a2d143a7,
- '/components/skills.vue?vue&type=style&index=0&lang.css': $id_cfe411c4,
- '/components/project.vue': $id_9aa3dd9e,
- '/node_modules/swiper/modules/free-mode/free-mode.min.css': $id_6f2c3b0e,
- '/node_modules/swiper/modules/thumbs/thumbs.min.css': $id_14412fe5,
- '/assets/images/icons8/icons8-broadcasting.svg': $id_c5664f3a,
- '/assets/images/team/placeholder-photo.png': $id_2895cd70,
- '/assets/images/team/photo4.png': $id_5e76e404,
- '/assets/images/team/dots.svg': $id_ed8d99e0,
- '/assets/images/team/dots2.svg': $id_e24d19d5,
- '/assets/images/team/quote.png': $id_4c8c4a03,
- '/components/project.vue?vue&type=style&index=0&lang.css': $id_ebf4cadc,
- '/components/home.vue': $id_4ae345a3,
- '/assets/images/mycollection/lines-blue1.svg': $id_bb982fe0,
- '/assets/images/mycollection/lines-blue2.svg': $id_9b39567b,
- '/assets/images/mycollection/Diploma.svg': $id_f20728b3,
- '/assets/images/mycollection/Light-Bulb.svg': $id_6c58f639,
- '/assets/images/mycollection/Plane.svg': $id_37ed14ad,
- '/assets/images/mycollection/myAvatar.svg': $id_fb98ae54,
- '/assets/images/mycollection/github-icon.svg': $id_9d6b8ac8,
- '/assets/images/mycollection/linkedin-tile.svg': $id_0d8c80e1,
- '/assets/images/mycollection/gmail-icon.svg': $id_08559e13,
- '/assets/images/mycollection/icon1.svg': $id_4304f31b,
- '/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs': $id_7b587af2,
- '/node_modules/ohmyfetch/dist/index.mjs': $id_780217c4,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs': $id_46c29c57,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs': $id_f92004e9,
- '/node_modules/nuxt3/dist/app/components/nuxt-root.vue': $id_f8564e04,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs': $id_f17181d1,
- '/node_modules/nuxt3/dist/pages/runtime/app.vue': $id_0851ff57
-}
-
-
-const __pendingModules__ = new Map()
-const __pendingImports__ = new Map()
-const __ssrContext__ = { global: globalThis }
-
-function __ssrLoadModule__(url, urlStack = []) {
-  const pendingModule = __pendingModules__.get(url)
-  if (pendingModule) { return pendingModule }
-  const modulePromise = __instantiateModule__(url, urlStack)
-  __pendingModules__.set(url, modulePromise)
-  modulePromise.catch(() => { __pendingModules__.delete(url) })
-         .finally(() => { __pendingModules__.delete(url) })
-  return modulePromise
-}
-
-async function __instantiateModule__(url, urlStack) {
-  const mod = __modules__[url]
-  if (mod.stubModule) { return mod.stubModule }
-  const stubModule = { [Symbol.toStringTag]: 'Module' }
-  Object.defineProperty(stubModule, '__esModule', { value: true })
-  mod.stubModule = stubModule
-  // https://vitejs.dev/guide/api-hmr.html
-  const importMeta = { url, hot: { accept() {}, prune() {}, dispose() {}, invalidate() {}, decline() {}, on() {} } }
-  urlStack = urlStack.concat(url)
-  const isCircular = url => urlStack.includes(url)
-  const pendingDeps = []
-  const ssrImport = async (dep) => {
-    // TODO: Handle externals if dep[0] !== '.' | '/'
-    if (!isCircular(dep) && !__pendingImports__.get(dep)?.some(isCircular)) {
-      pendingDeps.push(dep)
-      if (pendingDeps.length === 1) {
-        __pendingImports__.set(url, pendingDeps)
-      }
-      await __ssrLoadModule__(dep, urlStack)
-      if (pendingDeps.length === 1) {
-        __pendingImports__.delete(url)
-      } else {
-        pendingDeps.splice(pendingDeps.indexOf(dep), 1)
-      }
-    }
-    return __modules__[dep].stubModule
-  }
-  function ssrDynamicImport (dep) {
-    // TODO: Handle dynamic import starting with . relative to url
-    return ssrImport(dep)
-  }
-
-  function ssrExportAll(sourceModule) {
-    for (const key in sourceModule) {
-      if (key !== 'default') {
-        try {
-          Object.defineProperty(stubModule, key, {
-            enumerable: true,
-            configurable: true,
-            get() { return sourceModule[key] }
-          })
-        } catch (_err) { }
-      }
-    }
-  }
-
-  await mod(
-    __ssrContext__.global,
-    stubModule,
-    importMeta,
-    ssrImport,
-    ssrDynamicImport,
-    ssrExportAll
-  )
-
-  return stubModule
-}
-
-
-export default await __ssrLoadModule__('C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry')
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+const index$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": index
+});
+export { entry$1 as default };
