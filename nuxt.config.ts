@@ -28,6 +28,10 @@ export default defineNuxtConfig({
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  // nitro: {
+  //   preset: 'server',
+  //   timing: true
+  // },
   css: [
     "~/assets/css/tailwind.css"
   ],

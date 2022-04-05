@@ -11,7 +11,10 @@
               <swiper-slide>
                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex items-center justify-center mb-8 -mt-8">
+                      <h4 class="text-xl font-medium uppercase font-heading">Project TechnologieS</h4>
+                      <img src="~/assets/images/icons8/icons8-broadcasting.svg" alt="" />
+                    </div>
                     <div class="flex flex-col justify-between sm:flex-row lg:mx-14">
                       <div>
                         <img class="w-20 h-20 mx-auto mb-5" src="~/assets/images/team/placeholder-photo.png" alt="" />
@@ -32,14 +35,15 @@
                   </div>
                 </div>
               </swiper-slide>
-
               <swiper-slide>
                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex items-center justify-center mb-8 -mt-8">
+                      <h4 class="text-xl font-medium uppercase font-heading">Project TechnologieS</h4>
+                      <img src="~/assets/images/icons8/icons8-broadcasting.svg" alt="" />
+                    </div>
                     <div class="flex flex-col items-center justify-between sm:flex-row">
                       <img class="w-20 pb-6 mx-auto rounded-md sm:w-40" src="~/assets/images/team/photo4.png" alt="" />
-
                       <div class="flex space-x-8 sm:space-x-20">
                         <div>
                           <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/html-5.svg" alt="" />html</h1>
@@ -60,7 +64,10 @@
               <swiper-slide>
                 <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
                   <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <h4 class="mb-5 -mt-5 text-xl font-medium font-heading">Project Technologies</h4>
+                    <div class="flex items-center justify-center mb-8 -mt-8">
+                      <h4 class="text-xl font-medium uppercase font-heading">Project TechnologieS</h4>
+                      <img src="~/assets/images/icons8/icons8-broadcasting.svg" alt="" />
+                    </div>
                     <div class="flex justify-between">
                       <div class="mx-auto">
                         <img class="w-20 h-20 mx-auto mb-5" src="~/assets/images/team/placeholder-photo.png" alt="" />
@@ -162,14 +169,14 @@ import SwiperCore, { FreeMode, Navigation, Thumbs, Pagination } from "swiper";
 SwiperCore.use([FreeMode, Navigation, Thumbs, Pagination]);
 
 export default {
-   head: {
-    title: 'Projects',
+  head: {
+    title: "Projects",
     meta: [
       {
-        hid: 'description',
-        name: 'MEVN developer | website developer',
-        content: 'I am create multiple websites and also modified existing websites.'
-      }
+        hid: "description",
+        name: "MEVN developer | website developer",
+        content: "I am create multiple websites and also modified existing websites.",
+      },
     ],
   },
   components: {

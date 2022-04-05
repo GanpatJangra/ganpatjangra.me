@@ -13,8 +13,10 @@
 `##########################`
 Some important information :- 
 
-I am use some resource paid and free like svg from https://elements.envato.com
+I am use some resource paid and free like svg from https://elements.envato.com and https://icons8.com/icon
+
 Animation from https://tail-animista.vercel.app
+
 
 `########################`
 
