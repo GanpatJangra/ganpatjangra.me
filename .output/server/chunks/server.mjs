@@ -4976,14 +4976,19 @@ const _imports_9 = "/_nuxt/assets/icon1.1227f604.svg";
 const _sfc_main$1 = {
   name: "home",
   head: {
-    title: "Home",
+    title: "it's me",
     meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: "description",
-        name: "MEVN developer | website developer",
-        content: "I am create multiple websites and also modified existing websites."
+        hid: "MEVN developer portfolio ganpatjangra",
+        name: "ganpatjangra, ganpat jangra",
+        author: "ganpat jangra",
+        keywords: "developer jangra ganpat website ganpatjangra web portfolio",
+        content: "Hi, I am ganpat jangra. I am a web dev and mevn learner."
       }
-    ]
+    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "../assets/images/favicon.ico" }]
   }
 };
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
@@ -5001,12 +5006,21 @@ const home = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": __nuxt_component_2
 });
-const _sfc_main = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+const _sfc_main = {
+  name: "home",
+  data() {
+    return {
+      dark: true
+    };
+  }
+};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_skills = __nuxt_component_0;
   const _component_project = __nuxt_component_1;
   const _component_home = __nuxt_component_2;
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
+    class: [{ dark: $data.dark }, "dark:bg-gray-400"]
+  }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_skills, null, null, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_project, null, null, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_home, null, null, _parent));

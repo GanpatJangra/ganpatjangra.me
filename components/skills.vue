@@ -1,5 +1,5 @@
 <template>
-  <swiper :navigation="true" :keyboard="{ enabled: true }" :pagination="{ dynamicBullets: true, clickable: true }" :modules="modules" class="mySwiper cursor-pointer select-none mt-10">
+  <swiper :navigation="true" :keyboard="{ enabled: true }" :pagination="{ dynamicBullets: true, clickable: true }" :modules="modules" class="mt-10 cursor-pointer select-none mySwiper">
     <swiper-slide>
       <section class="bg-white">
         <div class="container px-4 mx-auto">
@@ -8,8 +8,8 @@
               <img class="w-5 -mb-[11px] mx-auto" src="~/assets/images/icons8/icons8-penguin.svg" alt="" />
             </div> -->
             <div class="flex items-center justify-center">
-<img class="w-6 -mr-1" src="~/assets/images/icons8/icons8-f-cute.svg " alt="">
-            <h1 class="text-2xl font-semibold text-center text-red-500">RONT END</h1>
+              <img class="w-6 -mr-1" src="~/assets/images/icons8/icons8-f-cute.svg " alt="" />
+              <h1 class="text-2xl font-semibold text-center text-red-500">RONT END</h1>
             </div>
             <span class="text-sm text-center text-black">MEVN Learner</span>
           </div>
@@ -65,14 +65,14 @@
     <swiper-slide>
       <section class="bg-white">
         <div class="container px-4 mx-auto">
-               <!-- <div class="mr-[64px]">
+          <!-- <div class="mr-[64px]">
               <img class="w-5 -mb-[13px] mx-auto" src="~/assets/images/icons8/icons8-snoopy.svg" alt="" />
             </div> -->
           <div class="flex items-center justify-center">
-<img class="w-6 -mr-1" src="~/assets/images/icons8/icons8-b-cute.svg" alt="">
-            
-          <h1 class="flex justify-center text-2xl font-semibold text-black">ACK END</h1>
-</div>
+            <img class="w-6 -mr-1" src="~/assets/images/icons8/icons8-b-cute.svg" alt="" />
+
+            <h1 class="flex justify-center text-2xl font-semibold text-black">ACK END</h1>
+          </div>
           <div class="flex flex-wrap items-center justify-center -mx-4">
             <!-- html skills for slider  -->
             <div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0">
@@ -109,14 +109,14 @@
     <swiper-slide>
       <section class="bg-white">
         <div class="container px-4 mx-auto">
-               <!-- <div class="ml-2">
+          <!-- <div class="ml-2">
               <img class="w-5 -mb-[11px] mx-auto" src="~/assets/images/icons8/icons8-penguin.svg" alt="" />
             </div> -->
           <div class="flex items-center justify-center">
-<img class="w-6 -mr-[3px]" src="~/assets/images/icons8/icons8-o-cute.svg" alt="">
-            
-          <h1 class="text-[#00749A] text-2xl justify-center flex font-semibold">THER</h1>
-</div>
+            <img class="w-6 -mr-[3px]" src="~/assets/images/icons8/icons8-o-cute.svg" alt="" />
+
+            <h1 class="text-[#00749A] text-2xl justify-center flex font-semibold">THER</h1>
+          </div>
           <div class="flex flex-wrap items-center justify-center -mx-4">
             <!-- html skills for slider  -->
             <div class="w-full px-4 mb-10 mt-14 sm:w-4/5 md:mb-0">
