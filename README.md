@@ -2,11 +2,6 @@
 
 
 
-![Folder_Structure](https://user-images.githubusercontent.com/69577968/161445587-eea4de6d-c006-404f-8fa8-5da66c9c09ff.png)
-
-
-
-
 ## Steps
 
 
