@@ -1,0 +1,1 @@
+import r from"./skills-f25601ea.mjs";import _ from"./project-af8f6b30.mjs";import m from"./home-5ad73f05.mjs";import{_ as c,j as s,k as o,q as a}from"./bootstrap-5e12956d.mjs";import"./nuxt-dc25c7b3.mjs";const p={name:"home",data(){return{dark:!0}}};function f(d,i,u,l,j,x){const t=r,e=_,n=m;return a(),s("div",null,[o(t),o(e),o(n)])}var B=c(p,[["render",f]]);export{B as default};

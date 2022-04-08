@@ -1,23 +1,25 @@
 {
   "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-945e995e.mjs",
+    "file": "entry-14970d9d.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
-      "_bootstrap-ac4c6308.mjs"
+      "_bootstrap-5e12956d.mjs"
     ]
   },
-  "_bootstrap-ac4c6308.mjs": {
-    "file": "bootstrap-ac4c6308.mjs",
+  "_bootstrap-5e12956d.mjs": {
+    "file": "bootstrap-5e12956d.mjs",
     "isDynamicEntry": true,
     "dynamicImports": [
       "pages/index.vue",
+      "pages/me.vue",
+      "components/darkbutton.vue",
       "components/home.vue",
       "components/project.vue",
       "components/skills.vue"
     ],
     "css": [
-      "assets/bootstrap.28ef2d59.css"
+      "assets/bootstrap.104f3d13.css"
     ],
     "assets": [
       "assets/Weather-Moon.617d8515.svg",
@@ -26,12 +28,20 @@
       "assets/Space_Animal_5.3aa2aee6.svg"
     ]
   },
+  "components/darkbutton.vue": {
+    "file": "darkbutton-e2b77aa7.mjs",
+    "src": "components/darkbutton.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_bootstrap-5e12956d.mjs"
+    ]
+  },
   "components/home.vue": {
-    "file": "home-8f9d67f5.mjs",
+    "file": "home-5ad73f05.mjs",
     "src": "components/home.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_bootstrap-ac4c6308.mjs"
+      "_bootstrap-5e12956d.mjs"
     ],
     "assets": [
       "assets/lines-blue1.11a8413a.svg",
@@ -47,12 +57,12 @@
     ]
   },
   "components/project.vue": {
-    "file": "project-19261f27.mjs",
+    "file": "project-af8f6b30.mjs",
     "src": "components/project.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-b07aecd9.mjs",
-      "_bootstrap-ac4c6308.mjs"
+      "_nuxt-dc25c7b3.mjs",
+      "_bootstrap-5e12956d.mjs"
     ],
     "css": [
       "assets/project.a352a431.css"
@@ -64,10 +74,10 @@
       "assets/dots2.79aeb633.svg"
     ]
   },
-  "_nuxt-b07aecd9.mjs": {
-    "file": "nuxt-b07aecd9.mjs",
+  "_nuxt-dc25c7b3.mjs": {
+    "file": "nuxt-dc25c7b3.mjs",
     "imports": [
-      "_bootstrap-ac4c6308.mjs"
+      "_bootstrap-5e12956d.mjs"
     ],
     "css": [
       "assets/nuxt.f7502460.css"
@@ -81,12 +91,12 @@
     ]
   },
   "components/skills.vue": {
-    "file": "skills-af6ac106.mjs",
+    "file": "skills-f25601ea.mjs",
     "src": "components/skills.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-b07aecd9.mjs",
-      "_bootstrap-ac4c6308.mjs"
+      "_nuxt-dc25c7b3.mjs",
+      "_bootstrap-5e12956d.mjs"
     ],
     "css": [
       "assets/skills.a6dba478.css"
@@ -107,15 +117,27 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-eaf3cc0d.mjs",
+    "file": "index-bdee2829.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "components/skills.vue",
       "components/project.vue",
       "components/home.vue",
-      "_bootstrap-ac4c6308.mjs",
-      "_nuxt-b07aecd9.mjs"
+      "_bootstrap-5e12956d.mjs",
+      "_nuxt-dc25c7b3.mjs"
+    ]
+  },
+  "pages/me.vue": {
+    "file": "me-6eedbbad.mjs",
+    "src": "pages/me.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "components/home.vue",
+      "components/skills.vue",
+      "components/project.vue",
+      "_bootstrap-5e12956d.mjs",
+      "_nuxt-dc25c7b3.mjs"
     ]
   }
 }
