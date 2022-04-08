@@ -12,7 +12,7 @@
               <h1 class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl">
                 <span
                   >Hi, it's me
-                  <h2 class="animate-tracking-in-expand"><span class="underline text-blueGray-700">G</span>anpat <span class="underline text-blueGray-700">J</span>angra</h2>
+                  <span class="underline text-blueGray-700 animate-pulse animation-5s">G</span>anpat <span class="animate-pulse animation-5s underline text-blueGray-700">J</span>angra
                   and I am a
                 </span>
                 <span class="relative inline-block">
@@ -95,7 +95,7 @@
                 <img class="mr-6 h-14" src="~/assets/images/mycollection/icon1.svg" alt="" />
                 <a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#"
                   >Call
-                  <h1 class="text-sm">+91 8708423836</h1>
+                  <h1 class="text-sm">+91 9876543210</h1>
                 </a>
               </div>
             </div>

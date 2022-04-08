@@ -1,14 +1,14 @@
 const client_manifest = {
   "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-29dc1e83.mjs",
+    "file": "entry-945e995e.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
-      "_bootstrap-2e676938.mjs"
+      "_bootstrap-ac4c6308.mjs"
     ]
   },
-  "_bootstrap-2e676938.mjs": {
-    "file": "bootstrap-2e676938.mjs",
+  "_bootstrap-ac4c6308.mjs": {
+    "file": "bootstrap-ac4c6308.mjs",
     "isDynamicEntry": true,
     "dynamicImports": [
       "pages/index.vue",
@@ -17,7 +17,7 @@ const client_manifest = {
       "components/skills.vue"
     ],
     "css": [
-      "assets/bootstrap.58ae7c7d.css"
+      "assets/bootstrap.28ef2d59.css"
     ],
     "assets": [
       "assets/Weather-Moon.617d8515.svg",
@@ -27,11 +27,11 @@ const client_manifest = {
     ]
   },
   "components/home.vue": {
-    "file": "home-49fe0879.mjs",
+    "file": "home-8f9d67f5.mjs",
     "src": "components/home.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_bootstrap-2e676938.mjs"
+      "_bootstrap-ac4c6308.mjs"
     ],
     "assets": [
       "assets/lines-blue1.11a8413a.svg",
@@ -47,12 +47,12 @@ const client_manifest = {
     ]
   },
   "components/project.vue": {
-    "file": "project-10054162.mjs",
+    "file": "project-19261f27.mjs",
     "src": "components/project.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-c0bee48f.mjs",
-      "_bootstrap-2e676938.mjs"
+      "_nuxt-b07aecd9.mjs",
+      "_bootstrap-ac4c6308.mjs"
     ],
     "css": [
       "assets/project.a352a431.css"
@@ -60,15 +60,14 @@ const client_manifest = {
     "assets": [
       "assets/icons8-broadcasting.1904243b.svg",
       "assets/placeholder-photo.3df78d0e.png",
-      "assets/photo4.21c13b80.png",
       "assets/dots.1c4c2d6c.svg",
       "assets/dots2.79aeb633.svg"
     ]
   },
-  "_nuxt-c0bee48f.mjs": {
-    "file": "nuxt-c0bee48f.mjs",
+  "_nuxt-b07aecd9.mjs": {
+    "file": "nuxt-b07aecd9.mjs",
     "imports": [
-      "_bootstrap-2e676938.mjs"
+      "_bootstrap-ac4c6308.mjs"
     ],
     "css": [
       "assets/nuxt.f7502460.css"
@@ -82,12 +81,12 @@ const client_manifest = {
     ]
   },
   "components/skills.vue": {
-    "file": "skills-0132dce8.mjs",
+    "file": "skills-af6ac106.mjs",
     "src": "components/skills.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-c0bee48f.mjs",
-      "_bootstrap-2e676938.mjs"
+      "_nuxt-b07aecd9.mjs",
+      "_bootstrap-ac4c6308.mjs"
     ],
     "css": [
       "assets/skills.a6dba478.css"
@@ -108,15 +107,15 @@ const client_manifest = {
     ]
   },
   "pages/index.vue": {
-    "file": "index-4b570e01.mjs",
+    "file": "index-eaf3cc0d.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "components/skills.vue",
       "components/project.vue",
       "components/home.vue",
-      "_bootstrap-2e676938.mjs",
-      "_nuxt-c0bee48f.mjs"
+      "_bootstrap-ac4c6308.mjs",
+      "_nuxt-b07aecd9.mjs"
     ]
   }
 };

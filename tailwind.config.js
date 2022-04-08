@@ -840,7 +840,14 @@ module.exports = {
         zIndex: ['responsive', 'focus-within', 'focus'],
     },
     corePlugins: {},
+    // plugins: [require("daisyui")],
+    // plugins: [
+    //     require('tailwindcss-animations','daisyui'),
+    // ],
+
+
     plugins: [
-        require('tailwindcss-animations'),
+       
+        require("tailwindcss-animations",),
     ],
 }

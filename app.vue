@@ -1,14 +1,13 @@
 <template>
-  <div>
-    <skills></skills>
-    <project></project>
-    <home></home>
+<div :class="{ dark }">
+     
+  <NuxtPage>
+  </NuxtPage>
   </div>
 </template>
 
 <script>
 export default {
-  name: "home",
   data() {
     return {
       dark: true,
