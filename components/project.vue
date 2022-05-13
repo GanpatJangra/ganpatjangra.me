@@ -89,7 +89,6 @@
                   </div>
                 </div>
               </swiper-slide>
-           
             </swiper>
           </div>
         </div>
@@ -175,8 +174,7 @@ export default {
     title: "Projects",
     meta: [
       {
-        hid: "description",
-        name: "MEVN developer | website developer",
+        keyword: "Hi, I am Ganpat jangra. I am a web developer and designer who loves to create beautiful web pages using HTML5 and CSS3. Here is my portfolio with some of my work.",
         content: "I am create multiple websites and also modified existing websites.",
       },
     ],

@@ -187,7 +187,6 @@ export default {
     title: "skills",
     meta: [
       {
-        hid: "description",
         name: "MEVN developer | website developer",
         content: "I know front end and some basic of backend. html, css, javascript, vscode, vue js, nuxt js, many more.",
       },

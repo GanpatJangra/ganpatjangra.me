@@ -10,17 +10,11 @@
             <div class="relative w-full px-4 mb-24 lg:w-1/2 lg:mb-0">
               <div class="absolute animate-slide-tl h-44 w-full bg-elephant bg-no-repeat bg-left-top bg-[length:400px_150px]"></div>
               <h1 class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl">
-                <span
-                  >Hi, it's me
-                  <span class="underline text-blueGray-700 animate-pulse animation-5s">G</span>anpat <span class="animate-pulse animation-5s underline text-blueGray-700">J</span>angra
-                  and I am a
-                </span>
+                <span>Hi, it's me <span class="underline text-blueGray-700 animate-pulse animation-5s">G</span>anpat <span class="animate-pulse animation-5s underline text-blueGray-700">J</span>angra and I am a </span>
                 <span class="relative inline-block">
                   <span class="absolute inset-0 xl:-left-8 xl:-right-8">
-                    <img class="absolute inset-0 w-full max-w-non" src="~/assets/images/mycollection/lines-blue1.svg" alt="" /><img
-                      class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"
-                      src="~/assets/images/mycollection/lines-blue2.svg"
-                      alt="" />
+                    <img class="absolute inset-0 w-full max-w-non" src="~/assets/images/mycollection/lines-blue1.svg" alt="" />
+                    <img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none" src="~/assets/images/mycollection/lines-blue2.svg" alt="" />
                   </span>
                   <!-- full stack -->
                   <span class="relative z-10"> web dev.</span>
@@ -109,31 +103,21 @@
 <script>
 export default {
   name: "home",
-  // head: {
-  //   title: "Home",
-  //   meta: [
-  //     {
-  //       hid: "description",
-  //       name: "MEVN developer | website developer",
-  //       content: "I am create multiple websites and also modified existing websites.",
-  //     },
-  //   ],
-  // },
-
   head: {
     title: "it's me",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: "MEVN developer portfolio ganpatjangra",
+        hid: "description",
+        // hid: "MEVN developer portfolio ganpatjangra",
         name: "ganpatjangra, ganpat jangra",
+        description: "Hi, I am ganpat. I am a web developer and designer who loves to create beautiful web pages using HTML5 and CSS3. Here is my portfolio with some of my work.",
         author: "ganpat jangra",
         keywords: "developer jangra ganpat website ganpatjangra web portfolio",
-        content: "Hi, I am ganpat jangra. I am a web dev and mevn learner.",
+        content: "Hi, I am ganpat. I am a web developer and designer who loves to create beautiful web pages using HTML5 and CSS3. Here is my portfolio with some of my work.",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 };
 </script>

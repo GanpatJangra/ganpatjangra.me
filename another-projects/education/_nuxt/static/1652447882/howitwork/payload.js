@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/howitwork", {data:[{}],fetch:{},mutations:void 0});

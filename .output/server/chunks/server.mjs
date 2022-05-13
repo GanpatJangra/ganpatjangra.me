@@ -3208,21 +3208,21 @@ _sfc_main$8.setup = (props, ctx) => {
 const NuxtPage = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$7]]);
 const routes = [
   {
+    "name": "blog",
+    "path": "/blog",
+    "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/blog.vue",
+    "children": [],
+    "component": () => Promise.resolve().then(function() {
+      return blog$1;
+    })
+  },
+  {
     "name": "index",
     "path": "/",
     "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/index.vue",
     "children": [],
     "component": () => Promise.resolve().then(function() {
       return index$1;
-    })
-  },
-  {
-    "name": "me",
-    "path": "/me",
-    "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/me.vue",
-    "children": [],
-    "component": () => Promise.resolve().then(function() {
-      return me$1;
     })
   }
 ];
@@ -3698,6 +3698,57 @@ const bootstrap$1 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": bootstrap
 });
+const _sfc_main$5 = {
+  name: "blogs",
+  data() {
+    return {
+      blogs: [
+        {
+          id: "1",
+          tag: "Development",
+          heading: "Lorem its its ikks",
+          date: "26/08/2022",
+          heading: "loremLorem, ipsum dolor sit amet consectetur adipisicing elit.",
+          content: "   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae tenetur facere sit sunt consequatur ducimus nobis dolorum incidunt? Neque, saepe!",
+          image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80"
+        },
+        {
+          id: "2",
+          tag: "Development",
+          heading: "Lorem its its ikks",
+          date: "26/08/2022",
+          heading: "loremLorem, ipsum dolor sit amet consectetur adipisicing elit.",
+          content: "   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae tenetur facere sit sunt consequatur ducimus nobis dolorum incidunt? Neque, saepe!",
+          image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80"
+        },
+        {
+          id: "3",
+          tag: "Development",
+          heading: "Lorem its its ikks",
+          date: "26/08/2022",
+          heading: "loremLorem, ipsum dolor sit amet consectetur adipisicing elit.",
+          content: "   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae tenetur facere sit sunt consequatur ducimus nobis dolorum incidunt? Neque, saepe!",
+          image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80"
+        }
+      ]
+    };
+  }
+};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(_attrs)}><div class="skew skew-top mr-for-radius"><svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none"><polygon fill="currentColor" points="0 0 10 10 0 10"></polygon></svg></div><div class="skew skew-top ml-for-radius"><svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none"><polygon fill="currentColor" points="0 10 10 0 10 10"></polygon></svg></div><div class="bg-gray-50 radius-for-skewed mx-3"><div class="container mx-auto px-4"><div class="mb-16 flex flex-wrap items-center"><div class="w-full lg:w-1/2 text-center lg:text-left"><span class="text-green-600 font-bold">Dolor sit amet consectutar</span><h2 class="text-4xl lg:text-5xl font-bold font-heading">Our Blog</h2></div><div class="hidden lg:block text-right w-1/2"><a class="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-green-600 hover:bg-green-700 text-gray-50 font-bold leading-loose transition duration-200" href="#">View More Articles</a></div></div><div class="mb-8 flex flex-wrap rounded-lg shadow overflow-hidden"><div class="w-full lg:w-1/2 rounded-l"><img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></div><div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white"><span class="text-sm text-gray-400">24 Jan, 2021</span><h2 class="my-4 text-2xl font-bold">Morbi scelerisque nulla et lectus dignissim eleifend nulla eu nulla a metus</h2><p class="mb-4 text-gray-400 leading-loose"> Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu dictum. Integer sit amet erat sit amet lectus lacinia mattis. Donec est tortor, fermentum at urna a, accumsan suscipit sem. </p><a class="text-green-600 hover:text-green-700 font-bold" href="#">Learn More</a></div></div><div class="mb-8 flex flex-wrap rounded-lg shadow overflow-hidden"><div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white order-1 lg:order-0"><span class="text-sm text-gray-400">24 Jan, 2021</span><h2 class="my-4 text-2xl font-bold">Morbi scelerisque nulla et lectus dignissim eleifend nulla eu nulla a metus</h2><p class="mb-4 text-gray-400 leading-loose"> Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu dictum. Integer sit amet erat sit amet lectus lacinia mattis. Donec est tortor, fermentum at urna a, accumsan suscipit sem. </p><a class="text-green-600 hover:text-green-700 font-bold" href="#">Learn More</a></div><div class="w-full lg:w-1/2 rounded-l order-0 lg:order-1"><img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></div></div><div class="mb-8 flex flex-wrap rounded-lg shadow overflow-hidden"><div class="w-full lg:w-1/2 rounded-l"><img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></div><div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white"><span class="text-sm text-gray-400">24 Jan, 2021</span><h2 class="my-4 text-2xl font-bold">Morbi scelerisque nulla et lectus dignissim eleifend nulla eu nulla a metus</h2><p class="mb-4 text-gray-400 leading-loose"> Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu dictum. Integer sit amet erat sit amet lectus lacinia mattis. Donec est tortor, fermentum at urna a, accumsan suscipit sem. </p><a class="text-green-600 hover:text-green-700 font-bold" href="#">Learn More</a></div></div><div class="mb-8 flex flex-wrap rounded-lg shadow overflow-hidden"><div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white order-1 lg:order-0"><span class="text-sm text-gray-400">24 Jan, 2021</span><h2 class="my-4 text-2xl font-bold">Morbi scelerisque nulla et lectus dignissim eleifend nulla eu nulla a metus</h2><p class="mb-4 text-gray-400 leading-loose"> Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu dictum. Integer sit amet erat sit amet lectus lacinia mattis. Donec est tortor, fermentum at urna a, accumsan suscipit sem. </p><a class="text-green-600 hover:text-green-700 font-bold" href="#">Learn More</a></div><div class="w-full lg:w-1/2 rounded-l order-0 lg:order-1"><img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></div></div><div class="mb-16 flex flex-wrap rounded-lg shadow overflow-hidden"><div class="w-full lg:w-1/2 rounded-l bg-white"><img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></div><div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white"><span class="text-sm text-gray-400">24 Jan, 2021</span><h2 class="my-4 text-2xl font-bold">Morbi scelerisque nulla et lectus dignissim eleifend nulla eu nulla a metus</h2><p class="mb-4 text-gray-400 leading-loose"> Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu dictum. Integer sit amet erat sit amet lectus lacinia mattis. Donec est tortor, fermentum at urna a, accumsan suscipit sem. </p><a class="text-green-600 hover:text-green-700 font-bold" href="#">Learn More</a></div></div><div class="flex justify-center"><nav class="flex items-center bg-white shadow rounded" aria-label="Pagination"><a class="px-4 text-gray-400 hover:text-gray-500" href="#"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg></a><div class="p-2 border-r border-l text-gray-500"><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">1</a><a class="mx-1 px-2 rounded bg-gray-50 text-gray-800 font-bold" href="#">2</a><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">3</a><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">4</a><span class="mx-3">...</span><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">16</a><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">17</a><a class="mx-1 px-2 rounded hover:bg-gray-50 hover:text-gray-800" href="#">18</a></div><a class="px-4 text-gray-400 hover:text-gray-500" href="#"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a></nav></div></div></div><div class="skew skew-bottom mr-for-radius"><svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none"><polygon fill="currentColor" points="0 0 10 0 0 10"></polygon></svg></div><div class="skew skew-bottom ml-for-radius"><svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none"><polygon fill="currentColor" points="0 0 10 0 10 10"></polygon></svg></div></section>`);
+}
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/blog.vue");
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+};
+const blog = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$4]]);
+const blog$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": blog
+});
 const _imports_0$2 = "/_nuxt/assets/icons8-f-cute.3b02a426.svg";
 const _imports_2$2 = "/_nuxt/assets/html-5.765166f2.svg";
 const _imports_2$1 = "/_nuxt/assets/css3.20d99463.svg";
@@ -3715,7 +3766,7 @@ const _imports_13 = "/_nuxt/assets/canva-icon.00b39470.svg";
 const _imports_14 = "/_nuxt/assets/vscode.ac6dde88.svg";
 const _imports_15 = "/_nuxt/assets/git.717a57ea.svg";
 const _imports_16 = "/_nuxt/assets/digitalocean-icon.91247310.svg";
-const _sfc_main$5 = {
+const _sfc_main$4 = {
   head: {
     title: "skills",
     meta: [
@@ -3736,7 +3787,7 @@ const _sfc_main$5 = {
     };
   }
 };
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_swiper = vue_cjs_prod.resolveComponent("swiper");
   const _component_swiper_slide = vue_cjs_prod.resolveComponent("swiper-slide");
   _push(serverRenderer.exports.ssrRenderComponent(_component_swiper, vue_cjs_prod.mergeProps({
@@ -4280,17 +4331,17 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     _: 1
   }, _parent));
 }
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/skills.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$4]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$3]]);
 const skills = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": __nuxt_component_1
+  "default": __nuxt_component_0
 });
 const _imports_0$1 = "/_nuxt/assets/icons8-broadcasting.1904243b.svg";
 const _imports_1$1 = "/_nuxt/assets/placeholder-photo.3df78d0e.png";
@@ -4298,7 +4349,7 @@ const _imports_7$1 = "/_nuxt/assets/dots.1c4c2d6c.svg";
 const _imports_8$1 = "/_nuxt/assets/dots2.79aeb633.svg";
 const _imports_9$1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVHgB7ZTBrcIwDIZ/8+C969sAGKFMACMwAmcubIDYgANC3GAEmIDeQagbUDYIAxBjVJAqEaoaLHHpd6kUN84XJzF1hszQwEgPc2qHQpIrlU8TCmr4MpVAJVAJfF2gLo1l8DRKWOINiDBij//8GBPGBLRezgkNFnbHgk4YIhryVhbpvoqrj0B26WCIWkBqc4YVUk29AEwrcNIfASOGHUe1gCc7AdnMRicgZ5bMKYEN7vKHWFuBCaxgrJMpufIC2ftfwQLJ5X22mXIC2YQejPBAP1lQWk7gvvhjwoe4Gkmu3D0qEnDSqCf+F5HB4lmuBtr7GcX5QD309w8j2hnddm5gcGtetwsXil8BQ2ld5eFPsDUAAAAASUVORK5CYII=";
 SwiperCore.use([FreeMode, Navigation, Thumbs, Pagination]);
-const _sfc_main$4 = {
+const _sfc_main$3 = {
   head: {
     title: "Projects",
     meta: [
@@ -4324,7 +4375,7 @@ const _sfc_main$4 = {
     }
   }
 };
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_swiper = vue_cjs_prod.resolveComponent("swiper");
   const _component_swiper_slide = vue_cjs_prod.resolveComponent("swiper-slide");
   _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white xl:pt-20" }, _attrs))}><div class="container px-4 mx-auto"><div class="relative flex flex-wrap -mx-4"><div class="w-full px-4 lg:w-1/2"><div class="text-center"><h2 class="mb-20 font-medium xl:mt-8 xl:mb-16 text-9xl md:text-10xl xl:text-11xl font-heading">Projects</h2></div><div class="flex flex-wrap justify-center mb-20 -mx-1 xl:flex-nowrap lg:px-10">`);
@@ -4969,17 +5020,17 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }, _parent));
   _push(`<div class="flex items-center justify-center -mx-4"></div></div><div class="hidden h-1 md:block"><div class="w-64 mx-auto bg-gray-100 rounded-full h-1/2"><div class="w-1/3 h-full bg-purple-500 rounded-full"></div></div></div></div></div></div></section>`);
 }
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/project.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$3]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2]]);
 const project = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": __nuxt_component_2
+  "default": __nuxt_component_1
 });
 const _imports_0 = "/_nuxt/assets/lines-blue1.11a8413a.svg";
 const _imports_1 = "/_nuxt/assets/lines-blue2.5f9a9806.svg";
@@ -4991,7 +5042,7 @@ const _imports_6 = "/_nuxt/assets/github-icon.03573308.svg";
 const _imports_7 = "/_nuxt/assets/linkedin-tile.b66e127c.svg";
 const _imports_8 = "/_nuxt/assets/gmail-icon.e9d865c1.svg";
 const _imports_9 = "/_nuxt/assets/icon1.1227f604.svg";
-const _sfc_main$3 = {
+const _sfc_main$2 = {
   name: "home",
   head: {
     title: "it's me",
@@ -5009,22 +5060,22 @@ const _sfc_main$3 = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   }
 };
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}><section id="home" class="py-16 overflow-hidden 2xl:py-20"><div class="relative shadow-2xl shadow-gray-900 rounded-b-10xl"><div class="container relative px-4 mx-auto"><div class="absolute hidden w-32 h-32 bg-no-repeat bg-moon lg:block top-5 right-2 lg:right-7 lg:top-7"></div><div class="flex flex-wrap items-center py-10 mx-4 xl:bg-right"><div class="relative w-full px-4 mb-24 lg:w-1/2 lg:mb-0"><div class="absolute animate-slide-tl h-44 w-full bg-elephant bg-no-repeat bg-left-top bg-[length:400px_150px]"></div><h1 class="relative max-w-xl mb-16 font-medium leading-none font-heading text-9xl md:text-10xl xl:text-11xl"><span>Hi, it&#39;s me <span class="underline text-blueGray-700 animate-pulse animation-5s">G</span>anpat <span class="animate-pulse animation-5s underline text-blueGray-700">J</span>angra and I am a </span><span class="relative inline-block"><span class="absolute inset-0 xl:-left-8 xl:-right-8"><img class="absolute inset-0 w-full max-w-non"${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt=""><img class="absolute inset-0 w-full mt-1 lg:mt-2 xl:ml-4 max-w-none"${serverRenderer.exports.ssrRenderAttr("src", _imports_1)} alt=""></span><span class="relative z-10"> web dev.</span></span></h1><div class="space-y-2"><div class="flex items-center space-x-2"><img class="w-10"${serverRenderer.exports.ssrRenderAttr("src", _imports_2)} alt=""><h1 class="text-xl capitalize">previous study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">In 2020, I complete my engineering.</p><div class="flex items-center space-x-2"><img class="w-10"${serverRenderer.exports.ssrRenderAttr("src", _imports_3)} alt=""><h1 class="text-xl capitalize">currently study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">leaning MEVN and communication skills in English language.</p><div class="flex items-center space-x-2"><img class="w-10"${serverRenderer.exports.ssrRenderAttr("src", _imports_4)} alt=""><h1 class="text-xl capitalize">future study</h1></div><p class="text-lg leading-snug lg:mb-24 text-darkBlueGray-400">BCA in Australia.</p></div></div><div class="relative w-full px-4 lg:w-1/2"><div class="absolute hidden bg-center bg-no-repeat lg:block h-96 w-96 animate-slide-left bg-tiger"></div><div class="relative mx-auto"><div class="w-64 h-64 mx-auto border-4 border-gray-700 rounded-full"><div class="w-56 h-56 mx-auto border-4 border-gray-400 rounded-full"><div class="relative flex items-center justify-center w-48 h-48 mx-auto border-4 rounded-full backdrop-blur-sm"><img class="w-36 -mt-9"${serverRenderer.exports.ssrRenderAttr("src", _imports_5)} alt=""></div></div></div></div></div></div><div class="relative z-10 mx-4 mb-5 lg:mx-7"><h1 class="mb-5 text-6xl font-semibold capitalize">Contact</h1><div class="relative grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center"><div class="absolute h-80 w-44 bg-animal bg-no-repeat bg-[length:200px] bg-center animate-slide-tr"></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_6)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_7)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_8)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${serverRenderer.exports.ssrRenderAttr("src", _imports_9)} alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 9876543210</h1></a></div></div></div></div></div></section></div>`);
 }
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/home.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$1]]);
 const home = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": __nuxt_component_0
+  "default": __nuxt_component_2
 });
-const _sfc_main$2 = {
+const _sfc_main$1 = {
   name: "home",
   data() {
     return {
@@ -5032,52 +5083,27 @@ const _sfc_main$2 = {
     };
   }
 };
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_skills = __nuxt_component_1;
-  const _component_project = __nuxt_component_2;
-  const _component_home = __nuxt_component_0;
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_skills = __nuxt_component_0;
+  const _component_project = __nuxt_component_1;
+  const _component_home = __nuxt_component_2;
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_skills, null, null, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_project, null, null, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_home, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
+const _sfc_setup$1 = _sfc_main$1.setup;
+_sfc_main$1.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+  return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$1]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender]]);
 const index$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": index
-});
-const _sfc_main$1 = {
-  name: "me"
-};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_home = __nuxt_component_0;
-  const _component_skills = __nuxt_component_1;
-  const _component_project = __nuxt_component_2;
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
-  _push(serverRenderer.exports.ssrRenderComponent(_component_home, { class: "-mt-[6rem]" }, null, _parent));
-  _push(serverRenderer.exports.ssrRenderComponent(_component_skills, null, null, _parent));
-  _push(serverRenderer.exports.ssrRenderComponent(_component_project, null, null, _parent));
-  _push(`</div>`);
-}
-const _sfc_setup$1 = _sfc_main$1.setup;
-_sfc_main$1.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/me.vue");
-  return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
-};
-const me = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender]]);
-const me$1 = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": me
 });
 const _sfc_main = {
   __ssrInlineRender: true,
