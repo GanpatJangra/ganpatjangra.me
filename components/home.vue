@@ -65,7 +65,7 @@
 
               <div class="relative flex items-center w-full mb-6 xl:w-1/2">
                 <img class="mr-6 h-14" src="~/assets/images/mycollection/github-icon.svg" alt="" />
-                <a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra"
+                <a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="https://github.com/GanpatJangra"
                   >Github
 
                   <h1 class="text-sm">@ganpatjangra</h1>
@@ -73,23 +73,23 @@
               </div>
               <div class="relative flex items-center w-full mb-6 xl:w-1/2">
                 <img class="mr-6 h-14" src="~/assets/images/mycollection/linkedin-tile.svg" alt="" />
-                <a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/"
+                <a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/"
                   >Linkdin
                   <h1 class="text-sm">@ganpatjangra</h1>
                 </a>
               </div>
               <div class="relative flex items-center w-full mb-6 xl:w-1/2">
                 <img class="mr-6 h-14" src="~/assets/images/mycollection/gmail-icon.svg" alt="" />
-                <a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#"
+                <a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="#"
                   >Mail
                   <h1 class="text-sm">ganpatjangra@gmail.com</h1>
                 </a>
               </div>
               <div class="relative flex items-center w-full mb-6 xl:w-1/2">
                 <img class="mr-6 h-14" src="~/assets/images/mycollection/icon1.svg" alt="" />
-                <a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#"
+                <a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="#"
                   >Call
-                  <h1 class="text-sm">+91 9876543210</h1>
+                  <h1 class="text-sm">+91 8708423836</h1>
                 </a>
               </div>
             </div>

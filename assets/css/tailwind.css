@@ -9,4 +9,9 @@
  
 }
 
+@font-face {
+  font-family:"Epilogue";
+  src: url('~/assets/font/Epilogue-VariableFont_wght.ttf');
+}
+
 @tailwind utilities;

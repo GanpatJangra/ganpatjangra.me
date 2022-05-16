@@ -13,7 +13,7 @@ import { error404, errorDev } from '@nuxt/design';
 import { createRenderer } from 'vue-bundle-renderer';
 import devalue from '@nuxt/devalue';
 import defu from 'defu';
-import htmlTemplate from 'file:///C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/views/document.template.mjs';
+import htmlTemplate from 'file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'vue/server-renderer';
 
 const _runtimeConfig = {public:{app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null}},private:{}};
@@ -130,10 +130,10 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/ganpatjangra.me/dist" + "/" + "1650294601";
+const STATIC_ASSETS_BASE = "C:/Users/acer/Desktop/Projects/ganpatjangra.me/dist" + "/" + "1652685371";
 const PAYLOAD_JS = "/payload.js";
-const getClientManifest = cachedImport(() => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/dist/server/client.manifest.mjs'));
-const getSSRApp = cachedImport(() => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/dist/server/server.mjs'));
+const getClientManifest = cachedImport(() => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/dist/server/client.manifest.mjs'));
+const getSSRApp = cachedImport(() => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/dist/server/server.mjs'));
 const publicPath = publicConfig.app && publicConfig.app.assetsPath || "/_nuxt/" || "/_nuxt";
 const getSSRRenderer = cachedResult(async () => {
   const clientManifest = await getClientManifest();

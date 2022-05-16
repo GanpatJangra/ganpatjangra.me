@@ -31,7 +31,34 @@
                       </div>
                       <!-- </div> -->
                     </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
+                    <a target="blank" href="https://bit.ly/3FNc1Cv"> <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50">Education website</span> </a>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
+                  <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
+                    <div class="flex items-center justify-center mb-8 -mt-8">
+                      <h4 class="text-xl font-medium uppercase font-heading">Project TechnologieS</h4>
+                      <img src="~/assets/images/icons8/icons8-broadcasting.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col justify-between sm:flex-row lg:mx-14">
+                      <div>
+                        <img class="h-28 w-28 mx-auto mb-5" src="~/assets/images/team/placeholder-photo.png" alt="" />
+                      </div>
+                      <!-- <div class="flex sm:space-x-20 mb-14"> -->
+                      <div class="flex flex-col">
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/wordpress-icon.svg" alt="" />Wordpress</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/css3.svg" alt="" />Custom CSS</h1>
+                      </div>
+                      <div>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/plugin.svg" alt="" />Plugins</h1>
+                        <!-- <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1> -->
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                    <a target="blank" href="https://bit.ly/3FMGald"> <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50">Wordpress News website</span></a>
                   </div>
                 </div>
               </swiper-slide>
@@ -50,42 +77,17 @@
                       <div class="flex flex-col">
                         <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/html-5.svg" alt="" />html</h1>
                         <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css</h1>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/javascript.svg" alt="" />java</h1>
                       </div>
                       <div>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                        <!-- <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1> -->
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/api1.svg" alt="" />Axios API</h1>
                         <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1>
                       </div>
                       <!-- </div> -->
                     </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
-                  </div>
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="w-full px-1 mb-4 xl:w-auto xl:mb-0">
-                  <div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300">
-                    <div class="flex items-center justify-center mb-8 -mt-8">
-                      <h4 class="text-xl font-medium uppercase font-heading">Project TechnologieS</h4>
-                      <img src="~/assets/images/icons8/icons8-broadcasting.svg" alt="" />
-                    </div>
-                    <div class="flex flex-col justify-between sm:flex-row lg:mx-14">
-                      <div>
-                        <img class="h-28 w-28 mx-auto mb-5" src="~/assets/images/team/placeholder-photo.png" alt="" />
-                      </div>
-                      <!-- <div class="flex sm:space-x-20 mb-14"> -->
-                      <div class="flex flex-col">
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/html-5.svg" alt="" />html</h1>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/tailwindcss.svg" alt="" />tailwind css</h1>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/javascript.svg" alt="" />java</h1>
-                      </div>
-                      <div>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1>
-                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1>
-                      </div>
-                      <!-- </div> -->
-                    </div>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900">Founder</span>
+                    <a target="blank" href="https://bit.ly/3NjnwUT">
+                      <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50">Quotes Website</span>
+                    </a>
                   </div>
                 </div>
               </swiper-slide>
@@ -105,7 +107,7 @@
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
                     <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
+                      I am creating an educational website that is not only easy to use, but also less animated. We believe that this is the first step in empowering people around the world to learn and grow.
                     </p>
                   </div>
                   <img src="~/assets/images/team/quote.png" alt="" />
@@ -117,9 +119,7 @@
                   <img class="rotate-180" src="~/assets/images/team/quote.png" alt="" />
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
-                    <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
-                    </p>
+                    <p class="mx-2 text-2xl font-medium">A news website with a creative and unique design. We are also fast and optimized for top performance on the search engine result pages.</p>
                   </div>
                   <img src="~/assets/images/team/quote.png" alt="" />
                 </div>
@@ -130,9 +130,7 @@
                   <img class="rotate-180" src="~/assets/images/team/quote.png" alt="" />
                   <div class="max-w-sm mx-auto text-justify -mt-9">
                     <h1 class="mx-2 text-2xl font-medium text-blue-500 capitalize">project Ideas :-</h1>
-                    <p class="mx-2 text-2xl font-medium">
-                      Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia!
-                    </p>
+                    <p class="mx-2 text-2xl font-medium">Some quotes are very nice. I have created a quotes website with public available API and axios package.</p>
                   </div>
                   <img src="~/assets/images/team/quote.png" alt="" />
                 </div>
@@ -200,7 +198,6 @@ export default {
 .swiper-pagination-bullet {
   height: 15px;
   width: 15px;
-
   background-color: red;
 }
 </style>

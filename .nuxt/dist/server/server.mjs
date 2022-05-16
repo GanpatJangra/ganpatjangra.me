@@ -1,12 +1,12 @@
 
 // --------------------
-// Request: C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry
+// Request: C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/app/entry
 // Parents: 
 // - <entry> ($id_c757eb9e)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // --------------------
-const $id_0bdfba74 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_767b9929 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const entry = true ? (ctx) => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default(ctx)) : () => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default);
 if (false) {
   entry();
@@ -19,27 +19,27 @@ __vite_ssr_exports__.default = entry;
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/bootstrap.mjs
 // Parents: 
-// - C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry ($id_0bdfba74)
+// - C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/app/entry ($id_767b9929)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs ($id_838a58c0)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs ($id_f92004e9)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs ($id_f17181d1)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/css.mjs ($id_fd99a68c)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/root-component.mjs ($id_454f0a38)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/app-component.mjs ($id_c8874ac0)
 // --------------------
 const $id_fef466a9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/css.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/root-component.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/app-component.mjs");
 
 let entry;
 const plugins = __vite_ssr_import_1__.normalizePlugins(__vite_ssr_import_3__.default);
@@ -99,13 +99,13 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt3/dist/pages/runtime/nested-page.vue ($id_c268603a)
 // - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs ($id_45f47c42)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/layouts.mjs ($id_e4d09968)
 // - /pages/blog.vue ($id_b88f8cfb)
 // - /components/skills.vue ($id_43fa255d)
 // - /components/project.vue ($id_9aa3dd9e)
 // - /components/home.vue ($id_4ae345a3)
 // - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // - /components/darkbutton.vue ($id_0bdb3e11)
 // - /node_modules/@headlessui/vue/dist/headlessui.esm.js ($id_2c13895f)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
@@ -113,7 +113,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // Dependencies: 
 
 // --------------------
-const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js".') })
+const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue/dist/vue.cjs.js".') })
 
 
 // --------------------
@@ -298,7 +298,7 @@ function defineGetter(obj, key, val) {
 // Dependencies: 
 
 // --------------------
-const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/hookable/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/hookable/dist/index.mjs".') })
+const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/hookable/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/hookable/dist/index.mjs".') })
 
 
 // --------------------
@@ -423,7 +423,7 @@ Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, 
 // Dependencies: 
 
 // --------------------
-const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs".') })
+const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/unenv/runtime/mock/proxy.mjs".') })
 
 
 // --------------------
@@ -535,7 +535,7 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable:
 // Dependencies: 
 
 // --------------------
-const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js".') })
+const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue-router/dist/vue-router.cjs.js".') })
 
 
 // --------------------
@@ -748,7 +748,7 @@ function generateKey(keys) {
 // Dependencies: 
 
 // --------------------
-const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs".') })
+const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/murmurhash-es/dist/index.mjs".') })
 
 
 // --------------------
@@ -837,7 +837,7 @@ function writeServerCookie(res, name, value, opts = {}) {
 // Dependencies: 
 
 // --------------------
-const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs".') })
+const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/cookie-es/dist/index.mjs".') })
 
 
 // --------------------
@@ -847,7 +847,7 @@ const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/h3/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/h3/dist/index.mjs".') })
+const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/h3/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/h3/dist/index.mjs".') })
 
 
 // --------------------
@@ -857,7 +857,7 @@ const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/destr/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/destr/dist/index.mjs".') })
+const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/destr/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/destr/dist/index.mjs".') })
 
 
 // --------------------
@@ -886,13 +886,13 @@ Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: t
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/css.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /assets/css/tailwind.css ($id_f75548e1)
 // --------------------
-const $id_838a58c0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_fd99a68c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.css");
 ;
 }
@@ -901,17 +901,17 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.cs
 // --------------------
 // Request: /assets/css/tailwind.css
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs ($id_838a58c0)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/css.mjs ($id_fd99a68c)
 // Dependencies: 
 
 // --------------------
 const $id_f75548e1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: \"DM Sans\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}\n\n*, *::before, *::after {\n  --animation-duration: 1s;\n  --animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@-webkit-keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@-webkit-keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@-webkit-keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n\n@keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\r\n*, ::before, ::after {\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(206 209 215 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(50 107 255 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\r\n.container {\n  width: 100%;\n}\r\n@media (min-width: 640px) {\n\n  .container {\n    max-width: 640px;\n  }\n}\r\n@media (min-width: 768px) {\n\n  .container {\n    max-width: 768px;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .container {\n    max-width: 1024px;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .container {\n    max-width: 1280px;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .container {\n    max-width: 1536px;\n  }\n}\r\n.toggle-checkbox:checked {\n  right: 0px;\n}\r\n.toggle-checkbox:checked + .toggle-label {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\r\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\r\n.pointer-events-none {\n  pointer-events: none;\n}\r\n.absolute {\n  position: absolute;\n}\r\n.relative {\n  position: relative;\n}\r\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\r\n.top-5 {\n  top: 1.25rem;\n}\r\n.right-2 {\n  right: 0.5rem;\n}\r\n.top-0 {\n  top: 0px;\n}\r\n.left-1\\/2 {\n  left: 50%;\n}\r\n.left-\\[38\\%\\] {\n  left: 38%;\n}\r\n.left-\\[62\\%\\] {\n  left: 62%;\n}\r\n.left-\\[40\\%\\] {\n  left: 40%;\n}\r\n.left-\\[60\\%\\] {\n  left: 60%;\n}\r\n.left-\\[35\\%\\] {\n  left: 35%;\n}\r\n.left-\\[65\\%\\] {\n  left: 65%;\n}\r\n.z-10 {\n  z-index: 10;\n}\r\n.order-1 {\n  order: 1;\n}\r\n.order-first {\n  order: -9999;\n}\r\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\r\n.mx-4 {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\r\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\r\n.-mx-1 {\n  margin-left: -0.25rem;\n  margin-right: -0.25rem;\n}\r\n.mx-10 {\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n}\r\n.mx-5 {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n}\r\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\r\n.mx-3 {\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n}\r\n.my-4 {\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\r\n.mx-1 {\n  margin-left: 0.25rem;\n  margin-right: 0.25rem;\n}\r\n.mb-24 {\n  margin-bottom: 6rem;\n}\r\n.mb-16 {\n  margin-bottom: 4rem;\n}\r\n.mt-1 {\n  margin-top: 0.25rem;\n}\r\n.-mt-9 {\n  margin-top: -2.25rem;\n}\r\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\r\n.mb-6 {\n  margin-bottom: 1.5rem;\n}\r\n.mr-6 {\n  margin-right: 1.5rem;\n}\r\n.mb-20 {\n  margin-bottom: 5rem;\n}\r\n.mb-4 {\n  margin-bottom: 1rem;\n}\r\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\r\n.mb-8 {\n  margin-bottom: 2rem;\n}\r\n.-mt-8 {\n  margin-top: -2rem;\n}\r\n.mb-14 {\n  margin-bottom: 3.5rem;\n}\r\n.mr-2 {\n  margin-right: 0.5rem;\n}\r\n.mt-8 {\n  margin-top: 2rem;\n}\r\n.mb-12 {\n  margin-bottom: 3rem;\n}\r\n.mt-10 {\n  margin-top: 2.5rem;\n}\r\n.ml-2 {\n  margin-left: 0.5rem;\n}\r\n.-mb-\\[11px\\] {\n  margin-bottom: -11px;\n}\r\n.-mr-1 {\n  margin-right: -0.25rem;\n}\r\n.mt-14 {\n  margin-top: 3.5rem;\n}\r\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\r\n.mr-\\[64px\\] {\n  margin-right: 64px;\n}\r\n.-mb-\\[13px\\] {\n  margin-bottom: -13px;\n}\r\n.-mr-\\[3px\\] {\n  margin-right: -3px;\n}\r\n.mb-3 {\n  margin-bottom: 0.75rem;\n}\r\n.block {\n  display: block;\n}\r\n.inline-block {\n  display: inline-block;\n}\r\n.flex {\n  display: flex;\n}\r\n.inline-flex {\n  display: inline-flex;\n}\r\n.grid {\n  display: grid;\n}\r\n.hidden {\n  display: none;\n}\r\n.h-\\[25px\\] {\n  height: 25px;\n}\r\n.h-\\[20px\\] {\n  height: 20px;\n}\r\n.h-32 {\n  height: 8rem;\n}\r\n.h-44 {\n  height: 11rem;\n}\r\n.h-96 {\n  height: 24rem;\n}\r\n.h-64 {\n  height: 16rem;\n}\r\n.h-56 {\n  height: 14rem;\n}\r\n.h-48 {\n  height: 12rem;\n}\r\n.h-80 {\n  height: 20rem;\n}\r\n.h-14 {\n  height: 3.5rem;\n}\r\n.h-28 {\n  height: 7rem;\n}\r\n.h-1 {\n  height: 0.25rem;\n}\r\n.h-1\\/2 {\n  height: 50%;\n}\r\n.h-full {\n  height: 100%;\n}\r\n.h-20 {\n  height: 5rem;\n}\r\n.h-8 {\n  height: 2rem;\n}\r\n.h-4 {\n  height: 1rem;\n}\r\n.w-\\[61px\\] {\n  width: 61px;\n}\r\n.w-\\[20px\\] {\n  width: 20px;\n}\r\n.w-32 {\n  width: 8rem;\n}\r\n.w-full {\n  width: 100%;\n}\r\n.w-10 {\n  width: 2.5rem;\n}\r\n.w-96 {\n  width: 24rem;\n}\r\n.w-64 {\n  width: 16rem;\n}\r\n.w-56 {\n  width: 14rem;\n}\r\n.w-48 {\n  width: 12rem;\n}\r\n.w-36 {\n  width: 9rem;\n}\r\n.w-44 {\n  width: 11rem;\n}\r\n.w-28 {\n  width: 7rem;\n}\r\n.w-6 {\n  width: 1.5rem;\n}\r\n.w-1\\/3 {\n  width: 33.333333%;\n}\r\n.w-5 {\n  width: 1.25rem;\n}\r\n.w-20 {\n  width: 5rem;\n}\r\n.w-1\\/2 {\n  width: 50%;\n}\r\n.w-4 {\n  width: 1rem;\n}\r\n.max-w-xl {\n  max-width: 36rem;\n}\r\n.max-w-none {\n  max-width: none;\n}\r\n.max-w-sm {\n  max-width: 24rem;\n}\r\n.max-w-2xl {\n  max-width: 42rem;\n}\r\n.flex-shrink-0 {\n  flex-shrink: 0;\n}\r\n.shrink-0 {\n  flex-shrink: 0;\n}\r\n.translate-x-9 {\n  --tw-translate-x: 2.25rem;\n  transform: var(--tw-transform);\n}\r\n.translate-x-0 {\n  --tw-translate-x: 0px;\n  transform: var(--tw-transform);\n}\r\n.translate-x-1\\/2 {\n  --tw-translate-x: 50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-y-1\\/2 {\n  --tw-translate-y: -50%;\n  transform: var(--tw-transform);\n}\r\n.rotate-180 {\n  --tw-rotate: 180deg;\n  transform: var(--tw-transform);\n}\r\n.transform {\n  transform: var(--tw-transform);\n}\r\n@-webkit-keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tl {\n  animation: slide-tl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n@-webkit-keyframes pulse {\n\n  50% {\n    opacity: .5;\n  }\n}\r\n@keyframes pulse {\n\n  50% {\n    opacity: .5;\n  }\n}\r\n.animate-pulse {\n  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;\n          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;\n}\r\n@-webkit-keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n@keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n.animate-slide-left {\n  animation: slide-left 10s ease-in-out  infinite alternate-reverse both;\n}\r\n@-webkit-keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tr {\n  animation: slide-tr 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n.cursor-pointer {\n  cursor: pointer;\n}\r\n.select-none {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\r\n.flex-col {\n  flex-direction: column;\n}\r\n.flex-wrap {\n  flex-wrap: wrap;\n}\r\n.place-items-center {\n  place-items: center;\n}\r\n.items-start {\n  align-items: flex-start;\n}\r\n.items-center {\n  align-items: center;\n}\r\n.justify-center {\n  justify-content: center;\n}\r\n.justify-between {\n  justify-content: space-between;\n}\r\n.space-y-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\r\n.space-x-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\r\n.overflow-hidden {\n  overflow: hidden;\n}\r\n.rounded-full {\n  border-radius: 9999px;\n}\r\n.rounded-7xl {\n  border-radius: 1.5rem;\n}\r\n.rounded-lg {\n  border-radius: 0.5rem;\n}\r\n.rounded {\n  border-radius: 0.25rem;\n}\r\n.rounded-b-10xl {\n  border-bottom-right-radius: 5rem;\n  border-bottom-left-radius: 5rem;\n}\r\n.rounded-l-xl {\n  border-top-left-radius: 0.625rem;\n  border-bottom-left-radius: 0.625rem;\n}\r\n.rounded-t-xl {\n  border-top-left-radius: 0.625rem;\n  border-top-right-radius: 0.625rem;\n}\r\n.rounded-l {\n  border-top-left-radius: 0.25rem;\n  border-bottom-left-radius: 0.25rem;\n}\r\n.rounded-r {\n  border-top-right-radius: 0.25rem;\n  border-bottom-right-radius: 0.25rem;\n}\r\n.border-2 {\n  border-width: 2px;\n}\r\n.border-4 {\n  border-width: 4px;\n}\r\n.border-r {\n  border-right-width: 1px;\n}\r\n.border-l {\n  border-left-width: 1px;\n}\r\n.border-transparent {\n  border-color: transparent;\n}\r\n.border-gray-700 {\n  --tw-border-opacity: 1;\n  border-color: rgb(45 53 71 / var(--tw-border-opacity));\n}\r\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(119 126 142 / var(--tw-border-opacity));\n}\r\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\r\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\r\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(236 237 239 / var(--tw-bg-opacity));\n}\r\n.bg-purple-500 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(109 50 240 / var(--tw-bg-opacity));\n}\r\n.bg-green-600 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(28 190 73 / var(--tw-bg-opacity));\n}\r\n.bg-blue-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 248 255 / var(--tw-bg-opacity));\n}\r\n.bg-red-400 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 130 114 / var(--tw-bg-opacity));\n}\r\n.bg-moon {\n  background-image: url(/_nuxt/assets/images/animals/Weather-Moon.svg);\n}\r\n.bg-elephant {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_7.svg);\n}\r\n.bg-tiger {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_2.svg);\n}\r\n.bg-animal {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_5.svg);\n}\r\n.bg-\\[length\\:400px_150px\\] {\n  background-size: 400px 150px;\n}\r\n.bg-\\[length\\:200px\\] {\n  background-size: 200px;\n}\r\n.bg-left-top {\n  background-position: left top;\n}\r\n.bg-center {\n  background-position: center;\n}\r\n.bg-no-repeat {\n  background-repeat: no-repeat;\n}\r\n.object-cover {\n  -o-object-fit: cover;\n     object-fit: cover;\n}\r\n.p-2 {\n  padding: 0.5rem;\n}\r\n.py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\r\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\r\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\r\n.px-1 {\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\r\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\r\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\r\n.py-6 {\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\r\n.px-2 {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\r\n.py-5 {\n  padding-top: 1.25rem;\n  padding-bottom: 1.25rem;\n}\r\n.py-1 {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\r\n.px-8 {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\r\n.py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\r\n.pt-10 {\n  padding-top: 2.5rem;\n}\r\n.pb-12 {\n  padding-bottom: 3rem;\n}\r\n.pt-16 {\n  padding-top: 4rem;\n}\r\n.pb-8 {\n  padding-bottom: 2rem;\n}\r\n.pb-4 {\n  padding-bottom: 1rem;\n}\r\n.text-left {\n  text-align: left;\n}\r\n.text-center {\n  text-align: center;\n}\r\n.text-right {\n  text-align: right;\n}\r\n.text-justify {\n  text-align: justify;\n}\r\n.font-heading {\n  font-family: \"Poppins\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\r\n.text-9xl {\n  font-size: 3rem;\n}\r\n.text-xl {\n  font-size: 1.25rem;\n}\r\n.text-lg {\n  font-size: 1.125rem;\n}\r\n.text-6xl {\n  font-size: 2rem;\n}\r\n.text-3xl {\n  font-size: 1.5rem;\n}\r\n.text-sm {\n  font-size: 0.875rem;\n}\r\n.text-2xl {\n  font-size: 1.375rem;\n}\r\n.text-4xl {\n  font-size: 1.625rem;\n}\r\n.text-xs {\n  font-size: 0.75rem;\n}\r\n.font-medium {\n  font-weight: 500;\n}\r\n.font-semibold {\n  font-weight: 600;\n}\r\n.font-bold {\n  font-weight: 700;\n}\r\n.uppercase {\n  text-transform: uppercase;\n}\r\n.lowercase {\n  text-transform: lowercase;\n}\r\n.capitalize {\n  text-transform: capitalize;\n}\r\n.leading-none {\n  line-height: 1;\n}\r\n.leading-snug {\n  line-height: 1.375;\n}\r\n.leading-loose {\n  line-height: 2;\n}\r\n.text-red-500 {\n  --tw-text-opacity: 1;\n  color: rgb(255 77 53 / var(--tw-text-opacity));\n}\r\n.text-blueGray-700 {\n  --tw-text-opacity: 1;\n  color: rgb(60 98 149 / var(--tw-text-opacity));\n}\r\n.text-darkBlueGray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(90 93 123 / var(--tw-text-opacity));\n}\r\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\r\n.text-blue-500 {\n  --tw-text-opacity: 1;\n  color: rgb(50 107 255 / var(--tw-text-opacity));\n}\r\n.text-black {\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\r\n.text-indigo-400 {\n  --tw-text-opacity: 1;\n  color: rgb(167 139 250 / var(--tw-text-opacity));\n}\r\n.text-\\[\\#00749A\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 116 154 / var(--tw-text-opacity));\n}\r\n.text-gray-50 {\n  --tw-text-opacity: 1;\n  color: rgb(245 246 247 / var(--tw-text-opacity));\n}\r\n.text-green-600 {\n  --tw-text-opacity: 1;\n  color: rgb(28 190 73 / var(--tw-text-opacity));\n}\r\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(119 126 142 / var(--tw-text-opacity));\n}\r\n.text-gray-800 {\n  --tw-text-opacity: 1;\n  color: rgb(36 43 56 / var(--tw-text-opacity));\n}\r\n.text-blue-400 {\n  --tw-text-opacity: 1;\n  color: rgb(112 151 255 / var(--tw-text-opacity));\n}\r\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\r\n.underline {\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\r\n.shadow-lg {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-2xl {\n  --tw-shadow: 14px 13px 32px 0 rgba(0, 0, 0, 0.03);\n  --tw-shadow-colored: 14px 13px 32px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-sm {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-inner {\n  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow {\n  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-gray-900 {\n  --tw-shadow-color: #1d232e;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-gray-300 {\n  --tw-shadow-color: #b1b5bf;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-blueGray-900 {\n  --tw-shadow-color: #1c2d45;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.ring-0 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\r\n.backdrop-blur-sm {\n  --tw-backdrop-blur: blur(4px);\n  -webkit-backdrop-filter: var(--tw-backdrop-filter);\n          backdrop-filter: var(--tw-backdrop-filter);\n}\r\n.transition-colors {\n  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\r\n.transition {\n  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\r\n.duration-200 {\n  transition-duration: 200ms;\n}\r\n.ease-in-out {\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\r\n.animation-5s {\n  --animation-duration: 5s;\n  -webkit-animation-duration: var(--animation-duration);\n          animation-duration: var(--animation-duration);\n}\r\n.hover\\:bg-green-700:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(23 158 61 / var(--tw-bg-opacity));\n}\r\n.hover\\:bg-gray-50:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\r\n.hover\\:bg-red-300:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 184 174 / var(--tw-bg-opacity));\n}\r\n.hover\\:text-blueGray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(120 155 201 / var(--tw-text-opacity));\n}\r\n.hover\\:text-green-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(23 158 61 / var(--tw-text-opacity));\n}\r\n.hover\\:text-gray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\r\n.hover\\:text-gray-800:hover {\n  --tw-text-opacity: 1;\n  color: rgb(36 43 56 / var(--tw-text-opacity));\n}\r\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\r\n.focus-visible\\:ring-2:focus-visible {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\r\n.focus-visible\\:ring-white:focus-visible {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));\n}\r\n.focus-visible\\:ring-opacity-75:focus-visible {\n  --tw-ring-opacity: 0.75;\n}\r\n@media (min-width: 640px) {\n\n  .sm\\:w-4\\/5 {\n    width: 80%;\n  }\n\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n\n  .sm\\:space-x-20 > :not([hidden]) ~ :not([hidden]) {\n    --tw-space-x-reverse: 0;\n    margin-right: calc(5rem * var(--tw-space-x-reverse));\n    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n}\r\n@media (min-width: 768px) {\n\n  .md\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .md\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .md\\:block {\n    display: block;\n  }\n\n  .md\\:h-12 {\n    height: 3rem;\n  }\n\n  .md\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .md\\:text-10xl {\n    font-size: 4rem;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .lg\\:right-7 {\n    right: 1.75rem;\n  }\n\n  .lg\\:top-7 {\n    top: 1.75rem;\n  }\n\n  .lg\\:order-1 {\n    order: 1;\n  }\n\n  .lg\\:order-last {\n    order: 9999;\n  }\n\n  .lg\\:mx-7 {\n    margin-left: 1.75rem;\n    margin-right: 1.75rem;\n  }\n\n  .lg\\:mx-14 {\n    margin-left: 3.5rem;\n    margin-right: 3.5rem;\n  }\n\n  .lg\\:-mx-24 {\n    margin-left: -6rem;\n    margin-right: -6rem;\n  }\n\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .lg\\:mt-2 {\n    margin-top: 0.5rem;\n  }\n\n  .lg\\:mb-24 {\n    margin-bottom: 6rem;\n  }\n\n  .lg\\:mt-20 {\n    margin-top: 5rem;\n  }\n\n  .lg\\:block {\n    display: block;\n  }\n\n  .lg\\:h-20 {\n    height: 5rem;\n  }\n\n  .lg\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .lg\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .lg\\:w-2\\/5 {\n    width: 40%;\n  }\n\n  .lg\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n\n  .lg\\:pt-10 {\n    padding-top: 2.5rem;\n  }\n\n  .lg\\:text-left {\n    text-align: left;\n  }\n\n  .lg\\:text-5xl {\n    font-size: 1.875rem;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .xl\\:-left-8 {\n    left: -2rem;\n  }\n\n  .xl\\:-right-8 {\n    right: -2rem;\n  }\n\n  .xl\\:ml-4 {\n    margin-left: 1rem;\n  }\n\n  .xl\\:mt-8 {\n    margin-top: 2rem;\n  }\n\n  .xl\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .xl\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .xl\\:block {\n    display: block;\n  }\n\n  .xl\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .xl\\:w-auto {\n    width: auto;\n  }\n\n  .xl\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n\n  .xl\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .xl\\:bg-right {\n    background-position: right;\n  }\n\n  .xl\\:pt-20 {\n    padding-top: 5rem;\n  }\n\n  .xl\\:text-11xl {\n    font-size: 5rem;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .\\32xl\\:py-20 {\n    padding-top: 5rem;\n    padding-bottom: 5rem;\n  }\n}\r\n";
+__vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: \"DM Sans\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #777e8e; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}\n\n*, *::before, *::after {\n  --animation-duration: 1s;\n  --animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes tracking-in-expand {\n\n  0% {\n    letter-spacing: -.5em;\n    opacity: 0;\n  }\n\n  40% {\n    opacity: .6;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@keyframes pulsate-bck {\n\n  0%,to {\n    transform: scale(1);\n  }\n\n  50% {\n    transform: scale(.9);\n  }\n}\n\n@-webkit-keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@keyframes shake-horizontal {\n\n  0%,to {\n    transform: translateX(0);\n  }\n\n  10%,30%,50%,70% {\n    transform: translateX(-10px);\n  }\n\n  20%,40%,60% {\n    transform: translateX(10px);\n  }\n\n  80% {\n    transform: translateX(8px);\n  }\n\n  90% {\n    transform: translateX(-8px);\n  }\n}\n\n@-webkit-keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@keyframes vibrate-1 {\n\n  0%,to {\n    transform: translate(0);\n  }\n\n  20% {\n    transform: translate(-2px, 2px);\n  }\n\n  40% {\n    transform: translate(-2px, -2px);\n  }\n\n  60% {\n    transform: translate(2px, 2px);\n  }\n\n  80% {\n    transform: translate(2px, -2px);\n  }\n}\n\n@-webkit-keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\n\n@keyframes jump {\n\n  0% {\n    transform: translateY(0%);\n  }\n\n  50% {\n    transform: translateY(-100%);\n  }\n\n  100% {\n    transform: translateY(0%);\n  }\n}\r\n*, ::before, ::after {\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(206 209 215 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(50 107 255 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n}\r\n.container {\n  width: 100%;\n}\r\n@media (min-width: 640px) {\n\n  .container {\n    max-width: 640px;\n  }\n}\r\n@media (min-width: 768px) {\n\n  .container {\n    max-width: 768px;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .container {\n    max-width: 1024px;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .container {\n    max-width: 1280px;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .container {\n    max-width: 1536px;\n  }\n}\r\n.toggle-checkbox:checked {\n  right: 0px;\n}\r\n.toggle-checkbox:checked + .toggle-label {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\r\n@font-face {\r\n  font-family:\"Epilogue\";\r\n  src: url('/_nuxt/assets/font/Epilogue-VariableFont_wght.ttf');\r\n}\r\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\r\n.pointer-events-none {\n  pointer-events: none;\n}\r\n.absolute {\n  position: absolute;\n}\r\n.relative {\n  position: relative;\n}\r\n.inset-0 {\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\r\n.top-5 {\n  top: 1.25rem;\n}\r\n.right-2 {\n  right: 0.5rem;\n}\r\n.top-0 {\n  top: 0px;\n}\r\n.left-1\\/2 {\n  left: 50%;\n}\r\n.left-\\[38\\%\\] {\n  left: 38%;\n}\r\n.left-\\[62\\%\\] {\n  left: 62%;\n}\r\n.left-\\[40\\%\\] {\n  left: 40%;\n}\r\n.left-\\[60\\%\\] {\n  left: 60%;\n}\r\n.left-\\[35\\%\\] {\n  left: 35%;\n}\r\n.left-\\[65\\%\\] {\n  left: 65%;\n}\r\n.z-10 {\n  z-index: 10;\n}\r\n.order-1 {\n  order: 1;\n}\r\n.order-first {\n  order: -9999;\n}\r\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\r\n.mx-4 {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\r\n.-mx-4 {\n  margin-left: -1rem;\n  margin-right: -1rem;\n}\r\n.-mx-1 {\n  margin-left: -0.25rem;\n  margin-right: -0.25rem;\n}\r\n.mx-10 {\n  margin-left: 2.5rem;\n  margin-right: 2.5rem;\n}\r\n.mx-5 {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n}\r\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\r\n.mx-3 {\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n}\r\n.my-4 {\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\r\n.mx-1 {\n  margin-left: 0.25rem;\n  margin-right: 0.25rem;\n}\r\n.mb-24 {\n  margin-bottom: 6rem;\n}\r\n.mb-16 {\n  margin-bottom: 4rem;\n}\r\n.mt-1 {\n  margin-top: 0.25rem;\n}\r\n.-mt-9 {\n  margin-top: -2.25rem;\n}\r\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\r\n.mb-6 {\n  margin-bottom: 1.5rem;\n}\r\n.mr-6 {\n  margin-right: 1.5rem;\n}\r\n.mb-20 {\n  margin-bottom: 5rem;\n}\r\n.mb-4 {\n  margin-bottom: 1rem;\n}\r\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\r\n.mb-8 {\n  margin-bottom: 2rem;\n}\r\n.-mt-8 {\n  margin-top: -2rem;\n}\r\n.mb-14 {\n  margin-bottom: 3.5rem;\n}\r\n.mr-2 {\n  margin-right: 0.5rem;\n}\r\n.mt-8 {\n  margin-top: 2rem;\n}\r\n.mb-12 {\n  margin-bottom: 3rem;\n}\r\n.mt-10 {\n  margin-top: 2.5rem;\n}\r\n.ml-2 {\n  margin-left: 0.5rem;\n}\r\n.-mb-\\[11px\\] {\n  margin-bottom: -11px;\n}\r\n.-mr-1 {\n  margin-right: -0.25rem;\n}\r\n.mt-14 {\n  margin-top: 3.5rem;\n}\r\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\r\n.mr-\\[64px\\] {\n  margin-right: 64px;\n}\r\n.-mb-\\[13px\\] {\n  margin-bottom: -13px;\n}\r\n.-mr-\\[3px\\] {\n  margin-right: -3px;\n}\r\n.mb-3 {\n  margin-bottom: 0.75rem;\n}\r\n.block {\n  display: block;\n}\r\n.inline-block {\n  display: inline-block;\n}\r\n.flex {\n  display: flex;\n}\r\n.inline-flex {\n  display: inline-flex;\n}\r\n.grid {\n  display: grid;\n}\r\n.hidden {\n  display: none;\n}\r\n.h-\\[25px\\] {\n  height: 25px;\n}\r\n.h-\\[20px\\] {\n  height: 20px;\n}\r\n.h-32 {\n  height: 8rem;\n}\r\n.h-44 {\n  height: 11rem;\n}\r\n.h-96 {\n  height: 24rem;\n}\r\n.h-64 {\n  height: 16rem;\n}\r\n.h-56 {\n  height: 14rem;\n}\r\n.h-48 {\n  height: 12rem;\n}\r\n.h-80 {\n  height: 20rem;\n}\r\n.h-14 {\n  height: 3.5rem;\n}\r\n.h-28 {\n  height: 7rem;\n}\r\n.h-1 {\n  height: 0.25rem;\n}\r\n.h-1\\/2 {\n  height: 50%;\n}\r\n.h-full {\n  height: 100%;\n}\r\n.h-20 {\n  height: 5rem;\n}\r\n.h-8 {\n  height: 2rem;\n}\r\n.h-4 {\n  height: 1rem;\n}\r\n.w-\\[61px\\] {\n  width: 61px;\n}\r\n.w-\\[20px\\] {\n  width: 20px;\n}\r\n.w-32 {\n  width: 8rem;\n}\r\n.w-full {\n  width: 100%;\n}\r\n.w-10 {\n  width: 2.5rem;\n}\r\n.w-96 {\n  width: 24rem;\n}\r\n.w-64 {\n  width: 16rem;\n}\r\n.w-56 {\n  width: 14rem;\n}\r\n.w-48 {\n  width: 12rem;\n}\r\n.w-36 {\n  width: 9rem;\n}\r\n.w-44 {\n  width: 11rem;\n}\r\n.w-28 {\n  width: 7rem;\n}\r\n.w-6 {\n  width: 1.5rem;\n}\r\n.w-1\\/3 {\n  width: 33.333333%;\n}\r\n.w-5 {\n  width: 1.25rem;\n}\r\n.w-20 {\n  width: 5rem;\n}\r\n.w-1\\/2 {\n  width: 50%;\n}\r\n.w-4 {\n  width: 1rem;\n}\r\n.max-w-xl {\n  max-width: 36rem;\n}\r\n.max-w-none {\n  max-width: none;\n}\r\n.max-w-sm {\n  max-width: 24rem;\n}\r\n.max-w-2xl {\n  max-width: 42rem;\n}\r\n.flex-shrink-0 {\n  flex-shrink: 0;\n}\r\n.shrink-0 {\n  flex-shrink: 0;\n}\r\n.grow {\n  flex-grow: 1;\n}\r\n.translate-x-9 {\n  --tw-translate-x: 2.25rem;\n  transform: var(--tw-transform);\n}\r\n.translate-x-0 {\n  --tw-translate-x: 0px;\n  transform: var(--tw-transform);\n}\r\n.translate-x-1\\/2 {\n  --tw-translate-x: 50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-x-1\\/2 {\n  --tw-translate-x: -50%;\n  transform: var(--tw-transform);\n}\r\n.-translate-y-1\\/2 {\n  --tw-translate-y: -50%;\n  transform: var(--tw-transform);\n}\r\n.rotate-180 {\n  --tw-rotate: 180deg;\n  transform: var(--tw-transform);\n}\r\n.transform {\n  transform: var(--tw-transform);\n}\r\n@-webkit-keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tl {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(-100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tl {\n  animation: slide-tl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n@-webkit-keyframes pulse {\n\n  50% {\n    opacity: .5;\n  }\n}\r\n@keyframes pulse {\n\n  50% {\n    opacity: .5;\n  }\n}\r\n.animate-pulse {\n  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;\n          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;\n}\r\n@-webkit-keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n@keyframes slide-left {\n\n  0% {\n    transform: translateX(0);\n  }\n\n  to {\n    transform: translateX(-100px);\n  }\n\n  from {\n    transform: translateX(100px);\n  }\n}\r\n.animate-slide-left {\n  animation: slide-left 10s ease-in-out  infinite alternate-reverse both;\n}\r\n@-webkit-keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n@keyframes slide-tr {\n\n  0% {\n    transform: translateY(0) translateX(0);\n  }\n\n  to {\n    transform: translateY(-100px) translateX(100px);\n  }\n\n  from {\n    transform: translateY(100px) translateX(-100px);\n  }\n}\r\n.animate-slide-tr {\n  animation: slide-tr 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;\n}\r\n.cursor-pointer {\n  cursor: pointer;\n}\r\n.select-none {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\r\n.flex-col {\n  flex-direction: column;\n}\r\n.flex-wrap {\n  flex-wrap: wrap;\n}\r\n.place-items-center {\n  place-items: center;\n}\r\n.items-start {\n  align-items: flex-start;\n}\r\n.items-center {\n  align-items: center;\n}\r\n.justify-center {\n  justify-content: center;\n}\r\n.justify-between {\n  justify-content: space-between;\n}\r\n.space-y-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\r\n.space-x-2 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\r\n.overflow-hidden {\n  overflow: hidden;\n}\r\n.rounded-full {\n  border-radius: 9999px;\n}\r\n.rounded-7xl {\n  border-radius: 1.5rem;\n}\r\n.rounded-lg {\n  border-radius: 0.5rem;\n}\r\n.rounded {\n  border-radius: 0.25rem;\n}\r\n.rounded-b-10xl {\n  border-bottom-right-radius: 5rem;\n  border-bottom-left-radius: 5rem;\n}\r\n.rounded-l-xl {\n  border-top-left-radius: 0.625rem;\n  border-bottom-left-radius: 0.625rem;\n}\r\n.rounded-t-xl {\n  border-top-left-radius: 0.625rem;\n  border-top-right-radius: 0.625rem;\n}\r\n.rounded-l {\n  border-top-left-radius: 0.25rem;\n  border-bottom-left-radius: 0.25rem;\n}\r\n.rounded-r {\n  border-top-right-radius: 0.25rem;\n  border-bottom-right-radius: 0.25rem;\n}\r\n.border-2 {\n  border-width: 2px;\n}\r\n.border-4 {\n  border-width: 4px;\n}\r\n.border-r {\n  border-right-width: 1px;\n}\r\n.border-l {\n  border-left-width: 1px;\n}\r\n.border-transparent {\n  border-color: transparent;\n}\r\n.border-gray-700 {\n  --tw-border-opacity: 1;\n  border-color: rgb(45 53 71 / var(--tw-border-opacity));\n}\r\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(119 126 142 / var(--tw-border-opacity));\n}\r\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\r\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\r\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(236 237 239 / var(--tw-bg-opacity));\n}\r\n.bg-purple-500 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(109 50 240 / var(--tw-bg-opacity));\n}\r\n.bg-green-600 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(28 190 73 / var(--tw-bg-opacity));\n}\r\n.bg-blue-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 248 255 / var(--tw-bg-opacity));\n}\r\n.bg-red-400 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 130 114 / var(--tw-bg-opacity));\n}\r\n.bg-moon {\n  background-image: url(/_nuxt/assets/images/animals/Weather-Moon.svg);\n}\r\n.bg-elephant {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_7.svg);\n}\r\n.bg-tiger {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_2.svg);\n}\r\n.bg-animal {\n  background-image: url(/_nuxt/assets/images/animals/Space_Animal_5.svg);\n}\r\n.bg-\\[length\\:400px_150px\\] {\n  background-size: 400px 150px;\n}\r\n.bg-\\[length\\:200px\\] {\n  background-size: 200px;\n}\r\n.bg-left-top {\n  background-position: left top;\n}\r\n.bg-center {\n  background-position: center;\n}\r\n.bg-no-repeat {\n  background-repeat: no-repeat;\n}\r\n.object-cover {\n  -o-object-fit: cover;\n     object-fit: cover;\n}\r\n.p-2 {\n  padding: 0.5rem;\n}\r\n.py-16 {\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\r\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\r\n.py-10 {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\r\n.px-1 {\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\r\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\r\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\r\n.py-6 {\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\r\n.px-2 {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\r\n.py-5 {\n  padding-top: 1.25rem;\n  padding-bottom: 1.25rem;\n}\r\n.py-1 {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\r\n.px-8 {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\r\n.py-4 {\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\r\n.pt-10 {\n  padding-top: 2.5rem;\n}\r\n.pb-12 {\n  padding-bottom: 3rem;\n}\r\n.pt-16 {\n  padding-top: 4rem;\n}\r\n.pb-8 {\n  padding-bottom: 2rem;\n}\r\n.pb-4 {\n  padding-bottom: 1rem;\n}\r\n.text-left {\n  text-align: left;\n}\r\n.text-center {\n  text-align: center;\n}\r\n.text-right {\n  text-align: right;\n}\r\n.text-justify {\n  text-align: justify;\n}\r\n.font-heading {\n  font-family: \"Poppins\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\r\n.text-9xl {\n  font-size: 3rem;\n}\r\n.text-xl {\n  font-size: 1.25rem;\n}\r\n.text-lg {\n  font-size: 1.125rem;\n}\r\n.text-6xl {\n  font-size: 2rem;\n}\r\n.text-3xl {\n  font-size: 1.5rem;\n}\r\n.text-sm {\n  font-size: 0.875rem;\n}\r\n.text-2xl {\n  font-size: 1.375rem;\n}\r\n.text-4xl {\n  font-size: 1.625rem;\n}\r\n.text-xs {\n  font-size: 0.75rem;\n}\r\n.font-medium {\n  font-weight: 500;\n}\r\n.font-semibold {\n  font-weight: 600;\n}\r\n.font-bold {\n  font-weight: 700;\n}\r\n.uppercase {\n  text-transform: uppercase;\n}\r\n.lowercase {\n  text-transform: lowercase;\n}\r\n.capitalize {\n  text-transform: capitalize;\n}\r\n.leading-none {\n  line-height: 1;\n}\r\n.leading-snug {\n  line-height: 1.375;\n}\r\n.leading-loose {\n  line-height: 2;\n}\r\n.text-red-500 {\n  --tw-text-opacity: 1;\n  color: rgb(255 77 53 / var(--tw-text-opacity));\n}\r\n.text-blueGray-700 {\n  --tw-text-opacity: 1;\n  color: rgb(60 98 149 / var(--tw-text-opacity));\n}\r\n.text-darkBlueGray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(90 93 123 / var(--tw-text-opacity));\n}\r\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\r\n.text-blue-500 {\n  --tw-text-opacity: 1;\n  color: rgb(50 107 255 / var(--tw-text-opacity));\n}\r\n.text-black {\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\r\n.text-indigo-400 {\n  --tw-text-opacity: 1;\n  color: rgb(167 139 250 / var(--tw-text-opacity));\n}\r\n.text-\\[\\#00749A\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 116 154 / var(--tw-text-opacity));\n}\r\n.text-gray-50 {\n  --tw-text-opacity: 1;\n  color: rgb(245 246 247 / var(--tw-text-opacity));\n}\r\n.text-green-600 {\n  --tw-text-opacity: 1;\n  color: rgb(28 190 73 / var(--tw-text-opacity));\n}\r\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(119 126 142 / var(--tw-text-opacity));\n}\r\n.text-gray-800 {\n  --tw-text-opacity: 1;\n  color: rgb(36 43 56 / var(--tw-text-opacity));\n}\r\n.text-blue-400 {\n  --tw-text-opacity: 1;\n  color: rgb(112 151 255 / var(--tw-text-opacity));\n}\r\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\r\n.text-\\[\\#38BDF8\\] {\n  --tw-text-opacity: 1;\n  color: rgb(56 189 248 / var(--tw-text-opacity));\n}\r\n.text-\\[\\#00DC82\\] {\n  --tw-text-opacity: 1;\n  color: rgb(0 220 130 / var(--tw-text-opacity));\n}\r\n.underline {\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\r\n.shadow-lg {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-2xl {\n  --tw-shadow: 14px 13px 32px 0 rgba(0, 0, 0, 0.03);\n  --tw-shadow-colored: 14px 13px 32px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-sm {\n  --tw-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);\n  --tw-shadow-colored: 0 8px 10px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-inner {\n  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow {\n  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\r\n.shadow-gray-900 {\n  --tw-shadow-color: #1d232e;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-gray-300 {\n  --tw-shadow-color: #b1b5bf;\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.shadow-blueGray-900\\/50 {\n  --tw-shadow-color: rgb(28 45 69 / 0.5);\n  --tw-shadow: var(--tw-shadow-colored);\n}\r\n.ring-0 {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\r\n.backdrop-blur-sm {\n  --tw-backdrop-blur: blur(4px);\n  -webkit-backdrop-filter: var(--tw-backdrop-filter);\n          backdrop-filter: var(--tw-backdrop-filter);\n}\r\n.transition-colors {\n  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\r\n.transition {\n  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\r\n.duration-200 {\n  transition-duration: 200ms;\n}\r\n.ease-in-out {\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\r\n.animation-5s {\n  --animation-duration: 5s;\n  -webkit-animation-duration: var(--animation-duration);\n          animation-duration: var(--animation-duration);\n}\r\n.hover\\:bg-green-700:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(23 158 61 / var(--tw-bg-opacity));\n}\r\n.hover\\:bg-gray-50:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(245 246 247 / var(--tw-bg-opacity));\n}\r\n.hover\\:bg-red-300:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 184 174 / var(--tw-bg-opacity));\n}\r\n.hover\\:text-blueGray-600:hover {\n  --tw-text-opacity: 1;\n  color: rgb(80 125 185 / var(--tw-text-opacity));\n}\r\n.hover\\:text-green-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(23 158 61 / var(--tw-text-opacity));\n}\r\n.hover\\:text-gray-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(60 71 94 / var(--tw-text-opacity));\n}\r\n.hover\\:text-gray-800:hover {\n  --tw-text-opacity: 1;\n  color: rgb(36 43 56 / var(--tw-text-opacity));\n}\r\n.focus\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\r\n.focus-visible\\:ring-2:focus-visible {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\r\n.focus-visible\\:ring-white:focus-visible {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));\n}\r\n.focus-visible\\:ring-opacity-75:focus-visible {\n  --tw-ring-opacity: 0.75;\n}\r\n@media (min-width: 640px) {\n\n  .sm\\:w-4\\/5 {\n    width: 80%;\n  }\n\n  .sm\\:grid-cols-2 {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n\n  .sm\\:space-x-20 > :not([hidden]) ~ :not([hidden]) {\n    --tw-space-x-reverse: 0;\n    margin-right: calc(5rem * var(--tw-space-x-reverse));\n    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n}\r\n@media (min-width: 768px) {\n\n  .md\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .md\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .md\\:block {\n    display: block;\n  }\n\n  .md\\:h-12 {\n    height: 3rem;\n  }\n\n  .md\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .md\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .md\\:text-10xl {\n    font-size: 4rem;\n  }\n}\r\n@media (min-width: 1024px) {\n\n  .lg\\:right-7 {\n    right: 1.75rem;\n  }\n\n  .lg\\:top-7 {\n    top: 1.75rem;\n  }\n\n  .lg\\:order-1 {\n    order: 1;\n  }\n\n  .lg\\:order-last {\n    order: 9999;\n  }\n\n  .lg\\:mx-7 {\n    margin-left: 1.75rem;\n    margin-right: 1.75rem;\n  }\n\n  .lg\\:mx-14 {\n    margin-left: 3.5rem;\n    margin-right: 3.5rem;\n  }\n\n  .lg\\:-mx-24 {\n    margin-left: -6rem;\n    margin-right: -6rem;\n  }\n\n  .lg\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .lg\\:mt-2 {\n    margin-top: 0.5rem;\n  }\n\n  .lg\\:mb-24 {\n    margin-bottom: 6rem;\n  }\n\n  .lg\\:mt-20 {\n    margin-top: 5rem;\n  }\n\n  .lg\\:block {\n    display: block;\n  }\n\n  .lg\\:h-20 {\n    height: 5rem;\n  }\n\n  .lg\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .lg\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .lg\\:w-2\\/5 {\n    width: 40%;\n  }\n\n  .lg\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n\n  .lg\\:pt-10 {\n    padding-top: 2.5rem;\n  }\n\n  .lg\\:text-left {\n    text-align: left;\n  }\n\n  .lg\\:text-5xl {\n    font-size: 1.875rem;\n  }\n}\r\n@media (min-width: 1280px) {\n\n  .xl\\:-left-8 {\n    left: -2rem;\n  }\n\n  .xl\\:-right-8 {\n    right: -2rem;\n  }\n\n  .xl\\:ml-4 {\n    margin-left: 1rem;\n  }\n\n  .xl\\:mt-8 {\n    margin-top: 2rem;\n  }\n\n  .xl\\:mb-16 {\n    margin-bottom: 4rem;\n  }\n\n  .xl\\:mb-0 {\n    margin-bottom: 0px;\n  }\n\n  .xl\\:block {\n    display: block;\n  }\n\n  .xl\\:w-1\\/2 {\n    width: 50%;\n  }\n\n  .xl\\:w-auto {\n    width: auto;\n  }\n\n  .xl\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n\n  .xl\\:flex-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .xl\\:bg-right {\n    background-position: right;\n  }\n\n  .xl\\:pt-20 {\n    padding-top: 5rem;\n  }\n\n  .xl\\:text-11xl {\n    font-size: 5rem;\n  }\n}\r\n@media (min-width: 1536px) {\n\n  .\\32xl\\:py-20 {\n    padding-top: 5rem;\n    padding-bottom: 5rem;\n  }\n}\r\n";
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
@@ -920,9 +920,9 @@ __vite_ssr_exports__.default = "/*\n! tailwindcss v3.0.8 | MIT License | https:/
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // - /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs ($id_7b587af2)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // --------------------
-const $id_197ba429 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_61dc351e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/plugins/preload.server.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs");
@@ -933,7 +933,7 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs");
 
 __vite_ssr_exports__.default = [
   __vite_ssr_import_0__.default,
@@ -949,7 +949,7 @@ __vite_ssr_import_1__.default,
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/plugins/preload.server.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // --------------------
@@ -972,7 +972,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -1425,13 +1425,13 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
 // - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs ($id_36430d24)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/meta.config.mjs ($id_18710eac)
 // --------------------
 const $id_9fd5f35e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1442,7 +1442,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/meta.config.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_3__.defineNuxtPlugin((nuxtApp) => {
   __vite_ssr_import_2__.useMeta(__vite_ssr_import_4__.default.globalMeta);
@@ -1708,17 +1708,17 @@ Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, confi
 // Dependencies: 
 
 // --------------------
-const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js".') })
+const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/@vue/shared/dist/shared.cjs.js".') })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/meta.config.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // Dependencies: 
 
 // --------------------
-const $id_36430d24 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_18710eac = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[],"style":[],"script":[]},"mixinKey":"created"};
 }
 
@@ -1726,7 +1726,7 @@ __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name
 // --------------------
 // Request: /node_modules/nuxt3/dist/pages/runtime/router.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
@@ -1734,7 +1734,7 @@ __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name
 // - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs ($id_313442dd)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs ($id_c8aca64c)
 // --------------------
 const $id_a4d6cb5b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1749,7 +1749,7 @@ const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_5__.defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("NuxtNestedPage", __vite_ssr_import_2__.default);
@@ -1847,7 +1847,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/nested-page.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/nested-page.vue"]]);
 }
 
 
@@ -1867,7 +1867,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // Dependencies: 
 
 // --------------------
-const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/server-renderer/index.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/vue/server-renderer/index.js".') })
+const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue/server-renderer/index.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/vue/server-renderer/index.js".') })
 
 
 // --------------------
@@ -2064,7 +2064,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/page.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/pages/runtime/page.vue"]]);
 }
 
 
@@ -2075,12 +2075,12 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs ($id_45f47c42)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/layouts.mjs ($id_e4d09968)
 // --------------------
 const $id_9b68c93f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/layouts.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -2107,13 +2107,13 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/layouts.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // --------------------
-const $id_45f47c42 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_e4d09968 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 __vite_ssr_exports__.default = {};
@@ -2121,26 +2121,26 @@ __vite_ssr_exports__.default = {};
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /pages/blog.vue ($id_b88f8cfb)
 // - /pages/index.vue ($id_cca58e97)
 // --------------------
-const $id_313442dd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_c8aca64c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = [
   {
     "name": "blog",
     "path": "/blog",
-    "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/blog.vue",
+    "file": "C:/Users/acer/Desktop/Projects/ganpatjangra.me/pages/blog.vue",
     "children": [],
     "component": () => __vite_ssr_dynamic_import__('/pages/blog.vue')
   },
   {
     "name": "index",
     "path": "/",
-    "file": "C:/Users/acer/Desktop/ganpatjangra.me/pages/index.vue",
+    "file": "C:/Users/acer/Desktop/Projects/ganpatjangra.me/pages/index.vue",
     "children": [],
     "component": () => __vite_ssr_dynamic_import__('/pages/index.vue')
   }
@@ -2151,7 +2151,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /pages/blog.vue
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs ($id_313442dd)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs ($id_c8aca64c)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -2238,14 +2238,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/pages/blog.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/pages/blog.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/index.vue
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs ($id_313442dd)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs ($id_c8aca64c)
 // Dependencies: 
 // - /components/skills.vue ($id_43fa255d)
 // - /components/project.vue ($id_9aa3dd9e)
@@ -2297,7 +2297,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/pages/index.vue"]]);
 }
 
 
@@ -2305,7 +2305,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // Request: /components/skills.vue
 // Parents: 
 // - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/swiper/vue/swiper-vue.js ($id_72e3deca)
@@ -2471,7 +2471,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>Semantic Tags Structure, SEO Tags <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>HTML 5</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
                 _scopeId
@@ -2491,9 +2491,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>class, id, flex, grid, animation, transition <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
-              }>CSS 3 <span class="text-indigo-400"${
+              }>CSS 3 <span class="text-[#38BDF8]"${
                 _scopeId
               }>||</span> TAILWINd CSS</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mt-20"${
                 _scopeId
@@ -2509,7 +2509,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>DOM, loop,validation, condition,event <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>Java script</span></div></div><div class="w-full px-4 pb-4 md:w-1/2 lg:w-1/4"${
                 _scopeId
@@ -2529,9 +2529,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>fundamentals, advanced components, transitions &amp; animations, vuex, form validation, routing <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
-              }>vue js <span class="text-indigo-400"${
+              }>vue js <span class="text-[#00DC82]"${
                 _scopeId
               }>||</span> nuxt js</span></div></div></div></div><!-- skills for slider end  --></div></div></section>`)
             } else {
@@ -2566,7 +2566,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("Semantic Tags Structure, SEO Tags "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "HTML 5")
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -2586,9 +2586,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                                 __vite_ssr_import_6__.createTextVNode("CSS 3 "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-[#38BDF8]" }, "||"),
                                 __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
                               ])
                             ])
@@ -2605,7 +2605,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("DOM, loop,validation, condition,event "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Java script")
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
@@ -2625,9 +2625,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                                 __vite_ssr_import_6__.createTextVNode("vue js "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-[#00DC82]" }, "||"),
                                 __vite_ssr_import_6__.createTextVNode(" nuxt js")
                               ])
                             ])
@@ -2676,7 +2676,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
                 _scopeId
-              }>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>express js</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
                 _scopeId
@@ -2690,7 +2690,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>newbie</h4><h4 class="mb-4 text-sm font-medium capitalize font-heading"${
                 _scopeId
-              }>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>crud, connection</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>mongo db</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20"${
                 _scopeId
@@ -2706,7 +2706,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>crud oppression <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>maria db</span></div></div></div></div></div></div></section>`)
             } else {
@@ -2734,7 +2734,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 alt: ""
                               }),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "express js")
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -2746,7 +2746,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               }),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "mongo db")
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
@@ -2761,7 +2761,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("crud oppression "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "maria db")
                             ])
                           ])
                         ])
@@ -2811,7 +2811,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>theme create &amp; edit, plugin <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>wordpress</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
                 _scopeId
@@ -2827,14 +2827,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>video banner &amp; ads, image editor <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>canva</span></div></div><!-- <div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20">
                   <div class="relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300">
                     <img class="absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2" src="~/assets/images/mycollection/vscode.svg" alt="">
                     <h4 class="mb-4 text-sm font-medium font-heading">Advance</h4>
                     <h4 class="mb-4 text-sm font-medium capitalize font-heading">.vscode, theme, plugin, shortcut <span class="lowercase">etc</span> </h4>
-                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 ">vs code</span>
+                    <span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50 ">vs code</span>
                   </div>
                 </div> --><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20"${
                 _scopeId
@@ -2854,9 +2854,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>vscode, theme, plugin, shortcut, pull, put, repo, clone <span class="lowercase"${
                 _scopeId
-              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>etc</span></h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
-              }>vs code <span class="text-indigo-400"${
+              }>vs code <span class="text-[#F34F29]"${
                 _scopeId
               }>||</span> git</span></div></div><div class="w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0"${
                 _scopeId
@@ -2868,7 +2868,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }><h4 class="mb-4 text-sm font-medium font-heading"${
                 _scopeId
-              }>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>Newbie</h4><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
                 _scopeId
               }>digital ocean</span></div></div></div></div></div></div></section>`)
             } else {
@@ -2900,7 +2900,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("theme create & edit, plugin "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "wordpress")
                             ])
                           ]),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -2915,10 +2915,10 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("video banner & ads, image editor "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "canva")
                             ])
                           ]),
-                          __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
+                          __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50 \">vs code</span>\r\n                  </div>\r\n                </div> "),
                           __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
                             __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                               __vite_ssr_import_6__.createVNode("img", {
@@ -2936,9 +2936,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
                                 __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                               ]),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                                 __vite_ssr_import_6__.createTextVNode("vs code "),
-                                __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                                __vite_ssr_import_6__.createVNode("span", { class: "text-[#F34F29]" }, "||"),
                                 __vite_ssr_import_6__.createTextVNode(" git")
                               ])
                             ])
@@ -2951,7 +2951,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 alt: ""
                               }),
                               __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                              __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "digital ocean")
                             ])
                           ])
                         ])
@@ -2998,7 +2998,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("Semantic Tags Structure, SEO Tags "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "HTML 5")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "HTML 5")
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -3018,9 +3018,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("class, id, flex, grid, animation, transition "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                               __vite_ssr_import_6__.createTextVNode("CSS 3 "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-[#38BDF8]" }, "||"),
                               __vite_ssr_import_6__.createTextVNode(" TAILWINd CSS")
                             ])
                           ])
@@ -3037,7 +3037,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("DOM, loop,validation, condition,event "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Java script")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Java script")
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 pb-4 md:w-1/2 lg:w-1/4" }, [
@@ -3057,9 +3057,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("fundamentals, advanced components, transitions & animations, vuex, form validation, routing "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                               __vite_ssr_import_6__.createTextVNode("vue js "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-[#00DC82]" }, "||"),
                               __vite_ssr_import_6__.createTextVNode(" nuxt js")
                             ])
                           ])
@@ -3098,7 +3098,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               alt: ""
                             }),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "newbie"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "express js")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "express js")
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -3110,7 +3110,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             }),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-1 text-sm font-medium capitalize font-heading" }, "newbie"),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium capitalize font-heading" }, "crud, connection"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "mongo db")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "mongo db")
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20" }, [
@@ -3125,7 +3125,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("crud oppression "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "maria db")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "maria db")
                           ])
                         ])
                       ])
@@ -3165,7 +3165,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("theme create & edit, plugin "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "wordpress")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "wordpress")
                           ])
                         ]),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
@@ -3180,10 +3180,10 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("video banner & ads, image editor "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "canva")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "canva")
                           ])
                         ]),
-                        __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900 \">vs code</span>\r\n                  </div>\r\n                </div> "),
+                        __vite_ssr_import_6__.createCommentVNode(" <div class=\"w-full px-4 md:w-1/2 lg:w-1/4 mb-14 md:mb-0 lg:mt-20\">\r\n                  <div class=\"relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm rounded-7xl shadow-gray-300\">\r\n                    <img class=\"absolute top-0 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-lg left-1/2\" src=\"~/assets/images/mycollection/vscode.svg\" alt=\"\">\r\n                    <h4 class=\"mb-4 text-sm font-medium font-heading\">Advance</h4>\r\n                    <h4 class=\"mb-4 text-sm font-medium capitalize font-heading\">.vscode, theme, plugin, shortcut <span class=\"lowercase\">etc</span> </h4>\r\n                    <span class=\"p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50 \">vs code</span>\r\n                  </div>\r\n                </div> "),
                         __vite_ssr_import_6__.createVNode("div", { class: "w-full px-4 md:w-1/2 lg:w-1/4 mb-14 lg:mb-0 lg:mt-20" }, [
                           __vite_ssr_import_6__.createVNode("div", { class: "relative h-full px-6 pt-16 pb-8 text-center bg-gray-100 shadow-sm shrink-0 rounded-7xl shadow-gray-300" }, [
                             __vite_ssr_import_6__.createVNode("img", {
@@ -3201,9 +3201,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               __vite_ssr_import_6__.createTextVNode("vscode, theme, plugin, shortcut, pull, put, repo, clone "),
                               __vite_ssr_import_6__.createVNode("span", { class: "lowercase" }, "etc")
                             ]),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, [
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, [
                               __vite_ssr_import_6__.createTextVNode("vs code "),
-                              __vite_ssr_import_6__.createVNode("span", { class: "text-indigo-400" }, "||"),
+                              __vite_ssr_import_6__.createVNode("span", { class: "text-[#F34F29]" }, "||"),
                               __vite_ssr_import_6__.createTextVNode(" git")
                             ])
                           ])
@@ -3216,7 +3216,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               alt: ""
                             }),
                             __vite_ssr_import_6__.createVNode("h4", { class: "mb-4 text-sm font-medium font-heading" }, "Newbie"),
-                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "digital ocean")
+                            __vite_ssr_import_6__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "digital ocean")
                           ])
                         ])
                       ])
@@ -3247,7 +3247,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_27__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_27__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/skills.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_27__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/components/skills.vue"]]);
 }
 
 
@@ -3259,7 +3259,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_27__.default(_sfc_
 // Dependencies: 
 
 // --------------------
-const $id_72e3deca = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js".') })
+const $id_72e3deca = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/vue/swiper-vue.js".') })
 
 
 // --------------------
@@ -3432,7 +3432,7 @@ Object.defineProperty(__vite_ssr_exports__, "EffectCards", { enumerable: true, c
 // Dependencies: 
 
 // --------------------
-const $id_413488a5 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/core/core.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/core/core.js".') })
+const $id_413488a5 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/core/core.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/core/core.js".') })
 
 
 // --------------------
@@ -3442,7 +3442,7 @@ const $id_413488a5 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_cdb0752d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js".') })
+const $id_cdb0752d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/virtual/virtual.js".') })
 
 
 // --------------------
@@ -3452,7 +3452,7 @@ const $id_cdb0752d = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_b79f366d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js".') })
+const $id_b79f366d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/keyboard/keyboard.js".') })
 
 
 // --------------------
@@ -3462,7 +3462,7 @@ const $id_b79f366d = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_ff1b73b2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js".') })
+const $id_ff1b73b2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/mousewheel/mousewheel.js".') })
 
 
 // --------------------
@@ -3472,7 +3472,7 @@ const $id_ff1b73b2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_3cbacc13 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js".') })
+const $id_3cbacc13 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/navigation/navigation.js".') })
 
 
 // --------------------
@@ -3482,7 +3482,7 @@ const $id_3cbacc13 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_9d25ff48 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js".') })
+const $id_9d25ff48 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/pagination/pagination.js".') })
 
 
 // --------------------
@@ -3492,7 +3492,7 @@ const $id_9d25ff48 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_b7c15973 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js".') })
+const $id_b7c15973 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/scrollbar/scrollbar.js".') })
 
 
 // --------------------
@@ -3502,7 +3502,7 @@ const $id_b7c15973 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_2bc0dda6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js".') })
+const $id_2bc0dda6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/parallax/parallax.js".') })
 
 
 // --------------------
@@ -3512,7 +3512,7 @@ const $id_2bc0dda6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_b6094d1d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js".') })
+const $id_b6094d1d = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/zoom/zoom.js".') })
 
 
 // --------------------
@@ -3522,7 +3522,7 @@ const $id_b6094d1d = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_27878f55 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js".') })
+const $id_27878f55 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/lazy/lazy.js".') })
 
 
 // --------------------
@@ -3532,7 +3532,7 @@ const $id_27878f55 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_224f2e59 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js".') })
+const $id_224f2e59 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/controller/controller.js".') })
 
 
 // --------------------
@@ -3542,7 +3542,7 @@ const $id_224f2e59 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_7fc5b0be = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js".') })
+const $id_7fc5b0be = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/a11y/a11y.js".') })
 
 
 // --------------------
@@ -3552,7 +3552,7 @@ const $id_7fc5b0be = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_f5205ad9 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/history/history.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/history/history.js".') })
+const $id_f5205ad9 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/history/history.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/history/history.js".') })
 
 
 // --------------------
@@ -3562,7 +3562,7 @@ const $id_f5205ad9 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_39f6940c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js".') })
+const $id_39f6940c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/hash-navigation/hash-navigation.js".') })
 
 
 // --------------------
@@ -3572,7 +3572,7 @@ const $id_39f6940c = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_11d42465 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js".') })
+const $id_11d42465 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/autoplay/autoplay.js".') })
 
 
 // --------------------
@@ -3582,7 +3582,7 @@ const $id_11d42465 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_7f241531 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js".') })
+const $id_7f241531 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/thumbs/thumbs.js".') })
 
 
 // --------------------
@@ -3592,7 +3592,7 @@ const $id_7f241531 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_adae43c1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js".') })
+const $id_adae43c1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/free-mode/free-mode.js".') })
 
 
 // --------------------
@@ -3602,7 +3602,7 @@ const $id_adae43c1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_be08b669 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js".') })
+const $id_be08b669 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/grid/grid.js".') })
 
 
 // --------------------
@@ -3612,7 +3612,7 @@ const $id_be08b669 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_9ffdf8ef = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js".') })
+const $id_9ffdf8ef = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/manipulation/manipulation.js".') })
 
 
 // --------------------
@@ -3622,7 +3622,7 @@ const $id_9ffdf8ef = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_ed5701f6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js".') })
+const $id_ed5701f6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-fade/effect-fade.js".') })
 
 
 // --------------------
@@ -3632,7 +3632,7 @@ const $id_ed5701f6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_03914d04 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js".') })
+const $id_03914d04 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-cube/effect-cube.js".') })
 
 
 // --------------------
@@ -3642,7 +3642,7 @@ const $id_03914d04 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_24c07261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js".') })
+const $id_24c07261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-flip/effect-flip.js".') })
 
 
 // --------------------
@@ -3652,7 +3652,7 @@ const $id_24c07261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_0ea540eb = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js".') })
+const $id_0ea540eb = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-coverflow/effect-coverflow.js".') })
 
 
 // --------------------
@@ -3662,7 +3662,7 @@ const $id_0ea540eb = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_3ab2d8b1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js".') })
+const $id_3ab2d8b1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-creative/effect-creative.js".') })
 
 
 // --------------------
@@ -3672,7 +3672,7 @@ const $id_3ab2d8b1 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_597d31c2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js".') })
+const $id_597d31c2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/swiper/modules/effect-cards/effect-cards.js".') })
 
 
 // --------------------
@@ -3704,6 +3704,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/html-5.svg";
 // Request: /assets/images/mycollection/css3.svg
 // Parents: 
 // - /components/skills.vue ($id_43fa255d)
+// - /components/project.vue ($id_9aa3dd9e)
 // Dependencies: 
 
 // --------------------
@@ -3828,6 +3829,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/icons8/icons8-o-cute.svg";
 // Request: /assets/images/mycollection/wordpress-icon.svg
 // Parents: 
 // - /components/skills.vue ($id_43fa255d)
+// - /components/project.vue ($id_9aa3dd9e)
 // Dependencies: 
 
 // --------------------
@@ -3892,7 +3894,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/digitalocean-i
 
 // --------------------
 const $id_cfe411c4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n\r\n  background-color: red;\n}\n.swiper-button-next,\r\n.swiper-button-prev {\r\n  color: gray;\r\n  top: 5%;\r\n  height: 100%;\r\n  width: 80px;\n}\n.swiper-button-next:hover {\r\n  opacity: 0.2;\r\n\r\n  margin-bottom: 20px;\r\n  background: #e9e9ef;\n}\n.swiper-button-prev:hover {\r\n  opacity: 0.2;\r\n  border-radius: 20px;\r\n  background: #e9e9ef;\n}\r\n";
+__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n  background-color: red;\n}\n.swiper-button-next,\r\n.swiper-button-prev {\r\n  color: gray;\r\n  top: 5%;\r\n  height: 100%;\r\n  width: 80px;\n}\n.swiper-button-next:hover {\r\n  opacity: 0.2;\r\n  margin-bottom: 20px;\r\n  background: #e9e9ef;\n}\n.swiper-button-prev:hover {\r\n  opacity: 0.2;\r\n  border-radius: 20px;\r\n  background: #e9e9ef;\n}\r\n";
 }
 
 
@@ -3900,7 +3902,7 @@ __vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;
 // Request: /components/project.vue
 // Parents: 
 // - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/swiper/vue/swiper-vue.js ($id_72e3deca)
@@ -3918,6 +3920,10 @@ __vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;
 // - /assets/images/mycollection/javascript.svg ($id_188644a4)
 // - /assets/images/mycollection/vue.svg ($id_abef9de1)
 // - /assets/images/mycollection/nuxt.svg ($id_b2bb126b)
+// - /assets/images/mycollection/wordpress-icon.svg ($id_9d8e64d7)
+// - /assets/images/mycollection/css3.svg ($id_687c4c7a)
+// - /assets/images/mycollection/plugin.svg ($id_59b3084c)
+// - /assets/images/mycollection/api1.svg ($id_25689546)
 // - /assets/images/team/dots.svg ($id_ed8d99e0)
 // - /assets/images/team/dots2.svg ($id_e24d19d5)
 // - /assets/images/team/quote.png ($id_4c8c4a03)
@@ -3997,11 +4003,19 @@ const __vite_ssr_import_15__ = await __vite_ssr_import__("/assets/images/mycolle
 
 const __vite_ssr_import_16__ = await __vite_ssr_import__("/assets/images/mycollection/nuxt.svg");
 
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/assets/images/team/dots.svg");
+const __vite_ssr_import_17__ = await __vite_ssr_import__("/assets/images/mycollection/wordpress-icon.svg");
 
-const __vite_ssr_import_18__ = await __vite_ssr_import__("/assets/images/team/dots2.svg");
+const __vite_ssr_import_18__ = await __vite_ssr_import__("/assets/images/mycollection/css3.svg");
 
-const __vite_ssr_import_19__ = await __vite_ssr_import__("/assets/images/team/quote.png");
+const __vite_ssr_import_19__ = await __vite_ssr_import__("/assets/images/mycollection/plugin.svg");
+
+const __vite_ssr_import_20__ = await __vite_ssr_import__("/assets/images/mycollection/api1.svg");
+
+const __vite_ssr_import_21__ = await __vite_ssr_import__("/assets/images/team/dots.svg");
+
+const __vite_ssr_import_22__ = await __vite_ssr_import__("/assets/images/team/dots2.svg");
+
+const __vite_ssr_import_23__ = await __vite_ssr_import__("/assets/images/team/quote.png");
 
 
 
@@ -4076,9 +4090,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
               } alt=""${
                 _scopeId
-              }>nuxt js</h1></div><!-- </div> --></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>nuxt js</h1></div><!-- </div> --></div><a target="blank" href="https://bit.ly/3FNc1Cv"${
                 _scopeId
-              }>Founder</span></div></div>`)
+              }><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
+                _scopeId
+              }>Education website</span></a></div></div>`)
             } else {
               return [
                 __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
@@ -4145,7 +4161,127 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       ]),
                       __vite_ssr_import_8__.createCommentVNode(" </div> ")
                     ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    __vite_ssr_import_8__.createVNode("a", {
+                      target: "blank",
+                      href: "https://bit.ly/3FNc1Cv"
+                    }, [
+                      __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Education website")
+                    ])
+                  ])
+                ])
+              ]
+            }
+          }),
+          _: 1 /* STABLE */
+        }, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
+          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+            if (_push) {
+              _push(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${
+                _scopeId
+              }><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${
+                _scopeId
+              }><div class="flex items-center justify-center mb-8 -mt-8"${
+                _scopeId
+              }><h4 class="text-xl font-medium uppercase font-heading"${
+                _scopeId
+              }>Project TechnologieS</h4><img${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
+              } alt=""${
+                _scopeId
+              }></div><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${
+                _scopeId
+              }><div${
+                _scopeId
+              }><img class="h-28 w-28 mx-auto mb-5"${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_11__.default)
+              } alt=""${
+                _scopeId
+              }></div><!-- <div class="flex sm:space-x-20 mb-14"> --><div class="flex flex-col"${
+                _scopeId
+              }><h1 class="flex items-center uppercase"${
+                _scopeId
+              }><img class="w-6 mr-2"${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_17__.default)
+              } alt=""${
+                _scopeId
+              }>Wordpress</h1><h1 class="flex items-center uppercase"${
+                _scopeId
+              }><img class="w-6 mr-2"${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_18__.default)
+              } alt=""${
+                _scopeId
+              }>Custom CSS</h1></div><div${
+                _scopeId
+              }><h1 class="flex items-center uppercase"${
+                _scopeId
+              }><img class="w-6 mr-2"${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+              } alt=""${
+                _scopeId
+              }>Plugins</h1><!-- <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1>
+                        <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/nuxt.svg" alt="" />nuxt js</h1> --></div><!-- </div> --></div><a target="blank" href="https://bit.ly/3FMGald"${
+                _scopeId
+              }><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
+                _scopeId
+              }>Wordpress News website</span></a></div></div>`)
+            } else {
+              return [
+                __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                  __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                      __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                      __vite_ssr_import_8__.createVNode("img", {
+                        src: __vite_ssr_import_10__.default,
+                        alt: ""
+                      })
+                    ]),
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                      __vite_ssr_import_8__.createVNode("div", null, [
+                        __vite_ssr_import_8__.createVNode("img", {
+                          class: "h-28 w-28 mx-auto mb-5",
+                          src: __vite_ssr_import_11__.default,
+                          alt: ""
+                        })
+                      ]),
+                      __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
+                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
+                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          __vite_ssr_import_8__.createVNode("img", {
+                            class: "w-6 mr-2",
+                            src: __vite_ssr_import_17__.default,
+                            alt: ""
+                          }),
+                          __vite_ssr_import_8__.createTextVNode("Wordpress")
+                        ]),
+                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          __vite_ssr_import_8__.createVNode("img", {
+                            class: "w-6 mr-2",
+                            src: __vite_ssr_import_18__.default,
+                            alt: ""
+                          }),
+                          __vite_ssr_import_8__.createTextVNode("Custom CSS")
+                        ])
+                      ]),
+                      __vite_ssr_import_8__.createVNode("div", null, [
+                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                          __vite_ssr_import_8__.createVNode("img", {
+                            class: "w-6 mr-2",
+                            src: __vite_ssr_import_19__.default,
+                            alt: ""
+                          }),
+                          __vite_ssr_import_8__.createTextVNode("Plugins")
+                        ]),
+                        __vite_ssr_import_8__.createCommentVNode(" <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/vue.svg\" alt=\"\" />vue js</h1>\r\n                        <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/nuxt.svg\" alt=\"\" />nuxt js</h1> ")
+                      ]),
+                      __vite_ssr_import_8__.createCommentVNode(" </div> ")
+                    ]),
+                    __vite_ssr_import_8__.createVNode("a", {
+                      target: "blank",
+                      href: "https://bit.ly/3FMGald"
+                    }, [
+                      __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Wordpress News website")
+                    ])
                   ])
                 ])
               ]
@@ -4190,29 +4326,25 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
               } alt=""${
                 _scopeId
-              }>tailwind css</h1><h1 class="flex items-center uppercase"${
+              }>tailwind css</h1></div><div${
+                _scopeId
+              }><!-- <h1 class="flex items-center uppercase"><img class="w-6 mr-2" src="~/assets/images/mycollection/vue.svg" alt="" />vue js</h1> --><h1 class="flex items-center uppercase"${
                 _scopeId
               }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_20__.default)
               } alt=""${
                 _scopeId
-              }>java</h1></div><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }>vue js</h1><h1 class="flex items-center uppercase"${
+              }>Axios API</h1><h1 class="flex items-center uppercase"${
                 _scopeId
               }><img class="w-6 mr-2"${
                 __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
               } alt=""${
                 _scopeId
-              }>nuxt js</h1></div><!-- </div> --></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
+              }>nuxt js</h1></div><!-- </div> --></div><a target="blank" href="https://bit.ly/3NjnwUT"${
                 _scopeId
-              }>Founder</span></div></div>`)
+              }><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50"${
+                _scopeId
+              }>Quotes Website</span></a></div></div>`)
             } else {
               return [
                 __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
@@ -4249,24 +4381,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             alt: ""
                           }),
                           __vite_ssr_import_8__.createTextVNode("tailwind css")
-                        ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_14__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("java")
                         ])
                       ]),
                       __vite_ssr_import_8__.createVNode("div", null, [
+                        __vite_ssr_import_8__.createCommentVNode(" <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/vue.svg\" alt=\"\" />vue js</h1> "),
                         __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                           __vite_ssr_import_8__.createVNode("img", {
                             class: "w-6 mr-2",
-                            src: __vite_ssr_import_15__.default,
+                            src: __vite_ssr_import_20__.default,
                             alt: ""
                           }),
-                          __vite_ssr_import_8__.createTextVNode("vue js")
+                          __vite_ssr_import_8__.createTextVNode("Axios API")
                         ]),
                         __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                           __vite_ssr_import_8__.createVNode("img", {
@@ -4279,141 +4404,12 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       ]),
                       __vite_ssr_import_8__.createCommentVNode(" </div> ")
                     ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
-                  ])
-                ])
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper_slide, null, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<div class="w-full px-1 mb-4 xl:w-auto xl:mb-0"${
-                _scopeId
-              }><div class="px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300"${
-                _scopeId
-              }><div class="flex items-center justify-center mb-8 -mt-8"${
-                _scopeId
-              }><h4 class="text-xl font-medium uppercase font-heading"${
-                _scopeId
-              }>Project TechnologieS</h4><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-              } alt=""${
-                _scopeId
-              }></div><div class="flex flex-col justify-between sm:flex-row lg:mx-14"${
-                _scopeId
-              }><div${
-                _scopeId
-              }><img class="h-28 w-28 mx-auto mb-5"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_11__.default)
-              } alt=""${
-                _scopeId
-              }></div><!-- <div class="flex sm:space-x-20 mb-14"> --><div class="flex flex-col"${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_12__.default)
-              } alt=""${
-                _scopeId
-              }>html</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_13__.default)
-              } alt=""${
-                _scopeId
-              }>tailwind css</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_14__.default)
-              } alt=""${
-                _scopeId
-              }>java</h1></div><div${
-                _scopeId
-              }><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_15__.default)
-              } alt=""${
-                _scopeId
-              }>vue js</h1><h1 class="flex items-center uppercase"${
-                _scopeId
-              }><img class="w-6 mr-2"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_16__.default)
-              } alt=""${
-                _scopeId
-              }>nuxt js</h1></div><!-- </div> --></div><span class="p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900"${
-                _scopeId
-              }>Founder</span></div></div>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                      __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                      __vite_ssr_import_8__.createVNode("img", {
-                        src: __vite_ssr_import_10__.default,
-                        alt: ""
-                      })
-                    ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "h-28 w-28 mx-auto mb-5",
-                          src: __vite_ssr_import_11__.default,
-                          alt: ""
-                        })
-                      ]),
-                      __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_12__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("html")
-                        ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_13__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("tailwind css")
-                        ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_14__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("java")
-                        ])
-                      ]),
-                      __vite_ssr_import_8__.createVNode("div", null, [
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_15__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("vue js")
-                        ]),
-                        __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                          __vite_ssr_import_8__.createVNode("img", {
-                            class: "w-6 mr-2",
-                            src: __vite_ssr_import_16__.default,
-                            alt: ""
-                          }),
-                          __vite_ssr_import_8__.createTextVNode("nuxt js")
-                        ])
-                      ]),
-                      __vite_ssr_import_8__.createCommentVNode(" </div> ")
-                    ]),
-                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                    __vite_ssr_import_8__.createVNode("a", {
+                      target: "blank",
+                      href: "https://bit.ly/3NjnwUT"
+                    }, [
+                      __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Quotes Website")
+                    ])
                   ])
                 ])
               ]
@@ -4489,7 +4485,74 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     ]),
                     __vite_ssr_import_8__.createCommentVNode(" </div> ")
                   ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  __vite_ssr_import_8__.createVNode("a", {
+                    target: "blank",
+                    href: "https://bit.ly/3FNc1Cv"
+                  }, [
+                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Education website")
+                  ])
+                ])
+              ])
+            ]),
+            _: 1 /* STABLE */
+          }),
+          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
+            default: __vite_ssr_import_8__.withCtx(() => [
+              __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
+                __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
+                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
+                    __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
+                    __vite_ssr_import_8__.createVNode("img", {
+                      src: __vite_ssr_import_10__.default,
+                      alt: ""
+                    })
+                  ]),
+                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
+                    __vite_ssr_import_8__.createVNode("div", null, [
+                      __vite_ssr_import_8__.createVNode("img", {
+                        class: "h-28 w-28 mx-auto mb-5",
+                        src: __vite_ssr_import_11__.default,
+                        alt: ""
+                      })
+                    ]),
+                    __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
+                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
+                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        __vite_ssr_import_8__.createVNode("img", {
+                          class: "w-6 mr-2",
+                          src: __vite_ssr_import_17__.default,
+                          alt: ""
+                        }),
+                        __vite_ssr_import_8__.createTextVNode("Wordpress")
+                      ]),
+                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        __vite_ssr_import_8__.createVNode("img", {
+                          class: "w-6 mr-2",
+                          src: __vite_ssr_import_18__.default,
+                          alt: ""
+                        }),
+                        __vite_ssr_import_8__.createTextVNode("Custom CSS")
+                      ])
+                    ]),
+                    __vite_ssr_import_8__.createVNode("div", null, [
+                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
+                        __vite_ssr_import_8__.createVNode("img", {
+                          class: "w-6 mr-2",
+                          src: __vite_ssr_import_19__.default,
+                          alt: ""
+                        }),
+                        __vite_ssr_import_8__.createTextVNode("Plugins")
+                      ]),
+                      __vite_ssr_import_8__.createCommentVNode(" <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/vue.svg\" alt=\"\" />vue js</h1>\r\n                        <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/nuxt.svg\" alt=\"\" />nuxt js</h1> ")
+                    ]),
+                    __vite_ssr_import_8__.createCommentVNode(" </div> ")
+                  ]),
+                  __vite_ssr_import_8__.createVNode("a", {
+                    target: "blank",
+                    href: "https://bit.ly/3FMGald"
+                  }, [
+                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Wordpress News website")
+                  ])
                 ])
               ])
             ]),
@@ -4531,24 +4594,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           alt: ""
                         }),
                         __vite_ssr_import_8__.createTextVNode("tailwind css")
-                      ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_14__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("java")
                       ])
                     ]),
                     __vite_ssr_import_8__.createVNode("div", null, [
+                      __vite_ssr_import_8__.createCommentVNode(" <h1 class=\"flex items-center uppercase\"><img class=\"w-6 mr-2\" src=\"~/assets/images/mycollection/vue.svg\" alt=\"\" />vue js</h1> "),
                       __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                         __vite_ssr_import_8__.createVNode("img", {
                           class: "w-6 mr-2",
-                          src: __vite_ssr_import_15__.default,
+                          src: __vite_ssr_import_20__.default,
                           alt: ""
                         }),
-                        __vite_ssr_import_8__.createTextVNode("vue js")
+                        __vite_ssr_import_8__.createTextVNode("Axios API")
                       ]),
                       __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
                         __vite_ssr_import_8__.createVNode("img", {
@@ -4561,79 +4617,12 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     ]),
                     __vite_ssr_import_8__.createCommentVNode(" </div> ")
                   ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
-                ])
-              ])
-            ]),
-            _: 1 /* STABLE */
-          }),
-          __vite_ssr_import_8__.createVNode(_component_swiper_slide, null, {
-            default: __vite_ssr_import_8__.withCtx(() => [
-              __vite_ssr_import_8__.createVNode("div", { class: "w-full px-1 mb-4 xl:w-auto xl:mb-0" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "px-6 pt-10 pb-12 mb-10 text-center shadow-sm bg-gray-50 rounded-7xl shadow-gray-300" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center justify-center mb-8 -mt-8" }, [
-                    __vite_ssr_import_8__.createVNode("h4", { class: "text-xl font-medium uppercase font-heading" }, "Project TechnologieS"),
-                    __vite_ssr_import_8__.createVNode("img", {
-                      src: __vite_ssr_import_10__.default,
-                      alt: ""
-                    })
-                  ]),
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col justify-between sm:flex-row lg:mx-14" }, [
-                    __vite_ssr_import_8__.createVNode("div", null, [
-                      __vite_ssr_import_8__.createVNode("img", {
-                        class: "h-28 w-28 mx-auto mb-5",
-                        src: __vite_ssr_import_11__.default,
-                        alt: ""
-                      })
-                    ]),
-                    __vite_ssr_import_8__.createCommentVNode(" <div class=\"flex sm:space-x-20 mb-14\"> "),
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_12__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("html")
-                      ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_13__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("tailwind css")
-                      ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_14__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("java")
-                      ])
-                    ]),
-                    __vite_ssr_import_8__.createVNode("div", null, [
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_15__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("vue js")
-                      ]),
-                      __vite_ssr_import_8__.createVNode("h1", { class: "flex items-center uppercase" }, [
-                        __vite_ssr_import_8__.createVNode("img", {
-                          class: "w-6 mr-2",
-                          src: __vite_ssr_import_16__.default,
-                          alt: ""
-                        }),
-                        __vite_ssr_import_8__.createTextVNode("nuxt js")
-                      ])
-                    ]),
-                    __vite_ssr_import_8__.createCommentVNode(" </div> ")
-                  ]),
-                  __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900" }, "Founder")
+                  __vite_ssr_import_8__.createVNode("a", {
+                    target: "blank",
+                    href: "https://bit.ly/3NjnwUT"
+                  }, [
+                    __vite_ssr_import_8__.createVNode("span", { class: "p-2 text-sm font-bold text-gray-500 uppercase bg-white rounded-full shadow-inner shadow-blueGray-900/50" }, "Quotes Website")
+                  ])
                 ])
               ])
             ]),
@@ -4644,7 +4633,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     }),
     _: 1 /* STABLE */
   }, _parent))
-  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${__vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_17__.default)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`)
+  _push(`</div></div><img class="absolute top-0 hidden transform translate-x-1/2 xl:block left-1/2"${__vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_21__.default)} alt=""><div class="w-full px-4 lg:w-1/2"><div class="text-center lg:px-10 md:mb-16"><h2 class="mt-8 font-medium text-9xl md:text-10xl xl:text-11xl font-heading">Details</h2>`)
   _push(__vite_ssr_import_9__.ssrRenderComponent(_component_swiper, {
     spaceBetween: 10,
     slidesPerView: 1,
@@ -4658,13 +4647,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_18__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_22__.default)
               } alt=""${
                 _scopeId
               }><div class="flex items-start mb-10"${
                 _scopeId
               }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
@@ -4673,8 +4662,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+              }> I am creating an educational website that is not only easy to use, but also less animated. We believe that this is the first step in empowering people around the world to learn and grow. </p></div><img${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }></div>`)
@@ -4682,21 +4671,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               return [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_18__.default,
+                  src: __vite_ssr_import_22__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                   __vite_ssr_import_8__.createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                     __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " I am creating an educational website that is not only easy to use, but also less animated. We believe that this is the first step in empowering people around the world to learn and grow. ")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   })
                 ])
@@ -4709,13 +4698,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_18__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_22__.default)
               } alt=""${
                 _scopeId
               }><div class="flex items-start mb-10"${
                 _scopeId
               }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
@@ -4724,8 +4713,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+              }>A news website with a creative and unique design. We are also fast and optimized for top performance on the search engine result pages.</p></div><img${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }></div>`)
@@ -4733,21 +4722,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               return [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_18__.default,
+                  src: __vite_ssr_import_22__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                   __vite_ssr_import_8__.createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                     __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "A news website with a creative and unique design. We are also fast and optimized for top performance on the search engine result pages.")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   })
                 ])
@@ -4760,13 +4749,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<img class="block mx-auto mb-12"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_18__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_22__.default)
               } alt=""${
                 _scopeId
               }><div class="flex items-start mb-10"${
                 _scopeId
               }><img class="rotate-180"${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }><div class="max-w-sm mx-auto text-justify -mt-9"${
@@ -4775,8 +4764,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 _scopeId
               }>project Ideas :-</h1><p class="mx-2 text-2xl font-medium"${
                 _scopeId
-              }> Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! </p></div><img${
-                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_19__.default)
+              }>Some quotes are very nice. I have created a quotes website with public available API and axios package.</p></div><img${
+                __vite_ssr_import_9__.ssrRenderAttr("src", __vite_ssr_import_23__.default)
               } alt=""${
                 _scopeId
               }></div>`)
@@ -4784,21 +4773,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               return [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "block mx-auto mb-12",
-                  src: __vite_ssr_import_18__.default,
+                  src: __vite_ssr_import_22__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                   __vite_ssr_import_8__.createVNode("img", {
                     class: "rotate-180",
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   }),
                   __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                     __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                    __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Some quotes are very nice. I have created a quotes website with public available API and axios package.")
                   ]),
                   __vite_ssr_import_8__.createVNode("img", {
-                    src: __vite_ssr_import_19__.default,
+                    src: __vite_ssr_import_23__.default,
                     alt: ""
                   })
                 ])
@@ -4813,21 +4802,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             default: __vite_ssr_import_8__.withCtx(() => [
               __vite_ssr_import_8__.createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_18__.default,
+                src: __vite_ssr_import_22__.default,
                 alt: ""
               }),
               __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                   __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " I am creating an educational website that is not only easy to use, but also less animated. We believe that this is the first step in empowering people around the world to learn and grow. ")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 })
               ])
@@ -4838,21 +4827,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             default: __vite_ssr_import_8__.withCtx(() => [
               __vite_ssr_import_8__.createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_18__.default,
+                src: __vite_ssr_import_22__.default,
                 alt: ""
               }),
               __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                   __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "A news website with a creative and unique design. We are also fast and optimized for top performance on the search engine result pages.")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 })
               ])
@@ -4863,21 +4852,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             default: __vite_ssr_import_8__.withCtx(() => [
               __vite_ssr_import_8__.createVNode("img", {
                 class: "block mx-auto mb-12",
-                src: __vite_ssr_import_18__.default,
+                src: __vite_ssr_import_22__.default,
                 alt: ""
               }),
               __vite_ssr_import_8__.createVNode("div", { class: "flex items-start mb-10" }, [
                 __vite_ssr_import_8__.createVNode("img", {
                   class: "rotate-180",
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 }),
                 __vite_ssr_import_8__.createVNode("div", { class: "max-w-sm mx-auto text-justify -mt-9" }, [
                   __vite_ssr_import_8__.createVNode("h1", { class: "mx-2 text-2xl font-medium text-blue-500 capitalize" }, "project Ideas :-"),
-                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, " Morbi ut nisl placerat, suscipit urna non, fringilla leo. Aenean mi libero, pretium eu convallis non, feugiat non ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia! ")
+                  __vite_ssr_import_8__.createVNode("p", { class: "mx-2 text-2xl font-medium" }, "Some quotes are very nice. I have created a quotes website with public available API and axios package.")
                 ]),
                 __vite_ssr_import_8__.createVNode("img", {
-                  src: __vite_ssr_import_19__.default,
+                  src: __vite_ssr_import_23__.default,
                   alt: ""
                 })
               ])
@@ -4892,20 +4881,20 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   _push(`<div class="flex items-center justify-center -mx-4"></div></div><div class="hidden h-1 md:block"><div class="w-64 mx-auto bg-gray-100 rounded-full h-1/2"><div class="w-1/3 h-full bg-purple-500 rounded-full"></div></div></div></div></div></div></section>`)
 }
 
-const __vite_ssr_import_20__ = await __vite_ssr_import__("/components/project.vue?vue&type=style&index=0&lang.css");
+const __vite_ssr_import_24__ = await __vite_ssr_import__("/components/project.vue?vue&type=style&index=0&lang.css");
 
 
-const __vite_ssr_import_21__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_25__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_21__.useSSRContext()
+  const ssrContext = __vite_ssr_import_25__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/project.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_22__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_26__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_22__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/project.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_26__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/components/project.vue"]]);
 }
 
 
@@ -4958,6 +4947,30 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/team/placeholder-photo.png"
 
 
 // --------------------
+// Request: /assets/images/mycollection/plugin.svg
+// Parents: 
+// - /components/project.vue ($id_9aa3dd9e)
+// Dependencies: 
+
+// --------------------
+const $id_59b3084c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/plugin.svg";
+}
+
+
+// --------------------
+// Request: /assets/images/mycollection/api1.svg
+// Parents: 
+// - /components/project.vue ($id_9aa3dd9e)
+// Dependencies: 
+
+// --------------------
+const $id_25689546 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/api1.svg";
+}
+
+
+// --------------------
 // Request: /assets/images/team/dots.svg
 // Parents: 
 // - /components/project.vue ($id_9aa3dd9e)
@@ -5001,7 +5014,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/team/quote.png";
 
 // --------------------
 const $id_ebf4cadc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n\r\n  background-color: red;\n}\r\n";
+__vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;\r\n  width: 15px;\r\n  background-color: red;\n}\r\n";
 }
 
 
@@ -5009,7 +5022,7 @@ __vite_ssr_exports__.default = "\n.swiper-pagination-bullet {\r\n  height: 15px;
 // Request: /components/home.vue
 // Parents: 
 // - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /assets/images/mycollection/lines-blue1.svg ($id_bb982fe0)
@@ -5089,13 +5102,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_6__.default)
   } alt=""></div></div></div></div></div></div><div class="relative z-10 mx-4 mb-5 lg:mx-7"><h1 class="mb-5 text-6xl font-semibold capitalize">Contact</h1><div class="relative grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center"><!-- bg image  --><div class="absolute h-80 w-44 bg-animal bg-no-repeat bg-[length:200px] bg-center animate-slide-tr"></div><!-- bg image  --><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
     __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_7__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
+  } alt=""><a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="https://github.com/GanpatJangra">Github <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
     __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_8__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
+  } alt=""><a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="https://www.linkedin.com/in/ganpat-jangra-4b3a9621a/">Linkdin <h1 class="text-sm">@ganpatjangra</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
     __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_9__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
+  } alt=""><a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="#">Mail <h1 class="text-sm">ganpatjangra@gmail.com</h1></a></div><div class="relative flex items-center w-full mb-6 xl:w-1/2"><img class="mr-6 h-14"${
     __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_10__.default)
-  } alt=""><a class="text-3xl font-medium hover:text-blueGray-500" target="blankpage" href="#">Call <h1 class="text-sm">+91 9876543210</h1></a></div></div></div></div></div></section></div>`)
+  } alt=""><a class="text-3xl font-medium hover:text-blueGray-600" target="blankpage" href="#">Call <h1 class="text-sm">+91 8708423836</h1></a></div></div></div></div></div></section></div>`)
 }
 
 
@@ -5109,7 +5122,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/home.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/components/home.vue"]]);
 }
 
 
@@ -5236,7 +5249,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/mycollection/icon1.svg";
 // --------------------
 // Request: /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
 // --------------------
@@ -5260,13 +5273,13 @@ __vite_ssr_exports__.default = () => {}
 // Dependencies: 
 
 // --------------------
-const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs".') })
+const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/ohmyfetch/dist/index.mjs".') })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_197ba429)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs ($id_61dc351e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /components/darkbutton.vue ($id_0bdb3e11)
@@ -5274,7 +5287,7 @@ const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /components/project.vue ($id_9aa3dd9e)
 // - /components/skills.vue ($id_43fa255d)
 // --------------------
-const $id_46c29c57 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_5c04d609 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -5298,7 +5311,7 @@ __vite_ssr_exports__.default = function (nuxtApp) {
 // --------------------
 // Request: /components/darkbutton.vue
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs ($id_46c29c57)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs ($id_5c04d609)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@headlessui/vue/dist/headlessui.esm.js ($id_2c13895f)
@@ -5372,7 +5385,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/components/darkbutton.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/components/darkbutton.vue"]]);
 }
 
 
@@ -5461,13 +5474,13 @@ Object.defineProperty(__vite_ssr_exports__, "TransitionRoot", { enumerable: true
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/root-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // --------------------
-const $id_f92004e9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_454f0a38 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/components/nuxt-root.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -5477,7 +5490,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/components/nuxt-root.vue
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs ($id_f92004e9)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/root-component.mjs ($id_454f0a38)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -5528,18 +5541,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs
+// Request: /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/app-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /app.vue ($id_2b46e842)
 // --------------------
-const $id_f17181d1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_c8874ac0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/app.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -5549,7 +5562,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /app.vue
 // Parents: 
-// - /@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs ($id_f17181d1)
+// - /@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/app-component.mjs ($id_c8874ac0)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -5594,12 +5607,12 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/ganpatjangra.me/app.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/acer/Desktop/Projects/ganpatjangra.me/app.vue"]]);
 }
 
 
 const __modules__ = {
- 'C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry': $id_0bdfba74,
+ 'C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/app/entry': $id_767b9929,
  '/node_modules/nuxt3/dist/app/bootstrap.mjs': $id_fef466a9,
  '/node_modules/vue/dist/vue.cjs.js': $id_60f0615f,
  '/node_modules/nuxt3/dist/app/index.mjs': $id_d8c2af0f,
@@ -5620,9 +5633,9 @@ const __modules__ = {
  '/node_modules/h3/dist/index.mjs': $id_57d7ded6,
  '/node_modules/destr/dist/index.mjs': $id_03d15ecd,
  '/node_modules/nuxt3/dist/app/composables/ssr.mjs': $id_4d0dc923,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/css.mjs': $id_838a58c0,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/css.mjs': $id_fd99a68c,
  '/assets/css/tailwind.css': $id_f75548e1,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/plugins/server.mjs': $id_197ba429,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/plugins/server.mjs': $id_61dc351e,
  '/node_modules/nuxt3/dist/app/plugins/preload.server.mjs': $id_b9f3c557,
  '/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs': $id_cbe5172d,
  '/node_modules/@vueuse/head/dist/index.mjs': $id_c032264e,
@@ -5630,15 +5643,15 @@ const __modules__ = {
  '/node_modules/nuxt3/dist/meta/runtime/components.mjs': $id_94744df3,
  '/node_modules/nuxt3/dist/meta/runtime/composables.mjs': $id_ca9295be,
  '/node_modules/@vue/shared/dist/shared.cjs.js': $id_852b06a2,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/meta.config.mjs': $id_36430d24,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/meta.config.mjs': $id_18710eac,
  '/node_modules/nuxt3/dist/pages/runtime/router.mjs': $id_a4d6cb5b,
  '/node_modules/nuxt3/dist/pages/runtime/nested-page.vue': $id_c268603a,
  '/node_modules/vue/server-renderer/index.js': $id_b215fa1c,
  '/@id/plugin-vue:export-helper': $id_bbb863c1,
  '/node_modules/nuxt3/dist/pages/runtime/page.vue': $id_10628d40,
  '/node_modules/nuxt3/dist/pages/runtime/layout.mjs': $id_9b68c93f,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/layouts.mjs': $id_45f47c42,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/routes.mjs': $id_313442dd,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/layouts.mjs': $id_e4d09968,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/routes.mjs': $id_c8aca64c,
  '/pages/blog.vue': $id_b88f8cfb,
  '/pages/index.vue': $id_cca58e97,
  '/components/skills.vue': $id_43fa255d,
@@ -5695,6 +5708,8 @@ const __modules__ = {
  '/node_modules/swiper/modules/thumbs/thumbs.min.css': $id_14412fe5,
  '/assets/images/icons8/icons8-broadcasting.svg': $id_c5664f3a,
  '/assets/images/team/placeholder-photo.png': $id_2895cd70,
+ '/assets/images/mycollection/plugin.svg': $id_59b3084c,
+ '/assets/images/mycollection/api1.svg': $id_25689546,
  '/assets/images/team/dots.svg': $id_ed8d99e0,
  '/assets/images/team/dots2.svg': $id_e24d19d5,
  '/assets/images/team/quote.png': $id_4c8c4a03,
@@ -5712,12 +5727,12 @@ const __modules__ = {
  '/assets/images/mycollection/icon1.svg': $id_4304f31b,
  '/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs': $id_7b587af2,
  '/node_modules/ohmyfetch/dist/index.mjs': $id_780217c4,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/components.mjs': $id_46c29c57,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/components.mjs': $id_5c04d609,
  '/components/darkbutton.vue': $id_0bdb3e11,
  '/node_modules/@headlessui/vue/dist/headlessui.esm.js': $id_2c13895f,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/root-component.mjs': $id_f92004e9,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/root-component.mjs': $id_454f0a38,
  '/node_modules/nuxt3/dist/app/components/nuxt-root.vue': $id_f8564e04,
- '/@id/__x00__virtual:C:/Users/acer/Desktop/ganpatjangra.me/.nuxt/app-component.mjs': $id_f17181d1,
+ '/@id/__x00__virtual:C:/Users/acer/Desktop/Projects/ganpatjangra.me/.nuxt/app-component.mjs': $id_c8874ac0,
  '/app.vue': $id_2b46e842
 }
 
@@ -5795,4 +5810,4 @@ async function __instantiateModule__(url, urlStack) {
 }
 
 
-export default await __ssrLoadModule__('C:/Users/acer/Desktop/ganpatjangra.me/node_modules/nuxt3/dist/app/entry')
+export default await __ssrLoadModule__('C:/Users/acer/Desktop/Projects/ganpatjangra.me/node_modules/nuxt3/dist/app/entry')

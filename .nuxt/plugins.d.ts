@@ -10,7 +10,7 @@ type NuxtAppInjections =
   InjectionType<typeof import('../node_modules/nuxt3/dist/meta/runtime/plugin').default> &
   InjectionType<typeof import('../node_modules/nuxt3/dist/pages/runtime/router').default> &
   InjectionType<typeof import('../node_modules/@nuxt/nitro/dist/runtime/app/nitro.client').default> &
-  InjectionType<typeof import('../../../../../../#build/components').default>
+  InjectionType<typeof import('../../../../../../../#build/components').default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
